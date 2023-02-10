@@ -1,11 +1,11 @@
 ---
-title: "Teaching experience 1"
+title: "Processing Big Data"
 collection: teaching
-type: "Undergraduate course"
+type: "PhD course"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+venue: "University of Lisbon, IST, ECE Department"
+date: 2018-03-01
+location: "Lisbon, Portugal"
 ---
 
 This is a description of a teaching experience. You can use markdown like any other post.

@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Trustworthy Machine Learning"
+title                    : "Trustworthy ML"
 title_separator          : "-"
 name                     : &name "Claudia Soares"
-description              : &description "Researcher and Assistant Professor, department of CS NOVA University of Lisbon"
+description              : &description "Researcher and Assistant Professor, Department of CS NOVA University of Lisbon"
 url                      : https://ClaudiaASoares.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ClaudiaASoares/ClaudiaASoares.github.io"

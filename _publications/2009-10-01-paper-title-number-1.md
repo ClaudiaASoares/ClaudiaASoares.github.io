@@ -47,7 +47,7 @@ Recommended citation: Caldas, Francisco M., and Cláudia Soares. "A Temporal Fus
 
 Bibtex:
 
-<preformatted>
+<code>
   @inproceedings{caldas2023temporal,
   title={A Temporal Fusion Transformer for Long-term Explainable Prediction of Emergency Department Overcrowding},
   author={Caldas, Francisco M and Soares, Cl{\'a}udia},
@@ -56,4 +56,4 @@ Bibtex:
   year={2023},
   organization={Springer}
 }
-  </preformatted>
+  </code>

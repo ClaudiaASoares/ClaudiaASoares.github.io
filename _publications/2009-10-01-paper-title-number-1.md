@@ -10,7 +10,7 @@ patients. This paper describes a novel
 deep learning architecture, the Temporal Fusion Transformer, that uses calendar and time-series covariates to forecast prediction intervals and point predictions for a 4-week period. We have
 concluded that patient volume can be
 forecast with a Mean Absolute Percentage Error (MAPE) of 9.87%.'
-date: 2023-01-31
+date: 2022-09-23
 venue: 'Machine Learning and Principles and Practice of Knowledge Discovery in Databases: International Workshops of ECML PKDD 2022'
 paperurl: 'https://arxiv.org/pdf/2207.00610.pdf'
 citation: 'Caldas, Francisco M., and Cláudia Soares. "A Temporal Fusion Transformer for Long-term Explainable Prediction of Emergency Department Overcrowding." Machine Learning and Principles and Practice of Knowledge Discovery in Databases: International Workshops of ECML PKDD 2022, Grenoble, France, September 19–23, 2022, Proceedings, Part I. Cham: Springer Nature Switzerland.'

@@ -38,7 +38,7 @@ MSc Students
 
 [João Catulo](.)
 
-[José Tomás Silveira](../files/Silveira_2022.pdf)
+[José Tomás Silveira](Claudia.ASoares.github.io/files/Silveira_2022.pdf)
 
 [Lourenço Vasconcelos](https://www.notion.so/Louren-o-Vasconcelos-aab59dd9bea84d998b22e4f1d8876827)
 

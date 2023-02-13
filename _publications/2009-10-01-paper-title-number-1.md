@@ -12,8 +12,8 @@ concluded that patient volume can be
 forecast with a Mean Absolute Percentage Error (MAPE) of 9.87%.'
 date: 2023-01-31
 venue: 'Machine Learning and Principles and Practice of Knowledge Discovery in Databases: International Workshops of ECML PKDD 2022'
-paperurl: '[TFT for Emergency Department Overcrowding Prediction](https://arxiv.org/pdf/2207.00610.pdf)'
-citation: 'Caldas, Francisco M., and Cláudia Soares. "A Temporal Fusion Transformer for Long-term Explainable Prediction of Emergency Department Overcrowding." Machine Learning and Principles and Practice of Knowledge Discovery in Databases: International Workshops of ECML PKDD 2022, Grenoble, France, September 19–23, 2022, Proceedings, Part I. Cham: Springer Nature Switzerland, 2023.'
+paperurl: 'https://arxiv.org/pdf/2207.00610.pdf'
+citation: 'Caldas, Francisco M., and Cláudia Soares. "A Temporal Fusion Transformer for Long-term Explainable Prediction of Emergency Department Overcrowding." Machine Learning and Principles and Practice of Knowledge Discovery in Databases: International Workshops of ECML PKDD 2022, Grenoble, France, September 19–23, 2022, Proceedings, Part I. Cham: Springer Nature Switzerland.'
 ---
 
 
@@ -43,8 +43,6 @@ other models commonly found in the literature.
 
 [Download paper here](https://arxiv.org/pdf/2207.00610.pdf)
 
-Recommended citation: Caldas, Francisco M., and Cláudia Soares. "A Temporal Fusion Transformer for Long-term Explainable Prediction of Emergency Department Overcrowding." Machine Learning and Principles and Practice of Knowledge Discovery in Databases: International Workshops of ECML PKDD 2022, Grenoble, France, September 19–23, 2022, Proceedings, Part I. Cham: Springer Nature Switzerland, 2023.
-
 Bibtex:
 
 <code>
@@ -54,6 +52,5 @@ Bibtex:
   booktitle={Machine Learning and Principles and Practice of Knowledge Discovery in Databases: International Workshops of ECML PKDD 2022, Grenoble, France, September 19--23, 2022, Proceedings, Part I},
   pages={71--88},
   year={2023},
-  organization={Springer}
-}
+  organization={Springer}}
   </code>

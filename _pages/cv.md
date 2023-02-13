@@ -11,37 +11,39 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+
+* Ph.D in Distributed Estimation Algorithms over Networks (ECE), Tecnico Lisboa, 2016
+* M.S. in Electrical and Computer Engineering, Tecnico Lisboa, 2007
+* B.S. in Electrical and Computer Engineering, Tecnico Lisboa, 2007
+* Diploma in Modern Languages and Cultures, NOVA University of Lisbon, 2002
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2021 to present: Assistant Professor
+  * Department of Computes Science 
+  * NOVA School of Science and Technology
+  
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2018 to 2021: Invited Assistant Professor
+  * Department of ECE
+  * Tecnico Lisboa
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
-
+* Distributed Machine Learning
+* Machine Learning for Space
+ 
 Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
+
+Supervisions
+======
+TBD
+ 
 Talks
 ======
   <ul>{% for post in site.talks %}
@@ -56,4 +58,7 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Member of the Cientific Committee of the Master program on Big Data Analysis and Engineering
+* Associated Editor of the Mathematics in Industry journal
+
+

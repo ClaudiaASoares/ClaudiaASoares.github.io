@@ -36,15 +36,11 @@ PhD Students
 MSc Students
 ------
 
-[João Catulo](.)
-
-[José Tomás Silveira](Claudia.ASoares.github.io/files/Silveira_2022.pdf) Modelling Customer Churn With Time-To-Event Approaches
-
-[Lourenço Vasconcelos](Claudia.ASoares.github.io/files/Vasconcelos_2022.pdf)
-
-[Ricardo Ferreira](https://www.notion.so/Ricardo-Ferreira-413caeab913a4ef58e9cf6cea02847bb)
-
-[Diogo Lavado](Claudia.ASoares.github.io/files/Lavado_2022.pdf)
+* [João Catulo](.)
+* [José Tomás Silveira](Claudia.ASoares.github.io/files/Silveira_2022.pdf) Modelling Customer Churn With Time-To-Event Approaches
+* [Lourenço Vasconcelos](Claudia.ASoares.github.io/files/Vasconcelos_2022.pdf)
+* [Ricardo Ferreira](https://www.notion.so/Ricardo-Ferreira-413caeab913a4ef58e9cf6cea02847bb)
+* [Diogo Lavado](Claudia.ASoares.github.io/files/Lavado_2022.pdf)
 
 [Miguel Dias](https://www.notion.so/Miguel-Dias-7d893e74f14c4992967ba2066153d16c)
 

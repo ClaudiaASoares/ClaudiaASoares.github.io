@@ -23,7 +23,7 @@ PhD Students
 ------
 * [Filipa Valdeira](https://filva.github.io/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2019 - 2022)
 * [Stevo Rackovic](https://stevorackovic.github.io/) (with [Dusan Jakovetic](https://people.dmi.uns.ac.rs/~dusan.jakovetic/), 2019 - )
-* David Vicente (2019 - )
+* David Vicente (with Marko Beko, 2019 - )
 * [Pedro Valdeira](https://www.cmuportugal.org/students/pedro-valdeira/) (CMU-Portugal with [Joao Xavier](http://users.isr.tecnico.ulisboa.pt/~jxavier/) and  [Yuejie Chi](https://users.ece.cmu.edu/~yuejiec/) 2020 - )
 * Ricardo Ferreira (2022 - )
 * Diogo Lavado (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2022 - )
@@ -38,7 +38,7 @@ MSc Students
 
 [João Catulo](.)
 
-[José Tomás Silveira](_files/Silveira_2022.pdf)
+[José Tomás Silveira](files/Silveira_2022.pdf)
 
 [Lourenço Vasconcelos](https://www.notion.so/Louren-o-Vasconcelos-aab59dd9bea84d998b22e4f1d8876827)
 

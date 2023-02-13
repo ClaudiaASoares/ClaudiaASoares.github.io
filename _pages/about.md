@@ -27,10 +27,10 @@ PhD Students
 * [Pedro Valdeira](https://www.cmuportugal.org/students/pedro-valdeira/) (CMU-Portugal with [Joao Xavier](http://users.isr.tecnico.ulisboa.pt/~jxavier/) and  [Yuejie Chi](https://users.ece.cmu.edu/~yuejiec/) 2020 - )
 * Ricardo Ferreira (2022 - )
 * Diogo Lavado (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2022 - )
-* Francisco M. Caldas (2022 - )
-* Marcos Motta (2021 - )
-* Bárbara Tavares (2022 - )
-* Bruno Rodrigues (2023 - )
+* Francisco M. Caldas (ESA-PT Space PhD Grantee, 2022 - )
+* Marcos Motta (with [Luís Picado](https://fenix.tecnico.ulisboa.pt/homepage/ist25123) and [J.P. Costeira](http://users.isr.ist.utl.pt/~jpc/), 2021 - )
+* Bárbara Tavares (with [Manuel Marques](http://users.isr.ist.utl.pt/~manuel/) 2022 - )
+* Bruno Rodrigues (with [João Leite](https://userweb.fct.unl.pt//~jleite/), 2023 - )
 
 
 MSc Students

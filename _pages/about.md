@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-I use optimization, physics, and probability theory to develop robust, interpretable, and trustworthy learning methods to be applied in the real world.
-
 
 I am a researcher at [NOVA LINCS](https://nova-lincs.di.fct.unl.pt/) and an Assistant Professor at the [Department of Computer Science](https://www.di.fct.unl.pt/en) of the [NOVA School of Science and Technology](https://www.fct.unl.pt/en). I do scientific consulting to [Neuraspace](https://www.neuraspace.com/), fighting Space Debris with Machine Learning. My work is broadly on trustworthy ML for Healthcare and for Physical Systems, like swarms of artificial agents, underwater unmanned vehicles, and satellites. 
 

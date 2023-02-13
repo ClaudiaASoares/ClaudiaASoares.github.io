@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-I am a researcher at [NOVA LINCS](https://nova-lincs.di.fct.unl.pt/) and an Assistant Professor at the [Department of Computer Science](https://www.di.fct.unl.pt/en) of the [NOVA School of Science and Technology](https://www.fct.unl.pt/en). I do scientific consulting to [Neuraspace](https://www.neuraspace.com/), fighting Space Debris with Machine Learning. My work is broadly on trustworthy ML for Healthcare and for Physical Systems, like swarms of artificial agents, underwater unmanned vehicles, and satellites. 
+I am a researcher at [NOVA LINCS](https://nova-lincs.di.fct.unl.pt/) and an Assistant Professor at the [Department of Computer Science](https://www.di.fct.unl.pt/en) of the [NOVA School of Science and Technology](https://www.fct.unl.pt/en). I do scientific consulting to [Neuraspace](https://www.neuraspace.com/), to fight Space Debris with Machine Learning. My work is broadly on trustworthy ML for Healthcare and for Physical Systems, like swarms of artificial agents, underwater unmanned vehicles, and satellites. 
 
 My Erdös number is 4.
 
@@ -25,7 +25,7 @@ PhD Students
 * [Stevo Rackovic](https://stevorackovic.github.io/) (with [Dusan Jakovetic](https://people.dmi.uns.ac.rs/~dusan.jakovetic/), 2019 - )
 * David Vicente (with Marko Beko, 2019 - )
 * [Pedro Valdeira](https://www.cmuportugal.org/students/pedro-valdeira/) (CMU-Portugal with [Joao Xavier](http://users.isr.tecnico.ulisboa.pt/~jxavier/) and  [Yuejie Chi](https://users.ece.cmu.edu/~yuejiec/) 2020 - )
-* Ricardo Ferreira (2022 - )
+* Ricardo Ferreira (with Marta Guimarães (Neuraspace), 2022 - )
 * Diogo Lavado (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2022 - )
 * Francisco M. Caldas (ESA-PT Space PhD Grantee, 2022 - )
 * Marcos Motta (with [Luís Picado](https://fenix.tecnico.ulisboa.pt/homepage/ist25123) and [J.P. Costeira](http://users.isr.ist.utl.pt/~jpc/), 2021 - )

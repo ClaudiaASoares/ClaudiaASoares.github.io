@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Author CS">
+  <title>Lecture 0: Introduction</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/black.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Lecture 0: Introduction</h1>
+  <p class="author">Author CS</p>
+  <p class="date">Date March</p>
+</section>
+
+<section id="learning-with-unstructured-data" class="slide level1">
+<h1>Learning with Unstructured Data</h1>
+<p>Lecture 0: Introduction</p>
+<p><br><br> Prof. Claudia Soares<br> <a
+href="mailto:claudia.soares@fct.unl.pt">claudia.soares@fct.unl.pt</a></p>
+</section>
+<section id="today" class="slide level1">
+<h1>Today</h1>
+<ul>
+<li class="fragment">Course outline</li>
+<li class="fragment">Introduction to deep learning</li>
+<li class="fragment">Fundamentals of machine learning</li>
+</ul>
+</section>
+<section id="outline" class="slide level1">
+<h1>Outline</h1>
+<ul>
+<li class="fragment">Lecture 1.1: Introduction</li>
+<li class="fragment">Lecture 1.2: Fundamentals of machine learning</li>
+<li class="fragment">Lecture 2.1: Multi-layer perceptron</li>
+<li class="fragment">Lecture 2.2: Training neural networks</li>
+<li class="fragment">Lecture 3.1: Computer Vision</li>
+<li class="fragment">Lecture 3.2: Convolutional neural networks</li>
+<li class="fragment">Lecture 4: Attention and transformer networks</li>
+<li class="fragment">Lecture 5: Graph Neural Networks</li>
+<li class="fragment">Lecture 6: Natural Language Processing</li>
+</ul>
+</section>
+<section id="main-reference" class="slide level1">
+<h1>Main Reference</h1>
+<div class="columns">
+<div class="column" style="width:40%;">
+<ul>
+<li class="fragment">Good balance of theory and practice</li>
+<li class="fragment">Covers almost all topics; Will be added more
+references, as adequate</li>
+<li class="fragment">Online book <a
+href="https://d2l.ai/">dl2.ai</a></li>
+</ul>
+</div><div class="column" style="width:60%;">
+<p class="stretch">
+<img src="https://d2l.ai/_images/front.png" width="60%" height="60%">
+</p>
+</div>
+</div>
+</section>
+<section class="slide level1">
+
+<h2 id="my-mission">My mission</h2>
+<p>By the end of this course, you will have acquired a solid and
+detailed understanding of the field of deep learning.</p>
+<p>You will have learned how to design deep neural networks for a wide
+range of advanced probabilistic inference tasks and how to train
+them.</p>
+<p>These models seen in the course apply to a wide variety of artificial
+intelligence problems, with plenty of applications in engineering and
+science.</p>
+</section>
+<section id="why-learning" class="slide level1">
+<h1>Why learning?</h1>
+</section>
+<section class="slide level1">
+
+<p class="stretch">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Adolphe_Millot_champignon.jpg" width="60%" height="60%">
+</p>
+</section>
+<section class="slide level1">
+
+<figure>
+<img
+data-src="https://upload.wikimedia.org/wikipedia/commons/9/98/Adolphe_Millot_champignon.jpg"
+alt="What do you see?" />
+<figcaption aria-hidden="true">What do you see?</figcaption>
+</figure>
+<p>???</p>
+<p>.italic[How do you do that?]</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle</p>
+<p>.center[ .width-70[<img data-src="figures/lec0/dog1.jpg" />]</p>
+<p>Sheepdog or mop? ]</p>
+<p>.footnote[Credits: <a href="https://twitter.com/teenybiscuit">Karen
+Zack</a>, 2016.]</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle</p>
+<p>.center[ .width-70[<img data-src="figures/lec0/dog2.jpg" />]</p>
+<p>Chihuahua or muffin? ]</p>
+<p>.footnote[Credits: <a href="https://twitter.com/teenybiscuit">Karen
+Zack</a>. 2016.]</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle</p>
+<p>The (human) brain is so good at interpreting visual information that
+the <strong>gap</strong> between raw data and its semantic
+interpretation is difficult to assess intuitively:</p>
+<p><br> .center[ <img data-src="figures/lec0/mushroom-small.png" /></p>
+<p>This is a mushroom. ]</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, center</p>
+<p>.width-70[<img data-src="figures/lec0/mushroom-big.png" />]</p>
+<p>This is a mushroom.</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, center</p>
+<p>.width-30[<img data-src="figures/lec0/mushroom-rgb0.png" />] +
+.width-30[<img data-src="figures/lec0/mushroom-rgb1.png" />] +
+.width-30[<img data-src="figures/lec0/mushroom-rgb2.png" />]</p>
+<p>This is a mushroom.</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, center</p>
+<p>.width-80[<img data-src="figures/lec0/mushroom-small-nb.png" />]</p>
+<p>This is a mushroom.</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, center</p>
+<p>Writing a computer program that sees?</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle</p>
+<p>.center.width-60[<img data-src="figures/lec0/cat1.png" />]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false class: black-slide</p>
+<p>.center.width-60[<img data-src="figures/lec0/cat2.png" />]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false class: black-slide, middle</p>
+<p>.center.width-80[<img data-src="figures/lec0/cat3.png" />]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false class: black-slide, middle</p>
+<p>.center.width-80[<img data-src="figures/lec0/cat4.png" />]</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle</p>
+<p>Extracting semantic information requires models of <strong>high
+complexity</strong>, which cannot be designed by hand.</p>
+<p>However, one can write a program that <em>learns</em> the task of
+extracting semantic information.</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, black-slide</p>
+<p>.center.width-70[<img data-src="figures/lec0/console.jpg" />]</p>
+<p>The common approach used in practice consists of: - defining a
+parametric model with high capacity, - optimizing its parameters, by
+“making it work” on the training data.</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, center, black-slide</p>
+<p>class: middle, black-slide</p>
+<p>.center[
+<video loop controls preload="auto" height="500" width="600">
+<source src="./figures/lec0/yann-dl.mp4" type="video/mp4"> </video>]</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle</p>
+</section>
+<section id="applications-and-successes" class="slide level1">
+<h1>Applications and successes</h1>
+</section>
+<section class="slide level1">
+
+<p>class: middle, center, black-slide</p>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/5kpsZoKjPgQ" frameborder="0" allowfullscreen>
+</iframe>
+<p>Object detection, pose estimation, segmentation (2019)</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, center, black-slide</p>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/V1eYniJ0Rnk" frameborder="0" allowfullscreen>
+</iframe>
+<p>Reinforcement learning (Mnih et al, 2014)</p>
+</section>
+<section class="slide level1">
+
+<p>exclude: true class: middle, center, black-slide</p>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/HcZ48JDamyk" frameborder="0" allowfullscreen>
+</iframe>
+<p>Strategy games (Deepmind, 2016-2018)</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, center, black-slide</p>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/qhUvQiKec2U" frameborder="0" allowfullscreen>
+</iframe>
+<p>Autonomous cars (NVIDIA, 2016)</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, center, black-slide</p>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/hA_-MkU0Nfw" frameborder="0" allowfullscreen>
+</iframe>
+<p>Autonomous cars (Waymo, 2022)</p>
+</section>
+<section class="slide level1">
+
+<p>exclude: true class: middle, black-slide</p>
+<p>.center[
+<video loop controls preload="auto" height="400" width="600">
+<source src="./figures/lec7/physics-simulation.mp4" type="video/mp4">
+</video></p>
+<p>Physics simulation (Sanchez-Gonzalez et al, 2020)</p>
+<p>]</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, black-slide, center</p>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/gg7WjuFs8F4" frameborder="0" allowfullscreen>
+</iframe>
+<p>AI for Science (Deepmind, AlphaFold, 2020)</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, center, black-slide</p>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/7gh6_U7Nfjs" frameborder="0" allowfullscreen>
+</iframe>
+<p>Speech synthesis and question answering (Google, 2018)</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, center, black-slide</p>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/qTgPSKKjfVg" frameborder="0" allowfullscreen>
+</iframe>
+<p>Image generation and AI art (OpenAI, 2022)</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, center, black-slide</p>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/Zm9B-DvwOgw" frameborder="0" allowfullscreen>
+</iframe>
+<p>Write computer code (OpenAI, 2021)</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, center, black-slide</p>
+<p>.center.width-100[<img data-src="figures/lec0/ChatGPT.png" />]</p>
+<p>Answer all your questions (OpenAI, 2022)</p>
+</section>
+<section class="slide level1">
+
+<p>exclude: true class: middle, center, black-slide</p>
+<iframe width="600" height="450" src="https://www.youtube.com/embed/BIDaxl4xqJ4" frameborder="0" allowfullscreen>
+</iframe>
+<p>Dali Lives (2019)</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle, center</p>
+<p>.width-70[<img data-src="figures/lec0/turing-award.png" />]</p>
+<p>.italic[“ACM named .bold[Yoshua Bengio], .bold[Geoffrey Hinton], and
+.bold[Yann LeCun] recipients of the .bold[2018 ACM A.M. Turing Award]
+for conceptual and engineering breakthroughs that have made deep neural
+networks a critical component of computing.”]</p>
+</section>
+<section id="why-does-it-work-now" class="slide level1">
+<h1>Why does it work now?</h1>
+<p>.center.grid[ .kol-1-2[ Algorithms (old and new)<br><br>
+.width-90[<img data-src="figures/lec0/skip-connection.png" />]]
+.center.kol-1-2[ More data<br><br> .width-50[<img
+data-src="figures/lec0/imagenet.jpeg" />]]]</p>
+<p>.center.grid[ .kol-1-2[ Software<br> .width-90[<img
+data-src="figures/lec0/software.png" />]] .kol-1-2[ Faster compute
+engines<br><br> .width-50[<img
+data-src="figures/lec0/titan.jpg" />]]]</p>
+<p>???</p>
+<p>The success of deep learning is multi-factorial…</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle</p>
+<h2 id="building-on-the-shoulders-of-giants">Building on the shoulders
+of giants</h2>
+<p>Five decades of research in machine learning provided - a taxonomy of
+ML concepts (classification, generative models, clustering, kernels,
+linear embeddings, etc.), - a sound statistical formalization (Bayesian
+estimation, PAC), - a clear picture of fundamental issues (bias/variance
+dilemma, VC dimension, generalization bounds, etc.), - a good
+understanding of optimization issues, - efficient large-scale
+algorithms.</p>
+<p>.footnote[Credits: Francois Fleuret, <a
+href="https://fleuret.org/ee559/">EE559 Deep Learning</a>, EPFL.]</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle</p>
+<h2 id="deep-learning">Deep learning</h2>
+<p>From a practical perspective, deep learning - lessens the need for a
+deep mathematical grasp, - makes the design of large learning
+architectures a system/software development task, - allows to leverage
+modern hardware (clusters of GPUs), - does not plateau when using more
+data, - makes large trained networks a commodity.</p>
+<p>.footnote[Credits: Francois Fleuret, <a
+href="https://fleuret.org/ee559/">EE559 Deep Learning</a>, EPFL.]</p>
+</section>
+<section class="slide level1">
+
+<p>class: middle</p>
+<p>.center.circle.width-30[<img
+data-src="figures/lec0/bishop.jpg" />]</p>
+<p>.italic[For the last forty years we have programmed computers; for
+the next forty years we will train them.]</p>
+<p>.pull-right[Chris Bishop, 2020.]</p>
+</section>
+<section class="slide level1">
+
+<p>class: end-slide, center count: false</p>
+<p>The end.</p>
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/math/math.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>

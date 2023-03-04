@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title>lecture1</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/black.css" id="theme">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+
+<section class="slide level1">
+
+<script>
+  window.MathJax = {
+  tex: {
+    inlineMath: [['$', '$'], ['\\(', '\\)']]
+  }
+};
+</script>
+</section>
+<section id="deep-learning" class="slide level1">
+<h1>Deep Learning</h1>
+<p>Lecture 1: Fundamentals of machine learning</p>
+<p><br><br> Prof. Claudia Soares<br> <a
+href="mailto:claudia.soares@fct.unl.pt">claudia.soares@fct.unl.pt</a></p>
+<aside class="notes">
+<p>R: over-parametrization https://arxiv.org/pdf/2109.02355.pdf</p>
+</aside>
+</section>
+<section id="today" class="slide level1">
+<h1>Today</h1>
+<p>A recap on statistical learning:</p>
+<ul>
+<li class="fragment">Supervised learning</li>
+<li class="fragment">Empirical risk minimization</li>
+<li class="fragment">Under-fitting and over-fitting</li>
+<li class="fragment">Bias-variance dilemma</li>
+</ul>
+</section>
+<section id="statistical-learning" class="slide level1">
+<h1>Statistical learning</h1>
+</section>
+<section id="supervised-learning" class="slide level1">
+<h1>Supervised learning</h1>
+<p>Consider an unknown joint probability distribution <span
+class="math inline">\(p\_{X,Y}\)</span>.</p>
+<p>Assume training data <span
+class="math display">\[(\mathbf{x}\_i,y\_i) \sim p\_{X,Y},\]</span> with
+<span class="math inline">\(\mathbf{x}\_i \in \mathcal{X}\)</span>,
+<span class="math inline">\(y\_i \in \mathcal{Y}\)</span>, <span
+class="math inline">\(i=1, ..., N\)</span>.</p>
+<ul>
+<li class="fragment">In most cases,
+<ul>
+<li class="fragment"><span class="math inline">\(\mathbf{x}\_i\)</span>
+is a <span class="math inline">\(p\)</span>-dimensional vector of
+features or descriptors,</li>
+<li class="fragment"><span class="math inline">\(y\_i\)</span> is a
+scalar (e.g., a category or a real value).</li>
+</ul></li>
+<li class="fragment">The training data is generated i.i.d.</li>
+<li class="fragment">The training data can be of any finite size <span
+class="math inline">\(N\)</span>.</li>
+<li class="fragment">In general, we do not have any prior information
+about <span class="math inline">\(p\_{X,Y}\)</span>.</li>
+</ul>
+<p>???</p>
+<p>In most cases, x is a vector, but it could be an image, a piece of
+text or a sample of sound.</p>
+</section>
+<section class="slide level1">
+
+<h2 id="inference">Inference</h2>
+<p>Supervised learning is usually concerned with the two following
+inference problems: - <strong>Classification</strong>: Given <span
+class="math inline">\((\mathbf{x}\_i, y\_i) \in
+\mathcal{X}\times\mathcal{Y} = \mathbb{R}^p \times
+\bigtriangleup^C\)</span>, for <span class="math inline">\(i=1, ...,
+N\)</span>, we want to estimate for any new <span
+class="math inline">\(\mathbf{x}\)</span>, <span
+class="math display">\[\arg \max\_y p(Y=y|X=\mathbf{x}).\]</span> -
+<strong>Regression</strong>: Given <span
+class="math inline">\((\mathbf{x}\_i, y\_i) \in
+\mathcal{X}\times\mathcal{Y} = \mathbb{R}^p \times \mathbb{R}\)</span>,
+for <span class="math inline">\(i=1, ..., N\)</span>, we want to
+estimate for any new <span class="math inline">\(\mathbf{x}\)</span>,
+<span class="math display">\[\mathbb{E}\left[ Y|X=\mathbf{x}
+\right].\]</span></p>
+<p>???</p>
+<p><span class="math inline">\(\bigtriangleup^C\)</span> is the <span
+class="math inline">\(C-1\)</span>-dimensional probability simplex <span
+class="math inline">\(\\{\mathbf{p} \in \mathbb{R}^C_+ :
+||\mathbf{p}||_1 = 1\\}\)</span>.</p>
+</section>
+<section class="slide level1">
+
+<p>, center</p>
+<p><img data-src="figures/lec1/classification.png" /></p>
+<p>Classification consists in identifying<br> a decision boundary
+between objects of distinct classes.</p>
+</section>
+<section class="slide level1">
+
+<p>, center</p>
+<p><img data-src="figures/lec1/regression.png" /></p>
+<p>Regression aims at estimating relationships among (usually
+continuous) variables.</p>
+</section>
+<section class="slide level1">
+
+<p>Or more generally, inference is concerned with the estimation of the
+conditional <span class="math display">\[p(Y=y|X=\mathbf{x})\]</span>
+for any new <span class="math inline">\((\mathbf{x},y)\)</span>.</p>
+</section>
+<section id="empirical-risk-minimization" class="slide level1">
+<h1>Empirical risk minimization</h1>
+<p>Consider a function <span class="math inline">\(f : \mathcal{X} \to
+\mathcal{Y}\)</span> produced by some learning algorithm. The
+predictions of this function can be evaluated through a loss <span
+class="math display">\[\ell : \mathcal{Y} \times  \mathcal{Y} \to
+\mathbb{R},\]</span> such that <span class="math inline">\(\ell(y,
+f(\mathbf{x})) \geq 0\)</span> measures how close the prediction <span
+class="math inline">\(f(\mathbf{x})\)</span> from <span
+class="math inline">\(y\)</span> is.</p>
+<p><br> ## Examples of loss functions</p>
+<p>.grid[ .kol-1-3[Classification:] .kol-2-3[<span
+class="math inline">\(\ell(y,f(\mathbf{x})) = \mathbf{1}\_{y \neq
+f(\mathbf{x})}\)</span>]] .grid[ .kol-1-3[Regression:] .kol-2-3[<span
+class="math inline">\(\ell(y,f(\mathbf{x})) = (y -
+f(\mathbf{x}))^2\)</span>]]</p>
+</section>
+<section class="slide level1">
+
+<p>Let <span class="math inline">\(\mathcal{F}\)</span> denote the
+hypothesis space, i.e. the set of all functions <span
+class="math inline">\(f\)</span> than can be produced by the chosen
+learning algorithm.</p>
+<p>We are looking for a function <span class="math inline">\(f \in
+\mathcal{F}\)</span> with a small <strong>expected risk</strong> (or
+generalization error) <span class="math display">\[R(f) =
+\mathbb{E}\_{(\mathbf{x},y)\sim p\_{X,Y}}\left[ \ell(y, f(\mathbf{x}))
+\right].\]</span></p>
+<p>This means that for a given data generating distribution <span
+class="math inline">\(p\_{X,Y}\)</span> and for a given hypothesis space
+<span class="math inline">\(\mathcal{F}\)</span>, the optimal model is
+<span class="math display">\[f\_\* = \arg \min\_{f \in \mathcal{F}}
+R(f).\]</span></p>
+</section>
+<section class="slide level1">
+
+<p>Since <span class="math inline">\(p\_{X,Y}\)</span> is unknown, the
+expected risk cannot be evaluated and the optimal model cannot be
+determined.</p>
+<p>However, if we have i.i.d. training data <span
+class="math inline">\(\mathbf{d} = \\\{(\mathbf{x}\_i, y\_i) |
+i=1,\ldots,N\\\}\)</span>, we can compute an estimate, the
+<strong>empirical risk</strong> (or training error) <span
+class="math display">\[\hat{R}(f, \mathbf{d}) = \frac{1}{N}
+\sum\_{(\mathbf{x}\_i, y\_i) \in \mathbf{d}} \ell(y\_i,
+f(\mathbf{x}\_i)).\]</span></p>
+<p>This estimator is <em>unbiased</em> and can be used for finding a
+good enough approximation of <span class="math inline">\(f\_\*\)</span>.
+This results into the <strong>empirical risk minimization
+principle</strong>: <span class="math display">\[f\_\*^{\mathbf{d}} =
+\arg \min\_{f \in \mathcal{F}} \hat{R}(f, \mathbf{d})\]</span></p>
+<p>???</p>
+<p>What does unbiased mean?</p>
+<p>=&gt; The expected empirical risk estimate (over d) is the expected
+risk.</p>
+</section>
+<section class="slide level1">
+
+<p>Most machine learning algorithms, including <strong>neural
+networks</strong>, implement empirical risk minimization.</p>
+<p>Under regularity assumptions, empirical risk minimizers converge:</p>
+<p><span class="math display">\[\lim\_{N \to \infty} f\_\*^{\mathbf{d}}
+= f\_\*\]</span></p>
+<p>???</p>
+<p>This is why tuning the parameters of the model to make it work on the
+training data is a reasonable thing to do.</p>
+</section>
+<section id="polynomial-regression" class="slide level1">
+<h1>Polynomial regression</h1>
+<p>.center[<img data-src="figures/lec1/data.png" />]</p>
+<p>Consider the joint probability distribution <span
+class="math inline">\(p\_{X,Y}\)</span> induced by the data generating
+process <span class="math display">\[(x,y) \sim p\_{X,Y} \Leftrightarrow
+x \sim U[-10;10], \epsilon \sim \mathcal{N}(0, \sigma^2), y = g(x) +
+\epsilon\]</span> where <span class="math inline">\(x \in
+\mathbb{R}\)</span>, <span class="math inline">\(y\in\mathbb{R}\)</span>
+and <span class="math inline">\(g\)</span> is an unknown polynomial of
+degree 3.</p>
+</section>
+<section class="slide level1">
+
+<p>Our goal is to find a function <span class="math inline">\(f\)</span>
+that makes good predictions on average over <span
+class="math inline">\(p\_{X,Y}\)</span>.</p>
+<p>Consider the hypothesis space <span class="math inline">\(f \in
+\mathcal{F}\)</span> of polynomials of degree 3 defined through their
+parameters <span class="math inline">\(\mathbf{w} \in
+\mathbb{R}^4\)</span> such that <span class="math display">\[\hat{y}
+\triangleq f(x; \mathbf{w}) = \sum\_{d=0}^3 w\_d x^d\]</span></p>
+</section>
+<section class="slide level1">
+
+<p>For this regression problem, we use the squared error loss <span
+class="math display">\[\ell(y, f(x;\mathbf{w})) = (y -
+f(x;\mathbf{w}))^2\]</span> to measure how wrong the predictions
+are.</p>
+<p>Therefore, our goal is to find the best value <span
+class="math inline">\(\mathbf{w}\_\*\)</span> such that <span
+class="math display">\[\begin{aligned}
+\mathbf{w}\_\* &amp;= \arg\min\_\mathbf{w} R(\mathbf{w}) \\\\
+&amp;= \arg\min\_\mathbf{w}  \mathbb{E}\_{(x,y)\sim p\_{X,Y}}\left[
+(y-f(x;\mathbf{w}))^2 \right]
+\end{aligned}\]</span></p>
+</section>
+<section class="slide level1">
+
+<p>Given a large enough training set <span
+class="math inline">\(\mathbf{d} = \\\{(x\_i, y\_i) |
+i=1,\ldots,N\\\}\)</span>, the empirical risk minimization principle
+tells us that a good estimate <span
+class="math inline">\(\mathbf{w}\_\*^{\mathbf{d}}\)</span> of <span
+class="math inline">\(\mathbf{w}\_\*\)</span> can be found by minimizing
+the empirical risk: <span class="math display">\[\begin{aligned}
+\mathbf{w}\_\*^{\mathbf{d}} &amp;= \arg\min\_\mathbf{w}
+\hat{R}(\mathbf{w},\mathbf{d}) \\\\
+&amp;= \arg\min\_\mathbf{w} \frac{1}{N}  \sum\_{(x\_i, y\_i) \in
+\mathbf{d}} (y\_i - f(x\_i;\mathbf{w}))^2 \\\\
+&amp;= \arg\min\_\mathbf{w} \frac{1}{N}  \sum\_{(x\_i, y\_i) \in
+\mathbf{d}} (y\_i - \sum\_{d=0}^3 w\_d x\_i^d)^2 \\\\
+&amp;= \arg\min\_\mathbf{w} \frac{1}{N} \left\lVert
+\underbrace{\begin{pmatrix}
+y\_1 \\\\
+y\_2 \\\\
+\ldots \\\\
+y\_N
+\end{pmatrix}}\_{\mathbf{y}} -
+\underbrace{\begin{pmatrix}
+x\_1^0 \ldots x\_1^3 \\\\
+x\_2^0 \ldots x\_2^3 \\\\
+\ldots \\\\
+x\_N^0 \ldots x\_N^3
+\end{pmatrix}}\_{\mathbf{X}}
+\begin{pmatrix}
+w\_0 \\\\
+w\_1 \\\\
+w\_2 \\\\
+w\_3
+\end{pmatrix}
+\right\rVert^2
+\end{aligned}\]</span></p>
+</section>
+<section class="slide level1">
+
+<p>This is <strong>ordinary least squares</strong> regression, for which
+the solution is derived as <span
+class="math display">\[\mathbf{w}\_\*^{\mathbf{d}} =
+(\mathbf{X}^T\mathbf{X})^{-1}\mathbf{X}^T\mathbf{y}.\]</span></p>
+<p>.center[<img data-src="figures/lec1/poly-3.png" />]</p>
+</section>
+<section class="slide level1">
+
+<p>The expected risk minimizer <span
+class="math inline">\(\mathbf{w}\_\*\)</span> within our hypothesis
+space is <span class="math inline">\(g\)</span> itself.</p>
+<p>Therefore, on this toy problem, we can verify that <span
+class="math inline">\(f(x;\mathbf{w}\_\*^{\mathbf{d}}) \to
+f(x;\mathbf{w}\_\*) = g(x)\)</span> as <span class="math inline">\(N \to
+\infty\)</span>.</p>
+</section>
+<section class="slide level1">
+
+<p>.center[<img data-src="figures/lec1/poly-N-5.png" />]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false</p>
+<p>.center[<img data-src="figures/lec1/poly-N-10.png" />]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false</p>
+<p>.center[<img data-src="figures/lec1/poly-N-50.png" />]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false</p>
+<p>.center[<img data-src="figures/lec1/poly-N-100.png" />]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false</p>
+<p>.center[<img data-src="figures/lec1/poly-N-500.png" />]</p>
+</section>
+<section id="under-fitting-and-over-fitting" class="slide level1">
+<h1>Under-fitting and over-fitting</h1>
+<p>What if we consider a hypothesis space <span
+class="math inline">\(\mathcal{F}\)</span> in which candidate functions
+<span class="math inline">\(f\)</span> are either too “simple” or too
+“complex” with respect to the true data generating process?</p>
+</section>
+<section class="slide level1">
+
+<p>.center.width-60[<img
+data-src="figures/lec1/model-selection.png" />]</p>
+<h2 id="which-model-would-you-choose">Which model would you choose?</h2>
+<p>.grid[ .kol-1-3[</p>
+<p><span class="math inline">\(f\_1(x) = w\_0 + w\_1 x\)</span></p>
+<p>] .kol-1-3[</p>
+<p><span class="math inline">\(f\_2(x) = \sum\_{j=0}^3 w\_j
+x^j\)</span></p>
+<p>] .kol-1-3[</p>
+<p><span class="math inline">\(f\_3(x) = \sum\_{j=0}^{10^4} w\_j
+x^j\)</span></p>
+<p>] ]</p>
+</section>
+<section class="slide level1">
+
+<p>.center[<img data-src="figures/lec1/poly-1.png" />]</p>
+<p>.center[<span class="math inline">\(\mathcal{F}\)</span> =
+polynomials of degree 1]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false</p>
+<p>.center[<img data-src="figures/lec1/poly-2.png" />]</p>
+<p>.center[<span class="math inline">\(\mathcal{F}\)</span> =
+polynomials of degree 2]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false</p>
+<p>.center[<img data-src="figures/lec1/poly-3.png" />]</p>
+<p>.center[<span class="math inline">\(\mathcal{F}\)</span> =
+polynomials of degree 3]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false</p>
+<p>.center[<img data-src="figures/lec1/poly-4.png" />]</p>
+<p>.center[<span class="math inline">\(\mathcal{F}\)</span> =
+polynomials of degree 4]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false</p>
+<p>.center[<img data-src="figures/lec1/poly-5.png" />]</p>
+<p>.center[<span class="math inline">\(\mathcal{F}\)</span> =
+polynomials of degree 5]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false</p>
+<p>.center[<img data-src="figures/lec1/poly-10.png" />]</p>
+<p>.center[<span class="math inline">\(\mathcal{F}\)</span> =
+polynomials of degree 10]</p>
+</section>
+<section class="slide level1">
+
+<p>, center</p>
+<p><img data-src="figures/lec1/training-error.png" /></p>
+<p>Degree <span class="math inline">\(d\)</span> of the polynomial VS.
+error.</p>
+<p>???</p>
+<p>Why shouldn’t we pick the largest <span
+class="math inline">\(d\)</span>?</p>
+</section>
+<section class="slide level1">
+
+<p>Let <span class="math inline">\(\mathcal{Y}^{\mathcal X}\)</span> be
+the set of all functions <span class="math inline">\(f : \mathcal{X} \to
+\mathcal{Y}\)</span>.</p>
+<p>We define the <strong>Bayes risk</strong> as the minimal expected
+risk over all possible functions, <span class="math display">\[R\_B =
+\min\_{f \in \mathcal{Y}^{\mathcal X}} R(f),\]</span> and call the
+<strong>Bayes optimal model</strong> the model <span
+class="math inline">\(f_B\)</span> that achieves this minimum.</p>
+<p>No model <span class="math inline">\(f\)</span> can perform better
+than <span class="math inline">\(f\_B\)</span>.</p>
+</section>
+<section class="slide level1">
+
+<p>The <strong>capacity</strong> of an hypothesis space induced by a
+learning algorithm intuitively represents the ability to find a good
+model <span class="math inline">\(f \in \mathcal{F}\)</span> for any
+function, regardless of its complexity.</p>
+<p>In practice, capacity can be controlled through hyper-parameters of
+the learning algorithm. For example: - The degree of the family of
+polynomials; - The number of layers in a neural network; - The number of
+training iterations; - Regularization terms.</p>
+</section>
+<section class="slide level1">
+
+<ul>
+<li class="fragment">If the capacity of <span
+class="math inline">\(\mathcal{F}\)</span> is too low, then <span
+class="math inline">\(f\_B \notin \mathcal{F}\)</span> and <span
+class="math inline">\(R(f) - R\_B\)</span> is large for any <span
+class="math inline">\(f \in \mathcal{F}\)</span>, including <span
+class="math inline">\(f\_\*\)</span> and <span
+class="math inline">\(f\_\*^{\mathbf{d}}\)</span>. Such models <span
+class="math inline">\(f\)</span> are said to <strong>underfit</strong>
+the data.</li>
+<li class="fragment">If the capacity of <span
+class="math inline">\(\mathcal{F}\)</span> is too high, then <span
+class="math inline">\(f\_B \in \mathcal{F}\)</span> or <span
+class="math inline">\(R(f\_\*) - R\_B\)</span> is small.<br> However,
+because of the high capacity of the hypothesis space, the empirical risk
+minimizer <span class="math inline">\(f\_\*^{\mathbf{d}}\)</span> could
+fit the training data arbitrarily well such that <span
+class="math display">\[R(f\_\*^{\mathbf{d}}) \geq R\_B \geq
+\hat{R}(f\_\*^{\mathbf{d}}, \mathbf{d}) \geq 0.\]</span> In this
+situation, <span class="math inline">\(f\_\*^{\mathbf{d}}\)</span>
+becomes too specialized with respect to the true data generating process
+and a large reduction of the empirical risk (often) comes at the price
+of an increase of the expected risk of the empirical risk minimizer
+<span class="math inline">\(R(f\_\*^{\mathbf{d}})\)</span>. In this
+situation, <span class="math inline">\(f\_\*^{\mathbf{d}}\)</span> is
+said to <strong>overfit</strong> the data.</li>
+</ul>
+</section>
+<section class="slide level1">
+
+<p>Therefore, our goal is to adjust the capacity of the hypothesis space
+such that the expected risk of the empirical risk minimizer gets as low
+as possible.</p>
+<p>.center[<img data-src="figures/lec1/underoverfitting.png" />]</p>
+<p>???</p>
+<p>Comment that for deep networks, training error may goes to 0 while
+the generalization error may not necessarily go up!</p>
+</section>
+<section class="slide level1">
+
+<p>When overfitting, <span class="math display">\[R(f\_\*^{\mathbf{d}})
+\geq R\_B \geq \hat{R}(f\_\*^{\mathbf{d}}, \mathbf{d}) \geq
+0.\]</span></p>
+<p>This indicates that the empirical risk <span
+class="math inline">\(\hat{R}(f\_\*^{\mathbf{d}}, \mathbf{d})\)</span>
+is a poor estimator of the expected risk <span
+class="math inline">\(R(f\_\*^{\mathbf{d}})\)</span>.</p>
+<p>Nevertheless, an unbiased estimate of the expected risk can be
+obtained by evaluating <span
+class="math inline">\(f\_\*^{\mathbf{d}}\)</span> on data <span
+class="math inline">\(\mathbf{d}\_\text{test}\)</span> independent from
+the training samples <span class="math inline">\(\mathbf{d}\)</span>:
+<span class="math display">\[\hat{R}(f\_\*^{\mathbf{d}},
+\mathbf{d}\_\text{test}) =  \frac{1}{N} \sum\_{(\mathbf{x}\_i, y\_i) \in
+\mathbf{d}\_\text{test}} \ell(y\_i,
+f\_\*^{\mathbf{d}}(\mathbf{x}\_i))\]</span></p>
+<p>This <strong>test error</strong> estimate can be used to evaluate the
+actual performance of the model. However, it should not be used, at the
+same time, for model selection.</p>
+</section>
+<section class="slide level1">
+
+<p>, center</p>
+<p><img data-src="figures/lec1/training-test-error.png" /></p>
+<p>Degree <span class="math inline">\(d\)</span> of the polynomial VS.
+error.</p>
+<p>???</p>
+<p>What value of <span class="math inline">\(d\)</span> shall you
+select?</p>
+<p>But then how good is this selected model?</p>
+</section>
+<section class="slide level1">
+
+<h2 id="proper-evaluation-protocol">(Proper) evaluation protocol</h2>
+<p>.center[<img data-src="figures/lec1/protocol1.png" />]</p>
+<p>There may be over-fitting, but it does not bias the final performance
+evaluation.</p>
+<p>.footnote[Credits: Francois Fleuret, <a
+href="https://fleuret.org/ee559/">EE559 Deep Learning</a>, EPFL.]</p>
+</section>
+<section class="slide level1">
+
+<p>.center[<img data-src="figures/lec1/protocol2.png" />]</p>
+<p>.center[This should be <strong>avoided</strong> at all costs!]</p>
+<p>.footnote[Credits: Francois Fleuret, <a
+href="https://fleuret.org/ee559/">EE559 Deep Learning</a>, EPFL.]</p>
+</section>
+<section class="slide level1">
+
+<p>.center[<img data-src="figures/lec1/protocol3.png" />]</p>
+<p>.center[Instead, keep a separate validation set for tuning the
+hyper-parameters.]</p>
+<p>.footnote[Credits: Francois Fleuret, <a
+href="https://fleuret.org/ee559/">EE559 Deep Learning</a>, EPFL.]</p>
+<p>???</p>
+<p>Comment on the comparison of algorithms from one paper to the
+other.</p>
+</section>
+<section id="bias-variance-decomposition" class="slide level1">
+<h1>Bias-variance decomposition</h1>
+<p>Consider a fixed point <span class="math inline">\(x\)</span> and the
+prediction <span
+class="math inline">\(\hat{Y}=f\_*^\mathbf{d}(x)\)</span> of the
+empirical risk minimizer at <span class="math inline">\(x\)</span>.</p>
+<p>Then the local expected risk of <span
+class="math inline">\(f\_\*^{\mathbf{d}}\)</span> is <span
+class="math display">\[\begin{aligned}
+R(f\_\*^{\mathbf{d}}|x) &amp;= \mathbb{E}\_{y \sim p\_{Y|x}} \left[ (y -
+f\_\*^{\mathbf{d}}(x))^2 \right] \\\\
+&amp;= \mathbb{E}\_{y \sim p\_{Y|x}} \left[ (y - f\_B(x) + f\_B(x) -
+f\_\*^{\mathbf{d}}(x))^2 \right]  \\\\
+&amp;= \mathbb{E}\_{y \sim p\_{Y|x}} \left[ (y - f\_B(x))^2 \right] +
+\mathbb{E}\_{y \sim p\_{Y|x}} \left[ (f\_B(x) - f\_\*^{\mathbf{d}}(x))^2
+\right] \\\\
+&amp;= R(f\_B|x) + (f\_B(x) - f\_\*^{\mathbf{d}}(x))^2
+\end{aligned}\]</span> where - <span
+class="math inline">\(R(f\_B|x)\)</span> is the local expected risk of
+the Bayes model. This term cannot be reduced. - <span
+class="math inline">\((f\_B(x) - f\_\*^{\mathbf{d}}(x))^2\)</span>
+represents the discrepancy between <span
+class="math inline">\(f\_B\)</span> and <span
+class="math inline">\(f\_\*^{\mathbf{d}}\)</span>.</p>
+</section>
+<section class="slide level1">
+
+<p>If <span class="math inline">\(\mathbf{d} \sim p\_{X,Y}\)</span> is
+itself considered as a random variable, then <span
+class="math inline">\(f\_*^\mathbf{d}\)</span> is also a random
+variable, along with its predictions <span
+class="math inline">\(\hat{Y}\)</span>.</p>
+</section>
+<section class="slide level1">
+
+<p>.center[<img data-src="figures/lec1/poly-avg-degree-1.png" />]</p>
+<p>???</p>
+<p>What do you observe?</p>
+</section>
+<section class="slide level1">
+
+<p>count: false</p>
+<p>.center[<img data-src="figures/lec1/poly-avg-degree-2.png" />]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false</p>
+<p>.center[<img data-src="figures/lec1/poly-avg-degree-3.png" />]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false</p>
+<p>.center[<img data-src="figures/lec1/poly-avg-degree-4.png" />]</p>
+</section>
+<section class="slide level1">
+
+<p>count: false</p>
+<p>.center[<img data-src="figures/lec1/poly-avg-degree-5.png" />]</p>
+</section>
+<section class="slide level1">
+
+<p>Formally, the expected local expected risk yields to: <span
+class="math display">\[\begin{aligned}
+&amp;\mathbb{E}\_\mathbf{d} \left[ R(f\_\*^{\mathbf{d}}|x) \right] \\\\
+&amp;= \mathbb{E}\_\mathbf{d} \left[ R(f\_B|x) + (f\_B(x) -
+f\_\*^{\mathbf{d}}(x))^2 \right]  \\\\
+&amp;=  R(f\_B|x) + \mathbb{E}\_\mathbf{d} \left[ (f\_B(x) -
+f\_\*^{\mathbf{d}}(x))^2 \right] \\\\
+&amp;= \underbrace{R(f\_B|x)}\_{\text{noise}(x)} + \underbrace{(f\_B(x)
+- \mathbb{E}\_\mathbf{d}\left[ f\_\*^\mathbf{d}(x) \right]
+)^2}\_{\text{bias}^2(x)}  + \underbrace{\mathbb{E}\_\mathbf{d}\left[ (
+\mathbb{E}\_\mathbf{d}\left[ f\_\*^\mathbf{d}(x) \right] -
+f\_\*^\mathbf{d}(x))^2 \right]}\_{\text{var}(x)}
+\end{aligned}\]</span></p>
+<p>This decomposition is known as the <strong>bias-variance</strong>
+decomposition. - The noise term quantifies the irreducible part of the
+expected risk. - The bias term measures the discrepancy between the
+average model and the Bayes model. - The variance term quantities the
+variability of the predictions.</p>
+</section>
+<section class="slide level1">
+
+<h2 id="bias-variance-trade-off">Bias-variance trade-off</h2>
+<ul>
+<li class="fragment">Reducing the capacity makes <span
+class="math inline">\(f\_\*^\mathbf{d}\)</span> fit the data less on
+average, which increases the bias term.</li>
+<li class="fragment">Increasing the capacity makes <span
+class="math inline">\(f\_\*^\mathbf{d}\)</span> vary a lot with the
+training data, which increases the variance term.</li>
+</ul>
+<p>.footnote[Credits: Francois Fleuret, <a
+href="https://fleuret.org/ee559/">EE559 Deep Learning</a>, EPFL.]</p>
+</section>
+<section class="slide level1">
+
+<p>, center, red-slide</p>
+<p>What about a neural network with .bold[millions] of parameters?</p>
+</section>
+<section class="slide level1">
+
+<p>.center[<img data-src="figures/lec1/mlp-1000000.png" />]</p>
+</section>
+<section class="slide level1">
+
+<p>.width-100[<img data-src="figures/lec1/double-descent.png" />]</p>
+<p>.footnote[Credits: <a href="https://arxiv.org/abs/1812.11118">Belkin
+et al, 2018</a>.]</p>
+</section>
+<section class="slide level1">
+
+<p>.center.width-80[<img
+data-src="figures/lec1/double-descent-mnist.png" />]</p>
+<p>.footnote[Credits: <a href="https://arxiv.org/abs/1812.11118">Belkin
+et al, 2018</a>.]</p>
+</section>
+<section class="slide level1">
+
+</section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/math/math.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>

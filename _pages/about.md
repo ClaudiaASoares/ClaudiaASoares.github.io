@@ -9,15 +9,16 @@ redirect_from:
 ---
 
 
-I am a researcher at [NOVA LINCS](https://nova-lincs.di.fct.unl.pt/) and an Assistant Professor at the [Department of Computer Science](https://www.di.fct.unl.pt/en) of the [NOVA School of Science and Technology](https://www.fct.unl.pt/en). I do scientific consulting to [Neuraspace](https://www.neuraspace.com/), to fight Space Debris with Machine Learning. My work is broadly on trustworthy ML for Healthcare and for Physical Systems, like swarms of artificial agents, underwater unmanned vehicles, and satellites. 
+I am a researcher at [NOVA LINCS](https://nova-lincs.di.fct.unl.pt/) and an Assistant Professor at the [Department of Computer Science](https://www.di.fct.unl.pt/en) of the [NOVA School of Science and Technology](https://www.fct.unl.pt/en). I do scientific consulting to [Neuraspace](https://www.neuraspace.com/), to fight Space Debris with Machine Learning. My work is broadly on trustworthy ML for critical Systems, like healthcare, and physical systems (swarms of artificial agents, underwater unmanned vehicles, and satellites). 
 
 My Erdös number is 4.
 
 
 
-Students
+Students and lab members
 ======
 
+If you would like to be part of my group as a Postdoctoral Researcher, Ph.D. student, M.Sc., or B.S. student, [see this page](/students/).
 
 PhD Students
 ------

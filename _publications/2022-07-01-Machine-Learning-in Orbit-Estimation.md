@@ -1,12 +1,12 @@
 ---
 title: "Machine Learning in Orbit Estimation: a Survey"
 collection: publications
-permalink: /publication/2010-10-01-paper-title-number-2
+permalink: /publication/2022-07-01-Machine-Learning-in Orbit-Estimation
 excerpt: 'This survey describes the background and motivation for the research on the Orbit prediction problem.'
-date: 2022-07
+date: 2022-07-01
 venue: 'Submitted'
 paperurl: 'https://arxiv.org/abs/2207.08993'
-citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
+citation: 'Caldas, Francisco, and Cláudia Soares. &quot;Machine Learning in Orbit Estimation: a Survey.&quot;, <i>arXiv preprint </i> arXiv:2207.08993 (2022).'
 ---
 
 This survey describes the background and motivation for the research on the Orbit prediction problem. It discusses the increasing population of human-made objects in space and the need for fast and reliable methods for space situational awareness, maneuver recommendation, and planning. The text highlights the limitations of current physics-only methods and the potential of data-driven techniques, specifically machine learning, to improve orbit prediction accuracy. It mentions the challenges related to uncertainties in the state of space objects, environmental conditions, and unknown characteristics. The text also mentions the importance of interdisciplinary research in space sciences and machine learning for physical systems.

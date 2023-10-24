@@ -1,15 +1,25 @@
 ---
-title: "Paper Title Number 2"
+title: "Machine Learning in Orbit Estimation: a Survey"
 collection: publications
 permalink: /publication/2010-10-01-paper-title-number-2
-excerpt: 'This paper is about the number 2. The number 3 is left for future work.'
-date: 2010-10-01
-venue: 'Journal 1'
+excerpt: 'This survey describes the background and motivation for the research on the Orbit prediction problem.'
+date: 2022-07
+venue: 'Submitted'
 paperurl: 'http://academicpages.github.io/files/paper2.pdf'
 citation: 'Your Name, You. (2010). &quot;Paper Title Number 2.&quot; <i>Journal 1</i>. 1(2).'
 ---
-This paper is about the number 2. The number 3 is left for future work.
 
-[Download paper here](http://academicpages.github.io/files/paper2.pdf)
+This survey describes the background and motivation for the research on the Orbit prediction problem. It discusses the increasing population of human-made objects in space and the need for fast and reliable methods for space situational awareness, maneuver recommendation, and planning. The text highlights the limitations of current physics-only methods and the potential of data-driven techniques, specifically machine learning, to improve orbit prediction accuracy. It mentions the challenges related to uncertainties in the state of space objects, environmental conditions, and unknown characteristics. The text also mentions the importance of interdisciplinary research in space sciences and machine learning for physical systems.
+This paper provides an overview of the current work in space debris tracking and orbit prediction, emphasizing the potential of data-driven techniques, particularly machine learning, to enhance orbit prediction accuracy. It highlights the challenges associated with uncertainties and unknown characteristics of space objects and discusses the abstraction capacity of deep learning models in modeling complex non-linear systems. 
 
-Recommended citation: Your Name, You. (2010). "Paper Title Number 2." <i>Journal 1</i>. 1(2).
+[Download paper here](https://arxiv.org/abs/2207.08993)
+
+Bibtex:
+`
+@article{caldas2022machine,
+  title={Machine Learning in Orbit Estimation: a Survey},
+  author={Caldas, Francisco and Soares, Claudia},
+  journal={arXiv preprint arXiv:2207.08993},
+  year={2022}
+}
+`

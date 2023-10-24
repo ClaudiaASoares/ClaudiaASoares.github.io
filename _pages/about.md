@@ -20,6 +20,11 @@ Students and lab members
 
 If you would like to be part of my group as a Postdoctoral Researcher, Ph.D. student, M.Sc., or B.S. student, [see this page](/students/).
 
+**Postdoctoral Position Announcement: AI Fights Space Debris**
+
+Join us in our mission to combat space debris with the power of AI! [see this page](Neuraspace-postdoc)
+
+
 PhD Students
 ------
 * [Filipa Valdeira](https://filva.github.io/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2019 - 2022)

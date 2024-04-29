@@ -4,7 +4,7 @@ collection: teaching
 type: "MSc course"
 permalink: /teaching/2022-machine-learning
 venue: "NOVA School of Science and Technology, Department of Computer Science"
-date: 2022-10-01
+date: 2022 to present
 location: "Caparica, Portugal"
 ---
 

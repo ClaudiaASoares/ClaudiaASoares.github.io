@@ -1,5 +1,9 @@
 # main links links
 main:
+
+  - title: "TrustworthyML@NOVA lab"
+    url: https://trustworthy-ml.super.site/
+
   - title: "Publications"
     url: /publications/
 
@@ -15,8 +19,6 @@ main:
   - title: "Students and theses ideas"
     url: /students/
    
-  - title: "TrustworthyML@NOVA lab"
-    url: https://trustworthy-ml.super.site/
   
   #
   #- title: "Blog Posts"

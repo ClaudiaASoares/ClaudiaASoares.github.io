@@ -3,8 +3,8 @@ main:
   - title: "Publications"
     url: /publications/
 
-  - title: "Talks"
-    url: /talks/    
+  #- title: "Talks"
+  #  url: /talks/    
 
   - title: "Teaching"
     url: /teaching/    
@@ -15,6 +15,8 @@ main:
   - title: "Students and theses ideas"
     url: /students/
    
+  - title: "TrustworthyML@NOVA lab"
+    url: https://trustworthy-ml.super.site/
   
   #
   #- title: "Blog Posts"
@@ -23,5 +25,5 @@ main:
   - title: "CV"
     url: /cv/
     
-  - title: "Guide"
-    url: /markdown/
+  #- title: "Guide"
+  #  url: /markdown/

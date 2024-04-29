@@ -18,7 +18,7 @@ My Erdös number is 4.
 Students and lab members
 ======
 
-If you would like to be part of my group as a Postdoctoral Researcher, Ph.D. student, M.Sc., or B.S. student, [see this page](/students/).
+If you would like to join our group as a Postdoctoral Researcher, Ph.D. student, M.Sc., or B.S. student, [see this page](/students/).
 
 **Postdoctoral Position Announcement: AI Fights Space Debris**
 
@@ -30,7 +30,6 @@ PhD Students, current and former
 ------
 * [Filipa Valdeira](https://filva.github.io/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2019 - 2022)
 * [Stevo Rackovic](https://stevorackovic.github.io/) (with [Dusan Jakovetic](https://people.dmi.uns.ac.rs/~dusan.jakovetic/), 2019 - )
-* David Vicente (with Marko Beko, 2019 - )
 * [Pedro Valdeira](https://www.cmuportugal.org/students/pedro-valdeira/) (CMU-Portugal with [Joao Xavier](http://users.isr.tecnico.ulisboa.pt/~jxavier/) and  [Yuejie Chi](https://users.ece.cmu.edu/~yuejiec/) 2020 - )
 * Ricardo Ferreira (with Marta Guimarães (Neuraspace), 2022 - )
 * Diogo Lavado (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2022 - )
@@ -38,10 +37,24 @@ PhD Students, current and former
 * Marcos Motta (with [Luís Picado](https://fenix.tecnico.ulisboa.pt/homepage/ist25123) and [J.P. Costeira](http://users.isr.ist.utl.pt/~jpc/), 2021 - )
 * Bárbara Tavares (with [Manuel Marques](http://users.isr.ist.utl.pt/~manuel/) 2022 - )
 * Bruno Rodrigues (with [João Leite](https://userweb.fct.unl.pt//~jleite/), 2023 - )
+* Marta Guimarães (with [Chiara Manfletti](https://www.professoren.tum.de/en/manfletti-chiara) and Neuraspace, 2023 - )
+* Frederico Vicente (with [Dusan Jakovetic](https://scholar.google.com/citations?user=_93Oh_QAAAAJ), 2023 - )
 
 
 MSc Students
 ------
+* Frederico Metelo
+* Teresa Mayor
+* Sahil Kumar
+* Bruno Carmo
+* Rúben Belo
+* Manuel Pereira
+* Sofia Morgado
+* Valeria Danalachi
+* Margarida Borbinha
+* João Funenga
+* Gonçalo Mateus
+* Inês Viveiros
 * [João Catulo](.)
 * [José Tomás Silveira](Claudia.ASoares.github.io/files/Silveira_2022.pdf) Modelling Customer Churn With Time-To-Event Approaches
 * [Lourenço Vasconcelos](Claudia.ASoares.github.io/files/Vasconcelos_2022.pdf) 

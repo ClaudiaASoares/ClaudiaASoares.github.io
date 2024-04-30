@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Students and theses ideas"
+title: "Prospective students"
 permalink: /students/
 author_profile: true
 redirect_from:
@@ -9,9 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-Thank you for your interest in our Trustworthy ML @ NOVA lab!
+Thank you for your interest in our Trustworthy ML @ NOVA group!
 
-Trustworthy ML is a group hosted by NOVA that focuses on advancing machine learning for the real world. Our mission is to develop ML algorithms that consider ethical, safety, and social implications and provide a space for exchanging ideas between researchers, practitioners, and industry. We recognize the power of ML to create a better world but also understand its potential for dangerous mistakes, misuse, and abuse.
+Trustworthy ML is a group hosted by NOVA that focuses on advancing machine learning for the real world. Our mission is to develop ML algorithms that consider *ethical, safety,* and *social* implications and provide a space for exchanging ideas between researchers, practitioners, and industry. We recognize the power of ML to create a better world but also understand its potential for dangerous mistakes, misuse, and abuse.
 
 We produce developments in the research area, such as physics-guided learning, robust ML, large-scale learning, interpretability, privacy, fairness, accountability, transparency, and more.
 

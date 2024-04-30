@@ -57,9 +57,9 @@ MSc Students
 * João Funenga
 * Gonçalo Mateus
 * Inês Viveiros
-* [João Catulo](.)
-* [José Tomás Silveira](Claudia.ASoares.github.io/files/Silveira_2022.pdf) Modelling Customer Churn With Time-To-Event Approaches
-* [Lourenço Vasconcelos](Claudia.ASoares.github.io/files/Vasconcelos_2022.pdf) 
+* [João Catulo](https://www.linkedin.com/in/joao-catulo/)
+* [José Tomás Silveira](https://www.linkedin.com/in/tomas-silveira/) (AKT II, UK)
+* [Lourenço Vasconcelos](https://www.linkedin.com/in/lourenco-vasconcelos/) (InCommodities, Denmark) 
 * [Ricardo Ferreira]()
 * [Diogo Lavado](Claudia.ASoares.github.io/files/Lavado_2022.pdf)
 * [Miguel Dias]()
@@ -75,14 +75,14 @@ MSc Students
 * [Marta Guimarães]()
 * [Rui Eirinha]()
 * [António Fallah]()
-* [Adriana Silva](https://www.linkedin.com/in/adriana-m-silva/) (ThreatFabric - Behavioral Analytics)
-* [Gabriel Costa](https://www.linkedin.com/in/gabriel-cabral-costa/) (EY)
-* [Guilherme Saraiva](https://www.linkedin.com/in/guilherme-saraiva96/) (SAP)
-* [Mariana Galrinho](https://www.linkedin.com/in/marianagalrinho/) (Feedzai)
-* [Beatriz Gamito](https://www.linkedin.com/in/beatrizmgamito/) (MBA Candidate at Columbia Business School)
-* [Pedro Carrasqueira](https://pt.linkedin.com/in/pcarrasqueira) (Feedzai)
+* [Adriana Silva](https://www.linkedin.com/in/adriana-m-silva/) (ThreatFabric - Behavioral Analytics, The Netherlands)
+* [Gabriel Costa](https://www.linkedin.com/in/gabriel-cabral-costa/) (EY, UK)
+* [Guilherme Saraiva](https://www.linkedin.com/in/guilherme-saraiva96/) (SAP, Germany)
+* [Mariana Galrinho](https://www.linkedin.com/in/marianagalrinho/) (Feedzai, Portugal)
+* [Beatriz Gamito](https://www.linkedin.com/in/beatrizmgamito/) (MBA Candidate at Columbia Business School, US)
+* [Pedro Carrasqueira](https://pt.linkedin.com/in/pcarrasqueira) (Feedzai, Portugal)
 * [Rafael Borges]()
-* [Filipa Valdeira](https://filva.github.io/) (Assistant Researcher, NOVA School of Science and Technology)
-* [Pusheng Ji](https://www.linkedin.com/in/pusheng-ji/) (Meta, Data Scientist)
-* [Miguel Vasques](https://pt.linkedin.com/in/miguel-vasques) (IBM Portugal Cognitive Factory)
+* [Filipa Valdeira](https://filva.github.io/) (Assistant Researcher, NOVA School of Science and Technology, Portugal)
+* [Pusheng Ji](https://www.linkedin.com/in/pusheng-ji/) (Meta, Data Scientist, UK)
+* [Miguel Vasques](https://pt.linkedin.com/in/miguel-vasques) (IBM Cognitive Factory, Portugal)
 

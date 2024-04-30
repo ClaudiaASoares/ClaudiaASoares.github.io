@@ -15,6 +15,8 @@ Trustworthy ML is a group hosted by NOVA that focuses on advancing machine learn
 
 We produce developments in the research area, such as physics-guided learning, robust ML, large-scale learning, interpretability, privacy, fairness, accountability, transparency, and more.
 
+Check [where are now our alumni](/group).
+
 Prospective PhD Students
 ===
 

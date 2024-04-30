@@ -42,7 +42,7 @@ PhD Students, current and former
 * Frederico Vicente (with [Dusan Jakovetic](https://scholar.google.com/citations?user=_93Oh_QAAAAJ), 2023 - )
 
 
-MSc Students
+Current MSc Students
 ------
 * Frederico Metelo
 * Teresa Mayor
@@ -50,6 +50,9 @@ MSc Students
 * Bruno Carmo
 * Rúben Belo
 * Manuel Pereira
+
+Alumni
+------
 * Sofia Morgado
 * Valeria Danalachi
 * Margarida Borbinha

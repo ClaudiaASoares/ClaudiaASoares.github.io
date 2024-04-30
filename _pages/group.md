@@ -36,7 +36,6 @@ PhD Students, current and former
 * Ricardo Ferreira (with Marta Guimarães (Neuraspace), 2022 - )
 * Diogo Lavado (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2022 - )
 * [Francisco M. Caldas](https://frncaldas.github.io/) (ESA-PT Space PhD Grantee, 2022 - )
-[whatever]: # Marcos Motta (with [Luís Picado](https://fenix.tecnico.ulisboa.pt/homepage/ist25123) and [J.P. Costeira](http://users.isr.ist.utl.pt/~jpc/), 2021 - )
 * Bárbara Tavares (with [Manuel Marques](http://users.isr.ist.utl.pt/~manuel/) 2022 - )
 * Bruno Rodrigues (with [João Leite](https://userweb.fct.unl.pt//~jleite/), 2023 - )
 * Marta Guimarães (with [Chiara Manfletti](https://www.professoren.tum.de/en/manfletti-chiara) and Neuraspace, 2023 - )

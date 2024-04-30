@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Trustworthy ML @ NOVA"
+title                    : "Claudia Soares Home"
 title_separator          : "-"
 name                     : &name "Claudia Soares"
 description              : &description "Researcher and Assistant Professor, Department of CS NOVA University of Lisbon"

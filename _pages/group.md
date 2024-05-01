@@ -54,29 +54,29 @@ Current MSc Students
 Alumni
 ------
 * Sofia Morgado
-* Valeria Danalachi
-* Margarida Borbinha
-* João Funenga
-* Gonçalo Mateus
-* Inês Viveiros
+* [Valeria Danalachi] (https://www.linkedin.com/in/valeria-danalachi-34a599208/) (Deloitte, Portugal)
+* [Margarida Borbinha](https://www.linkedin.com/in/margarida-borbinha-528230221/) (NOS SGPS, Portugal)
+* [João Funenga](https://www.linkedin.com/in/joãofunenga/)
+* [Gonçalo Mateus](https://www.linkedin.com/in/gonçalo-mateus/) (Banco de Portugal)
+* [Inês Viveiros](https://www.linkedin.com/in/inês-netto-de-viveiros-725307185/) (Bosch Car Multimedia, Portugal)
 * [João Catulo](https://www.linkedin.com/in/joao-catulo/)
 * [José Tomás Silveira](https://www.linkedin.com/in/tomas-silveira/) (AKT II, UK)
 * [Lourenço Vasconcelos](https://www.linkedin.com/in/lourenco-vasconcelos/) (InCommodities, Denmark) 
-* [Ricardo Ferreira]()
+* [Ricardo Ferreira]() (NOVA, PhD Student)
 * [Diogo Lavado](Claudia.ASoares.github.io/files/Lavado_2022.pdf)
-* [Miguel Dias]()
-* [Bárbara Tavares]()
-* [Francisco M. Caldas](https://frncaldas.github.io/)
-* [Hugo Lopes]()
-* [Maria Carvalho]()
-* [João Torres]()
-* [Maria Almeida]()
-* [Teresa Marcelino]()
-* [Mariana Filipe]()
-* [Pedro Valdeira]()
-* [Marta Guimarães]()
-* [Rui Eirinha]()
-* [António Fallah]()
+* [Miguel Dias](https://www.linkedin.com/in/miguel-mendes-dias/) (Airbus, France)
+* [Bárbara Tavares]() (IST, PhD Student)
+* [Francisco M. Caldas](https://frncaldas.github.io/) (NOVA, PhD Student)
+* [Hugo Lopes](https://www.linkedin.com/in/hugomslopes/) (ZeroG, Germany)
+* [Maria Carvalho](https://www.linkedin.com/in/mariacruzcarvalho/) (Boeing, Germany)
+* [João Torres](https://www.linkedin.com/in/joao-fernandes-torres/) (Feedzai, Portugal)
+* [Maria Almeida](https://www.linkedin.com/in/mariasdalmeida/) (Neuraspace, Portugal)
+* [Teresa Marcelino](https://www.linkedin.com/in/teresamarcelino/) (Outsystems, Portugal)
+* [Mariana Filipe](https://www.linkedin.com/in/marianaangejafilipe/) (Neuraspace, Portugal)
+* [Pedro Valdeira](https://www.linkedin.com/in/pvaldeira/) (CMU-IST, PhD student)
+* [Marta Guimarães](https://www.linkedin.com/in/marta-vaz-guimaraes/) (Neuraspace, Portugal)
+* [Rui Eirinha](https://www.linkedin.com/in/rui-eirinha-117025173/) (Thales Portugal)
+* [António Fallah](https://www.linkedin.com/in/antoniofallah/) (EY, Portugal)
 * [Adriana Silva](https://www.linkedin.com/in/adriana-m-silva/) (ThreatFabric - Behavioral Analytics, The Netherlands)
 * [Gabriel Costa](https://www.linkedin.com/in/gabriel-cabral-costa/) (EY, UK)
 * [Guilherme Saraiva](https://www.linkedin.com/in/guilherme-saraiva96/) (SAP, Germany)

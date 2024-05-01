@@ -9,11 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
-Thank you for your interest in our Trustworthy ML @ NOVA group!
+Thank you for your interest in our [Trustworthy ML @ NOVA](https://trustworthy-ml.super.site/) group!
 
-Trustworthy ML is a group hosted by NOVA that focuses on advancing machine learning for the real world. Our mission is to develop ML algorithms that consider *ethical, safety,* and *social* implications and provide a space for exchanging ideas between researchers, practitioners, and industry. We recognize the power of ML to create a better world but also understand its potential for dangerous mistakes, misuse, and abuse.
+Trustworthy ML is a group hosted by [NOVA LINCS](https://nova-lincs.di.fct.unl.pt/) and [NOVA](https://www.fct.unl.pt/en) that focuses on advancing machine learning for the real world. Our mission is to develop ML algorithms that consider *ethical, safety,* and *social* implications and provide a space for exchanging ideas between researchers, practitioners, and industry. We recognize the power of ML to create a better world but also understand its potential for dangerous mistakes, misuse, and abuse.
 
-We produce developments in the research area, such as physics-guided learning, robust ML, large-scale learning, interpretability, privacy, fairness, accountability, transparency, and more.
+We do research in trustworthy ML areas, such as physics-guided learning, robust ML, large-scale learning, interpretability, privacy, fairness, accountability, transparency, and more.
 
 Check [where are now our alumni](/group/).
 

@@ -53,7 +53,7 @@ Current MSc Students
 
 Alumni
 ------
-* [Sofia Morgado] (NOVA + FML PhD Student, Complear)
+* [Sofia Morgado](https://www.linkedin.com/in/sofia-begonha-morgado-b1411b234/) (NOVA + FML PhD Student, Complear)
 * [Valeria Danalachi](https://www.linkedin.com/in/valeria-danalachi-34a599208/) (Deloitte, Portugal)
 * [Margarida Borbinha](https://www.linkedin.com/in/margarida-borbinha-528230221/) (NOS SGPS, Portugal)
 * [João Funenga](https://www.linkedin.com/in/joãofunenga/)

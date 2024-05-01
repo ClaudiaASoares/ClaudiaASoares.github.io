@@ -63,7 +63,7 @@ Alumni
 * [José Tomás Silveira](https://www.linkedin.com/in/tomas-silveira/) (AKT II, UK)
 * [Lourenço Vasconcelos](https://www.linkedin.com/in/lourenco-vasconcelos/) (InCommodities, Denmark) 
 * [Ricardo Ferreira]() (NOVA, PhD Student)
-* [Diogo Lavado](Claudia.ASoares.github.io/files/Lavado_2022.pdf)
+* [Diogo Lavado](https://www.linkedin.com/in/diogo-mateus-lavado-466a51159/) (UniMi + NOVA + EDP PhD Student)
 * [Miguel Dias](https://www.linkedin.com/in/miguel-mendes-dias/) (Airbus, France)
 * [Bárbara Tavares]() (IST, PhD Student)
 * [Francisco M. Caldas](https://frncaldas.github.io/) (NOVA, PhD Student)

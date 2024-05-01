@@ -23,18 +23,18 @@ If you would like to join our group as a Postdoctoral Researcher, Ph.D. student,
 
 Join us in our mission to combat space debris with the power of AI! [see this page](Neuraspace-postdoc)
 
-Visiting and assistant researchers
+Visiting students and assistant researchers
 ------
 * [Filipa Valdeira](https://filva.github.io/) (Researcher, 2023)
-* Pasit Khatinghul (U. Bologna, Italy)
+* Pasit Khatinghul (Erausmus+ MSc student U. Bologna, Italy)
 
 PhD Students, current and former
 ------
 * [Filipa Valdeira](https://filva.github.io/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2019 - 2022)
 * [Stevo Rackovic](https://stevorackovic.github.io/) (with [Dusan Jakovetic](https://people.dmi.uns.ac.rs/~dusan.jakovetic/), 2019 - )
 * [Pedro Valdeira](https://www.cmuportugal.org/students/pedro-valdeira/) (CMU-Portugal with [Joao Xavier](http://users.isr.tecnico.ulisboa.pt/~jxavier/) and  [Yuejie Chi](https://users.ece.cmu.edu/~yuejiec/) 2020 - )
-* Ricardo Ferreira (with Marta Guimarães (Neuraspace), 2022 - )
-* Diogo Lavado (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2022 - )
+* [Ricardo Ferreira](https://www.linkedin.com/in/rjnferreira/) (with Marta Guimarães (Neuraspace), 2022 - )
+* [Diogo Lavado](https://www.linkedin.com/in/diogo-mateus-lavado-466a51159/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2022 - )
 * [Francisco M. Caldas](https://frncaldas.github.io/) (ESA-PT Space PhD Grantee, 2022 - )
 * Bárbara Tavares (with [Manuel Marques](http://users.isr.ist.utl.pt/~manuel/) 2022 - )
 * Bruno Rodrigues (with [João Leite](https://userweb.fct.unl.pt//~jleite/), 2023 - )
@@ -62,10 +62,10 @@ Alumni
 * [João Catulo](https://www.linkedin.com/in/joao-catulo/)
 * [José Tomás Silveira](https://www.linkedin.com/in/tomas-silveira/) (AKT II, UK)
 * [Lourenço Vasconcelos](https://www.linkedin.com/in/lourenco-vasconcelos/) (InCommodities, Denmark) 
-* [Ricardo Ferreira]() (NOVA, PhD Student)
+* [Ricardo Ferreira](https://www.linkedin.com/in/rjnferreira/) (NOVA, PhD Student)
 * [Diogo Lavado](https://www.linkedin.com/in/diogo-mateus-lavado-466a51159/) (UniMi + NOVA + EDP PhD Student)
 * [Miguel Dias](https://www.linkedin.com/in/miguel-mendes-dias/) (Airbus, France)
-* [Bárbara Tavares]() (IST, PhD Student)
+* [Bárbara Tavares](https://www.linkedin.com/in/bárbara-tavares-bb39141a1/) (IST, PhD Student)
 * [Francisco M. Caldas](https://frncaldas.github.io/) (NOVA, PhD Student)
 * [Hugo Lopes](https://www.linkedin.com/in/hugomslopes/) (ZeroG, Germany)
 * [Maria Carvalho](https://www.linkedin.com/in/mariacruzcarvalho/) (Boeing, Germany)

@@ -84,9 +84,9 @@ author:
   avatar           : "profile.png"
   bio              : "I use optimization, physics, and probability theory to develop robust, interpretable, and trustworthy learning methods to be applied in the real world."
   location         : "Lisbon, Portugal"
-  employer         :
+  employer         : 
   pubmed           : 
-  googlescholar    : # "http://yourfullgooglescholarurl.com"
+  googlescholar    :  "https://scholar.google.com/citations?user=Y9CArh4AAAAJ"
   email            : "claudia.soares@fct.unl.pt"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :

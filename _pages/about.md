@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-I am a researcher at [NOVA LINCS](https://nova-lincs.di.fct.unl.pt/) and an Assistant Professor at the [Department of Computer Science](https://www.di.fct.unl.pt/en) of the [NOVA School of Science and Technology](https://www.fct.unl.pt/en). I do scientific consulting for [Neuraspace](https://www.neuraspace.com/) to fight space debris with machine learning. My work is broadly on trustworthy ML for critical Systems, like healthcare and physical systems (swarms of artificial agents, underwater unmanned vehicles, and satellites). 
+I am a researcher at [NOVA LINCS](https://nova-lincs.di.fct.unl.pt/) and an Assistant Professor at the [Department of Computer Science](https://www.di.fct.unl.pt/en) of the [NOVA School of Science and Technology](https://www.fct.unl.pt/en). My work is broadly on trustworthy ML for critical Systems, like healthcare and physical systems (swarms of artificial agents, underwater unmanned vehicles, and satellites). 
 
 My Erdös number is 4.
 

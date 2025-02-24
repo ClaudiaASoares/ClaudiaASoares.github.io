@@ -32,7 +32,7 @@ PhD Students, current and former
 ------
 * [Filipa Valdeira](https://filva.github.io/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2019 - 2022)
 * [Stevo Rackovic](https://stevorackovic.github.io/) (with [Dusan Jakovetic](https://people.dmi.uns.ac.rs/~dusan.jakovetic/), 2019 - )
-* [Pedro Valdeira](https://www.cmuportugal.org/students/pedro-valdeira/) (CMU-Portugal with [Joao Xavier](http://users.isr.tecnico.ulisboa.pt/~jxavier/) and  [Yuejie Chi](https://users.ece.cmu.edu/~yuejiec/) 2020 - )
+* [Pedro Valdeira](https://valdeira.github.io/) (CMU-Portugal with [Joao Xavier](http://users.isr.tecnico.ulisboa.pt/~jxavier/) and  [Yuejie Chi](https://users.ece.cmu.edu/~yuejiec/) 2020 - )
 * [Ricardo Ferreira](https://www.linkedin.com/in/rjnferreira/) (with Marta Guimarães (Neuraspace), 2022 - )
 * [Diogo Lavado](https://www.linkedin.com/in/diogo-mateus-lavado-466a51159/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2022 - )
 * [Francisco M. Caldas](https://frncaldas.github.io/) (ESA-PT Space PhD Grantee, 2022 - )
@@ -44,15 +44,30 @@ PhD Students, current and former
 
 Current MSc Students
 ------
-* Frederico Metelo
-* Teresa Mayor
-* Sahil Kumar
-* Bruno Carmo
-* Rúben Belo
-* Manuel Pereira
+* Alexandre Oliveira
+* Katarina Dyreby
+* Ricardo Gonçalo
+* Miguel Pimenta
+
+MSc Students in co-supervision
+------
+* Ruben Belo (with Marta Guimarães and Neuraspace)
+* Francisco Freitas (with Pedro Valdeira)
+* Manuel Pereira (with Alex Ecker, University of Göttingen, Germany)
+* Sahil Kumar (with Francisco Caldas)
+* Duarte Vinha (with Filipa Valdeira)
+* Pedro Estróia (with Filipa Valdeira)
+* Alexandre Dorotea (with Filipa Valdeira)
+* António Sobreiro (with Filipa Valdeira)
+* João Lopes (with Filipa Valdeira)
+* Diogo Silva (with Filipa Valdeira)
+* Ricardo Pereira (with Filipa Valdeira)
+* Francisco Silva (with Francisco Caldas)
 
 Alumni
 ------
+* [Frederico Metelo](https://github.com/FredericoMetelo) (NOVA, PhD Student)
+* [Teresa Sotto-Mayor](https://pt.linkedin.com/in/teresa-sotto-mayor-7445a81b9?trk=public_profile_samename-profile)(Novo Nordisk, Denmark)
 * [Sofia Morgado](https://www.linkedin.com/in/sofia-begonha-morgado-b1411b234/) (NOVA + FML PhD Student, Complear)
 * [Valeria Danalachi](https://www.linkedin.com/in/valeria-danalachi-34a599208/) (Deloitte, Portugal)
 * [Margarida Borbinha](https://www.linkedin.com/in/margarida-borbinha-528230221/) (NOS SGPS, Portugal)

@@ -16,3 +16,4 @@ learning theory and mathematics. These tools are already having a major influenc
 revolutionizing how films are made, machines are designed, and playing a larger role in fundamental sciences — from 
 astrophysics to medicine.
 
+This course runs every year in the second semester.

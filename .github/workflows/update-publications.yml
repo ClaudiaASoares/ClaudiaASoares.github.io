@@ -27,8 +27,8 @@ jobs:
       - name: Install publication dependencies
         run: python -m pip install -r requirements-publications.txt
 
-      - name: Update BibTeX from ORCID and OpenAlex
-        run: python scripts/update_publications_bib.py --verbose
+      - name: Update BibTeX from ORCID, OpenAlex, and OpenReview
+        run: python scripts/update_publications_bib.py --verbose --openreview-profile "~Claudia_Soares1"
 
       - name: Regenerate publication pages
         run: python pubsFromBib.py
@@ -42,6 +42,6 @@ jobs:
           title: Update publications
           commit-message: Update publications
           body: |
-            Automated publication update from ORCID, OpenAlex, and DOI metadata.
+            Automated publication update from ORCID, OpenAlex, OpenReview, and DOI metadata.
 
             Review the generated BibTeX and publication pages before merging.

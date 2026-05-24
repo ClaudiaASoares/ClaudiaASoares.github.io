@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Update publication BibTeX from ORCID, OpenAlex, and DOI metadata.
+"""Update publication BibTeX from ORCID, OpenAlex, OpenReview, and DOI metadata.
 
 The default mode is intentionally conservative:
 
 * fetch candidate works from ORCID and OpenAlex using the ORCID iD in
   `_config.yml`;
+* fetch accepted public OpenReview notes for the configured OpenReview profile;
 * prefer DOI content negotiation for canonical BibTeX records;
 * write a generated snapshot to `markdown_generator/generated_pubs.bib`;
 * append only records that are missing from `markdown_generator/pubs.bib`.
@@ -42,8 +43,22 @@ DEFAULT_CONFIG = REPO_ROOT / "_config.yml"
 DEFAULT_OUTPUT_BIB = REPO_ROOT / "markdown_generator" / "pubs.bib"
 DEFAULT_GENERATED_BIB = REPO_ROOT / "markdown_generator" / "generated_pubs.bib"
 DEFAULT_MANUAL_BIB = REPO_ROOT / "markdown_generator" / "manual_pubs.bib"
+DEFAULT_OPENREVIEW_PROFILE = "~Claudia_Soares1"
 
 USER_AGENT = "ClaudiaASoares.github.io publication updater (GitHub Actions)"
+
+OPENREVIEW_REJECTED_TERMS = (
+    "submitted",
+    "withdrawn",
+    "rejected",
+    "desk reject",
+    "under review",
+    "not accepted",
+)
+
+OPENREVIEW_IMPORTED_VENUE_PREFIXES = (
+    "dblp.org/",
+)
 
 MONTH_WORDS = (
     "jan",
@@ -80,12 +95,14 @@ class WorkCandidate:
     title: Optional[str]
     year: Optional[str]
     openalex_work: Optional[dict[str, Any]] = None
+    openreview_note: Optional[dict[str, Any]] = None
 
 
 @dataclass
 class RunStats:
     orcid_candidates: int = 0
     openalex_candidates: int = 0
+    openreview_candidates: int = 0
     doi_fetches: int = 0
     doi_failures: int = 0
     synthesized: int = 0
@@ -135,6 +152,24 @@ def parse_args() -> argparse.Namespace:
         "--include-openalex-only",
         action="store_true",
         help="Also import OpenAlex records that are not matched to an ORCID work.",
+    )
+    parser.add_argument(
+        "--openreview-profile",
+        default=os.environ.get("OPENREVIEW_PROFILE", DEFAULT_OPENREVIEW_PROFILE),
+        help=(
+            "OpenReview profile tilde ID to scan for accepted public papers. "
+            "Use an empty value to disable. Defaults to ~Claudia_Soares1."
+        ),
+    )
+    parser.add_argument(
+        "--no-openreview",
+        action="store_true",
+        help="Do not use OpenReview as a publication source.",
+    )
+    parser.add_argument(
+        "--include-openreview-imports",
+        action="store_true",
+        help="Also import DBLP/CoRR-style records shown on the OpenReview profile.",
     )
     parser.add_argument(
         "--no-generated-bib",
@@ -210,6 +245,19 @@ def normalize_orcid(value: Optional[str]) -> Optional[str]:
     if not match:
         return None
     return match.group(0).upper()
+
+
+def normalize_openreview_profile(value: Optional[str]) -> Optional[str]:
+    if not value:
+        return None
+    value = value.strip()
+    if not value:
+        return None
+    value = re.sub(r"^https?://openreview\.net/profile\?id=", "", value)
+    value = urllib.parse.unquote(value)
+    if not value.startswith("~"):
+        value = f"~{value}"
+    return value
 
 
 def normalize_doi(value: Optional[str]) -> Optional[str]:
@@ -330,6 +378,28 @@ def publication_title(summary: dict[str, Any]) -> Optional[str]:
     return text_value(title.get("title"))
 
 
+def openreview_content_value(note: dict[str, Any], key: str) -> Any:
+    content = note.get("content") or {}
+    value = content.get(key)
+    if isinstance(value, dict) and "value" in value:
+        return value["value"]
+    return value
+
+
+def openreview_text(note: dict[str, Any], key: str) -> Optional[str]:
+    return text_value(openreview_content_value(note, key))
+
+
+def openreview_list(note: dict[str, Any], key: str) -> list[str]:
+    value = openreview_content_value(note, key)
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return [text for item in value if (text := text_value(item))]
+    text = text_value(value)
+    return [text] if text else []
+
+
 def best_orcid_summary(group: dict[str, Any]) -> Optional[dict[str, Any]]:
     summaries = group.get("work-summary") or []
     if not summaries:
@@ -400,6 +470,121 @@ def fetch_openalex_candidates(
         if not next_cursor or next_cursor == cursor:
             break
         cursor = next_cursor
+    return candidates
+
+
+def year_from_millis(value: Any) -> Optional[str]:
+    try:
+        timestamp = int(value) / 1000
+    except (TypeError, ValueError):
+        return None
+    return time.strftime("%Y", time.gmtime(timestamp))
+
+
+def openreview_year(note: dict[str, Any]) -> Optional[str]:
+    for key in ("year", "publication_year"):
+        year = openreview_text(note, key)
+        if year and re.fullmatch(r"\d{4}", year):
+            return year
+    venue = openreview_text(note, "venue")
+    venueid = openreview_text(note, "venueid")
+    for value in (venue, venueid):
+        if not value:
+            continue
+        match = re.search(r"\b(19|20)\d{2}\b", value)
+        if match:
+            return match.group(0)
+    return year_from_millis(note.get("pdate")) or year_from_millis(note.get("cdate"))
+
+
+def openreview_forum_url(note: dict[str, Any]) -> str:
+    forum_id = note.get("forum") or note.get("id")
+    return f"https://openreview.net/forum?id={forum_id}"
+
+
+def openreview_pdf_url(note: dict[str, Any]) -> Optional[str]:
+    paperhash = openreview_text(note, "paperhash")
+    if paperhash:
+        return f"https://openreview.net/pdf?id={paperhash}"
+    note_id = text_value(note.get("id"))
+    return f"https://openreview.net/pdf?id={note_id}" if note_id else None
+
+
+def openreview_is_top_level(note: dict[str, Any]) -> bool:
+    note_id = note.get("id")
+    forum_id = note.get("forum")
+    return bool(note_id) and (not forum_id or note_id == forum_id)
+
+
+def openreview_is_accepted_publication(
+    note: dict[str, Any],
+    include_imports: bool,
+) -> bool:
+    if not openreview_is_top_level(note):
+        return False
+
+    venue = openreview_text(note, "venue") or ""
+    venueid = openreview_text(note, "venueid") or ""
+    combined = " ".join(
+        text
+        for text in (
+            venue,
+            venueid,
+            text_value(note.get("invitation")),
+            text_value(note.get("domain")),
+        )
+        if text
+    ).lower()
+
+    if not include_imports and venueid.lower().startswith(
+        OPENREVIEW_IMPORTED_VENUE_PREFIXES
+    ):
+        return False
+    if any(term in combined for term in OPENREVIEW_REJECTED_TERMS):
+        return False
+    return bool(openreview_text(note, "title") and venue)
+
+
+def fetch_openreview_candidates(
+    profile: str,
+    timeout: float,
+    include_imports: bool,
+    limit: int = 100,
+) -> list[WorkCandidate]:
+    candidates: list[WorkCandidate] = []
+    offset = 0
+    encoded_profile = urllib.parse.quote(profile, safe="~")
+    while True:
+        params = {
+            "content.authorids": encoded_profile,
+            "limit": str(limit),
+            "offset": str(offset),
+        }
+        url = "https://api2.openreview.net/notes?" + urllib.parse.urlencode(
+            params,
+            safe="~",
+        )
+        data = http_get_json(url, timeout)
+        notes = data.get("notes") or []
+        for note in notes:
+            if not openreview_is_accepted_publication(note, include_imports):
+                continue
+            doi = None
+            for key in ("doi", "DOI"):
+                if doi := normalize_doi(openreview_text(note, key)):
+                    break
+            candidates.append(
+                WorkCandidate(
+                    "openreview",
+                    doi,
+                    openreview_text(note, "title"),
+                    openreview_year(note),
+                    openreview_note=note,
+                )
+            )
+        if len(notes) < limit:
+            break
+        offset += limit
     return candidates
 
 
@@ -555,6 +740,39 @@ def synthesize_openalex_entry(work: dict[str, Any], used_keys: set[str]) -> tupl
     return key, Entry(entry_type, fields=fields, persons={"author": authors})
 
 
+def synthesize_openreview_entry(note: dict[str, Any], used_keys: set[str]) -> tuple[str, Entry]:
+    title = openreview_text(note, "title") or "Untitled work"
+    venue = openreview_text(note, "venue") or "OpenReview"
+    year = openreview_year(note) or ""
+    authors = [Person(name) for name in openreview_list(note, "authors")]
+
+    fields = {
+        "title": title,
+        "booktitle": venue,
+        "url": openreview_forum_url(note),
+    }
+    if year:
+        fields["year"] = year
+    if pdf_url := openreview_pdf_url(note):
+        fields["eprint"] = pdf_url
+    if venueid := openreview_text(note, "venueid"):
+        fields["organization"] = venueid
+    for key in ("doi", "DOI"):
+        if doi := normalize_doi(openreview_text(note, key)):
+            fields["doi"] = doi
+            break
+
+    first_author = None
+    if authors:
+        if authors[0].last_names:
+            first_author = str(authors[0].last_names[-1])
+        if not first_author:
+            first_author = family_name_from_display_name(str(authors[0]))
+    key_base = f"{first_author or 'openreview'}{year}{slug_words(title, 3)}"
+    key = unique_key(key_base, used_keys)
+    return key, Entry("inproceedings", fields=fields, persons={"author": authors})
+
+
 def sort_entries(entries: dict[str, Entry]) -> dict[str, Entry]:
     def sort_key(item: tuple[str, Entry]) -> tuple[int, str, str]:
         key, entry = item
@@ -583,13 +801,17 @@ def dedupe_candidates(candidates: Iterable[WorkCandidate]) -> list[WorkCandidate
         if not existing:
             by_identity[identity] = candidate
             continue
-        if candidate.openalex_work and not existing.openalex_work:
+        if (
+            (candidate.openalex_work and not existing.openalex_work)
+            or (candidate.openreview_note and not existing.openreview_note)
+        ):
             by_identity[identity] = WorkCandidate(
                 source=f"{existing.source}+{candidate.source}",
                 doi=existing.doi or candidate.doi,
                 title=existing.title or candidate.title,
                 year=existing.year or candidate.year,
-                openalex_work=candidate.openalex_work,
+                openalex_work=existing.openalex_work or candidate.openalex_work,
+                openreview_note=existing.openreview_note or candidate.openreview_note,
             )
     return list(by_identity.values())
 
@@ -662,9 +884,15 @@ def build_generated_entries(
             generated_identities.update(entry_identities(entry))
             generated_identities.update(identities)
             stats.synthesized += 1
+        elif candidate.openreview_note:
+            key, entry = synthesize_openreview_entry(candidate.openreview_note, used_keys)
+            generated[key] = entry
+            generated_identities.update(entry_identities(entry))
+            generated_identities.update(identities)
+            stats.synthesized += 1
         elif verbose:
             label = candidate.title or candidate.doi or "untitled work"
-            print(f"warning: skipping ORCID work without DOI or OpenAlex metadata: {label}")
+            print(f"warning: skipping work without DOI or source metadata: {label}")
 
     stats.generated_entries = len(generated)
     return generated
@@ -749,6 +977,15 @@ def main() -> int:
         )
         stats.openalex_candidates = len(openalex_candidates)
         candidates.extend(openalex_candidates)
+    openreview_profile = normalize_openreview_profile(args.openreview_profile)
+    if openreview_profile and not args.no_openreview:
+        openreview_candidates = fetch_openreview_candidates(
+            openreview_profile,
+            args.timeout,
+            args.include_openreview_imports,
+        )
+        stats.openreview_candidates = len(openreview_candidates)
+        candidates.extend(openreview_candidates)
 
     candidates = dedupe_candidates(candidates)
     if not candidates:
@@ -798,6 +1035,7 @@ def main() -> int:
         "Summary: "
         f"{stats.orcid_candidates} ORCID candidates, "
         f"{stats.openalex_candidates} OpenAlex candidates, "
+        f"{stats.openreview_candidates} OpenReview candidates, "
         f"{stats.doi_fetches} DOI BibTeX records, "
         f"{stats.synthesized} synthesized records, "
         f"{stats.doi_failures} DOI failures, "

@@ -6,4 +6,11 @@ date: 2020-01-01
 venue: 'The International Conference on Complex Networks and Their Applications'
 citation: 'Regina Duarte, Qiwei Han, Claudia Soares, "Dissecting medical referral mechanisms in health services using graph neural networks." The International Conference on Complex Networks and Their Applications, 2020.'
 ---
-Use [Google Scholar](https://scholar.google.com/scholar?q=Dissecting+medical+referral+mechanisms+in+health+services+using+graph+neural+networks){:target="_blank"} for full citation
+Bibtex:
+
+<pre><code>@inproceedings{Regina20,
+    author = &quot;Duarte, Regina and Han, Qiwei and Soares, Claudia&quot;,
+    title = &quot;Dissecting medical referral mechanisms in health services using graph neural networks&quot;,
+    booktitle = &quot;The International Conference on Complex Networks and Their Applications&quot;,
+    year = &quot;2020&quot;
+}</code></pre>

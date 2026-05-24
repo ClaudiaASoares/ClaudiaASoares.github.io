@@ -7,6 +7,8 @@ The default mode is intentionally conservative:
   `_config.yml`;
 * fetch accepted public OpenReview notes for the configured OpenReview profile;
 * prefer DOI content negotiation for canonical BibTeX records;
+* keep preprints only as `preprinturl` links on matching publications;
+* copy abstracts from BibTeX, OpenAlex, or OpenReview when available;
 * write a generated snapshot to `markdown_generator/generated_pubs.bib`;
 * append only records that are missing from `markdown_generator/pubs.bib`.
 
@@ -58,6 +60,15 @@ OPENREVIEW_REJECTED_TERMS = (
 
 OPENREVIEW_IMPORTED_VENUE_PREFIXES = (
     "dblp.org/",
+)
+
+PREPRINT_TERMS = (
+    "arxiv",
+    "corr",
+    "biorxiv",
+    "medrxiv",
+    "ssrn",
+    "preprint",
 )
 
 MONTH_WORDS = (
@@ -281,6 +292,81 @@ def normalize_title(value: Optional[str]) -> Optional[str]:
     title = re.sub(r"[^a-z0-9]+", " ", title)
     title = re.sub(r"\s+", " ", title).strip()
     return title or None
+
+
+def openalex_abstract(work: dict[str, Any]) -> Optional[str]:
+    inverted_index = work.get("abstract_inverted_index")
+    if not isinstance(inverted_index, dict):
+        return None
+    positions: list[tuple[int, str]] = []
+    for word, indexes in inverted_index.items():
+        if not isinstance(indexes, list):
+            continue
+        positions.extend((index, word) for index in indexes if isinstance(index, int))
+    if not positions:
+        return None
+    return " ".join(word for _index, word in sorted(positions))
+
+
+def entry_is_preprint(entry: Entry) -> bool:
+    doi = normalize_doi(entry.fields.get("doi"))
+    if doi and doi.startswith("10.48550/arxiv"):
+        return True
+    for field in (
+        "journal",
+        "journaltitle",
+        "booktitle",
+        "publisher",
+        "howpublished",
+        "archiveprefix",
+        "eprinttype",
+        "url",
+    ):
+        value = text_value(entry.fields.get(field))
+        if value and any(term in value.lower() for term in PREPRINT_TERMS):
+            return True
+    return False
+
+
+def arxiv_pdf_url(value: Optional[str]) -> Optional[str]:
+    value = text_value(value)
+    if not value:
+        return None
+    doi_match = re.search(r"10\.48550/arxiv\.([^\s/]+)", value, flags=re.IGNORECASE)
+    if doi_match:
+        return f"https://arxiv.org/pdf/{doi_match.group(1)}.pdf"
+    arxiv_match = re.search(
+        r"arxiv\.org/(?:abs|pdf)/([^?#\s]+)",
+        value,
+        flags=re.IGNORECASE,
+    )
+    if arxiv_match:
+        arxiv_id = arxiv_match.group(1).removesuffix(".pdf")
+        return f"https://arxiv.org/pdf/{arxiv_id}.pdf"
+    return None
+
+
+def preprint_url_for_entry(entry: Entry) -> Optional[str]:
+    for field in ("preprintpdfurl", "preprinturl", "url", "doi", "eprint"):
+        value = text_value(entry.fields.get(field))
+        if not value:
+            continue
+        if pdf_url := arxiv_pdf_url(value):
+            return pdf_url
+        if field in {"preprintpdfurl", "preprinturl", "url"}:
+            return value
+    return None
+
+
+def enrich_entry_from_candidate(entry: Entry, candidate: WorkCandidate) -> None:
+    if not entry.fields.get("abstract"):
+        abstract = None
+        if candidate.openalex_work:
+            abstract = openalex_abstract(candidate.openalex_work)
+        elif candidate.openreview_note:
+            abstract = openreview_text(candidate.openreview_note, "abstract")
+        if abstract:
+            entry.fields["abstract"] = abstract
 
 
 def entry_identity(entry: Entry) -> Optional[tuple[str, str]]:
@@ -698,6 +784,8 @@ def synthesize_openalex_entry(work: dict[str, Any], used_keys: set[str]) -> tupl
         fields["url"] = f"https://doi.org/{doi}"
     elif work.get("id"):
         fields["url"] = str(work["id"])
+    if abstract := openalex_abstract(work):
+        fields["abstract"] = abstract
 
     for field_name, source_field in (
         ("volume", "volume"),
@@ -757,6 +845,8 @@ def synthesize_openreview_entry(note: dict[str, Any], used_keys: set[str]) -> tu
         fields["eprint"] = pdf_url
     if venueid := openreview_text(note, "venueid"):
         fields["organization"] = venueid
+    if abstract := openreview_text(note, "abstract"):
+        fields["abstract"] = abstract
     for key in ("doi", "DOI"):
         if doi := normalize_doi(openreview_text(note, key)):
             fields["doi"] = doi
@@ -782,6 +872,45 @@ def sort_entries(entries: dict[str, Entry]) -> dict[str, Entry]:
         return (-year, normalize_title(entry.fields.get("title")) or "", key.lower())
 
     return dict(sorted(entries.items(), key=sort_key))
+
+
+def attach_preprints_to_publications(entries: dict[str, Entry]) -> dict[str, Entry]:
+    publications: dict[str, Entry] = {}
+    publications_by_title: dict[str, Entry] = {}
+    preprints: list[Entry] = []
+
+    for key, entry in entries.items():
+        if entry_is_preprint(entry):
+            preprints.append(entry)
+            continue
+        publications[key] = entry
+        if title := normalize_title(entry.fields.get("title")):
+            publications_by_title[title] = entry
+
+    for preprint in preprints:
+        title = normalize_title(preprint.fields.get("title"))
+        if not title:
+            continue
+        publication = publications_by_title.get(title)
+        if not publication:
+            continue
+        if preprint_url := preprint_url_for_entry(preprint):
+            publication.fields.setdefault("preprinturl", preprint_url)
+        if preprint_abstract := preprint.fields.get("abstract"):
+            publication.fields.setdefault("abstract", preprint_abstract)
+
+    return publications
+
+
+def generated_identity_updates(
+    entry: Entry,
+    candidate_id_values: set[tuple[str, str]],
+) -> set[tuple[str, str]]:
+    identities = set(entry_identities(entry))
+    identities.update(candidate_id_values)
+    if entry_is_preprint(entry):
+        return {identity for identity in identities if identity[0] == "doi"}
+    return identities
 
 
 def identity_index(entries: Iterable[Entry]) -> set[tuple[str, str]]:
@@ -866,10 +995,10 @@ def build_generated_entries(
                 raw_key, entry = next(iter(fetched.items()))
                 entry.fields.setdefault("doi", candidate.doi)
                 entry.fields.setdefault("url", f"https://doi.org/{candidate.doi}")
+                enrich_entry_from_candidate(entry, candidate)
                 key = unique_key(raw_key, used_keys)
                 generated[key] = entry
-                generated_identities.update(entry_identities(entry))
-                generated_identities.update(identities)
+                generated_identities.update(generated_identity_updates(entry, identities))
                 stats.doi_fetches += 1
                 time.sleep(sleep_seconds)
                 continue
@@ -881,19 +1010,18 @@ def build_generated_entries(
         if candidate.openalex_work:
             key, entry = synthesize_openalex_entry(candidate.openalex_work, used_keys)
             generated[key] = entry
-            generated_identities.update(entry_identities(entry))
-            generated_identities.update(identities)
+            generated_identities.update(generated_identity_updates(entry, identities))
             stats.synthesized += 1
         elif candidate.openreview_note:
             key, entry = synthesize_openreview_entry(candidate.openreview_note, used_keys)
             generated[key] = entry
-            generated_identities.update(entry_identities(entry))
-            generated_identities.update(identities)
+            generated_identities.update(generated_identity_updates(entry, identities))
             stats.synthesized += 1
         elif verbose:
             label = candidate.title or candidate.doi or "untitled work"
             print(f"warning: skipping work without DOI or source metadata: {label}")
 
+    generated = attach_preprints_to_publications(generated)
     stats.generated_entries = len(generated)
     return generated
 
@@ -1006,13 +1134,20 @@ def main() -> int:
     existing_entries = load_bib_file(args.output_bib)
     manual_entries = load_bib_file(args.manual_bib) if args.manual_bib.exists() else {}
     stats.existing_entries = len(existing_entries)
-    existing_identities = identity_index(existing_entries.values())
-    existing_identities.update(identity_index(manual_entries.values()))
+    existing_publications = [
+        entry for entry in existing_entries.values() if not entry_is_preprint(entry)
+    ]
+    manual_publications = [
+        entry for entry in manual_entries.values() if not entry_is_preprint(entry)
+    ]
+    existing_identities = identity_index(existing_publications)
+    existing_identities.update(identity_index(manual_publications))
 
     new_entries = {
         key: entry
         for key, entry in sort_entries(generated).items()
-        if (identities := entry_identities(entry))
+        if not entry_is_preprint(entry)
+        and (identities := entry_identities(entry))
         and identities.isdisjoint(existing_identities)
     }
     stats.new_entries = len(new_entries)

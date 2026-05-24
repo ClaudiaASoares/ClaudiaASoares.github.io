@@ -6,4 +6,14 @@ date: 2018-01-01
 venue: 'Signal Processing'
 citation: 'Beatriz Quintino Ferreira, Joao Gomes, Claudia Soares, Joao P Costeira, "FLORIS and CLORIS: Hybrid source and network localization based on ranges and video." Signal Processing, 2018.'
 ---
-Use [Google Scholar](https://scholar.google.com/scholar?q=FLORIS+and+CLORIS:+Hybrid+source+and+network+localization+based+on+ranges+and+video){:target="_blank"} for full citation
+Bibtex:
+
+<pre><code>@article{ferreira2018floris,
+    author = &quot;Ferreira, Beatriz Quintino and Gomes, Joao and Soares, Claudia and Costeira, Joao P&quot;,
+    title = &quot;FLORIS and CLORIS: Hybrid source and network localization based on ranges and video&quot;,
+    journal = &quot;Signal Processing&quot;,
+    volume = &quot;153&quot;,
+    pages = &quot;355--367&quot;,
+    year = &quot;2018&quot;,
+    publisher = &quot;Elsevier&quot;
+}</code></pre>

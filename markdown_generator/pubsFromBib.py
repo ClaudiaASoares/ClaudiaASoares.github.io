@@ -8,7 +8,9 @@ Run this script from the `markdown_generator` directory:
     python pubsFromBib.py
 
 It reads `pubs.bib` and writes one Markdown file per usable entry into
-`../_publications`.
+`../_publications`. Preprint entries are not rendered as standalone pages; when
+their title matches a published entry, their URL is linked from the published
+page instead.
 """
 
 from __future__ import annotations
@@ -16,15 +18,19 @@ from __future__ import annotations
 import html
 import os
 import re
+import unicodedata
 from time import strptime
 from typing import Optional
 
-from pybtex.database import Entry, Person
+from pybtex.database import BibliographyData, Entry, Person
 from pybtex.database.input import bibtex
+from pybtex.database.output import bibtex as bibtex_output
 
 
-PUBS_FILE = "pubs.bib"
-OUTPUT_DIR = "../_publications"
+_HERE = os.path.dirname(os.path.abspath(__file__))
+
+PUBS_FILE = os.path.join(_HERE, "pubs.bib")
+OUTPUT_DIR = os.path.join(_HERE, "../_publications")
 COLLECTION_NAME = "publications"
 PERMALINK_PREFIX = "/publication/"
 
@@ -39,6 +45,86 @@ VENUE_FIELDS = (
     "organization",
     "howpublished",
 )
+
+ABSTRACT_FIELDS = (
+    "abstract",
+    "description",
+    "summary",
+    "note",
+)
+
+PREPRINT_TERMS = (
+    "arxiv",
+    "corr",
+    "biorxiv",
+    "medrxiv",
+    "ssrn",
+    "preprint",
+)
+
+# Map LaTeX accent commands (single-char) to Unicode combining diacritical marks.
+_LATEX_COMBINING: dict[str, str] = {
+    "'": "\u0301",  # acute
+    "`": "\u0300",  # grave
+    '"': "\u0308",  # diaeresis / umlaut
+    "^": "\u0302",  # circumflex
+    "~": "\u0303",  # tilde
+    "=": "\u0304",  # macron
+    ".": "\u0307",  # dot above
+    "u": "\u0306",  # breve
+    "v": "\u030C",  # caron
+    "H": "\u030B",  # double acute
+    "r": "\u030A",  # ring above
+    "c": "\u0327",  # cedilla
+    "k": "\u0328",  # ogonek
+    "d": "\u0323",  # dot below
+    "b": "\u0332",  # macron below
+}
+
+# Special LaTeX letter commands that map to a single Unicode character.
+_LATEX_SPECIALS: dict[str, str] = {
+    "ss": "\u00DF",  # ß
+    "ae": "\u00E6",  # æ
+    "oe": "\u0153",  # œ
+    "aa": "\u00E5",  # å
+    "AE": "\u00C6",  # Æ
+    "OE": "\u0152",  # Œ
+    "AA": "\u00C5",  # Å
+    "o": "\u00F8",   # ø
+    "O": "\u00D8",   # Ø
+    "l": "\u0142",   # ł
+    "L": "\u0141",   # Ł
+}
+
+
+def _decode_latex_accents(text: str) -> str:
+    """Convert LaTeX accent/special-letter commands to their Unicode equivalents.
+
+    Handles both braced forms (e.g. ``\\'{a}`` → á) and unbraced forms
+    (e.g. ``\\'a`` → á), as well as special symbols like ``\\ss`` → ß.
+    """
+
+    def _replace(m: re.Match) -> str:  # type: ignore[type-arg]
+        cmd, char = m.group(1), m.group(2)
+        combining = _LATEX_COMBINING.get(cmd)
+        if combining:
+            return unicodedata.normalize("NFC", char + combining)
+        return char
+
+    _cls = "[" + "".join(_LATEX_COMBINING) + "]"
+    # \cmd{letter} — e.g. \'{a}, \"{o}, \c{c}
+    text = re.sub(r"\\(" + _cls + r")\{([a-zA-Z])\}", _replace, text)
+    # \cmd letter  — e.g. \'a, \"o (without braces)
+    text = re.sub(r"\\(" + _cls + r")([a-zA-Z])", _replace, text)
+    # \special — e.g. \ss, \ae, \o
+    specials_pattern = "|".join(re.escape(k) for k in _LATEX_SPECIALS)
+    text = re.sub(
+        rf"\\({specials_pattern})(?=[^a-zA-Z]|$)",
+        lambda m: _LATEX_SPECIALS.get(m.group(1), m.group(1)),
+        text,
+    )
+    return text
+
 
 HTML_ESCAPE_TABLE = {
     "&": "&amp;",
@@ -55,14 +141,17 @@ def html_escape(text: str) -> str:
 def clean_bibtex_text(text: Optional[str]) -> str:
     if not text:
         return ""
-    cleaned = (
-        str(text)
-        .replace("{", "")
-        .replace("}", "")
-        .replace("\\", "")
-        .replace("\n", " ")
-    )
+    cleaned = _decode_latex_accents(str(text))
+    cleaned = cleaned.replace("{", "").replace("}", "")
+    cleaned = cleaned.replace("\\", "").replace("\n", " ").replace("\r", " ")
     return re.sub(r"\s+", " ", cleaned).strip()
+
+
+def normalize_title(text: Optional[str]) -> Optional[str]:
+    title = clean_bibtex_text(text).lower()
+    title = re.sub(r"[^a-z0-9]+", " ", title)
+    title = re.sub(r"\s+", " ", title).strip()
+    return title or None
 
 
 def month_number(month: Optional[str]) -> str:
@@ -107,6 +196,21 @@ def publication_venue(fields: dict[str, str]) -> str:
     return "Publication"
 
 
+def abstract_for_entry(fields: dict[str, str]) -> str:
+    for field in ABSTRACT_FIELDS:
+        abstract = clean_bibtex_text(fields.get(field))
+        if abstract:
+            return abstract
+    return ""
+
+
+def excerpt_for_abstract(abstract: str, max_words: int = 65) -> str:
+    words = abstract.split()
+    if len(words) <= max_words:
+        return abstract
+    return " ".join(words[:max_words]).rstrip(".,;:") + "."
+
+
 def person_name(person: Person) -> str:
     parts = []
     for names in (
@@ -140,13 +244,73 @@ def url_for_entry(fields: dict[str, str]) -> Optional[str]:
     return None
 
 
+def arxiv_pdf_url(value: str) -> Optional[str]:
+    value = clean_bibtex_text(value)
+    doi_match = re.search(r"10\.48550/arxiv\.([^\s/]+)", value, flags=re.IGNORECASE)
+    if doi_match:
+        return f"https://arxiv.org/pdf/{doi_match.group(1)}.pdf"
+    arxiv_match = re.search(
+        r"arxiv\.org/(?:abs|pdf)/([^?#\s]+)",
+        value,
+        flags=re.IGNORECASE,
+    )
+    if arxiv_match:
+        arxiv_id = arxiv_match.group(1).removesuffix(".pdf")
+        return f"https://arxiv.org/pdf/{arxiv_id}.pdf"
+    return None
+
+
+def preprint_url_for_entry(entry: Entry) -> Optional[str]:
+    fields = entry.fields
+    for field in ("preprintpdfurl", "preprinturl", "url", "doi", "eprint"):
+        value = clean_bibtex_text(fields.get(field))
+        if not value:
+            continue
+        if pdf_url := arxiv_pdf_url(value):
+            return pdf_url
+        if field in {"preprintpdfurl", "preprinturl", "url"}:
+            return value
+    return None
+
+
+def is_preprint_entry(entry: Entry) -> bool:
+    fields = entry.fields
+    doi = clean_bibtex_text(fields.get("doi")).lower()
+    if doi.startswith("10.48550/arxiv"):
+        return True
+    for field in (
+        "journal",
+        "journaltitle",
+        "booktitle",
+        "publisher",
+        "howpublished",
+        "archiveprefix",
+        "eprinttype",
+        "url",
+    ):
+        value = clean_bibtex_text(fields.get(field)).lower()
+        if any(term in value for term in PREPRINT_TERMS):
+            return True
+    return False
+
+
+def bibtex_for_entry(key: str, entry: Entry) -> str:
+    writer = bibtex_output.Writer()
+    data = BibliographyData(entries={key: entry})
+    return writer.to_string(data).strip()
+
+
 def slug_for_title(title: str) -> str:
     clean_title = title.replace(" ", "-")
     url_slug = re.sub(r"\[.*\]|[^a-zA-Z0-9_-]", "", clean_title)
     return re.sub(r"-+", "-", url_slug).strip("-") or "publication"
 
 
-def markdown_for_entry(entry: Entry) -> Optional[tuple[str, str]]:
+def markdown_for_entry(
+    bib_id: str,
+    entry: Entry,
+    preprint_entry: Optional[Entry] = None,
+) -> Optional[tuple[str, str]]:
     fields = entry.fields
     title = clean_bibtex_text(fields.get("title"))
     if not title:
@@ -162,7 +326,11 @@ def markdown_for_entry(entry: Entry) -> Optional[tuple[str, str]]:
     html_filename = f"{pub_date}-{url_slug}"
     md_filename = os.path.basename(f"{html_filename}.md")
     paper_url = url_for_entry(fields)
-    note = clean_bibtex_text(fields.get("note"))
+    abstract = abstract_for_entry(fields)
+    if preprint_entry and not abstract:
+        abstract = abstract_for_entry(preprint_entry.fields)
+    excerpt = excerpt_for_abstract(abstract) if abstract else ""
+    preprint_url = preprint_url_for_entry(preprint_entry) if preprint_entry else None
 
     citation = (
         f'{authors_text(entry)}, "{html_escape(title)}." '
@@ -172,27 +340,29 @@ def markdown_for_entry(entry: Entry) -> Optional[tuple[str, str]]:
     md = f'---\ntitle: "{html_escape(title)}"\n'
     md += f"collection: {COLLECTION_NAME}"
     md += f"\npermalink: {PERMALINK_PREFIX}{html_filename}"
-    if note:
-        md += f"\nexcerpt: '{html_escape(note)}'"
+    if excerpt:
+        md += f"\nexcerpt: '{html_escape(excerpt)}'"
     md += f"\ndate: {pub_date}"
     md += f"\nvenue: '{html_escape(venue)}'"
     if paper_url:
         md += f"\npaperurl: '{paper_url}'"
+    if preprint_url:
+        md += f"\npreprinturl: '{preprint_url}'"
     md += f"\ncitation: '{citation}'"
     md += "\n---"
 
-    if note:
-        md += f"\n{html_escape(note)}\n"
+    if abstract:
+        md += f"\n\n{html_escape(abstract)}\n"
 
-    if paper_url:
+    if preprint_url:
+        md += f'\n[Download paper here]({preprint_url}){{:target="_blank"}}\n'
+    elif paper_url:
         md += f'\n[Access paper here]({paper_url}){{:target="_blank"}}\n'
-    else:
-        scholar_query = html.escape(title.replace(" ", "+"))
-        md += (
-            "\nUse [Google Scholar]"
-            f"(https://scholar.google.com/scholar?q={scholar_query})"
-            '{:target="_blank"} for full citation'
-        )
+
+    md += "\nBibtex:\n\n"
+    md += "<pre><code>"
+    md += html.escape(bibtex_for_entry(bib_id, entry))
+    md += "</code></pre>\n"
 
     return md_filename, md
 
@@ -202,10 +372,35 @@ def main() -> int:
     bibdata = parser.parse_file(PUBS_FILE)
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
+    preprints_by_title: dict[str, Entry] = {}
+    published_titles: set[str] = set()
+    for entry in bibdata.entries.values():
+        normalized_title = normalize_title(entry.fields.get("title"))
+        if not normalized_title:
+            continue
+        if is_preprint_entry(entry):
+            preprints_by_title.setdefault(normalized_title, entry)
+        else:
+            published_titles.add(normalized_title)
+
     written = 0
     skipped = 0
+    skipped_preprints = 0
     for bib_id, entry in bibdata.entries.items():
-        rendered = markdown_for_entry(entry)
+        normalized_title = normalize_title(entry.fields.get("title"))
+        if is_preprint_entry(entry):
+            title = clean_bibtex_text(entry.fields.get("title")) or bib_id
+            if normalized_title in published_titles:
+                print(f'INFO Linking preprint through published entry: "{title}"')
+            else:
+                print(f'INFO Skipping standalone preprint: "{title}"')
+            skipped_preprints += 1
+            continue
+
+        preprint_entry = (
+            preprints_by_title.get(normalized_title) if normalized_title else None
+        )
+        rendered = markdown_for_entry(bib_id, entry, preprint_entry)
         if not rendered:
             title = clean_bibtex_text(entry.fields.get("title")) or bib_id
             print(f'WARNING Skipping entry with missing title or year: "{title}"')
@@ -219,7 +414,11 @@ def main() -> int:
         print(f'SUCCESSFULLY PARSED {bib_id}: "{short_title}"')
         written += 1
 
-    print(f"Finished publication generation: {written} written, {skipped} skipped.")
+    print(
+        "Finished publication generation: "
+        f"{written} written, {skipped} skipped, "
+        f"{skipped_preprints} preprints skipped or linked."
+    )
     return 0
 
 

@@ -3,3 +3,5 @@ _site/
 .DS_Store
 *~
 .#_*
+__pycache__/
+*.pyc

@@ -19,9 +19,6 @@ Students and lab members
 
 If you would like to join our group as a Postdoctoral Researcher, Ph.D. student, M.Sc., or B.S. student, [see this page](/students/).
 
-**Postdoctoral Position Announcement: AI Fights Space Debris**
-
-Join us in our mission to combat space debris with the power of AI! [see this page](Neuraspace-postdoc)
 
 Visiting students and assistant researchers
 ------
@@ -31,15 +28,12 @@ Visiting students and assistant researchers
 PhD Students, current and former
 ------
 * [Filipa Valdeira](https://filva.github.io/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2019 - 2022)
-* [Stevo Rackovic](https://stevorackovic.github.io/) (with [Dusan Jakovetic](https://people.dmi.uns.ac.rs/~dusan.jakovetic/), 2019 - )
-* [Pedro Valdeira](https://valdeira.github.io/) (CMU-Portugal with [Joao Xavier](http://users.isr.tecnico.ulisboa.pt/~jxavier/) and  [Yuejie Chi](https://users.ece.cmu.edu/~yuejiec/) 2020 - )
+* [Stevo Rackovic](https://stevorackovic.github.io/) (with [Dusan Jakovetic](https://people.dmi.uns.ac.rs/~dusan.jakovetic/), 2019 - 2025)
+* [Pedro Valdeira](https://valdeira.github.io/) (CMU-Portugal with [Joao Xavier](http://users.isr.tecnico.ulisboa.pt/~jxavier/) and  [Yuejie Chi](https://users.ece.cmu.edu/~yuejiec/) 2020 - 2025)
+* [Diogo Lavado](https://www.linkedin.com/in/diogo-mateus-lavado-466a51159/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2022 - 2026)
 * [Ricardo Ferreira](https://www.linkedin.com/in/rjnferreira/) (with Marta Guimarães (Neuraspace), 2022 - )
-* [Diogo Lavado](https://www.linkedin.com/in/diogo-mateus-lavado-466a51159/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2022 - )
 * [Francisco M. Caldas](https://frncaldas.github.io/) (ESA-PT Space PhD Grantee, 2022 - )
-* Bárbara Tavares (with [Manuel Marques](http://users.isr.ist.utl.pt/~manuel/) 2022 - )
-* Bruno Rodrigues (with [João Leite](https://userweb.fct.unl.pt//~jleite/), 2023 - )
 * Marta Guimarães (with [Chiara Manfletti](https://www.professoren.tum.de/en/manfletti-chiara) and Neuraspace, 2023 - )
-* Frederico Vicente (with [Dusan Jakovetic](https://scholar.google.com/citations?user=_93Oh_QAAAAJ), 2023 - )
 
 
 Current MSc Students

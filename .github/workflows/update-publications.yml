@@ -28,7 +28,7 @@ jobs:
         run: python -m pip install -r requirements-publications.txt
 
       - name: Update BibTeX from ORCID, OpenAlex, and OpenReview
-        run: python scripts/update_publications_bib.py --verbose --openreview-profile "~Claudia_Soares1"
+        run: python scripts/update_publications_bib.py --verbose --openreview-profile "~Claudia_Soares1" --no-generated-bib
 
       - name: Regenerate publication pages
         run: python pubsFromBib.py

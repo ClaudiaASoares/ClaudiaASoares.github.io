@@ -10,7 +10,7 @@ The site uses `pubs.bib` as the source for generated publication pages. To fetch
 python scripts/update_publications_bib.py
 ```
 
-By default, the updater reads the ORCID iD from `_config.yml`, scans the OpenReview profile `~Claudia_Soares1` for accepted public venue records, writes a generated metadata snapshot to `generated_pubs.bib`, and appends only missing records to `pubs.bib`. Existing hand-curated BibTeX entries are preserved to avoid large formatting-only diffs.
+By default, the updater reads the ORCID iD from `_config.yml`, scans the OpenReview profile `~Claudia_Soares1` for accepted public venue records, writes a local generated metadata snapshot to `generated_pubs.bib`, and appends only missing records to `pubs.bib`. Existing hand-curated BibTeX entries are preserved to avoid large formatting-only diffs. The generated snapshot is ignored by git, and the GitHub Actions workflow runs with `--no-generated-bib` so no-change metadata refreshes do not open pull requests.
 
 Preprints such as arXiv, CoRR, bioRxiv, medRxiv, SSRN, and generic preprint records are not added as standalone publications. When a preprint has the same title as a published record, the preprint URL is kept as a `preprinturl` link on the published record. Abstracts are copied to the generated publication page when they are available from BibTeX, OpenAlex, or OpenReview metadata.
 
@@ -21,5 +21,6 @@ cd markdown_generator
 python pubsFromBib.py
 ```
 
-The GitHub Actions workflow in `.github/workflows/update-publications.yml` runs the same process weekly and opens a pull request when generated files change.
+`pubsFromBib.py` deduplicates publication records before writing markdown. Records with the same DOI or normalized title are treated as one publication; the best record supplies the canonical date, URL, and BibTeX key, while missing abstracts, keywords, and other fields can be merged from duplicate records. Stale duplicate markdown files with the same normalized title are removed during generation.
 
+The GitHub Actions workflow in `.github/workflows/update-publications.yml` runs the same process weekly and opens a pull request when generated files change.

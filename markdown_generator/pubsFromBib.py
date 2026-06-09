@@ -7,10 +7,11 @@ Run this script from the `markdown_generator` directory:
 
     python pubsFromBib.py
 
-It reads `pubs.bib` and writes one Markdown file per usable entry into
-`../_publications`. Preprint entries are not rendered as standalone pages; when
-their title matches a published entry, their URL is linked from the published
-page instead.
+It reads `pubs.bib` and writes one Markdown file per usable publication into
+`../_publications`. Duplicate BibTeX records are collapsed by DOI and title,
+with missing metadata merged into the selected record. Preprint entries are not
+rendered as standalone pages; when their title matches a published entry, their
+URL is linked from the published page instead.
 """
 
 from __future__ import annotations
@@ -50,7 +51,6 @@ ABSTRACT_FIELDS = (
     "abstract",
     "description",
     "summary",
-    "note",
 )
 
 PREPRINT_TERMS = (
@@ -152,6 +152,17 @@ def normalize_title(text: Optional[str]) -> Optional[str]:
     title = re.sub(r"[^a-z0-9]+", " ", title)
     title = re.sub(r"\s+", " ", title).strip()
     return title or None
+
+
+def normalize_doi(text: Optional[str]) -> Optional[str]:
+    doi = clean_bibtex_text(text).lower()
+    doi = re.sub(r"^https?://(?:dx\.)?doi\.org/", "", doi, flags=re.IGNORECASE)
+    doi = re.sub(r"^doi:\s*", "", doi, flags=re.IGNORECASE)
+    doi = doi.strip().strip("<>")
+    doi = re.sub(r"[\s.,;)\]]+$", "", doi)
+    if not doi.startswith("10."):
+        return None
+    return doi
 
 
 def month_number(month: Optional[str]) -> str:
@@ -294,6 +305,107 @@ def is_preprint_entry(entry: Entry) -> bool:
     return False
 
 
+def entry_identities(entry: Entry) -> set[tuple[str, str]]:
+    identities: set[tuple[str, str]] = set()
+    if doi := normalize_doi(entry.fields.get("doi")):
+        identities.add(("doi", doi))
+    if title := normalize_title(entry.fields.get("title")):
+        identities.add(("title", title))
+    return identities
+
+
+def entry_quality_score(entry: Entry) -> int:
+    fields = entry.fields
+    score = 0
+    if normalize_doi(fields.get("doi")):
+        score += 30
+    if url_for_entry(fields):
+        score += 8
+    if abstract_for_entry(fields):
+        score += 8
+    if clean_bibtex_text(fields.get("month")):
+        score += 10
+    if clean_bibtex_text(fields.get("day")):
+        score += 3
+    for field in ("pages", "volume", "number"):
+        if clean_bibtex_text(fields.get(field)):
+            score += 3
+    for field in ("publisher", "issn", "isbn", "keywords"):
+        if clean_bibtex_text(fields.get(field)):
+            score += 1
+    return score
+
+
+def clone_entry(entry: Entry) -> Entry:
+    return Entry(
+        entry.type,
+        fields=dict(entry.fields),
+        persons={role: list(people) for role, people in entry.persons.items()},
+    )
+
+
+def merge_missing_metadata(target: Entry, source: Entry) -> None:
+    for field, value in source.fields.items():
+        if field not in target.fields or not clean_bibtex_text(target.fields.get(field)):
+            target.fields[field] = value
+    for role, people in source.persons.items():
+        if role not in target.persons or not target.persons[role]:
+            target.persons[role] = list(people)
+
+
+def duplicate_groups(
+    entries: list[tuple[str, Entry]],
+) -> list[list[tuple[str, Entry]]]:
+    parent = {key: key for key, _entry in entries}
+    by_identity: dict[tuple[str, str], str] = {}
+
+    def find(key: str) -> str:
+        while parent[key] != key:
+            parent[key] = parent[parent[key]]
+            key = parent[key]
+        return key
+
+    def union(left: str, right: str) -> None:
+        left_root = find(left)
+        right_root = find(right)
+        if left_root != right_root:
+            parent[right_root] = left_root
+
+    for key, entry in entries:
+        for identity in entry_identities(entry):
+            if identity in by_identity:
+                union(by_identity[identity], key)
+            else:
+                by_identity[identity] = key
+
+    grouped: dict[str, list[tuple[str, Entry]]] = {}
+    for key, entry in entries:
+        grouped.setdefault(find(key), []).append((key, entry))
+    return list(grouped.values())
+
+
+def dedupe_publication_entries(
+    entries: list[tuple[str, Entry]],
+) -> list[tuple[str, Entry, list[str]]]:
+    deduped: list[tuple[str, Entry, list[str]]] = []
+    for group in duplicate_groups(entries):
+        best_key, best_entry = group[0]
+        best_score = entry_quality_score(best_entry)
+        for key, entry in group[1:]:
+            score = entry_quality_score(entry)
+            if score > best_score:
+                best_key, best_entry, best_score = key, entry, score
+
+        merged = clone_entry(best_entry)
+        for key, entry in group:
+            if key != best_key:
+                merge_missing_metadata(merged, entry)
+
+        duplicate_keys = [key for key, _entry in group if key != best_key]
+        deduped.append((best_key, merged, duplicate_keys))
+    return deduped
+
+
 def bibtex_for_entry(key: str, entry: Entry) -> str:
     writer = bibtex_output.Writer()
     data = BibliographyData(entries={key: entry})
@@ -306,10 +418,31 @@ def slug_for_title(title: str) -> str:
     return re.sub(r"-+", "-", url_slug).strip("-") or "publication"
 
 
+def preferred_existing_filename(
+    normalized_title: Optional[str],
+    default_filename: str,
+    existing_files: Optional[dict[str, list[str]]],
+) -> str:
+    if not normalized_title or not existing_files:
+        return default_filename
+    candidates = existing_files.get(normalized_title, [])
+    if default_filename in candidates:
+        return default_filename
+    for candidate in candidates:
+        if candidate.casefold() == default_filename.casefold():
+            return candidate
+    default_date = default_filename[:10]
+    for candidate in candidates:
+        if candidate.startswith(default_date):
+            return candidate
+    return default_filename
+
+
 def markdown_for_entry(
     bib_id: str,
     entry: Entry,
     preprint_entry: Optional[Entry] = None,
+    existing_files: Optional[dict[str, list[str]]] = None,
 ) -> Optional[tuple[str, str]]:
     fields = entry.fields
     title = clean_bibtex_text(fields.get("title"))
@@ -325,6 +458,12 @@ def markdown_for_entry(
     url_slug = slug_for_title(title)
     html_filename = f"{pub_date}-{url_slug}"
     md_filename = os.path.basename(f"{html_filename}.md")
+    md_filename = preferred_existing_filename(
+        normalize_title(title),
+        md_filename,
+        existing_files,
+    )
+    html_filename = os.path.splitext(md_filename)[0]
     paper_url = url_for_entry(fields)
     abstract = abstract_for_entry(fields)
     if preprint_entry and not abstract:
@@ -367,25 +506,78 @@ def markdown_for_entry(
     return md_filename, md
 
 
+def markdown_title(path: str) -> Optional[str]:
+    try:
+        with open(path, encoding="utf-8") as file:
+            text = file.read()
+    except OSError:
+        return None
+    match = re.search(r'^\s*title:\s*["\']?(.*?)["\']?\s*$', text, re.MULTILINE)
+    if not match:
+        return None
+    return clean_bibtex_text(match.group(1))
+
+
+def existing_markdown_files_by_title() -> dict[str, list[str]]:
+    existing: dict[str, list[str]] = {}
+    for filename in os.listdir(OUTPUT_DIR):
+        if not filename.endswith(".md"):
+            continue
+        path = os.path.join(OUTPUT_DIR, filename)
+        title = normalize_title(markdown_title(path))
+        if title:
+            existing.setdefault(title, []).append(filename)
+    return existing
+
+
+def remove_stale_duplicate_pages(
+    desired_files: set[str],
+    rendered_titles: set[str],
+) -> int:
+    removed = 0
+    for filename in os.listdir(OUTPUT_DIR):
+        if not filename.endswith(".md") or filename in desired_files:
+            continue
+        path = os.path.join(OUTPUT_DIR, filename)
+        title = normalize_title(markdown_title(path))
+        if not title or title not in rendered_titles:
+            continue
+        os.remove(path)
+        removed += 1
+        print(f"REMOVED STALE DUPLICATE {filename}")
+    return removed
+
+
 def main() -> int:
     parser = bibtex.Parser()
     bibdata = parser.parse_file(PUBS_FILE)
     os.makedirs(OUTPUT_DIR, exist_ok=True)
 
     preprints_by_title: dict[str, Entry] = {}
-    published_titles: set[str] = set()
-    for entry in bibdata.entries.values():
+    publication_entries: list[tuple[str, Entry]] = []
+    for bib_id, entry in bibdata.entries.items():
         normalized_title = normalize_title(entry.fields.get("title"))
         if not normalized_title:
             continue
         if is_preprint_entry(entry):
             preprints_by_title.setdefault(normalized_title, entry)
         else:
-            published_titles.add(normalized_title)
+            publication_entries.append((bib_id, entry))
+
+    deduped_entries = dedupe_publication_entries(publication_entries)
+    published_titles = {
+        normalized_title
+        for _bib_id, entry, _duplicate_keys in deduped_entries
+        if (normalized_title := normalize_title(entry.fields.get("title")))
+    }
+    existing_files = existing_markdown_files_by_title()
 
     written = 0
     skipped = 0
     skipped_preprints = 0
+    deduped = 0
+    desired_files: set[str] = set()
+    rendered_titles: set[str] = set()
     for bib_id, entry in bibdata.entries.items():
         normalized_title = normalize_title(entry.fields.get("title"))
         if is_preprint_entry(entry):
@@ -397,10 +589,10 @@ def main() -> int:
             skipped_preprints += 1
             continue
 
-        preprint_entry = (
-            preprints_by_title.get(normalized_title) if normalized_title else None
-        )
-        rendered = markdown_for_entry(bib_id, entry, preprint_entry)
+    for bib_id, entry, duplicate_keys in deduped_entries:
+        normalized_title = normalize_title(entry.fields.get("title"))
+        preprint_entry = preprints_by_title.get(normalized_title) if normalized_title else None
+        rendered = markdown_for_entry(bib_id, entry, preprint_entry, existing_files)
         if not rendered:
             title = clean_bibtex_text(entry.fields.get("title")) or bib_id
             print(f'WARNING Skipping entry with missing title or year: "{title}"')
@@ -410,14 +602,27 @@ def main() -> int:
         md_filename, md = rendered
         with open(os.path.join(OUTPUT_DIR, md_filename), "w", encoding="utf-8") as file:
             file.write(md)
+        desired_files.add(md_filename)
+        if normalized_title:
+            rendered_titles.add(normalized_title)
         short_title = clean_bibtex_text(entry.fields.get("title"))[:60]
+        if duplicate_keys:
+            print(
+                f"INFO Deduplicated {bib_id}: skipped duplicate BibTeX keys "
+                f"{', '.join(duplicate_keys)}"
+            )
+            deduped += len(duplicate_keys)
         print(f'SUCCESSFULLY PARSED {bib_id}: "{short_title}"')
         written += 1
+
+    removed_stale = remove_stale_duplicate_pages(desired_files, rendered_titles)
 
     print(
         "Finished publication generation: "
         f"{written} written, {skipped} skipped, "
-        f"{skipped_preprints} preprints skipped or linked."
+        f"{skipped_preprints} preprints skipped or linked, "
+        f"{deduped} duplicate BibTeX records collapsed, "
+        f"{removed_stale} stale duplicate pages removed."
     )
     return 0
 

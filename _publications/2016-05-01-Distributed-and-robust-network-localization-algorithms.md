@@ -11,7 +11,7 @@ citation: 'Claudia Soares, "Distributed and robust network localization algorith
 
 Bibtex:
 
-<pre><code>@PhdThesis{Soares2016,
+<pre><code>@phdthesis{Soares2016,
     author = &quot;Soares, Claudia&quot;,
     title = &quot;Distributed and robust network localization algorithms&quot;,
     school = &quot;Instituto Superior T\&#x27;{e}cnico Universidade de Lisboa&quot;,

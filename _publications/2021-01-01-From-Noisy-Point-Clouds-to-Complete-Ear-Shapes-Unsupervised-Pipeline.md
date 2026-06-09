@@ -2,21 +2,29 @@
 title: "From Noisy Point Clouds to Complete Ear Shapes: Unsupervised Pipeline"
 collection: publications
 permalink: /publication/2021-01-01-From-Noisy-Point-Clouds-to-Complete-Ear-Shapes-Unsupervised-Pipeline
+excerpt: 'Project E!11439'
 date: 2021-01-01
 venue: 'IEEE Access'
-paperurl: 'https://doi.org/10.1109/ACCESS.2021.3111811'
+paperurl: 'http://dx.doi.org/10.1109/access.2021.3111811'
 citation: 'Filipa Valdeira, Ricardo Ferreira, Alessandra Micheletti, Claudia Soares, "From Noisy Point Clouds to Complete Ear Shapes: Unsupervised Pipeline." IEEE Access, 2021.'
 ---
-[Access paper here](https://doi.org/10.1109/ACCESS.2021.3111811){:target="_blank"}
+
+Project E!11439
+
+[Access paper here](http://dx.doi.org/10.1109/access.2021.3111811){:target="_blank"}
 
 Bibtex:
 
-<pre><code>@ARTICLE{9534754Valdeira2020RANSIP,
+<pre><code>@article{Valdeira_2021,
     author = &quot;Valdeira, Filipa and Ferreira, Ricardo and Micheletti, Alessandra and Soares, Claudia&quot;,
-    journal = &quot;IEEE Access&quot;,
     title = &quot;From Noisy Point Clouds to Complete Ear Shapes: Unsupervised Pipeline&quot;,
-    year = &quot;2021&quot;,
     volume = &quot;9&quot;,
+    ISSN = &quot;2169-3536&quot;,
+    url = &quot;http://dx.doi.org/10.1109/access.2021.3111811&quot;,
+    DOI = &quot;10.1109/access.2021.3111811&quot;,
+    journal = &quot;IEEE Access&quot;,
+    publisher = &quot;Institute of Electrical and Electronics Engineers (IEEE)&quot;,
+    year = &quot;2021&quot;,
     pages = &quot;127720-127734&quot;,
-    doi = &quot;10.1109/ACCESS.2021.3111811&quot;
+    abstract = &quot;Project E!11439&quot;
 }</code></pre>

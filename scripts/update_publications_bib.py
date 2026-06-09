@@ -36,7 +36,9 @@ try:
     from pybtex.database.output import bibtex as bibtex_output
 except ImportError as exc:  # pragma: no cover - exercised by users without deps.
     raise SystemExit(
-        "Missing dependency: pybtex. Install it with `pip install pybtex`."
+        "Missing or incompatible dependency: pybtex. "
+        "Install it with `pip install -r requirements-publications.txt`. "
+        f"Original import error: {exc}"
     ) from exc
 
 

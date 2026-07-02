@@ -87,6 +87,8 @@ Teaching
   
 Service and leadership
 ======
+* Member of the Scientific Committee of SPAICE 2026 organized by ESA
+* AC to UAI 2026
 * Member of the Scientific Committee of the Master program on Big Data Analysis and Engineering
 * Associated Editor of the Mathematics in Industry journal
 

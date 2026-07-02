@@ -1,16 +1,10 @@
 # Add or reorder selected papers here. The homepage sorts by date and shows the newest items first.
 
-- date: 2026-01-01
+- date: 2026-06-01
   title: "CLASP: Online learning algorithms for Convex Losses And Squared Penalties"
-  venue: "Proceedings of the 43rd International Conference on Machine Learning, 2026"
+  venue: "ICML 2026"
   description: "Online learning algorithms for convex losses and squared penalties."
   url: "/publication/2026-01-01-CLASP-Online-learning-algorithms-for-Convex-Losses-And-Squared-Penalties"
-
-- date: 2026-01-01
-  title: "A Systematic Evaluation of Retrieval-Augmented Generation and Language Models for Space Operations"
-  venue: "AI4Space, 2026"
-  description: "A systematic evaluation of retrieval-augmented generation pipelines for space operations."
-  url: "/publication/2026-01-01-A-Systematic-Evaluation-of-Retrieval-Augmented-Generation-and-Language-Models-for-Space-Operations"
 
 - date: 2026-01-01
   title: "A Multi-Token Coordinate Descent Method for Semi-Decentralized Vertical Federated Learning"
@@ -23,3 +17,10 @@
   venue: "Computer Vision and Image Understanding, 2025"
   description: "Interpretable, low-resource 3D pole detection with geometric priors."
   url: "/publication/2025-12-01-SCENE-Net-Geometric-induction-for-interpretable-and-low-resource-3D-pole-detection-with-Group-Equivariant-Non-Expansive-Operators"
+
+- date: 2025-12-01
+  title: OrbitZoo: Real Orbital Systems Challenges for Reinforcement Learning
+  venue: "NeurIPS 2025"
+  description: "A benchmark for reinforcement learning in real orbital systems."
+  url: "/publication/2025-01-01-OrbitZoo-Real-Orbital-Systems-Challenges-for-Reinforcement-Learning"
+

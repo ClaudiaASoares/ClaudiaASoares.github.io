@@ -1,0 +1,26 @@
+{% assign news_limit = include.limit | default: 5 %}
+{% assign news_title = include.title | default: "News" %}
+{% assign news_items = site.data.news | sort: "date" | reverse %}
+
+{% if news_items.size > 0 %}
+<section class="news-list" aria-labelledby="news-heading">
+  <h2 id="news-heading">{{ news_title }}</h2>
+  <ul class="news-list__items">
+    {% for item in news_items limit: news_limit %}
+      <li class="news-list__item">
+        <time class="news-list__date" datetime="{{ item.date | date: '%Y-%m-%d' }}">{{ item.date | date: "%B %-d, %Y" }}</time>
+        <div class="news-list__body">
+          {% if item.url %}
+            <a class="news-list__title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% else %}
+            <span class="news-list__title">{{ item.title }}</span>
+          {% endif %}
+          {% if item.description %}
+            <p>{{ item.description }}</p>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

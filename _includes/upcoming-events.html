@@ -1,0 +1,27 @@
+{% assign events = site.data.upcoming_events | sort: "date" %}
+
+{% if events.size > 0 %}
+<section class="homepage-list" aria-labelledby="upcoming-events-heading">
+  <h2 id="upcoming-events-heading">Some Upcoming events</h2>
+  <ul class="homepage-list__items">
+    {% for event in events %}
+      <li class="homepage-list__item">
+        <time class="homepage-list__date" datetime="{{ event.date | date: '%Y-%m-%d' }}">{{ event.date | date: "%B %-d, %Y" }}</time>
+        <div class="homepage-list__body">
+          {% if event.url %}
+            <a class="homepage-list__title" href="{{ event.url }}">{{ event.title }}</a>
+          {% else %}
+            <span class="homepage-list__title">{{ event.title }}</span>
+          {% endif %}
+          {% if event.location %}
+            <div class="homepage-list__meta">{{ event.location }}</div>
+          {% endif %}
+          {% if event.description %}
+            <p>{{ event.description }}</p>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

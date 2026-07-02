@@ -13,4 +13,6 @@ I am a researcher at [NOVA LINCS](https://nova-lincs.di.fct.unl.pt/) and an Assi
 
 My Erdös number is 4.
 
-{% include news.html limit=4 %}
+{% include selected-recent-papers.html limit=4 %}
+
+{% include upcoming-events.html %}

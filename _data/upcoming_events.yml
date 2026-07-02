@@ -1,0 +1,9 @@
+# Replace [] with entries when there are events to show.
+# Example:
+# - date: 2026-09-01
+#   title: "Invited talk"
+#   location: "Conference or institution"
+#   description: "Short optional description."
+#   url: "https://example.com"
+
+[]

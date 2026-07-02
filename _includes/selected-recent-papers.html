@@ -1,0 +1,28 @@
+{% assign papers_limit = include.limit | default: 4 %}
+{% assign papers = site.data.selected_recent_papers | sort: "date" | reverse %}
+
+{% if papers.size > 0 %}
+<section class="homepage-list" aria-labelledby="selected-recent-papers-heading">
+  <h2 id="selected-recent-papers-heading">Selected Recent Papers</h2>
+  <ul class="homepage-list__items">
+    {% for paper in papers limit: papers_limit %}
+      <li class="homepage-list__item">
+        <time class="homepage-list__date" datetime="{{ paper.date | date: '%Y-%m-%d' }}">{{ paper.date | date: "%Y" }}</time>
+        <div class="homepage-list__body">
+          {% if paper.url %}
+            <a class="homepage-list__title" href="{{ paper.url | relative_url }}">{{ paper.title }}</a>
+          {% else %}
+            <span class="homepage-list__title">{{ paper.title }}</span>
+          {% endif %}
+          {% if paper.venue %}
+            <div class="homepage-list__meta">{{ paper.venue }}</div>
+          {% endif %}
+          {% if paper.description %}
+            <p>{{ paper.description }}</p>
+          {% endif %}
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}

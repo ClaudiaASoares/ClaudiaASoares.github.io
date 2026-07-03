@@ -34,7 +34,7 @@ PhD Graduates
 
 PhD Students
 ------
-* [Ricardo Ferreira](https://www.linkedin.com/in/rjnferreira/) (with Marta Guimarães and Neuraspace, 2022 - )
+* [Ricardo Ferreira](https://www.linkedin.com/in/rjnferreira/) ( 2022 - )
 * [Francisco M. Caldas](https://frncaldas.github.io/) (ESA-PT Space PhD Grantee, 2022 - )
 * Marta Guimarães (with [Chiara Manfletti](https://www.professoren.tum.de/en/manfletti-chiara) and Neuraspace, 2023 - )
 * Frederico Metelo (2025 - )

@@ -10,6 +10,7 @@ Across these projects, I combine graph neural networks, network science, time-se
 
 ## Publications in this topic
 
+-[Dissecting medical referrals in health services: role of physician professional networks](https://link.springer.com/article/10.1186/s12913-026-14099-9), BMC Health Services Research, 2026.
 - [C-PATH: Conversational Patient Assistance and Triage in Healthcare System](/publication/2025-07-01-C-PATH-Conversational-Patient-Assistance-and-Triage-in-Healthcare-System), IEEE International Conference on Digital Health, 2025.
 - [Causal Inference Explanations for Graph Neural Networks](/publication/2024-01-01-Causal-Inference-Explanations-for-Graph-Neural-Networks), Causal@UAI2024, 2024.
 - [A Temporal Fusion Transformer for Long-Term Explainable Prediction of Emergency Department Overcrowding](/publication/2023-01-01-A-Temporal-Fusion-Transformer-for-Long-Term-Explainable-Prediction-of-Emergency-Department-Overcrowding), ECML PKDD, 2023.

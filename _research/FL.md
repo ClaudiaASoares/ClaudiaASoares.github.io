@@ -12,4 +12,5 @@ This line of work connects optimization theory with practical constraints: compr
 
 - [A Multi-Token Coordinate Descent Method for Semi-Decentralized Vertical Federated Learning](/publication/2026-01-01-A-Multi-Token-Coordinate-Descent-Method-for-Semi-Decentralized-Vertical-Federated-Learning), IEEE Transactions on Signal Processing, 2026.
 - [Communication-Efficient Vertical Federated Learning via Compressed Error Feedback](/publication/2025-01-01-Communication-Efficient-Vertical-Federated-Learning-via-Compressed-Error-Feedback), IEEE Transactions on Signal Processing, 2025.
+- [PeersimGym: An Environment for Solving the Task Offloading Problem with Reinforcement Learning](/publication/2024-01-01-PeersimGym-An-Environment-for-Solving-the-Task-Offloading-Problem-with-Reinforcement-Learning), ECML 2024
 - [Fast distributed MAP inference for large-scale graphical models](/publication/2019-07-01-Fast-distributed-MAP-inference-for-large-scale-graphical-models), IEEE EUROCON 2019.

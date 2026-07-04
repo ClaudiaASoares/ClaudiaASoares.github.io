@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "Trustworthy ML @ NOVA"
-excerpt: "Claudia Soares"
+title: "Claudia Soares"
+excerpt: "Trustworthy ML @ NOVA"
 author_profile: true
 redirect_from: 
   - /about/

@@ -20,7 +20,7 @@ Students and lab members
 If you would like to join our group as a Postdoctoral Researcher, Ph.D. student, M.Sc., or B.S. student, [see this page](/students/).
 
 
-Visiting students and assistant researchers
+Visiting students and assistant researchers at my group
 ------
 * [Filipa Valdeira](https://filva.github.io/) (Researcher, 2023)
 * Pasit Khatinghul (Erausmus+ MSc student U. Bologna, Italy)

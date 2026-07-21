@@ -48,12 +48,12 @@ Current MSc Students
 ------
 * Luís Camponês
 * José Nunes
-* Rogério Soares
 * Miguel Pimenta
 
 
 Current MSc Students in co-supervision
 ------
+* Rogério Soares (with Frederico Metelo)
 * Diogo Domingos (AFA)
 * Guilherme Simões (with Carolina Filipe)
 * João Norberto (with Ricardo Ferreira)

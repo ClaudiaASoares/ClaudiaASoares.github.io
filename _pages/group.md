@@ -53,7 +53,7 @@ Current MSc Students
 
 Current MSc Students in co-supervision
 ------
-* Rogério Soares (with Frederico Metelo)
+* Rogério Soares (with Frederico Metelo, Ana Ribeiro, Carla Ferreira)
 * Diogo Domingos (AFA)
 * Guilherme Simões (with Carolina Filipe)
 * João Norberto (with Ricardo Ferreira)

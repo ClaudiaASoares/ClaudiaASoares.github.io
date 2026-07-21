@@ -71,18 +71,18 @@ MSc Alumni
 * Ruben Belo (with Marta Guimarães and Neuraspace)
 * Francisco Freitas (with Pedro Valdeira)
 * Manuel Pereira (with Alex Ecker, University of Göttingen, Germany)
-* Sahil Kumar
+* Sahil Kumar (with Francisco Caldas)
 * Katarina Dyreby
 * Alexandre Oliveira
 * Pedro Estróia
-* Alexandre Dorotea
-* António Sobreiro
+* Alexandre Dorotea (with Filipa Valdeira)
+* António Sobreiro (with Filipa Valdeira)
 * João Lopes (with Filipa Valdeira)
 * Ricardo Pereira (with Filipa Valdeira)
-* [Frederico Metelo](https://github.com/FredericoMetelo) (NOVA, PhD Student)
+* [Frederico Metelo](https://github.com/FredericoMetelo) (with Stevo Rackovic, now at NOVA, PhD Student)
 * [Teresa Sotto-Mayor](https://pt.linkedin.com/in/teresa-sotto-mayor-7445a81b9?trk=public_profile_samename-profile)(Novo Nordisk, Denmark)
-* [Sofia Morgado](https://www.linkedin.com/in/sofia-begonha-morgado-b1411b234/) (NOVA + FML PhD Student)
-* [Valeria Danalachi](https://www.linkedin.com/in/valeria-danalachi-34a599208/) (Deloitte, Portugal)
+* [Sofia Morgado](https://www.linkedin.com/in/sofia-begonha-morgado-b1411b234/) (with Ludwig Kripahl, now NOVA + FML PhD Student)
+* [Valeria Danalachi](https://www.linkedin.com/in/valeria-danalachi-34a599208/) (with Filipa Valdeira, now at Deloitte, Portugal)
 * [Margarida Borbinha](https://www.linkedin.com/in/margarida-borbinha-528230221/) (NOS SGPS, Portugal)
 * [João Funenga](https://www.linkedin.com/in/joãofunenga/)
 * [Gonçalo Mateus](https://www.linkedin.com/in/gonçalo-mateus/) (Banco de Portugal)

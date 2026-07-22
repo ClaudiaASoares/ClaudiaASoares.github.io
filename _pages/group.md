@@ -10,7 +10,7 @@ redirect_from:
 {% include base_path %}
 
 
-Check the [TrustworthyML@NOVA](https://trustworthy-ml.super.site/) group site for more information about the amazing people that I get to collaborate with and the work we are doing.
+[//]: # Check the [TrustworthyML@NOVA](https://trustworthy-ml.super.site/) group site for more information about the amazing people that I get to collaborate with and the work we are doing.
 
 
 

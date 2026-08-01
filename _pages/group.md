@@ -12,12 +12,13 @@ redirect_from:
 
 [//]: # Check the [TrustworthyML@NOVA](https://trustworthy-ml.super.site/) group site for more information about the amazing people that I get to collaborate with and the work we are doing.
 
+Here I list some of the amazing people that I get to collaborate with.
 
 
 Students and lab members
 ======
 
-If you would like to join our group as a Postdoctoral Researcher, Ph.D. student, M.Sc., or B.S. student, [see this page](/students/).
+If you would like to join our group as a Postdoctoral Researcher, Ph.D. student, M.Sc., or B.Sc. student, [see this page](/students/).
 
 
 Visiting students and assistant researchers at my group

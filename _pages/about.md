@@ -13,6 +13,10 @@ I am a researcher at [NOVA LINCS](https://nova-lincs.di.fct.unl.pt/) and an Assi
 
 My Erdös number is 4.
 
+
+If you would like to join our group as a Postdoctoral Researcher, Ph.D. student, M.Sc., or B.Sc. student, [see this page](/students/).
+
+
 {% include selected-recent-papers.html limit=4 %}
 
 {% include upcoming-events.html %}

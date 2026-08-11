@@ -21,19 +21,8 @@ Students and lab members
 If you would like to join our group as a Postdoctoral Researcher, Ph.D. student, M.Sc., or B.Sc. student, [see this page](/students/).
 
 
-Visiting students and assistant researchers at my group
-------
-* [Filipa Valdeira](https://filva.github.io/) (Researcher, 2023)
-* Pasit Khatinghul (Erausmus+ MSc student U. Bologna, Italy)
 
-PhD Graduates
-------
-* [Filipa Valdeira](https://filva.github.io/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2019 - 2022)
-* [Stevo Rackovic](https://stevorackovic.github.io/) (with [Dusan Jakovetic](https://people.dmi.uns.ac.rs/~dusan.jakovetic/), 2019 - 2025)
-* [Pedro Valdeira](https://valdeira.github.io/) (CMU-Portugal with [Joao Xavier](http://users.isr.tecnico.ulisboa.pt/~jxavier/) and  [Yuejie Chi](https://yuejiechi.github.io/) 2020 - 2025)
-* [Diogo Lavado](https://www.linkedin.com/in/diogo-mateus-lavado-466a51159/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2022 - 2026)
-
-PhD Students
+Current PhD Students
 ------
 * [Ricardo Ferreira](https://www.linkedin.com/in/rjnferreira/) ( 2022 - )
 * [Francisco M. Caldas](https://frncaldas.github.io/) (ESA-PT Space PhD Grantee, 2022 - )
@@ -63,12 +52,32 @@ Current MSc Students in co-supervision
 * Rodrigo Pedro (with Francisco Caldas)
 * João Silva (with Katarina Dyreby)
 * Duarte Vinha (with Filipa Valdeira)
-* Diogo Silva (with Filipa Valdeira)
 * Francisco Silva (with Francisco Caldas)
+
+
+
+Visiting students and assistant researchers at my group
+------
+* [Filipa Valdeira](https://filva.github.io/) (Researcher, 2023)
+* Pasit Khatinghul (Erausmus+ MSc student U. Bologna, Italy)
+
+
+
+PhD Graduates
+------
+* [Filipa Valdeira](https://filva.github.io/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2019 - 2022)
+* [Stevo Rackovic](https://stevorackovic.github.io/) (with [Dusan Jakovetic](https://people.dmi.uns.ac.rs/~dusan.jakovetic/), 2019 - 2025)
+* [Pedro Valdeira](https://valdeira.github.io/) (CMU-Portugal with [Joao Xavier](http://users.isr.tecnico.ulisboa.pt/~jxavier/) and  [Yuejie Chi](https://yuejiechi.github.io/) 2020 - 2025)
+* [Diogo Lavado](https://www.linkedin.com/in/diogo-mateus-lavado-466a51159/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2022 - 2026)
 
 
 MSc Alumni
 ------
+
+* Alexandre Dorotea (with Filipa Valdeira)
+* António Sobreiro (with Filipa Valdeira)
+* João Lopes (with Filipa Valdeira)
+* Ricardo Pereira (with Filipa Valdeira)
 * Ruben Belo (with Marta Guimarães and Neuraspace)
 * Francisco Freitas (with Pedro Valdeira)
 * Manuel Pereira (with Alex Ecker, University of Göttingen, Germany)
@@ -76,10 +85,6 @@ MSc Alumni
 * Katarina Dyreby
 * Alexandre Oliveira
 * Pedro Estróia
-* Alexandre Dorotea (with Filipa Valdeira)
-* António Sobreiro (with Filipa Valdeira)
-* João Lopes (with Filipa Valdeira)
-* Ricardo Pereira (with Filipa Valdeira)
 * [Frederico Metelo](https://github.com/FredericoMetelo) (with Stevo Rackovic, now at NOVA, PhD Student)
 * [Teresa Sotto-Mayor](https://pt.linkedin.com/in/teresa-sotto-mayor-7445a81b9?trk=public_profile_samename-profile)(Novo Nordisk, Denmark)
 * [Sofia Morgado](https://www.linkedin.com/in/sofia-begonha-morgado-b1411b234/) (with Ludwig Kripahl, now NOVA + FML PhD Student)

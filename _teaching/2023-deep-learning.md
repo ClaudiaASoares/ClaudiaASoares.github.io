@@ -4,7 +4,7 @@ collection: teaching
 type: "MSc course"
 permalink: /teaching/2023-deep-learning
 venue: "NOVA School of Science and Technology, Department of Computer Science"
-date: 2023-03-01
+date: since 2023
 location: "Caparica, Portugal"
 ---
 

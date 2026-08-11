@@ -1109,13 +1109,20 @@ def main() -> int:
         candidates.extend(openalex_candidates)
     openreview_profile = normalize_openreview_profile(args.openreview_profile)
     if openreview_profile and not args.no_openreview:
-        openreview_candidates = fetch_openreview_candidates(
-            openreview_profile,
-            args.timeout,
-            args.include_openreview_imports,
-        )
-        stats.openreview_candidates = len(openreview_candidates)
-        candidates.extend(openreview_candidates)
+        try:
+            openreview_candidates = fetch_openreview_candidates(
+                openreview_profile,
+                args.timeout,
+                args.include_openreview_imports,
+            )
+        except (urllib.error.HTTPError, urllib.error.URLError) as exc:
+            print(
+                "warning: OpenReview fetch failed; "
+                f"continuing without OpenReview metadata: {exc}"
+            )
+        else:
+            stats.openreview_candidates = len(openreview_candidates)
+            candidates.extend(openreview_candidates)
 
     candidates = dedupe_candidates(candidates)
     if not candidates:

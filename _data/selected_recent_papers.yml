@@ -1,6 +1,6 @@
 # Add or reorder selected papers here. The homepage sorts by date and shows the newest items first.
 - date: 2026-09-01
-  titlee: "ASTRA: ADMM-Accelerated Topology Reconfiguration for Dynamic Satellite Constellations"
+  title: "ASTRA: ADMM-Accelerated Topology Reconfiguration for Dynamic Satellite Constellations"
   venue: "NeurIPS 2026"
   description: "A method for dynamic satellite constellation reconfiguration with regret guarantees and minimal pre-existing knowledge."
   url: "/publication/2026-09-01-ASTRA-ADMM-Accelerated-Topology-Reconfiguration-for-Dynamic-Satellite-Constellations"

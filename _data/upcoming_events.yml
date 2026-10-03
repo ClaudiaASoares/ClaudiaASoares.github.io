@@ -6,4 +6,9 @@
 #   description: "Short optional description."
 #   url: "https://example.com"
 
-[]
+- date: 21 to 23 October 2026
+  title: "SPAICE Conference. AI in and for Space"
+  location: "ESA/ESTEC, Noordwijk, The Netherlands"
+  description: "I will be chairing a session and my group will be presenting our work on AI for space applications at the SPAICE conference. We will be delighted to Connect."
+  url: "https://spaice.esa.int/2026/"
+  

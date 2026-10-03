@@ -27,6 +27,7 @@ Current PhD Students
 * [Ricardo Ferreira](https://www.linkedin.com/in/rjnferreira/) ( 2022 - )
 * [Francisco M. Caldas](https://frncaldas.github.io/) (ESA-PT Space PhD Grantee, 2022 - )
 * Marta Guimarães (with [Chiara Manfletti](https://www.professoren.tum.de/en/manfletti-chiara) and Neuraspace, 2023 - )
+* Alessandro Gambetti (with Qiwei Han)
 * Frederico Metelo (2025 - )
 * Sofia Morgado (with Filipa Valdeira, 2025 - )
 * Carolina Filipe (with Rui Ponte da Costa, 2025 - )
@@ -73,6 +74,7 @@ PhD Graduates
 
 MSc Alumni
 ------
+
 
 * Alexandre Dorotea (with Filipa Valdeira)
 * António Sobreiro (with Filipa Valdeira)

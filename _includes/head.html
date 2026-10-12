@@ -16,6 +16,13 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+{% if page.url == "/" %}
+  {% capture home_styles %}@import "theme";{% endcapture %}
+  <style>{{ home_styles | scssify }}</style>
+  <link rel="preload" href="{{ base_path }}/assets/css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ base_path }}/assets/css/main.css"></noscript>
+{% else %}
+  <link rel="stylesheet" href="{{ base_path }}/assets/css/main.css">
+{% endif %}
 
 <meta http-equiv="cleartype" content="on">

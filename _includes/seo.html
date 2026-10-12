@@ -6,12 +6,18 @@
 {% endif %}
 {% assign seo_url = seo_url | default: site.github.url %}
 
-{% if page.title %}
+{% if page.seo_title %}
+  {% assign seo_title = page.seo_title %}
+{% elsif page.title %}
   {% assign seo_title = page.title | append: " " | append: site.title_separator | append: " " | append: site.title %}
 {% endif %}
 
 {% if seo_title %}
-  {% assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once %}
+  {% if page.seo_title %}
+    {% assign seo_title = seo_title | strip_html | strip_newlines | escape_once %}
+  {% else %}
+    {% assign seo_title = seo_title | markdownify | strip_html | strip_newlines | escape_once %}
+  {% endif %}
 {% endif %}
 
 {% if site.url %}
@@ -116,13 +122,33 @@
 {% if site.social %}
   <script type="application/ld+json">
     {
-      "@context" : "http://schema.org",
-      "@type" : "{% if site.social.type %}{{ site.social.type }}{% else %}Person{% endif %}",
-      "name" : "{{ site.social.name | default: site.name }}",
-      "url" : {{ seo_url | jsonify }},
-      "sameAs" : {{ site.social.links | jsonify }}
+      "@context": "https://schema.org",
+      {% if page.url == "/" %}
+      "@type": "ProfilePage",
+      "@id": {{ seo_url | append: "/#profile" | jsonify }},
+      "url": {{ seo_url | append: "/" | jsonify }},
+      "mainEntity": {
+      {% endif %}
+        "@type": "Person",
+        "@id": {{ seo_url | append: "/#person" | jsonify }},
+        "name": {{ site.social.name | default: site.name | jsonify }},
+        "url": {{ seo_url | append: "/" | jsonify }},
+        "image": {{ "/images/profile-315.webp" | prepend: seo_url | jsonify }},
+        "affiliation": {
+          "@type": "Organization",
+          "name": "NOVA School of Science and Technology",
+          "url": "https://www.fct.unl.pt/en"
+        }{% if site.social.links %},
+        "sameAs": {{ site.social.links | jsonify }}{% endif %}
+      {% if page.url == "/" %}
+      }
+      {% endif %}
     }
   </script>
+{% endif %}
+
+{% if page.collection == "publications" %}
+  {% include citation-metadata.html %}
 {% endif %}
 
 {% if site.google_site_verification %}

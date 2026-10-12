@@ -1,4 +1,5 @@
 ---
+title: "AI Fights Space Debris postdoctoral position"
 description: "Information about the AI Fights Space Debris postdoctoral position at NOVA, in collaboration with Neuraspace."
 ---
 

@@ -9,7 +9,10 @@
     year = "2026",
     month = "September",
     note = "Accepted at NeurIPS 2026",
-    preprinturl = "https://arxiv.org/pdf/2609.33993"
+    preprinturl = {https://arxiv.org/abs/2609.33993},
+    abstract = {Dynamic topology reconfiguration is central to the reliability and efficiency of large satellite constellations, yet many existing approaches rely on idealized assumptions such as full constellation deployment or uniform orbital spacing. We present Adaptive Satellite Topology via Regret-Aware learning (ASTRA), a theoretically-grounded framework for dynamic satellite topology reconfiguration that builds on an online learning formulation and makes it computationally practical. ASTRA combines an ADMM-based offline solver with efficient online updates for both online gradient descent and online conditional gradient, yielding markedly cheaper constrained updates than generic optimization pipelines. On the theory side, we show that for a relevant class of entry-wise nonzero utility matrices, the objective is strongly convex, which yields logarithmic static regret for online gradient descent, and we further instantiate known dynamic-regret guarantees under inexact ADMM inner loops. Empirically, ASTRA matches or improves topology quality, presenting a good trade-off with computational time on synthetic constellations, and it remains effective on real Starlink data under partial deployment and non-uniform spacing, where idealized structural assumptions break down. These results position ASTRA as an efficient and theoretically grounded approach to topology reconfiguration in realistic Low Earth Orbit networks.},
+    abstractsource = {https://arxiv.org/abs/2609.33993},
+    abstractsourcelabel = {Author preprint abstract}
 }
 
 @misc{Norberto_2026_ASTRA_preprint,
@@ -33,7 +36,10 @@
     number = "9",
     pages = "2527--2537",
     doi = "10.2514/1.G008922",
-    url = "https://doi.org/10.2514/1.G008922"
+    url = "https://doi.org/10.2514/1.G008922",
+    abstract = {The amount of debris in orbit has increased significantly over the years. With the recent growth of interest in space exploration, conjunction assessment has become a central issue. One important metric to evaluate conjunction risk is the miss distance. However, this metric does not intrinsically take into account uncertainty distributions. Some work has been developed to consider the uncertainty associated with the position of the orbiting objects, in particular, to know if these uncertainty distributions overlap (e.g., ellipsoids when considering Gaussian distributions). This work presents two fast solutions to not only check if the ellipsoids overlap but to compute the distance between them, referred to as margin. One solution computes the margin when the best-known data from both objects can be centralized (e.g., debris/satellite conjunctions). The second solution is applied in the decentralized case when the most precise covariances cannot be shared (conjunctions of satellites owned by different operators). These methods are both accurate and fast, being able to process 15,000 conjunctions per minute with the centralized solution and approximately 490 conjunctions per minute with the distributed solution.},
+    abstractsource = {https://novaresearch.unl.pt/en/publications/satellite-safe-margin-fast-solutions-for-conjunction-analysis/},
+    abstractsourcelabel = {Published abstract source}
 }
 
 @misc{Ferreira_2024_SatelliteSafeMargin_preprint,
@@ -51,7 +57,13 @@
     title = "{CLASP}: Online learning algorithms for {C}onvex {L}osses {A}nd {S}quared {P}enalties",
     booktitle = "Proceedings of the 43rd International Conference on Machine Learning",
     year = "2026",
-    url = "https://openreview.net/forum?id=o54x4zOWuy",
+    url = {https://proceedings.mlr.press/v306/ferreira26a.html},
+    abstract = {Addressing Constrained Online Convex Optimization (COCO), we introduce CLASP (Convex Losses And Squared Penalties), a framework that minimizes cumulative loss together with squared constraint violations. We propose two variants of CLASP, CLASP-I and CLASP-F, allowing for a joint or separate handling of the static decision set and the time-varying constraints, a decoupling flexibility that affords simpler implementations when projections onto the static decision set are easy. Our theoretical analysis departs from prior work by fully leveraging the variety of cutter operators, and contraction properties such as the strongly quasi-nonexpansiveness, a proof strategy not previously applied in this setting. For convex losses, both CLASP algorithms achieve regret $O\left(T^{\max{\beta,1-\beta}}\right)$ and cumulative squared penalty $O\left(T^{{1-\beta}}\right)$ for any $\beta \in (0,1)$. Most importantly, for strongly convex problems, we provide the first logarithmic guarantees on both regret and cumulative squared penalty: In the strongly convex case, both CLASP algorithms guarantee that the regret is upper bounded by $O( \log T )$ and the cumulative squared penalty is also upper bounded by $O( \log T )$.},
+    abstractsource = {https://proceedings.mlr.press/v306/ferreira26a.html},
+    abstractsourcelabel = {Published abstract source},
+    pages = {30861--30878},
+    volume = {306},
+    publisher = {PMLR}
 }
 
 @article{Valdeira_2026,
@@ -64,7 +76,11 @@
     journal = "IEEE Transactions on Signal Processing",
     publisher = "Institute of Electrical and Electronics Engineers (IEEE)",
     year = "2026",
-    pages = "293-308"
+    pages = "293-308",
+    abstract = {Most federated learning (FL) methods use a client-server scheme, where clients communicate only with a central server. However, this scheme is prone to bandwidth bottlenecks at the server and has a single point of failure. In contrast, in a (fully) decentralized approach, clients communicate directly with each other, dispensing with the server and mitigating these issues. Yet, as the client network grows larger and sparser, the convergence of decentralized methods slows down, even failing to converge if the network is disconnected. This work addresses this gap between client-server and decentralized schemes, focusing on the vertical FL setup, where clients hold different features of the same samples. We propose multi-token coordinate descent (MTCD), a flexible semi-decentralized method for vertical FL that can exploit both client-server and client-client links. By selecting appropriate hyperparameters, MTCD recovers the client-sever and decentralized schemes as special cases. In fact, its decentralized instance is itself a novel method of independent interest. Yet, by controlling the degree of dependency on client-server links, MTCD can also explore a spectrum of schemes ranging from client-server to decentralized. We prove that, for sufficiently large batch sizes, MTCD converges at an $\mathcal{O}(1/T)$ rate for nonconvex objectives when the tokens roam across disjoint subsets of clients. To capture the aforementioned drawbacks of the client-server scheme succinctly, we model the relative impact of using client-server versus client-client links as the ratio of their "costs", which depends on the application. This allows us to demonstrate, both analytically and empirically, that by tuning the degree of dependency on the server, the semi-decentralized instances of MTCD can outperform both client-server and decentralized approaches across a range of applications.},
+    abstractsource = {https://arxiv.org/abs/2309.09977},
+    abstractsourcelabel = {Author preprint abstract},
+    preprinturl = {https://arxiv.org/abs/2309.09977}
 }
 
 @inproceedings{Belo2026a-systematic-evaluation,
@@ -91,7 +107,11 @@ Our results demonstrate that RAG pipelines can significantly enhance knowledge a
     publisher = "IEEE",
     year = "2025",
     month = "July",
-    pages = "50-57"
+    pages = "50-57",
+    abstract = {Navigating healthcare systems can be complex and overwhelming, creating barriers for patients seeking timely and appropriate medical attention. In this paper, we introduce C-PATH (Conversational Patient Assistance and Triage in Healthcare), a novel conversational AI system powered by large language models (LLMs) designed to assist patients in recognizing symptoms and recommending appropriate medical departments through natural, multi-turn dialogues. C-PATH is fine-tuned on medical knowledge, dialogue data, and clinical summaries using a multi-stage pipeline built on the LLaMA3 architecture. A core contribution of this work is a GPT-based data augmentation framework that transforms structured clinical knowledge from DDXPlus into lay-person-friendly conversations, allowing alignment with patient communication norms. We also implement a scalable conversation history management strategy to ensure long-range coherence. Evaluation with GPTScore demonstrates strong performance across dimensions such as clarity, informativeness, and recommendation accuracy. Quantitative benchmarks show that C-PATH achieves superior performance in GPT-rewritten conversational datasets, significantly outperforming domain-specific baselines. C-PATH represents a step forward in the development of user-centric, accessible, and accurate AI tools for digital health assistance and triage.},
+    abstractsource = {https://arxiv.org/abs/2506.06737},
+    abstractsourcelabel = {Author preprint abstract},
+    preprinturl = {https://arxiv.org/abs/2506.06737}
 }
 
 @article{Valdeira_2025,
@@ -120,7 +140,11 @@ Our results demonstrate that RAG pipelines can significantly enhance knowledge a
     publisher = "Institute of Electrical and Electronics Engineers (IEEE)",
     year = "2025",
     month = "Aug",
-    pages = "10784-10798"
+    pages = "10784-10798",
+    abstract = {With the increase in the number of active satellites and space debris in orbit, the problem of initial orbit determination (IOD) becomes increasingly important, demanding a high accuracy. Over the years, different approaches have been presented such as filtering methods (for example, Extended Kalman Filter), differential algebra or solving Lambert's problem. In this work, we consider a setting of three monostatic radars, where all available measurements are taken approximately at the same instant. This follows a similar setting as trilateration, a state-of-the-art approach, where each radar is able to obtain a single measurement of range and range-rate. Differently, and due to advances in Multiple-Input Multiple-Output (MIMO) radars, we assume that each location is able to obtain a larger set of range, angle and Doppler shift measurements. Thus, our method can be understood as an extension of trilateration leveraging more recent technology and incorporating additional data. We formulate the problem as a Maximum Likelihood Estimator (MLE), which for some number of observations is asymptotically unbiased and asymptotically efficient. Through numerical experiments, we demonstrate that our method attains the same accuracy as the trilateration method for the same number of measurements and offers an alternative and generalization, returning a more accurate estimation of the satellite's state vector, as the number of available measurements increases.},
+    abstractsource = {https://arxiv.org/abs/2407.15180},
+    abstractsourcelabel = {Author preprint abstract},
+    preprinturl = {https://arxiv.org/abs/2407.15180}
 }
 
 @inproceedings{Belo_2025,
@@ -133,7 +157,10 @@ Our results demonstrate that RAG pipelines can significantly enhance knowledge a
     publisher = "International Astronautical Federation (IAF)",
     year = "2025",
     pages = "144-155",
-    collection = "IAC 2025"
+    collection = "IAC 2025",
+    abstract = {The rapid expansion of the space industry has led to an increasing volume of technical documents, operational guidelines, and scientific publications. As space activities become more complex, effective decision-making and operations management require efficient processing of vast and ever-changing information sources to support new developments in the sector. Space operators must navigate regulations, guidelines, safety protocols, and mission-critical data, which makes knowledge retrieval a significant challenge. The ability to extract, synthesise, and communicate relevant information quickly is essential for ensuring safety, optimizing operations, and addressing emerging challenges in space traffic management and debris mitigation. To address these challenges, we propose a conversational agent powered by a Retrieval Augmented Generation (RAG) pipeline, leveraging Large Language Models (LLMs) and information retrieval techniques. Our system processes extensive documentation, retrieving and generating contextually relevant responses based on official reports, scientific literature, operational directives, and guidelines to provide actionable insights for space operations. Our methodology involves evaluating various retrieval strategies and embedding techniques to improve information accuracy. Furthermore, we explore different RAG configurations to optimize response generation, ensuring precise and reliable communication. To mitigate the risk of generating misinformation and harmful content, we integrate state-of-the-art techniques for conditioning LLM outputs, reinforcing safety and ethical considerations in our conversational agent’s responses. This research integrates state-of-the-art AI technologies with domain-specific space knowledge to contribute to the development of intelligent systems for space operations. Our approach aims to improve decision-making and space traffic management, and address the growing challenges posed by space debris. Ultimately, this research supports the advancement of safer and more sustainable space activities and applications, aligning with global efforts to ensure long-term space exploration.},
+    abstractsource = {https://blog.neuraspace.com/hubfs/Language-Modeling-and-Retrieval-Augmented-Generation-Integrationin-Space-Operation%20Decision-Support-Tools.pdf},
+    abstractsourcelabel = {Published abstract source}
 }
 
 @inproceedings{Lavado_2025-2,
@@ -145,7 +172,10 @@ Our results demonstrate that RAG pipelines can significantly enhance knowledge a
     publisher = "IEEE",
     year = "2025",
     month = "Feb",
-    pages = "7326-7336"
+    pages = "7326-7336",
+    abstract = {Research in 3D scene understanding, particularly in autonomous driving and indoor segmentation, has made significant strides. However, most available datasets focus on urban settings. We introduce TS40K, a 3D point cloud dataset spanning 40,000 km of electrical transmission systems in rural terrain, addressing power-grid inspections to prevent outages, damages, and fires. TS40K offers high point density and no occlusion, presenting challenges like noisy labels, diverse structures, and sensor noise causing spurious points. We evaluate state-of-the-art methods on 3D semantic segmentation and object detection, revealing limitations in power grid inspection. TS40K invites further research to tackle these challenges. Resources available in: https://github.com/dlavado/TS40K},
+    abstractsource = {https://openaccess.thecvf.com/content/WACV2025/papers/Lavado_Learning_under_Noisy_Labels_Spurious_Points_and_Diverse_Structures_TS40K_WACV_2025_paper.pdf},
+    abstractsourcelabel = {Published abstract source}
 }
 
 @inproceedings{Oliveira2025orbitzoo-real-orbital,
@@ -238,7 +268,11 @@ Our results demonstrate that RAG pipelines can significantly enhance knowledge a
     publisher = "IEEE",
     year = "2024",
     month = "Mar",
-    pages = "1-11"
+    pages = "1-11",
+    abstract = {Due to the importance of satellites for society and the exponential increase in the number of objects in orbit, it is important to accurately determine the state (e.g., position and velocity) of these Resident Space Objects (RSOs) at any time and in a timely manner. State-of-the-art methodologies for initial orbit determination consist of Kalman-type filters that process sequential data over time and return the state and associated uncertainty of the object, as is the case of the Extended Kalman Filter (EKF). However, these methodologies are dependent on a good initial guess for the state vector and usually simplify the physical dynamical model, due to the difficulty of precisely modeling perturbative forces, such as atmospheric drag and solar radiation pressure. Other approaches do not require assumptions about the dynamical system, such as the trilateration method, and require simultaneous measurements, such as three measurements of range and range-rate for the particular case of trilateration. We consider the same setting of simultaneous measurements (one-shot), resorting to time delay and Doppler shift measurements. Based on recent advancements in the problem of moving target localization for sonar multistatic systems, we are able to formulate the problem of initial orbit determination as a Weighted Least Squares. With this approach, we are able to directly obtain the state of the object (position and velocity) and the associated covariance matrix from the Fisher's Information Matrix (FIM). We demonstrate that, for small noise, our estimator is able to attain the Cramér-Rao Lower Bound accuracy, i.e., the accuracy attained by the unbiased estimator with minimum variance. We also numerically demonstrate that our estimator is able to attain better accuracy on the state estimation than the trilateration method and returns a smaller uncertainty associated with the estimation.},
+    abstractsource = {https://arxiv.org/abs/2312.13318},
+    abstractsourcelabel = {Author preprint abstract},
+    preprinturl = {https://arxiv.org/abs/2312.13318}
 }
 
 @inbook{Metelo_2024,
@@ -251,7 +285,11 @@ Our results demonstrate that RAG pipelines can significantly enhance knowledge a
     booktitle = "Machine Learning and Knowledge Discovery in Databases. Applied Data Science Track",
     publisher = "Springer Nature Switzerland",
     year = "2024",
-    pages = "38-54"
+    pages = "38-54",
+    abstract = {Task offloading, crucial for balancing computational loads across devices in networks such as the Internet of Things, poses significant optimization challenges, including minimizing latency and energy usage under strict communication and storage constraints. While traditional optimization falls short in scalability; and heuristic approaches lack in achieving optimal outcomes, Reinforcement Learning (RL) offers a promising avenue by enabling the learning of optimal offloading strategies through iterative interactions. However, the efficacy of RL hinges on access to rich datasets and custom-tailored, realistic training environments. To address this, we introduce PeersimGym, an open-source, customizable simulation environment tailored for developing and optimizing task offloading strategies within computational networks. PeersimGym supports a wide range of network topologies and computational constraints and integrates a \textit{PettingZoo}-based interface for RL agent deployment in both solo and multi-agent setups. Furthermore, we demonstrate the utility of the environment through experiments with Deep Reinforcement Learning agents, showcasing the potential of RL-based approaches to significantly enhance offloading strategies in distributed computing settings. PeersimGym thus bridges the gap between theoretical RL models and their practical applications, paving the way for advancements in efficient task offloading methodologies.},
+    abstractsource = {https://arxiv.org/abs/2403.17637},
+    abstractsourcelabel = {Author preprint abstract},
+    preprinturl = {https://arxiv.org/abs/2403.17637}
 }
 
 @inproceedings{Caldas_2024-2,
@@ -278,7 +316,10 @@ Our results demonstrate that RAG pipelines can significantly enhance knowledge a
     year = "2024",
     month = "Dec",
     pages = "1-9",
-    collection = "SA ’24"
+    collection = "SA ’24",
+    abstract = {In this paper, we present an advanced approach to solving the inverse rig problem in blendshape animation, using high-quality corrective blendshapes. Our algorithm focuses on three key areas: ensuring high data fidelity in reconstructed meshes, achieving greater sparsity in weight distributions, and facilitating smoother frame-to-frame transitions. While the incorporation of corrective terms is a known practice, our method differentiates itself by employing a unique combination of l1 norm regularization for sparsity and a temporal smoothness constraint through roughness penalty, focusing on the sum of second differences in consecutive frame weights. A significant innovation in our approach is the temporal decoupling of blendshapes, which permits simultaneous optimization across entire animation sequences. This feature sets our work apart from existing methods and contributes to a more efficient and effective solution. Our algorithm exhibits a marked improvement in maintaining data fidelity and ensuring smooth frame transitions when compared to prior approaches that either lack smoothness regularization or rely solely on linear blendshape models. In addition to superior mesh resemblance and smoothness, our method offers practical benefits, including reduced computational complexity and execution time, achieved through a novel parallelization strategy using clustering methods. Our results not only advance the state-of-the-art in terms of fidelity, sparsity, and smoothness in inverse rigging but also introduce significant efficiency improvements.},
+    abstractsource = {https://researchportal.ulisboa.pt/pt/publications/refined-inverse-rigging-a-balanced-approach-to-high-fidelity-blen/},
+    abstractsourcelabel = {Published abstract source}
 }
 
 @inproceedings{Lavado2024scene-net-v2,
@@ -425,7 +466,10 @@ Our code is available in: https://github.com/dlavado/SCENE-Net-V2"
     publisher = "Institute of Electrical and Electronics Engineers (IEEE)",
     year = "2021",
     pages = "127720-127734",
-    abstract = "Project E!11439"
+
+    abstract = {Ears are a particularly difficult region of the human face to model, not only due to the non-rigid deformations existing between shapes but also to the challenges in processing the retrieved data. The first step towards obtaining a good model is to have complete scans in correspondence, but these usually present a higher amount of occlusions, noise and outliers when compared to most face regions, thus requiring a specific procedure. Therefore, we propose a complete pipeline taking as input unordered 3D point clouds with the aforementioned problems, and producing as output a dataset in correspondence, with completion of the missing data. We provide a comparison of several state-of-the-art registration and shape completion methods, concluding on the best choice for each of the steps.},
+    abstractsource = {https://run.unl.pt/server/api/core/bitstreams/3e4f2a64-13d7-458a-84d3-48c0a37bff0c/content},
+    abstractsourcelabel = {Published abstract source}
 }
 
 @article{Soares_2021,
@@ -519,7 +563,7 @@ Our code is available in: https://github.com/dlavado/SCENE-Net-V2"
     year = "2018",
     month = "Aug",
     pages = "1-5",
-    abstract = "The following topics are dealt with: underwater acoustic communication; modems; wireless sensor networks; autonomous underwater vehicles; mobile robots; channel estimation; underwater vehicles; optical communication; underwater sound; routing protocols."
+    abstract = {For any operation involving autonomous vehicles, localization of mobile agents is a critical module. Unfortunately, localization methods are still dependant on tweaked parameters, under assumptions of poor trajectories, and that can fail disgracefully under real-world conditions. As our systems evolve to deployment-ready state, we see the looming need for more adaptive responses, where sudden changes of conditions can be accommodated by the localization algorithm. This paper addresses this gap, by proposing a parameter self-tuning scheme based on learning from acquired data.}
 }
 
 @article{Soares_2017,
@@ -802,14 +846,17 @@ Our code is available in: https://github.com/dlavado/SCENE-Net-V2"
 }
 
 @INPROCEEDINGS{Ji2017,
-  author =	 {C. {Soares} and P. {Ji} and J. {Gomes} and
-                  A. {Pascoal}},
+  author =	 {Soares, Cláudia and Ji, Pusheng and Gomes, João and Pascoal, António},
   booktitle =	 {OCEANS 2017 - Anchorage},
   title =	 {DIeSEL: Distributed self-localization of a network
                   of underwater vehicles},
   year =	 2017,
   pages =	 {pp. 1-6},
-  note =	 {citations: 2}
+  note =	 {citations: 2},
+    abstract = {How can teams of artificial agents localize and position themselves in GPS-denied environments? How can each agent determine its position from pairwise ranges, own velocity, and limited interaction with neighbors? This paper addresses this problem from an optimization point of view: we directly optimize the nonconvex maximum-likelihood estimator in the presence of range measurements contaminated with Gaussian noise, and we obtain a provably convergent, accurate and distributed positioning algorithm that outperforms the extended Kalman filter, a standard centralized solution for this problem.},
+    abstractsource = {https://arxiv.org/abs/1709.08746},
+    abstractsourcelabel = {Author preprint abstract},
+    preprinturl = {https://arxiv.org/abs/1709.08746}
 }
 
 @inproceedings{LFR2019,
@@ -904,6 +951,10 @@ Our code is available in: https://github.com/dlavado/SCENE-Net-V2"
   journal =	 {Accepted in the International Astronautical Congress
                   2023},
   year =	 2023,
+    abstract = {The risk of collision between resident space objects has significantly increased in recent years. As a result, spacecraft collision avoidance procedures have become an essential part of satellite operations. To ensure safe and effective space activities, satellite owners and operators rely on constantly updated estimates of encounters. These estimates include the uncertainty associated with the position of each object at the expected TCA. These estimates are crucial in planning risk mitigation measures, such as collision avoidance manoeuvres. As the TCA approaches, the accuracy of these estimates improves, as both objects' orbit determination and propagation procedures are made for increasingly shorter time intervals. However, this improvement comes at the cost of taking place close to the critical decision moment. This means that safe avoidance manoeuvres might not be possible or could incur significant costs. Therefore, knowing the evolution of this variable in advance can be crucial for operators. This work proposes a machine learning model based on diffusion models to forecast the position uncertainty of objects involved in a close encounter, particularly for the secondary object (usually debris), which tends to be more unpredictable. We compare the performance of our model with other state-of-the-art solutions and a naïve baseline approach, showing that the proposed solution has the potential to significantly improve the safety and effectiveness of spacecraft operations.},
+    abstractsource = {https://arxiv.org/abs/2311.05417},
+    abstractsourcelabel = {Author preprint abstract},
+    preprinturl = {https://arxiv.org/abs/2311.05417}
 }
 
 @article{Marta23Tax,
@@ -913,6 +964,10 @@ Our code is available in: https://github.com/dlavado/SCENE-Net-V2"
   journal =	 {Accepted in the International Astronautical Congress
                   2023},
   year =	 2023,
+    abstract = {The increasing number of RSOs has raised concerns about the risk of collisions and catastrophic incidents for all direct and indirect users of space. To mitigate this issue, it is essential to have a good understanding of the various RSOs in orbit and their behaviour. A well-established taxonomy defining several classes of RSOs is a critical step in achieving this understanding. This taxonomy helps assign objects to specific categories based on their main characteristics, leading to better tracking services. Furthermore, a well-established taxonomy can facilitate research and analysis processes by providing a common language and framework for better understanding the factors that influence RSO behaviour in space. These factors, in turn, help design more efficient and effective strategies for space traffic management. Our work proposes a new taxonomy for RSOs focusing on the low Earth orbit regime to enhance space traffic management. In addition, we present a deep learning-based model that uses an autoencoder architecture to reduce the features representing the characteristics of the RSOs. The autoencoder generates a lower-dimensional space representation that is then explored using techniques such as Uniform Manifold Approximation and Projection to identify fundamental clusters of RSOs based on their unique characteristics. This approach captures the complex and non-linear relationships between the features and the RSOs' classes identified. Our proposed taxonomy and model offer a significant contribution to the ongoing efforts to mitigate the overall risks posed by the increasing number of RSOs in orbit.},
+    abstractsource = {https://arxiv.org/abs/2311.05430},
+    abstractsourcelabel = {Author preprint abstract},
+    preprinturl = {https://arxiv.org/abs/2311.05430}
 }
 
 @ARTICLE{MartaITS2022,
@@ -937,6 +992,10 @@ Our code is available in: https://github.com/dlavado/SCENE-Net-V2"
   author =	 {Caldas, Francisco and Soares, Claudia and Nunes,
                   Cl{\'a}udia and Guimar{\~a}es, Marta and Filipe,
                   Mariana and Ventura, Rodrigo},
+    abstract = {Space debris is a major problem in space exploration. International bodies continuously monitor a large database of orbiting objects and emit warnings in the form of conjunction data messages. An important question for satellite operators is to estimate when fresh information will arrive so that they can react timely but sparingly with satellite maneuvers. We propose a statistical learning model of the message arrival process, allowing us to answer two important questions: (1) Will there be any new message in the next specified time interval? (2) When exactly and with what uncertainty will the next message arrive? The average prediction error for question (2) of our Bayesian Poisson process model is smaller than the baseline in more than 3 hours in a test set of 50k close encounter events.},
+    abstractsource = {https://ai4spacecraft.github.io/papers/AI4Spacecraft_paper_2.pdf},
+    abstractsourcelabel = {Published abstract source},
+    url = {https://ai4spacecraft.github.io/papers/AI4Spacecraft_paper_2.pdf}
 }
 
 @inproceedings{Regina20,
@@ -946,6 +1005,10 @@ Our code is available in: https://github.com/dlavado/SCENE-Net-V2"
   booktitle =	 {The International Conference on Complex Networks and
                   Their Applications},
   year =	 2020,
+    abstract = {The medical referrals between primary care doctor and specialist affect many aspects of patient care, such as quality of care, patient satisfaction and health care costs, etc. In this work, we hypothesize that the social network of medical doctors can influence the referral process. We analyse primary-specialty referrals through transaction data over medical appointments gathered between 2012 and 2017 in all hospital centers of a European private health provider. The main objective of the study is to discover patterns and hidden mechanisms in the primary-specialist referrals to improve efficiency of health care services. First, we carry out exploratory data analysis and search for patterns or interesting features of the data and afterwords we create and analyse the doctor's social network and the referrals network. We learn the representation of the referral network using a Graph Neural Network (GNN). This work addresses the discovery of important patterns in medical referrals to, in a future work, improve the efficiency of collaboration within organizations.},
+    abstractsource = {https://easychair.org/smart-program/COMPLEXNETWORKS2020/2020-12-03.html#talk:162210},
+    abstractsourcelabel = {Published abstract source},
+    url = {https://easychair.org/smart-program/COMPLEXNETWORKS2020/2020-12-03.html#talk:162210}
 }
 
 @article{Ricardo23OneShot,
@@ -1004,7 +1067,7 @@ Our code is available in: https://github.com/dlavado/SCENE-Net-V2"
                   Lisboa},
   year =	 2016,
   month =	 may,
-  url =		 {http://bit.ly/PhDThesisCS},
+  url =		 {https://isr.tecnico.ulisboa.pt/publications/distributed-and-robust-network-localization-algorithms/},
 }
 
 @inproceedings{Soares2019,
@@ -1043,7 +1106,11 @@ Our code is available in: https://github.com/dlavado/SCENE-Net-V2"
   title =	 {ISEE.U: Distributed online estimation and control
                   for improved target localization accuracy},
   author =	 {Claudia Soares and Miguel Vasques and Joao Gomes},
-  year =	 2021
+  year =	 2021,
+    abstract = {This paper addresses target localization with an online active learning algorithm defined by distributed, simple and fast computations at each node, with no parameters to tune and where the estimate of the target position at each agent is asymptotically equal in expectation to the centralized maximum-likelihood estimator. ISEE.U takes noisy distances at each agent and finds a control that maximizes localization accuracy. We do not assume specific target dynamics and, thus, our method is robust when facing unpredictable targets. Each agent computes the control that maximizes overall target position accuracy via a local estimate of the Fisher Information Matrix. We compared the proposed method with a state of the art algorithm outperforming it when the target movements do not follow a prescribed trajectory, with x100 less computation time, even when our method is running in one central CPU.},
+    abstractsource = {https://arxiv.org/abs/2210.09107},
+    abstractsourcelabel = {Abstract from the later author preprint (2022)},
+    preprinturl = {https://arxiv.org/abs/2210.09107}
 }
 
 @article{Strong21,
@@ -1098,6 +1165,11 @@ Our code is available in: https://github.com/dlavado/SCENE-Net-V2"
   booktitle =	 {The International Conference on Complex Networks and
                   Their Applications},
   year =	 2019,
+    abstract = {The medical referral between Primary Care Physicians (PCP) and specialists represents the formal mechanism in the health system to address the need of patients for specialty care [5]. Typically, for a given patient with clinical needs, PCP can make a choice of several specialists to whom they may refer and their choice would have important downstream effects. As such, primary-specialty referral may affect many aspects of patient care, such as quality of care, patient satisfaction and health care costs, etc. [3]. Researchers recently leveraged the patient consultation history extracted from insurance claims data to construct the patient sharing network between physicians based on the shared patients [3, 6]. Essentially, patient sharing network operationalizes an informal information-sharing network in which physicians provide care to shared patients. This network does not necessarily conform to the formal organizational structure that physicians are affiliated with, but may provide valuable insights in explaining the referral mechanism. For example, both [3] and [7] performed social network analysis on Medicare administrative data and showed that structure of patient sharing networks and the position of physicians in the network has a significant relationship with the overall cost and intensity of care. [2] further discovered small-world structure and strong correlations between certain network statistics with health system statistics. These metrics derived from network science can serve as informative features to boost predictive model performance and optimize health system for improved medical outcomes [1]. In this paper, we aim to add to the literature of understanding the primary-specialty referral mechanism. We obtain a large-scale patient consultation dataset from a private European health provider with over 9 million consultations between 1.3 million patients and 2,308 physicians (515 PCP and 1793 specialists) in 7 hospitals between 2012-2017. The primary-specialty referral is defined as when a patient consults a PCP and then a specialist within 30 days. In other words, there only exist links between two distinct set of physician nodes, namely PCP and specialists. As such, we develop a weighted bipartite network where 460 PCP are connected with 1,542 specialists through 78,593 edges. The edge weight of referral network represents the number of patients that PCP refer to the specialists. Importantly, 306 physicians do not have any edge to the referral 39 network, which raises the potential inefficiency concerns for their lack of involvement in referral process. Besides, we obtain additional physician registration data from the Human Resource department of the provider, including gender, age, education and internship institution, specialty, working hospital, etc. As we augment the referral network with such information, summary statistics show PCP and specialists indeed have different background. The gender composition for PCP is 69% of female and 31% male, and 43% of female and 57% of male for specialists. Also, we observe certain level of homophily. For example, more than half of the referrals are made between the physicians with the same gender and more than 70% of the referrals are made between those with the age difference less than 10 years. More interestingly, 67% of the referrals are made between physicians that work at the same hospital, implying that referral network may exhibit strong clustering in terms of physicians’ background. Following [8], we compute macro-level structural metrics from the resulting referral network and compare them against those of a synthetic Erdős-Rényi random network. We find that degree distributions (the number of specialists that PCP refers to, and the number of PCPs that specialist receives from) for the referral network do not follow Poisson distribution. Meanwhile, we obtain average clustering coefficient for the referral network (0.17) to measure the fraction of the number of observed squares to the total number of possible squares in the network. It is about 2.5 times higher than that of random network (0.07). This represents an essential precondition for referral network to exhibit small-world structure and suggests that physicians in the referral network have higher tendency to cluster together. We also quantify both betweenness and closeness centrality for physicians in the referral network. The former describes the number of shortest paths that pass through a physician while the latter describes the reciprocal of the sum of distance to all other physicians in the network. Top 25% and bottom 25% of PCP in terms of betweenness centrality initiate 58.4% and 0.07% of referrals, respectively. Top 25% and bottom 25% of specialists in terms of betweenness centrality receive 55.9% and 3.3% of referrals, respectively. Again, this raises the inefficiency concern as referral process occurs high skewed towards a small number of physicians. We adopt the popular modularity-based optimization algorithm Louvain to extract communities from the referral network [4]. In total, we identify 7 distinct communities, which happens to correspond to the number of hospitals of the provider. Figure 1 shows the visualization of community structure. In general, PCP tend to refer patients to specialists belonging to the same community, which indicates that physicians may form a “referral clique” wherein referral process occurs more likely than to physicians from different communities. Meanwhile, there is one community (in purple) that is located distantly from other communities, which contains physicians mostly working at the hospital in a different region. Moreover, we demonstrate that physicians within the same community share more similarity in terms of their background, namely, they are at the similar age, have similar number of years of experience, used to study and intern at the same institution and now work at the same hospital. Our results show that referral network may highly overlap with the social network of physicians and in the future work we plan to explore the correlation between them.},
+    abstractsource = {https://shirshendu.ccny.cuny.edu/PDF%20Files/CPD_BookOfAbs.pdf#page=57},
+    abstractsourcelabel = {Conference extended abstract},
+    url = {https://shirshendu.ccny.cuny.edu/PDF%20Files/CPD_BookOfAbs.pdf#page=57},
+    abstractheading = {Extended abstract}
 }
 
 @article{caldas2022machine,
@@ -1126,6 +1198,9 @@ Our code is available in: https://github.com/dlavado/SCENE-Net-V2"
                   RecSys ’21 conference},
   url =
                   {https://europe.naverlabs.com/wp-content/uploads/2021/09/DuarteEtAl2021.pdf},
+    abstract = {Medical referrals between primary care doctors and specialists affect many aspects of patient care, such as quality of care, patient satisfaction, and health care costs. In this work, we hypothesize that the social network of medical doctors can influence the referral process. We analyse primary-specialty referrals through transaction data over medical appointments gathered between 2012 and 2017 in all hospital centers of an European private healthcare provider. In this paper we uncover patterns and hidden mechanisms in primary-specialty referrals to improve the efficiency of health care services, and propose a link prediction model for recommendation using Graph Neural Networks. First, we carried out exploratory data analysis and searched for patterns or interesting features of the data and afterwords, we created and analysed the doctor’s social network and the referrals network. We learned the representation of the referral network using a Graph Neural Network (GNN). Finally, we discussed the nodes representation of the referral network which evidences our main hypothesis. This work addresses the discovery of important patterns in medical referrals to, in future work, improve the efficiency of collaboration within organizations.},
+    abstractsource = {https://europe.naverlabs.com/wp-content/uploads/2021/09/DuarteEtAl2021.pdf},
+    abstractsourcelabel = {Published abstract source}
 }
 
 @article{ferreira2018floris,
@@ -1307,5 +1382,8 @@ Our code is available in: https://github.com/dlavado/SCENE-Net-V2"
     journal = "BMC Health Services Research",
     publisher = "Springer Science and Business Media LLC",
     year = "2026",
-    month = "Apr"
+    month = "Apr",
+    abstract = {Background Medical referrals between primary care (PC) and specialist care (SC) physicians are essential to integrated healthcare delivery but often encounter inefficiencies arising from communication gaps, coordination issues, and organizational structure. While prior studies have explored patient-sharing networks, limited quantitative evidence exists on how physicians’ professional relationships, such as co-training, co-affiliation, or network embeddedness, relate to referral behavior. This study develops a data-driven framework combining network analysis and graph neural networks (GNNs) to examine how professional-network structure characterizes referral formation. Methods The study analyzed five years of consultation data from a large Portuguese private healthcare system. Two complementary networks were constructed: a directed referral network linking PC to SC physicians based on patient transitions within a 30-day window, and an undirected professional network representing shared institutional and educational ties. Graph-based embedding models (GraphSAGE, Attri2Vec, Node2Vec) were trained to predict referral links, using physician demographic and network-based inputs. Feature importance was evaluated using Shapley Additive Explanations (SHAP), and model embeddings were visualized using UMAP to assess structural coherence. Results Incorporating professional-network information improved referral prediction accuracy across all models. SHAP analyses identified degree and eigenvector centrality as dominant predictors of referral probability, indicating that physicians with broader professional connectivity and greater embeddedness were more likely to receive referrals. Age and gender effects were minor and secondary to structural network factors. Visualization of learned embeddings revealed that professional-network information produced coherent physician clusters aligned with hospital co-affiliations and cross-role interactions, demonstrating that professional networks capture referral proximity and organizational cohesion. Conclusion Physicians’ professional-network positions are strongly associated with referral behavior and provide incremental predictive value beyond demographics alone. Embeddedness and centrality reflect relational mechanisms of trust, reputation, and coordination that relate to access to specialist care. Incorporating network analytics into referral management can inform policy interventions aimed at improving transparency, balancing referral loads, and promoting equitable access to specialist services.},
+    abstractsource = {https://link.springer.com/article/10.1186/s12913-026-14099-9},
+    abstractsourcelabel = {Published abstract source}
 }

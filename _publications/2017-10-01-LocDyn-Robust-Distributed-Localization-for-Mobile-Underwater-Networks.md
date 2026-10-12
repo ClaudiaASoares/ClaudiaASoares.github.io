@@ -2,19 +2,36 @@
 title: "LocDyn: Robust Distributed Localization for Mobile Underwater Networks"
 collection: publications
 permalink: /publication/2017-10-01-LocDyn-Robust-Distributed-Localization-for-Mobile-Underwater-Networks
+excerpt_separator: ""
 description: 'How do we self-localize large teams of underwater nodes using only noisy range measurements?'
 excerpt: 'How do we self-localize large teams of underwater nodes using only noisy range measurements? How do we do it in a distributed way, and incorporating dynamics into the problem? How do we reject outliers and produce trustworthy position estimates? And what if some of the vehicles can measure angular information? The stringent acoustic communication constraints and accuracy needs of our geophysical survey application demand fast.'
 date: 2017-10-01
 venue: 'IEEE Journal of Oceanic Engineering'
+citation_authors: ["Claudia Soares", "Joao Gomes", "Beatriz Quintino Ferreira", "Joao Paulo Costeira"]
+citation_year: '2017'
+citation_journal: "IEEE Journal of Oceanic Engineering"
+citation_doi: "10.1109/joe.2017.2736951"
+citation_volume: "42"
+citation_issue: "4"
+citation_issn: "2373-7786"
+citation_firstpage: '1063'
+citation_lastpage: '1074'
 paperurl: 'http://dx.doi.org/10.1109/joe.2017.2736951'
 citation: 'Claudia Soares, Joao Gomes, Beatriz Quintino Ferreira, Joao Paulo Costeira, "LocDyn: Robust Distributed Localization for Mobile Underwater Networks." IEEE Journal of Oceanic Engineering, 2017.'
 ---
 
-How do we self-localize large teams of underwater nodes using only noisy range measurements? How do we do it in a distributed way, and incorporating dynamics into the problem? How do we reject outliers and produce trustworthy position estimates? And what if some of the vehicles can measure angular information? The stringent acoustic communication constraints and accuracy needs of our geophysical survey application demand fast and very accurate localization methods. We address dynamic localization as a MAP estimation problem where the prior encodes kinematic information, and we apply a convex relaxation method that takes advantage of previous estimates at each measurement acquisition step. The resulting LocDyn algorithm is fast: It converges at an optimal rate for first order methods. LocDyn is distributed: There is no fusion center responsible for processing acquired data and the same simple computations are performed at each node. LocDyn is accurate: Numerical experiments attest to about 30% smaller positioning error than a comparable Kalman filter. LocDyn is robust: It rejects outlier noise, while benchmarking methods succumb in terms of positioning error.
+
+<p class="publication-authors">Claudia Soares, Joao Gomes, Beatriz Quintino Ferreira, Joao Paulo Costeira</p>
+
+{% raw %}
+
+## Abstract
+
+<div class="publication-abstract"><p>How do we self-localize large teams of underwater nodes using only noisy range measurements? How do we do it in a distributed way, and incorporating dynamics into the problem? How do we reject outliers and produce trustworthy position estimates? And what if some of the vehicles can measure angular information? The stringent acoustic communication constraints and accuracy needs of our geophysical survey application demand fast and very accurate localization methods. We address dynamic localization as a MAP estimation problem where the prior encodes kinematic information, and we apply a convex relaxation method that takes advantage of previous estimates at each measurement acquisition step. The resulting LocDyn algorithm is fast: It converges at an optimal rate for first order methods. LocDyn is distributed: There is no fusion center responsible for processing acquired data and the same simple computations are performed at each node. LocDyn is accurate: Numerical experiments attest to about 30% smaller positioning error than a comparable Kalman filter. LocDyn is robust: It rejects outlier noise, while benchmarking methods succumb in terms of positioning error.</p></div>
 
 [Access paper here](http://dx.doi.org/10.1109/joe.2017.2736951){:target="_blank"}
 
-Bibtex:
+## BibTeX
 
 <pre><code>@article{Soares_2017,
     author = &quot;Soares, Claudia and Gomes, Joao and Ferreira, Beatriz Quintino and Costeira, Joao Paulo&quot;,
@@ -32,3 +49,4 @@ Bibtex:
     abstract = &quot;How do we self-localize large teams of underwater nodes using only noisy range measurements? How do we do it in a distributed way, and incorporating dynamics into the problem? How do we reject outliers and produce trustworthy position estimates? And what if some of the vehicles can measure angular information? The stringent acoustic communication constraints and accuracy needs of our geophysical survey application demand fast and very accurate localization methods. We address dynamic localization as a MAP estimation problem where the prior encodes kinematic information, and we apply a convex relaxation method that takes advantage of previous estimates at each measurement acquisition step. The resulting LocDyn algorithm is fast: It converges at an optimal rate for first order methods. LocDyn is distributed: There is no fusion center responsible for processing acquired data and the same simple computations are performed at each node. LocDyn is accurate: Numerical experiments attest to about 30\\% smaller positioning error than a comparable Kalman filter. LocDyn is robust: It rejects outlier noise, while benchmarking methods succumb in terms of positioning error.&quot;,
     note = &quot;citations: 9&quot;
 }</code></pre>
+{% endraw %}

@@ -2,19 +2,33 @@
 title: "Clustering of the Blendshape Facial Model"
 collection: publications
 permalink: /publication/2021-08-01-Clustering-of-the-Blendshape-Facial-Model
+excerpt_separator: ""
 description: 'Digital human animation relies on high-quality 3D models of the human face-rigs.'
 excerpt: 'Digital human animation relies on high-quality 3D models of the human face-rigs. A face rig must be accurate and, at the same time, fast to compute. One of the most common rigging models is the blendshape model. We present a novel approach for learning the inverse rig parameters at increased accuracy and decreased computational cost at the same time. It is based on a two.'
 date: 2021-08-01
 venue: '2021 29th European Signal Processing Conference (EUSIPCO)'
+citation_authors: ["Stevo Rackovic", "Claudia Soares", "Dusan Jakovetic", "Zoranka Desnica", "Relja Ljubobratovic"]
+citation_year: '2021'
+citation_conference: "2021 29th European Signal Processing Conference (EUSIPCO)"
+citation_doi: "10.23919/eusipco54536.2021.9616061"
+citation_firstpage: '1556'
+citation_lastpage: '1560'
 paperurl: 'http://dx.doi.org/10.23919/eusipco54536.2021.9616061'
 citation: 'Stevo Rackovic, Claudia Soares, Dusan Jakovetic, Zoranka Desnica, Relja Ljubobratovic, "Clustering of the Blendshape Facial Model." 2021 29th European Signal Processing Conference (EUSIPCO), 2021.'
 ---
 
-Digital human animation relies on high-quality 3D models of the human face-rigs. A face rig must be accurate and, at the same time, fast to compute. One of the most common rigging models is the blendshape model. We present a novel approach for learning the inverse rig parameters at increased accuracy and decreased computational cost at the same time. It is based on a two fold clustering of the blendshape face model. Our method focuses exclusively on the underlying space of deformation and produces clusters in both the mesh space and the controller space-something that was not investigated in previous literature. This segmentation finds intuitive and meaningful connections between groups of vertices on the face and deformation controls, and further these segments can be observed independently. A separate model for solving the inverse rig problem is then learnt for each segment. Our method is completely unsupervised and highly parallelizable.
+
+<p class="publication-authors">Stevo Rackovic, Claudia Soares, Dusan Jakovetic, Zoranka Desnica, Relja Ljubobratovic</p>
+
+{% raw %}
+
+## Abstract
+
+<div class="publication-abstract"><p>Digital human animation relies on high-quality 3D models of the human face-rigs. A face rig must be accurate and, at the same time, fast to compute. One of the most common rigging models is the blendshape model. We present a novel approach for learning the inverse rig parameters at increased accuracy and decreased computational cost at the same time. It is based on a two fold clustering of the blendshape face model. Our method focuses exclusively on the underlying space of deformation and produces clusters in both the mesh space and the controller space-something that was not investigated in previous literature. This segmentation finds intuitive and meaningful connections between groups of vertices on the face and deformation controls, and further these segments can be observed independently. A separate model for solving the inverse rig problem is then learnt for each segment. Our method is completely unsupervised and highly parallelizable.</p></div>
 
 [Access paper here](http://dx.doi.org/10.23919/eusipco54536.2021.9616061){:target="_blank"}
 
-Bibtex:
+## BibTeX
 
 <pre><code>@inproceedings{Rackovic_2021,
     author = &quot;Rackovic, Stevo and Soares, Claudia and Jakovetic, Dusan and Desnica, Zoranka and Ljubobratovic, Relja&quot;,
@@ -29,3 +43,4 @@ Bibtex:
     abstract = &quot;Digital human animation relies on high-quality 3D models of the human face-rigs. A face rig must be accurate and, at the same time, fast to compute. One of the most common rigging models is the blendshape model. We present a novel approach for learning the inverse rig parameters at increased accuracy and decreased computational cost at the same time. It is based on a two fold clustering of the blendshape face model. Our method focuses exclusively on the underlying space of deformation and produces clusters in both the mesh space and the controller space-something that was not investigated in previous literature. This segmentation finds intuitive and meaningful connections between groups of vertices on the face and deformation controls, and further these segments can be observed independently. A separate model for solving the inverse rig problem is then learnt for each segment. Our method is completely unsupervised and highly parallelizable.&quot;,
     organization = &quot;IEEE&quot;
 }</code></pre>
+{% endraw %}

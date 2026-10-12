@@ -1,0 +1,8 @@
+/* Page experience adjustments shared by critical and full styles. */
+.masthead, #main, .page__footer {
+  -webkit-animation: none;
+  animation: none;
+}
+
+.page__footer, .page__footer .social-icons i { color: $dark-gray; }
+.btn--inverse { color: $dark-gray !important; }

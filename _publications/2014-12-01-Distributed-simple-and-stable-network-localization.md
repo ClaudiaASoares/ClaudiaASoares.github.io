@@ -2,19 +2,33 @@
 title: "Distributed, simple and stable network localization"
 collection: publications
 permalink: /publication/2014-12-01-Distributed-simple-and-stable-network-localization
+excerpt_separator: ""
 description: 'We propose a simple, stable and distributed algorithm which directly optimizes the nonconvex maximum likelihood criterion for sensor network localization, with no need to tune any free parameter.'
 excerpt: 'We propose a simple, stable and distributed algorithm which directly optimizes the nonconvex maximum likelihood criterion for sensor network localization, with no need to tune any free parameter. We reformulate the problem to obtain a gradient Lipschitz cost; by shifting to this cost function we enable a Majorization-Minimization (MM) approach based on quadratic upper bounds that decouple across nodes; the resulting algorithm happens to be.'
 date: 2014-12-01
 venue: '2014 IEEE Global Conference on Signal and Information Processing (GlobalSIP)'
+citation_authors: ["Claudia Soares", "Joao Xavier", "Joao Gomes"]
+citation_year: '2014'
+citation_conference: "2014 IEEE Global Conference on Signal and Information Processing (GlobalSIP)"
+citation_doi: "10.1109/globalsip.2014.7032222"
+citation_firstpage: '764'
+citation_lastpage: '768'
 paperurl: 'http://dx.doi.org/10.1109/globalsip.2014.7032222'
 citation: 'Claudia Soares, Joao Xavier, Joao Gomes, "Distributed, simple and stable network localization." 2014 IEEE Global Conference on Signal and Information Processing (GlobalSIP), 2014.'
 ---
 
-We propose a simple, stable and distributed algorithm which directly optimizes the nonconvex maximum likelihood criterion for sensor network localization, with no need to tune any free parameter. We reformulate the problem to obtain a gradient Lipschitz cost; by shifting to this cost function we enable a Majorization-Minimization (MM) approach based on quadratic upper bounds that decouple across nodes; the resulting algorithm happens to be distributed, with all nodes working in parallel. Our method inherits the MM stability: each communication cuts down the cost function. Numerical simulations indicate that the proposed approach tops the performance of the state of the art algorithm, both in accuracy and communication cost.
+
+<p class="publication-authors">Claudia Soares, Joao Xavier, Joao Gomes</p>
+
+{% raw %}
+
+## Abstract
+
+<div class="publication-abstract"><p>We propose a simple, stable and distributed algorithm which directly optimizes the nonconvex maximum likelihood criterion for sensor network localization, with no need to tune any free parameter. We reformulate the problem to obtain a gradient Lipschitz cost; by shifting to this cost function we enable a Majorization-Minimization (MM) approach based on quadratic upper bounds that decouple across nodes; the resulting algorithm happens to be distributed, with all nodes working in parallel. Our method inherits the MM stability: each communication cuts down the cost function. Numerical simulations indicate that the proposed approach tops the performance of the state of the art algorithm, both in accuracy and communication cost.</p></div>
 
 [Access paper here](http://dx.doi.org/10.1109/globalsip.2014.7032222){:target="_blank"}
 
-Bibtex:
+## BibTeX
 
 <pre><code>@inproceedings{Soares_2014,
     author = &quot;Soares, Claudia and Xavier, Joao and Gomes, Joao&quot;,
@@ -29,3 +43,4 @@ Bibtex:
     abstract = &quot;We propose a simple, stable and distributed algorithm which directly optimizes the nonconvex maximum likelihood criterion for sensor network localization, with no need to tune any free parameter. We reformulate the problem to obtain a gradient Lipschitz cost; by shifting to this cost function we enable a Majorization-Minimization (MM) approach based on quadratic upper bounds that decouple across nodes; the resulting algorithm happens to be distributed, with all nodes working in parallel. Our method inherits the MM stability: each communication cuts down the cost function. Numerical simulations indicate that the proposed approach tops the performance of the state of the art algorithm, both in accuracy and communication cost.&quot;,
     keywords = &quot;maximum likelihood estimation;minimisation;numerical analysis;sensor placement;wireless sensor networks;cost function;distributed network localization;gradient Lipschitz cost;majorization-minimization;nonconvex maximum likelihood criterion;numerical simulations;quadratic upper bounds;sensor network localization;simple network localization;stable network localization;Accuracy;Cost function;Noise;Noise measurement;Position measurement;Robot sensing systems;Distributed algorithms;distributed iterative sensor localization;maximum-likelihood estimation;non-convex optimization;sensor networks&quot;
 }</code></pre>
+{% endraw %}

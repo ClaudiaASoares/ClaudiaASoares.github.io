@@ -1,6 +1,7 @@
 ---
 permalink: /
-title: "Claudia Soares"
+title: "Cláudia Soares"
+seo_title: "Cláudia Soares | Trustworthy Machine Learning at NOVA"
 description: "Cláudia Soares researches trustworthy machine learning at NOVA University of Lisbon, using optimisation, physics and probability for healthcare and space."
 excerpt: "Trustworthy ML @ NOVA"
 author_profile: true

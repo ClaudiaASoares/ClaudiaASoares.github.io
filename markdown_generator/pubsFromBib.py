@@ -17,6 +17,7 @@ URL is linked from the published page instead.
 from __future__ import annotations
 
 import html
+import json
 import os
 import re
 import unicodedata
@@ -209,10 +210,31 @@ def publication_venue(fields: dict[str, str]) -> str:
 
 def abstract_for_entry(fields: dict[str, str]) -> str:
     for field in ABSTRACT_FIELDS:
-        abstract = clean_bibtex_text(fields.get(field))
+        abstract = clean_abstract_text(fields.get(field))
         if abstract:
             return abstract
     return ""
+
+
+def clean_abstract_text(text: Optional[str]) -> str:
+    """Remove publisher markup while preserving the author's TeX mathematics."""
+    if not text:
+        return ""
+    text = html.unescape(str(text))
+    text = re.sub(r"</?(?:p|jats:p|br)\b[^>]*>", " ", text)
+    text = re.sub(r"</?[a-zA-Z][\w:-]*\b[^>]*>", "", text)
+    math_parts: list[str] = []
+
+    def save_math(match: re.Match) -> str:
+        math_parts.append(match.group(0))
+        return f"MATHPLACEHOLDER{len(math_parts) - 1}END"
+
+    text = re.sub(r"\$\$.*?\$\$|\$[^$]+\$|\\\(.*?\\\)|\\\[.*?\\\]", save_math, text, flags=re.DOTALL)
+    text = re.sub(r"\\(?:textbf|textit|textrm|textsf|texttt|emph)\s*\{", "{", text)
+    text = clean_bibtex_text(text)
+    for index, part in enumerate(math_parts):
+        text = text.replace(f"MATHPLACEHOLDER{index}END", re.sub(r"\s+", " ", part))
+    return text
 
 
 def excerpt_for_abstract(abstract: str, max_words: int = 65) -> str:
@@ -476,6 +498,8 @@ def markdown_for_entry(
         else f"{title}. {publication_label}."
     )
     preprint_url = preprint_url_for_entry(preprint_entry) if preprint_entry else None
+    if not preprint_url:
+        preprint_url = clean_bibtex_text(fields.get("preprinturl")) or None
 
     citation = (
         f'{authors_text(entry)}, "{html_escape(title)}." '
@@ -485,30 +509,59 @@ def markdown_for_entry(
     md = f'---\ntitle: "{html_escape(title)}"\n'
     md += f"collection: {COLLECTION_NAME}"
     md += f"\npermalink: {PERMALINK_PREFIX}{html_filename}"
+    md += '\nexcerpt_separator: ""'
     md += f"\ndescription: '{html_escape(description)}'"
     if excerpt:
         md += f"\nexcerpt: '{html_escape(excerpt)}'"
     md += f"\ndate: {pub_date}"
     md += f"\nvenue: '{html_escape(venue)}'"
+    author_names = [person_name(person) for person in entry.persons.get("author", [])]
+    md += f"\ncitation_authors: {json.dumps(author_names, ensure_ascii=False)}"
+    md += f"\ncitation_year: '{pub_year}'"
+    citation_venue = re.sub(r"^Accepted (?:in|at)\s+", "", venue, flags=re.IGNORECASE)
+    if entry.type == "phdthesis":
+        md += f"\ncitation_dissertation_institution: {json.dumps(citation_venue, ensure_ascii=False)}"
+    elif fields.get("journal") and not re.search(r"workshop|conference|congress", citation_venue, re.IGNORECASE):
+        md += f"\ncitation_journal: {json.dumps(citation_venue, ensure_ascii=False)}"
+    elif fields.get("booktitle") or re.search(r"workshop|conference|congress", citation_venue, re.IGNORECASE):
+        md += f"\ncitation_conference: {json.dumps(citation_venue, ensure_ascii=False)}"
+    for source, target in [("doi", "doi"), ("volume", "volume"), ("number", "issue"), ("issn", "issn"), ("isbn", "isbn")]:
+        value = normalize_doi(fields.get(source)) if source == "doi" else clean_bibtex_text(fields.get(source))
+        if value:
+            md += f"\ncitation_{target}: {json.dumps(value, ensure_ascii=False)}"
+    pages = re.fullmatch(r"(?:pp?\.\s*)?(\d+)(?:\s*[-–]+\s*(\d+))?", clean_bibtex_text(fields.get("pages")))
+    if pages:
+        md += f"\ncitation_firstpage: '{pages.group(1)}'"
+        if pages.group(2):
+            md += f"\ncitation_lastpage: '{pages.group(2)}'"
+    if re.search(r"\$|\\[([]", abstract):
+        md += "\nmathjax: true"
     if paper_url:
         md += f"\npaperurl: '{paper_url}'"
     if preprint_url:
         md += f"\npreprinturl: '{preprint_url}'"
     md += f"\ncitation: '{citation}'"
-    md += "\n---"
+    md += "\n---\n"
 
+    md += f'\n\n<p class="publication-authors">{html.escape(authors_text(entry))}</p>\n'
+    md += '\n{% raw %}\n'
     if abstract:
-        md += f"\n\n{html_escape(abstract)}\n"
+        heading = clean_bibtex_text(fields.get("abstractheading")) or "Abstract"
+        md += f'\n## {heading}\n\n<div class="publication-abstract"><p>{html.escape(abstract)}</p></div>\n'
+        if source_url := clean_bibtex_text(fields.get("abstractsource")):
+            label = clean_bibtex_text(fields.get("abstractsourcelabel")) or "Abstract source"
+            md += f"\n[{label}]({source_url}).\n"
 
     if preprint_url:
         md += f'\n[Download paper here]({preprint_url}){{:target="_blank"}}\n'
     elif paper_url:
         md += f'\n[Access paper here]({paper_url}){{:target="_blank"}}\n'
 
-    md += "\nBibtex:\n\n"
+    md += "\n## BibTeX\n\n"
     md += "<pre><code>"
     md += html.escape(bibtex_for_entry(bib_id, entry))
     md += "</code></pre>\n"
+    md += '{% endraw %}\n'
 
     return md_filename, md
 

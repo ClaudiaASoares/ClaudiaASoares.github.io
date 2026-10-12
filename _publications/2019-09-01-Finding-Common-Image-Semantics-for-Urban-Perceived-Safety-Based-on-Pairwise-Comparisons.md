@@ -2,19 +2,33 @@
 title: "Finding Common Image Semantics for Urban Perceived Safety Based on Pairwise Comparisons"
 collection: publications
 permalink: /publication/2019-09-01-Finding-Common-Image-Semantics-for-Urban-Perceived-Safety-Based-on-Pairwise-Comparisons
+excerpt_separator: ""
 description: 'What influences people’s perception of safety in an urban environment?'
 excerpt: 'What influences people’s perception of safety in an urban environment? Does everyone perceive safety the same way or do different people look for different contents in an image, safety-wise? We present a user analysis on a crowd-sourced dataset that contains pairwise comparisons regarding the perceived safety of street imagery from different municipalities in the greater Lisbon area, Portugal. We use state-of-the-art semantic segmentation to extract.'
 date: 2019-09-01
 venue: '2019 27th European Signal Processing Conference (EUSIPCO)'
+citation_authors: ["Gabriel Costa", "Claudia Soares", "Manuel Marques"]
+citation_year: '2019'
+citation_conference: "2019 27th European Signal Processing Conference (EUSIPCO)"
+citation_doi: "10.23919/eusipco.2019.8903115"
+citation_firstpage: '1'
+citation_lastpage: '5'
 paperurl: 'http://dx.doi.org/10.23919/eusipco.2019.8903115'
 citation: 'Gabriel Costa, Claudia Soares, Manuel Marques, "Finding Common Image Semantics for Urban Perceived Safety Based on Pairwise Comparisons." 2019 27th European Signal Processing Conference (EUSIPCO), 2019.'
 ---
 
-What influences people’s perception of safety in an urban environment? Does everyone perceive safety the same way or do different people look for different contents in an image, safety-wise? We present a user analysis on a crowd-sourced dataset that contains pairwise comparisons regarding the perceived safety of street imagery from different municipalities in the greater Lisbon area, Portugal. We use state-of-the-art semantic segmentation to extract the contents of images and cluster different people according to what they perceive as safe. Then, we study semantic classes and analyze clusters of users for semantic elements appearing in images classified as safer (or more dangerous). The results show that clusters share a lot of similarities. Our analysis evidences that, for users with more pairwise comparisons, there is only one group, while spurious groupings appear when users contribute less. This result emphasizes that a pairwise image comparison dataset potentiates agreement of users in perceptual tasks, for moderate comparison data size.
+
+<p class="publication-authors">Gabriel Costa, Claudia Soares, Manuel Marques</p>
+
+{% raw %}
+
+## Abstract
+
+<div class="publication-abstract"><p>What influences people’s perception of safety in an urban environment? Does everyone perceive safety the same way or do different people look for different contents in an image, safety-wise? We present a user analysis on a crowd-sourced dataset that contains pairwise comparisons regarding the perceived safety of street imagery from different municipalities in the greater Lisbon area, Portugal. We use state-of-the-art semantic segmentation to extract the contents of images and cluster different people according to what they perceive as safe. Then, we study semantic classes and analyze clusters of users for semantic elements appearing in images classified as safer (or more dangerous). The results show that clusters share a lot of similarities. Our analysis evidences that, for users with more pairwise comparisons, there is only one group, while spurious groupings appear when users contribute less. This result emphasizes that a pairwise image comparison dataset potentiates agreement of users in perceptual tasks, for moderate comparison data size.</p></div>
 
 [Access paper here](http://dx.doi.org/10.23919/eusipco.2019.8903115){:target="_blank"}
 
-Bibtex:
+## BibTeX
 
 <pre><code>@inproceedings{Costa_2019,
     author = &quot;Costa, Gabriel and Soares, Claudia and Marques, Manuel&quot;,
@@ -29,3 +43,4 @@ Bibtex:
     abstract = &quot;What influences people’s perception of safety in an urban environment? Does everyone perceive safety the same way or do different people look for different contents in an image, safety-wise? We present a user analysis on a crowd-sourced dataset that contains pairwise comparisons regarding the perceived safety of street imagery from different municipalities in the greater Lisbon area, Portugal. We use state-of-the-art semantic segmentation to extract the contents of images and cluster different people according to what they perceive as safe. Then, we study semantic classes and analyze clusters of users for semantic elements appearing in images classified as safer (or more dangerous). The results show that clusters share a lot of similarities. Our analysis evidences that, for users with more pairwise comparisons, there is only one group, while spurious groupings appear when users contribute less. This result emphasizes that a pairwise image comparison dataset potentiates agreement of users in perceptual tasks, for moderate comparison data size.&quot;,
     organization = &quot;IEEE&quot;
 }</code></pre>
+{% endraw %}

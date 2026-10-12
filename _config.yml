@@ -7,11 +7,11 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Claudia Soares Home"
+title                    : "Cláudia Soares"
 title_separator          : "-"
-name                     : &name "Claudia Soares"
+name                     : &name "Cláudia Soares"
 description              : &description "Researcher and Assistant Professor, Department of CS NOVA University of Lisbon"
-url                      : https://ClaudiaASoares.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://claudiaasoares.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "ClaudiaASoares/ClaudiaASoares.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -66,9 +66,13 @@ og_image                 :  # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Cláudia Soares"
+  links:
+    - https://orcid.org/0000-0003-3071-6627
+    - https://scholar.google.com/citations?user=Y9CArh4AAAAJ
+    - https://novaresearch.unl.pt/en/persons/claudia-soares/
+    - https://www.cienciavitae.pt/en/691E-996A-BEA8
 
 
 # Analytics
@@ -80,7 +84,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Claudia Soares"
+  name             : "Cláudia Soares"
   avatar           : "profile.png"
   bio              : "I use optimization, physics, and probability theory to develop robust, interpretable, and trustworthy learning methods to be applied in the real world."
   location         : "Lisbon, Portugal"
@@ -148,6 +152,8 @@ exclude:
   - vendor
   # Theme examples and maintenance files are kept in Git, outside the site output.
   - _audits
+  - DeepLearning/lecture0.md
+  - DeepLearning/lecture1.md
   - _drafts
   - _posts
   - _talks

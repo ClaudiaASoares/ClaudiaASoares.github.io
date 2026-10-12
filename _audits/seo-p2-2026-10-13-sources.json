@@ -1,0 +1,388 @@
+{
+  "date": "2026-10-13",
+  "abstract_sources": [
+    {
+      "bibtex_key": "Norberto_2026_ASTRA",
+      "source": "https://arxiv.org/abs/2609.33993",
+      "version": "Author preprint abstract",
+      "words": 187
+    },
+    {
+      "bibtex_key": "Valdeira_2026",
+      "source": "https://arxiv.org/abs/2309.09977",
+      "version": "Author preprint abstract",
+      "words": 271
+    },
+    {
+      "bibtex_key": "Shi_2025",
+      "source": "https://arxiv.org/abs/2506.06737",
+      "version": "Author preprint abstract",
+      "words": 171
+    },
+    {
+      "bibtex_key": "Ferreira_2025",
+      "source": "https://arxiv.org/abs/2407.15180",
+      "version": "Author preprint abstract",
+      "words": 212
+    },
+    {
+      "bibtex_key": "Ferreira_2024",
+      "source": "https://arxiv.org/abs/2312.13318",
+      "version": "Author preprint abstract",
+      "words": 286
+    },
+    {
+      "bibtex_key": "Metelo_2024",
+      "source": "https://arxiv.org/abs/2403.17637",
+      "version": "Author preprint abstract",
+      "words": 183
+    },
+    {
+      "bibtex_key": "Ji2017",
+      "source": "https://arxiv.org/abs/1709.08746",
+      "version": "Author preprint abstract",
+      "words": 82
+    },
+    {
+      "bibtex_key": "Marta23Diffusion",
+      "source": "https://arxiv.org/abs/2311.05417",
+      "version": "Author preprint abstract",
+      "words": 217
+    },
+    {
+      "bibtex_key": "Marta23Tax",
+      "source": "https://arxiv.org/abs/2311.05430",
+      "version": "Author preprint abstract",
+      "words": 239
+    },
+    {
+      "bibtex_key": "SoaresVasques2019",
+      "source": "https://arxiv.org/abs/2210.09107",
+      "version": "Abstract from the later author preprint (2022)",
+      "words": 138
+    },
+    {
+      "bibtex_key": "Ferreira_2026_SatelliteSafeMargin",
+      "source": "https://novaresearch.unl.pt/en/publications/satellite-safe-margin-fast-solutions-for-conjunction-analysis/",
+      "version": "Published abstract source",
+      "words": 178
+    },
+    {
+      "bibtex_key": "Rackovi__2024",
+      "source": "https://researchportal.ulisboa.pt/pt/publications/refined-inverse-rigging-a-balanced-approach-to-high-fidelity-blen/",
+      "version": "Published abstract source",
+      "words": 212
+    },
+    {
+      "bibtex_key": "Ferreira_2026_CLASP",
+      "source": "https://proceedings.mlr.press/v306/ferreira26a.html",
+      "version": "Published abstract source",
+      "words": 171
+    },
+    {
+      "bibtex_key": "Regina20",
+      "source": "https://easychair.org/smart-program/COMPLEXNETWORKS2020/2020-12-03.html#talk:162210",
+      "version": "Published abstract source",
+      "words": 161
+    },
+    {
+      "bibtex_key": "de_Brito_Duarte_2026",
+      "source": "https://link.springer.com/article/10.1186/s12913-026-14099-9",
+      "version": "Published abstract source",
+      "words": 308
+    },
+    {
+      "bibtex_key": "Belo_2025",
+      "source": "https://blog.neuraspace.com/hubfs/Language-Modeling-and-Retrieval-Augmented-Generation-Integrationin-Space-Operation%20Decision-Support-Tools.pdf",
+      "version": "Published abstract source",
+      "words": 269
+    },
+    {
+      "bibtex_key": "Poisson2021",
+      "source": "https://ai4spacecraft.github.io/papers/AI4Spacecraft_paper_2.pdf",
+      "version": "Published abstract source",
+      "words": 129
+    },
+    {
+      "bibtex_key": "Valdeira_2021",
+      "source": "https://run.unl.pt/server/api/core/bitstreams/3e4f2a64-13d7-458a-84d3-48c0a37bff0c/content",
+      "version": "Published abstract source",
+      "words": 123
+    },
+    {
+      "bibtex_key": "Lavado_2025-2",
+      "source": "https://openaccess.thecvf.com/content/WACV2025/papers/Lavado_Learning_under_Noisy_Labels_Spurious_Points_and_Diverse_Structures_TS40K_WACV_2025_paper.pdf",
+      "version": "Published abstract source",
+      "words": 101
+    },
+    {
+      "bibtex_key": "duarte2021referral",
+      "source": "https://europe.naverlabs.com/wp-content/uploads/2021/09/DuarteEtAl2021.pdf",
+      "version": "Published abstract source",
+      "words": 181
+    },
+    {
+      "bibtex_key": "Veiga2019",
+      "source": "https://shirshendu.ccny.cuny.edu/PDF%20Files/CPD_BookOfAbs.pdf#page=57",
+      "version": "Conference extended abstract",
+      "words": 927
+    },
+    {
+      "bibtex_key": "Soares_2018",
+      "source": "Author manuscript, archived 2025-06-30. MAPparameterData/text final/parameterFreeLocalization.tex, abstract lines 92-102.",
+      "version": "Author manuscript",
+      "words": 81
+    }
+  ],
+  "lecture_figures": [
+    {
+      "path": "figures/lec0/bishop.jpg",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/bishop.jpg",
+      "bytes": 113262
+    },
+    {
+      "path": "figures/lec0/cat1.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/cat1.png",
+      "bytes": 1292872
+    },
+    {
+      "path": "figures/lec0/cat2.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/cat2.png",
+      "bytes": 1141964
+    },
+    {
+      "path": "figures/lec0/cat3.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/cat3.png",
+      "bytes": 2293852
+    },
+    {
+      "path": "figures/lec0/cat4.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/cat4.png",
+      "bytes": 2192176
+    },
+    {
+      "path": "figures/lec0/console.jpg",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/console.jpg",
+      "bytes": 206763
+    },
+    {
+      "path": "figures/lec0/dog1.jpg",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/dog1.jpg",
+      "bytes": 141536
+    },
+    {
+      "path": "figures/lec0/dog2.jpg",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/dog2.jpg",
+      "bytes": 142206
+    },
+    {
+      "path": "figures/lec0/imagenet.jpeg",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/imagenet.jpeg",
+      "bytes": 164049
+    },
+    {
+      "path": "figures/lec0/mushroom-big.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/mushroom-big.png",
+      "bytes": 15298
+    },
+    {
+      "path": "figures/lec0/mushroom-rgb0.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/mushroom-rgb0.png",
+      "bytes": 6013
+    },
+    {
+      "path": "figures/lec0/mushroom-rgb1.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/mushroom-rgb1.png",
+      "bytes": 5911
+    },
+    {
+      "path": "figures/lec0/mushroom-rgb2.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/mushroom-rgb2.png",
+      "bytes": 5970
+    },
+    {
+      "path": "figures/lec0/mushroom-small-nb.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/mushroom-small-nb.png",
+      "bytes": 61670
+    },
+    {
+      "path": "figures/lec0/mushroom-small.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/mushroom-small.png",
+      "bytes": 6522
+    },
+    {
+      "path": "figures/lec0/skip-connection.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/skip-connection.png",
+      "bytes": 19004
+    },
+    {
+      "path": "figures/lec0/software.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/software.png",
+      "bytes": 20102
+    },
+    {
+      "path": "figures/lec0/titan.jpg",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/titan.jpg",
+      "bytes": 38334
+    },
+    {
+      "path": "figures/lec0/turing-award.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec0/turing-award.png",
+      "bytes": 1583414
+    },
+    {
+      "path": "figures/lec1/classification.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/classification.png",
+      "bytes": 7148
+    },
+    {
+      "path": "figures/lec1/data.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/data.png",
+      "bytes": 15695
+    },
+    {
+      "path": "figures/lec1/double-descent-mnist.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/double-descent-mnist.png",
+      "bytes": 134594
+    },
+    {
+      "path": "figures/lec1/double-descent.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/double-descent.png",
+      "bytes": 238633
+    },
+    {
+      "path": "figures/lec1/mlp-1000000.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/mlp-1000000.png",
+      "bytes": 26542
+    },
+    {
+      "path": "figures/lec1/model-selection.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/model-selection.png",
+      "bytes": 55152
+    },
+    {
+      "path": "figures/lec1/poly-1.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-1.png",
+      "bytes": 20173
+    },
+    {
+      "path": "figures/lec1/poly-10.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-10.png",
+      "bytes": 25108
+    },
+    {
+      "path": "figures/lec1/poly-2.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-2.png",
+      "bytes": 22962
+    },
+    {
+      "path": "figures/lec1/poly-3.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-3.png",
+      "bytes": 24569
+    },
+    {
+      "path": "figures/lec1/poly-4.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-4.png",
+      "bytes": 24857
+    },
+    {
+      "path": "figures/lec1/poly-5.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-5.png",
+      "bytes": 24758
+    },
+    {
+      "path": "figures/lec1/poly-N-10.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-N-10.png",
+      "bytes": 21001
+    },
+    {
+      "path": "figures/lec1/poly-N-100.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-N-100.png",
+      "bytes": 25384
+    },
+    {
+      "path": "figures/lec1/poly-N-5.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-N-5.png",
+      "bytes": 20743
+    },
+    {
+      "path": "figures/lec1/poly-N-50.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-N-50.png",
+      "bytes": 23365
+    },
+    {
+      "path": "figures/lec1/poly-N-500.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-N-500.png",
+      "bytes": 38568
+    },
+    {
+      "path": "figures/lec1/poly-avg-degree-1.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-avg-degree-1.png",
+      "bytes": 46722
+    },
+    {
+      "path": "figures/lec1/poly-avg-degree-2.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-avg-degree-2.png",
+      "bytes": 61937
+    },
+    {
+      "path": "figures/lec1/poly-avg-degree-3.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-avg-degree-3.png",
+      "bytes": 50500
+    },
+    {
+      "path": "figures/lec1/poly-avg-degree-4.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-avg-degree-4.png",
+      "bytes": 57395
+    },
+    {
+      "path": "figures/lec1/poly-avg-degree-5.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/poly-avg-degree-5.png",
+      "bytes": 65642
+    },
+    {
+      "path": "figures/lec1/protocol1.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/protocol1.png",
+      "bytes": 10289
+    },
+    {
+      "path": "figures/lec1/protocol2.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/protocol2.png",
+      "bytes": 14593
+    },
+    {
+      "path": "figures/lec1/protocol3.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/protocol3.png",
+      "bytes": 17550
+    },
+    {
+      "path": "figures/lec1/regression.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/regression.png",
+      "bytes": 9774
+    },
+    {
+      "path": "figures/lec1/training-error.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/training-error.png",
+      "bytes": 8578
+    },
+    {
+      "path": "figures/lec1/training-test-error.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/training-test-error.png",
+      "bytes": 13921
+    },
+    {
+      "path": "figures/lec1/underoverfitting.png",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/figures/lec1/underoverfitting.png",
+      "bytes": 34767
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://raw.githubusercontent.com/glouppe/info8010-deep-learning/07ccca9f937b54cb0b20c4cdb8572c59812fc4b2/LICENSE",
+      "bytes": 1521
+    }
+  ],
+  "identity_sources": [
+    "https://www.cienciavitae.pt/en/691E-996A-BEA8",
+    "https://novaresearch.unl.pt/en/persons/claudia-soares/"
+  ]
+}

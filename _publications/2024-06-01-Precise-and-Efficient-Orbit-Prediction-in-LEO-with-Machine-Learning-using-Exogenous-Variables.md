@@ -2,19 +2,33 @@
 title: "Precise and Efficient Orbit Prediction in LEO with Machine Learning using Exogenous Variables"
 collection: publications
 permalink: /publication/2024-06-01-Precise-and-Efficient-Orbit-Prediction-in-LEO-with-Machine-Learning-using-Exogenous-Variables
+excerpt_separator: ""
 description: 'The increasing volume of space objects in Earth&apos;s orbit presents a significant challenge for Space Situational Awareness (SSA).'
 excerpt: 'The increasing volume of space objects in Earth&apos;s orbit presents a significant challenge for Space Situational Awareness (SSA). And in particular, accurate orbit prediction is crucial to anticipate the position and velocity of space objects, for collision avoidance and space debris mitigation. When performing Orbit Prediction (OP), it is necessary to consider the impact of non-conservative forces, such as atmospheric drag and gravitational perturbations, that.'
 date: 2024-06-01
 venue: '2024 IEEE Congress on Evolutionary Computation (CEC)'
+citation_authors: ["Francisco Caldas", "Cláudia Soares"]
+citation_year: '2024'
+citation_conference: "2024 IEEE Congress on Evolutionary Computation (CEC)"
+citation_doi: "10.1109/cec60901.2024.10611996"
+citation_firstpage: '1'
+citation_lastpage: '8'
 paperurl: 'http://dx.doi.org/10.1109/cec60901.2024.10611996'
 citation: 'Francisco Caldas, Cláudia Soares, "Precise and Efficient Orbit Prediction in LEO with Machine Learning using Exogenous Variables." 2024 IEEE Congress on Evolutionary Computation (CEC), 2024.'
 ---
 
-The increasing volume of space objects in Earth&apos;s orbit presents a significant challenge for Space Situational Awareness (SSA). And in particular, accurate orbit prediction is crucial to anticipate the position and velocity of space objects, for collision avoidance and space debris mitigation. When performing Orbit Prediction (OP), it is necessary to consider the impact of non-conservative forces, such as atmospheric drag and gravitational perturbations, that contribute to uncertainty around the future position of spacecraft and space debris alike. Conventional propagator methods like the SGP4 inadequately account for these forces, while numerical propagators are able to model the forces at a high computational cost. To address these limitations, we propose an orbit prediction algorithm utilizing machine learning. This algorithm forecasts state vectors on a spacecraft using past positions and environmental variables like atmospheric density from external sources. The orbital data used in the paper is gathered from precision ephemeris data from the International Laser Ranging Service (ILRS), for the period of almost a year. We show how the use of machine learning and time-series techniques can produce low positioning errors at a very low computational cost, thus significantly improving SSA capabilities by providing faster and reliable orbit determination for an ever increasing number of space objects.
+
+<p class="publication-authors">Francisco Caldas, Cláudia Soares</p>
+
+{% raw %}
+
+## Abstract
+
+<div class="publication-abstract"><p>The increasing volume of space objects in Earth&#x27;s orbit presents a significant challenge for Space Situational Awareness (SSA). And in particular, accurate orbit prediction is crucial to anticipate the position and velocity of space objects, for collision avoidance and space debris mitigation. When performing Orbit Prediction (OP), it is necessary to consider the impact of non-conservative forces, such as atmospheric drag and gravitational perturbations, that contribute to uncertainty around the future position of spacecraft and space debris alike. Conventional propagator methods like the SGP4 inadequately account for these forces, while numerical propagators are able to model the forces at a high computational cost. To address these limitations, we propose an orbit prediction algorithm utilizing machine learning. This algorithm forecasts state vectors on a spacecraft using past positions and environmental variables like atmospheric density from external sources. The orbital data used in the paper is gathered from precision ephemeris data from the International Laser Ranging Service (ILRS), for the period of almost a year. We show how the use of machine learning and time-series techniques can produce low positioning errors at a very low computational cost, thus significantly improving SSA capabilities by providing faster and reliable orbit determination for an ever increasing number of space objects.</p></div>
 
 [Access paper here](http://dx.doi.org/10.1109/cec60901.2024.10611996){:target="_blank"}
 
-Bibtex:
+## BibTeX
 
 <pre><code>@inproceedings{Caldas_2024-2,
     author = &quot;Caldas, Francisco and Soares, Cláudia&quot;,
@@ -28,3 +42,4 @@ Bibtex:
     pages = &quot;1-8&quot;,
     abstract = &quot;The increasing volume of space objects in Earth&#x27;s orbit presents a significant challenge for Space Situational Awareness (SSA). And in particular, accurate orbit prediction is crucial to anticipate the position and velocity of space objects, for collision avoidance and space debris mitigation. When performing Orbit Prediction (OP), it is necessary to consider the impact of non-conservative forces, such as atmospheric drag and gravitational perturbations, that contribute to uncertainty around the future position of spacecraft and space debris alike. Conventional propagator methods like the SGP4 inadequately account for these forces, while numerical propagators are able to model the forces at a high computational cost. To address these limitations, we propose an orbit prediction algorithm utilizing machine learning. This algorithm forecasts state vectors on a spacecraft using past positions and environmental variables like atmospheric density from external sources. The orbital data used in the paper is gathered from precision ephemeris data from the International Laser Ranging Service (ILRS), for the period of almost a year. We show how the use of machine learning and time-series techniques can produce low positioning errors at a very low computational cost, thus significantly improving SSA capabilities by providing faster and reliable orbit determination for an ever increasing number of space objects.&quot;
 }</code></pre>
+{% endraw %}

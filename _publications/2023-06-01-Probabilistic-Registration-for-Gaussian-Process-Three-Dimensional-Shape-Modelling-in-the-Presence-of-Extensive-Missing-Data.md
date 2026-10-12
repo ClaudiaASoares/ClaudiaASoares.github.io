@@ -2,19 +2,36 @@
 title: "Probabilistic Registration for Gaussian Process Three-Dimensional Shape Modelling in the Presence of Extensive Missing Data"
 collection: publications
 permalink: /publication/2023-06-01-Probabilistic-Registration-for-Gaussian-Process-Three-Dimensional-Shape-Modelling-in-the-Presence-of-Extensive-Missing-Data
+excerpt_separator: ""
 description: 'We propose a shape fitting/registration method based on a Gaussian processes formulation, suitable for shapes with extensive regions of missing data.'
 excerpt: 'We propose a shape fitting/registration method based on a Gaussian processes formulation, suitable for shapes with extensive regions of missing data. Gaussian processes are a proven powerful tool, as they provide a unified setting for shape modelling and fitting. While the existing methods in this area prove to work well for the general case of the human head, when looking at more detailed and deformed.'
 date: 2023-06-01
 venue: 'SIAM Journal on Mathematics of Data Science'
+citation_authors: ["Filipa M. Valdeira", "Ricardo Ferreira", "Alessandra Micheletti", "Cláudia Soares"]
+citation_year: '2023'
+citation_journal: "SIAM Journal on Mathematics of Data Science"
+citation_doi: "10.1137/22m1495494"
+citation_volume: "5"
+citation_issue: "2"
+citation_issn: "2577-0187"
+citation_firstpage: '502'
+citation_lastpage: '527'
 paperurl: 'http://dx.doi.org/10.1137/22m1495494'
 citation: 'Filipa M. Valdeira, Ricardo Ferreira, Alessandra Micheletti, Cláudia Soares, "Probabilistic Registration for Gaussian Process Three-Dimensional Shape Modelling in the Presence of Extensive Missing Data." SIAM Journal on Mathematics of Data Science, 2023.'
 ---
 
-We propose a shape fitting/registration method based on a Gaussian processes formulation, suitable for shapes with extensive regions of missing data. Gaussian processes are a proven powerful tool, as they provide a unified setting for shape modelling and fitting. While the existing methods in this area prove to work well for the general case of the human head, when looking at more detailed and deformed data, with a high prevalence of missing data, such as the ears, the results are not satisfactory. In order to overcome this, we formulate the shape fitting problem as a multiannotator Gaussian process regression and establish a parallel with the standard probabilistic registration. The achieved method, the shape fitting Gaussian process (or SFGP), shows better performance when dealing with extensive areas of missing data when compared to a state-of-the-art registration method and current approaches for registration with GP. Experiments are conducted both for a two-dimensional small dataset with several transformations and a three-dimensional dataset of ears.
+
+<p class="publication-authors">Filipa M. Valdeira, Ricardo Ferreira, Alessandra Micheletti, Cláudia Soares</p>
+
+{% raw %}
+
+## Abstract
+
+<div class="publication-abstract"><p>We propose a shape fitting/registration method based on a Gaussian processes formulation, suitable for shapes with extensive regions of missing data. Gaussian processes are a proven powerful tool, as they provide a unified setting for shape modelling and fitting. While the existing methods in this area prove to work well for the general case of the human head, when looking at more detailed and deformed data, with a high prevalence of missing data, such as the ears, the results are not satisfactory. In order to overcome this, we formulate the shape fitting problem as a multiannotator Gaussian process regression and establish a parallel with the standard probabilistic registration. The achieved method, the shape fitting Gaussian process (or SFGP), shows better performance when dealing with extensive areas of missing data when compared to a state-of-the-art registration method and current approaches for registration with GP. Experiments are conducted both for a two-dimensional small dataset with several transformations and a three-dimensional dataset of ears.</p></div>
 
 [Access paper here](http://dx.doi.org/10.1137/22m1495494){:target="_blank"}
 
-Bibtex:
+## BibTeX
 
 <pre><code>@article{Valdeira_2023,
     author = &quot;Valdeira, Filipa M. and Ferreira, Ricardo and Micheletti, Alessandra and Soares, Cláudia&quot;,
@@ -31,3 +48,4 @@ Bibtex:
     pages = &quot;502-527&quot;,
     abstract = &quot;We propose a shape fitting/registration method based on a Gaussian processes formulation, suitable for shapes with extensive regions of missing data. Gaussian processes are a proven powerful tool, as they provide a unified setting for shape modelling and fitting. While the existing methods in this area prove to work well for the general case of the human head, when looking at more detailed and deformed data, with a high prevalence of missing data, such as the ears, the results are not satisfactory. In order to overcome this, we formulate the shape fitting problem as a multiannotator Gaussian process regression and establish a parallel with the standard probabilistic registration. The achieved method, the shape fitting Gaussian process (or SFGP), shows better performance when dealing with extensive areas of missing data when compared to a state-of-the-art registration method and current approaches for registration with GP. Experiments are conducted both for a two-dimensional small dataset with several transformations and a three-dimensional dataset of ears.&quot;
 }</code></pre>
+{% endraw %}

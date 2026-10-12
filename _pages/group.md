@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "Group"
+title: "TrustworthyML@NOVA"
 description: "Members and alumni of TrustworthyML@NOVA, Cláudia Soares's research group at NOVA School of Science and Technology."
 permalink: /group/
 author_profile: true

@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Prospective students"
+description: "Information for prospective PhD students, postdocs, MSc students and visiting researchers interested in joining TrustworthyML@NOVA."
 permalink: /students/
 author_profile: true
 redirect_from:

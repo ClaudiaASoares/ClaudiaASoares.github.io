@@ -1,5 +1,6 @@
 ---
 title: "Deep Learning"
+description: "Deep Learning MSc course at NOVA School of Science and Technology, covering computer vision, natural language processing and reinforcement learning."
 collection: teaching
 type: "MSc course"
 permalink: /teaching/2023-deep-learning

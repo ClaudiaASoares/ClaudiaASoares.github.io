@@ -1,3 +1,7 @@
+---
+description: "Information about the AI Fights Space Debris postdoctoral position at NOVA, in collaboration with Neuraspace."
+---
+
 **Postdoctoral Position Announcement: AI Fights Space Debris**
 
 We are excited to announce a postdoctoral position for the cutting-edge project "AI Fights Space Debris" under the umbrella of our Machine Learning for Space initiative. This role provides an unparalleled opportunity to work at the intersection of artificial intelligence and space technology.
@@ -20,4 +24,3 @@ This position presents a unique opportunity for postdoctoral researchers to enga
 For more details and application procedures, please reach out and fill in our application form at https://forms.gle/oXN3sCRgvJfNPJgr9. Applications will be reviewed on a rolling basis until the position is filled.
 
 Join us in our mission to combat space debris with the power of AI!
-

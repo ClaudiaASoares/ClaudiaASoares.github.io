@@ -1,5 +1,6 @@
 ---
 title: "Machine Learning"
+description: "Machine Learning MSc course at NOVA School of Science and Technology, covering supervised and unsupervised learning, generalization and model evaluation."
 collection: teaching
 type: "MSc course"
 permalink: /teaching/2022-machine-learning

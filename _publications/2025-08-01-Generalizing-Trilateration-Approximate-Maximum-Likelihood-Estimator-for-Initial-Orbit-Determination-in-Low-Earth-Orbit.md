@@ -2,6 +2,7 @@
 title: "Generalizing Trilateration: Approximate Maximum Likelihood Estimator for Initial Orbit Determination in Low Earth Orbit"
 collection: publications
 permalink: /publication/2025-08-01-Generalizing-Trilateration-Approximate-Maximum-Likelihood-Estimator-for-Initial-Orbit-Determination-in-Low-Earth-Orbit
+description: 'Generalizing Trilateration: Approximate Maximum Likelihood Estimator for Initial Orbit Determination in Low Earth Orbit. IEEE Transactions on Aerospace and Electronic Systems, 2025.'
 date: 2025-08-01
 venue: 'IEEE Transactions on Aerospace and Electronic Systems'
 paperurl: 'http://dx.doi.org/10.1109/taes.2025.3566085'

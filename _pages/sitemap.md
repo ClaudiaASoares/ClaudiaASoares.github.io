@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Sitemap"
+description: "Pages, research topics, publications and teaching resources on Cláudia Soares's website."
 permalink: /sitemap/
 author_profile: true
 ---

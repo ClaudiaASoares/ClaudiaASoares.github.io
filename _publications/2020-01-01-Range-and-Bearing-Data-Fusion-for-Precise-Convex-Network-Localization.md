@@ -2,6 +2,7 @@
 title: "Range and Bearing Data Fusion for Precise Convex Network Localization"
 collection: publications
 permalink: /publication/2020-01-01-Range-and-Bearing-Data-Fusion-for-Precise-Convex-Network-Localization
+description: 'Hybrid localization in GNSS-challenged environments using measured ranges and angles is becoming increasingly popular, in particular with the advent of multimodal communication systems.'
 excerpt: 'Hybrid localization in GNSS-challenged environments using measured ranges and angles is becoming increasingly popular, in particular with the advent of multimodal communication systems. Here, we address the hybrid network localization problem using ranges and bearings to jointly determine the positions of a number of agents through a single maximum-likelihood (ML) optimization problem that seamlessly fuses all the available pairwise range and angle measurements. We propose.'
 date: 2020-01-01
 venue: 'IEEE Signal Processing Letters'

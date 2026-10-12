@@ -2,6 +2,7 @@
 title: "Simple and Fast Convex Relaxation Method for Cooperative Localization in Sensor Networks Using Range Measurements"
 collection: publications
 permalink: /publication/2015-09-01-Simple-and-Fast-Convex-Relaxation-Method-for-Cooperative-Localization-in-Sensor-Networks-Using-Range-Measurements
+description: 'We address the sensor network localization problem given noisy range measurements between pairs of nodes.'
 excerpt: 'We address the sensor network localization problem given noisy range measurements between pairs of nodes. We approach the nonconvex maximum-likelihood formulation via a known simple convex relaxation. We exploit its favorable optimization properties to the full to obtain an approach that is completely distributed, has a simple implementation at each node, and capitalizes on an optimal gradient method to attain fast convergence. We offer a.'
 date: 2015-09-01
 venue: 'IEEE Transactions on Signal Processing'

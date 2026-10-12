@@ -2,6 +2,7 @@
 title: "Causal Inference Explanations for Graph Neural Networks"
 collection: publications
 permalink: /publication/2024-01-01-Causal-Inference-Explanations-for-Graph-Neural-Networks
+description: 'Explainable Artificial Intelligence has emerged, aiming to enhance the trustworthiness of black box models by devising explanation methods that clarify their inner workings.'
 excerpt: 'Explainable Artificial Intelligence has emerged, aiming to enhance the trustworthiness of black box models by devising explanation methods that clarify their inner workings. However, prevalent explanation techniques predominantly leverage correlation and association rather than employing causality, a significant aspect of human comprehension. We propose a novel explanation method grounded in causal inference tailored specifically for Graph Neural Networks. Our approach seeks to illuminate the decision-making.'
 date: 2024-01-01
 venue: 'Causal@UAI2024 Poster'

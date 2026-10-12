@@ -2,6 +2,7 @@
 title: "Refined Inverse Rigging: A Balanced Approach to High-fidelity Blendshape Animation"
 collection: publications
 permalink: /publication/2024-12-01-Refined-Inverse-Rigging-A-Balanced-Approach-to-High-fidelity-Blendshape-Animation
+description: 'Refined Inverse Rigging: A Balanced Approach to High-fidelity Blendshape Animation. SIGGRAPH Asia 2024 Conference Papers.'
 date: 2024-12-01
 venue: 'SIGGRAPH Asia 2024 Conference Papers'
 paperurl: 'http://dx.doi.org/10.1145/3680528.3687670'

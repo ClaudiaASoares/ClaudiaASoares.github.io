@@ -2,6 +2,7 @@
 title: "From Noisy Point Clouds to Complete Ear Shapes: Unsupervised Pipeline"
 collection: publications
 permalink: /publication/2021-01-01-From-Noisy-Point-Clouds-to-Complete-Ear-Shapes-Unsupervised-Pipeline
+description: 'Project E!11439'
 excerpt: 'Project E!11439'
 date: 2021-01-01
 venue: 'IEEE Access'

@@ -2,6 +2,7 @@
 title: "CLASP: Online learning algorithms for Convex Losses And Squared Penalties"
 collection: publications
 permalink: /publication/2026-01-01-CLASP-Online-learning-algorithms-for-Convex-Losses-And-Squared-Penalties
+description: 'CLASP: Online learning algorithms for Convex Losses And Squared Penalties. Proceedings of the 43rd International Conference on Machine Learning, 2026.'
 date: 2026-01-01
 venue: 'Proceedings of the 43rd International Conference on Machine Learning'
 paperurl: 'https://openreview.net/forum?id=o54x4zOWuy'

@@ -2,6 +2,7 @@
 title: "DIeSEL: Distributed self-localization of a network of underwater vehicles"
 collection: publications
 permalink: /publication/2017-01-01-DIeSEL-Distributed-self-localization-of-a-network-of-underwater-vehicles
+description: 'DIeSEL: Distributed self-localization of a network of underwater vehicles. OCEANS 2017 - Anchorage.'
 date: 2017-01-01
 venue: 'OCEANS 2017 - Anchorage'
 citation: 'C. Soares, P. Ji, J. Gomes, A. Pascoal, "DIeSEL: Distributed self-localization of a network of underwater vehicles." OCEANS 2017 - Anchorage, 2017.'

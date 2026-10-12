@@ -2,6 +2,7 @@
 title: "A Systematic Evaluation of Retrieval-Augmented Generation and Language Models for Space Operations"
 collection: publications
 permalink: /publication/2026-01-01-A-Systematic-Evaluation-of-Retrieval-Augmented-Generation-and-Language-Models-for-Space-Operations
+description: 'The rapid expansion of space activities has led to an unprecedented accumulation of technical documentation, operational guidelines, and scientific literature, creating challenges for timely decision-making in space operations.'
 excerpt: 'The rapid expansion of space activities has led to an unprecedented accumulation of technical documentation, operational guidelines, and scientific literature, creating challenges for timely decision-making in space operations. Effective management in space operations requires tools capable of efficiently processing vast and heterogeneous information sources. This paper systematically evaluates the performance of Retrieval-Augmented Generation (RAG) pipelines, combining Large Language Models (LLMs) with information retrieval techniques for.'
 date: 2026-01-01
 venue: 'AI4Space'

@@ -2,6 +2,7 @@
 title: "FLORIS and CLORIS: Hybrid source and network localization based on ranges and video"
 collection: publications
 permalink: /publication/2018-12-01-FLORIS-and-CLORIS-Hybrid-source-and-network-localization-based-on-ranges-and-video
+description: 'We propose hybrid methods for localization in wireless sensor networks fusing noisy range measurements with angular information (extracted from video).'
 excerpt: 'We propose hybrid methods for localization in wireless sensor networks fusing noisy range measurements with angular information (extracted from video). Compared with conventional methods that rely on a single sensed variable, this may pave the way for improved localization accuracy and robustness. We address both the single-source and network (i.e., cooperative multiple-source) localization paradigms, solving them via optimization of a convex surrogate. The formulations for.'
 date: 2018-12-01
 venue: 'Signal Processing'

@@ -2,6 +2,7 @@
 title: "Satellite Safe Margin: Fast Solutions for Conjunction Analysis"
 collection: publications
 permalink: /publication/2026-09-01-Satellite-Safe-Margin-Fast-Solutions-for-Conjunction-Analysis
+description: 'Satellite Safe Margin: Fast Solutions for Conjunction Analysis. Journal of Guidance, Control, and Dynamics, 2026.'
 date: 2026-09-01
 venue: 'Journal of Guidance, Control, and Dynamics'
 paperurl: 'https://doi.org/10.2514/1.G008922'

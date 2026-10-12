@@ -2,6 +2,7 @@
 title: "STRONG: Synchronous and asynchronous robust network localization, under non-Gaussian noise"
 collection: publications
 permalink: /publication/2021-08-01-STRONG-Synchronous-and-asynchronous-robust-network-localization-under-non-Gaussian-noise
+description: 'Real-world network applications must cope with failing nodes, malicious attacks, or nodes facing corrupted data — data classified as outliers.'
 excerpt: 'Real-world network applications must cope with failing nodes, malicious attacks, or nodes facing corrupted data — data classified as outliers. Our work addresses these concerns in the scope of the sensor network localization problem where, despite the abundance of technical literature, prior research seldom considered outlier data. We propose robust, fast, and distributed network localization algorithms, resilient to high-power noise, but also precise under regular.'
 date: 2021-08-01
 venue: 'Signal Processing'

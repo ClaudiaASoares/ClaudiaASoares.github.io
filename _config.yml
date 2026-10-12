@@ -146,6 +146,29 @@ exclude:
   - package.json
   - tmp
   - vendor
+  # Theme examples and maintenance files are kept in Git, outside the site output.
+  - _audits
+  - _drafts
+  - _posts
+  - _talks
+  - markdown_generator
+  - scripts
+  - talkmap
+  - talkmap.ipynb
+  - talkmap.py
+  - CONTRIBUTING.md
+  - requirements-publications.txt
+  - _pages/archive-layout-with-content.md
+  - _pages/category-archive.html
+  - _pages/collection-archive.html
+  - _pages/markdown.md
+  - _pages/non-menu-page.md
+  - _pages/page-archive.html
+  - _pages/portfolio.html
+  - _pages/tag-archive.html
+  - _pages/talkmap.html
+  - _pages/talks.html
+  - _pages/year-archive.html
 keep_files:
   - .git
   - .svn

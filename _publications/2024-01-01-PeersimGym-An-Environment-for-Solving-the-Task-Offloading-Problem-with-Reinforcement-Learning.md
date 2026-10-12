@@ -2,6 +2,7 @@
 title: "PeersimGym: An Environment for Solving the Task Offloading Problem with Reinforcement Learning"
 collection: publications
 permalink: /publication/2024-01-01-PeersimGym-An-Environment-for-Solving-the-Task-Offloading-Problem-with-Reinforcement-Learning
+description: 'PeersimGym: An Environment for Solving the Task Offloading Problem with Reinforcement Learning. Machine Learning and Knowledge Discovery in Databases. Applied Data Science Track, 2024.'
 date: 2024-01-01
 venue: 'Machine Learning and Knowledge Discovery in Databases. Applied Data Science Track'
 paperurl: 'http://dx.doi.org/10.1007/978-3-031-70378-2_3'

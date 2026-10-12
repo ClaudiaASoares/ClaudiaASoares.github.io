@@ -1,3 +1,7 @@
+---
+description: "Introduction to Deep Learning by Cláudia Soares, covering learning with unstructured data, course topics and machine learning fundamentals."
+---
+
 % Lecture 0: Introduction
 % Author CS
 % Date March 

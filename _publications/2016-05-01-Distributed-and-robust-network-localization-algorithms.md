@@ -2,6 +2,7 @@
 title: "Distributed and robust network localization algorithms"
 collection: publications
 permalink: /publication/2016-05-01-Distributed-and-robust-network-localization-algorithms
+description: 'Distributed and robust network localization algorithms. Instituto Superior Técnico Universidade de Lisboa, 2016.'
 date: 2016-05-01
 venue: 'Instituto Superior Técnico Universidade de Lisboa'
 paperurl: 'http://bit.ly/PhDThesisCS'

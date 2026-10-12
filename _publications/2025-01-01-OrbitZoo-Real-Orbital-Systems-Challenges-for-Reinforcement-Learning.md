@@ -2,6 +2,7 @@
 title: "OrbitZoo: Real Orbital Systems Challenges for Reinforcement Learning"
 collection: publications
 permalink: /publication/2025-01-01-OrbitZoo-Real-Orbital-Systems-Challenges-for-Reinforcement-Learning
+description: 'The increasing number of satellites and orbital debris has made space congestion a critical issue, threatening satellite safety and sustainability.'
 excerpt: 'The increasing number of satellites and orbital debris has made space congestion a critical issue, threatening satellite safety and sustainability. Challenges such as collision avoidance, station-keeping, and orbital maneuvering require advanced techniques to handle dynamic uncertainties and multi-agent interactions. Reinforcement learning (RL) has shown promise in this domain, enabling adaptive, autonomous policies for space operations; however, many existing RL frameworks rely on custom-built environments developed.'
 date: 2025-01-01
 venue: 'NeurIPS 2025 poster'

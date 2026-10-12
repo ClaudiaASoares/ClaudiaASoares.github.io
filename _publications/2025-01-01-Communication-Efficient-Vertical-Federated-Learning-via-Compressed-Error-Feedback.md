@@ -2,6 +2,7 @@
 title: "Communication-Efficient Vertical Federated Learning via Compressed Error Feedback"
 collection: publications
 permalink: /publication/2025-01-01-Communication-Efficient-Vertical-Federated-Learning-via-Compressed-Error-Feedback
+description: 'Communication overhead is a known bottleneck in federated learning (FL).'
 excerpt: 'Communication overhead is a known bottleneck in federated learning (FL). To address this, lossy compression is commonly used on the information communicated between the server and clients during training. In horizontal FL, where each client holds a subset of the samples, such communication-compressed training methods have recently seen significant progress. However, in their vertical FL counterparts, where each client holds a subset of the features.'
 date: 2025-01-01
 venue: 'IEEE Transactions on Signal Processing'

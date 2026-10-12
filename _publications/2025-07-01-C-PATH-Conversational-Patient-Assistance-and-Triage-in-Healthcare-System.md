@@ -2,6 +2,7 @@
 title: "C-PATH: Conversational Patient Assistance and Triage in Healthcare System"
 collection: publications
 permalink: /publication/2025-07-01-C-PATH-Conversational-Patient-Assistance-and-Triage-in-Healthcare-System
+description: 'C-PATH: Conversational Patient Assistance and Triage in Healthcare System. 2025 IEEE International Conference on Digital Health (ICDH).'
 date: 2025-07-01
 venue: '2025 IEEE International Conference on Digital Health (ICDH)'
 paperurl: 'http://dx.doi.org/10.1109/icdh67620.2025.00016'

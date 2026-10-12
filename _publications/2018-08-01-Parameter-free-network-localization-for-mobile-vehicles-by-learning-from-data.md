@@ -2,6 +2,7 @@
 title: "Parameter-free network localization for mobile vehicles by learning from data"
 collection: publications
 permalink: /publication/2018-08-01-Parameter-free-network-localization-for-mobile-vehicles-by-learning-from-data
+description: 'The following topics are dealt with: underwater acoustic communication; modems; wireless sensor networks; autonomous underwater vehicles; mobile robots; channel estimation; underwater vehicles; optical communication; underwater sound; routing protocols.'
 excerpt: 'The following topics are dealt with: underwater acoustic communication; modems; wireless sensor networks; autonomous underwater vehicles; mobile robots; channel estimation; underwater vehicles; optical communication; underwater sound; routing protocols.'
 date: 2018-08-01
 venue: '2018 Fourth Underwater Communications and Networking Conference (UComms)'

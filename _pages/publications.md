@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "Publications"
+description: "Publications by Cláudia Soares on trustworthy machine learning, including research in healthcare, space, federated learning and online learning."
 permalink: /publications/
 author_profile: true
 ---

@@ -2,6 +2,7 @@
 title: "One-Shot Initial Orbit Determination in Low-Earth Orbit"
 collection: publications
 permalink: /publication/2024-03-01-One-Shot-Initial-Orbit-Determination-in-Low-Earth-Orbit
+description: 'One-Shot Initial Orbit Determination in Low-Earth Orbit. Accepted at the IEEE Aerospace Conference, 2024.'
 date: 2024-03-01
 venue: 'Accepted at the IEEE Aerospace Conference'
 paperurl: 'http://dx.doi.org/10.1109/aero58975.2024.10521177'

@@ -1,6 +1,7 @@
 ---
 layout: archive
 title: "CV"
+description: "Cláudia Soares's academic CV, including education, research, publications, teaching and service at NOVA School of Science and Technology."
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -91,5 +92,4 @@ Service and leadership
 * AC to UAI 2026
 * Member of the Scientific Committee of the Master program on Big Data Analysis and Engineering
 * Associated Editor of the Mathematics in Industry journal
-
 

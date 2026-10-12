@@ -2,6 +2,7 @@
 title: "A Multi-Token Coordinate Descent Method for Semi-Decentralized Vertical Federated Learning"
 collection: publications
 permalink: /publication/2026-01-01-A-Multi-Token-Coordinate-Descent-Method-for-Semi-Decentralized-Vertical-Federated-Learning
+description: 'A Multi-Token Coordinate Descent Method for Semi-Decentralized Vertical Federated Learning. IEEE Transactions on Signal Processing, 2026.'
 date: 2026-01-01
 venue: 'IEEE Transactions on Signal Processing'
 paperurl: 'http://dx.doi.org/10.1109/tsp.2026.3652487'

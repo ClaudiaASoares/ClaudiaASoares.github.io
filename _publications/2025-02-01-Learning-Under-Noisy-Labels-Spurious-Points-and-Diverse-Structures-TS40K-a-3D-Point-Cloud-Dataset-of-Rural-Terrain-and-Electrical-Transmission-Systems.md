@@ -2,6 +2,7 @@
 title: "Learning Under Noisy Labels, Spurious Points, and Diverse Structures: TS40K, a 3D Point Cloud Dataset of Rural Terrain and Electrical Transmission Systems"
 collection: publications
 permalink: /publication/2025-02-01-Learning-Under-Noisy-Labels-Spurious-Points-and-Diverse-Structures-TS40K-a-3D-Point-Cloud-Dataset-of-Rural-Terrain-and-Electrical-Transmission-Systems
+description: 'Learning Under Noisy Labels, Spurious Points, and Diverse Structures: TS40K, a 3D Point Cloud Dataset of Rural Terrain and Electrical Transmission Systems. 2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV).'
 date: 2025-02-01
 venue: '2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)'
 paperurl: 'http://dx.doi.org/10.1109/wacv61041.2025.00712'

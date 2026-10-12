@@ -2,6 +2,7 @@
 title: "Dissecting medical referrals in health services: role of physician professional networks"
 collection: publications
 permalink: /publication/2026-04-01-Dissecting-medical-referrals-in-health-services-role-of-physician-professional-networks
+description: 'Dissecting medical referrals in health services: role of physician professional networks. BMC Health Services Research, 2026.'
 date: 2026-04-01
 venue: 'BMC Health Services Research'
 paperurl: 'http://dx.doi.org/10.1186/s12913-026-14099-9'

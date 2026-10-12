@@ -2,6 +2,7 @@
 title: "Locating a target from uncertain data: convex supersets based on linear-fractional representations"
 collection: publications
 permalink: /publication/2019-07-01-Locating-a-target-from-uncertain-data-convex-supersets-based-on-linear-fractional-representations
+description: 'We address the problem of locating a target by using measurements from a set of sensors called anchors.'
 excerpt: 'We address the problem of locating a target by using measurements from a set of sensors called anchors. Each anchor has a known location and measures its distance to the target, the measurement being contaminated with additive noise. The noise vector, which contains the noise realizations across the anchors, is naturally unknown, but we assume it to be drawn from a known bounded uncertainty set.Because.'
 date: 2019-07-01
 venue: 'IEEE EUROCON 2019 -18th International Conference on Smart Technologies'

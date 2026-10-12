@@ -469,6 +469,12 @@ def markdown_for_entry(
     if preprint_entry and not abstract:
         abstract = abstract_for_entry(preprint_entry.fields)
     excerpt = excerpt_for_abstract(abstract) if abstract else ""
+    publication_label = venue if pub_year in venue else f"{venue}, {pub_year}"
+    description = (
+        re.split(r"(?<=[.!?])\s+(?=[A-Z])", abstract, maxsplit=1)[0]
+        if abstract
+        else f"{title}. {publication_label}."
+    )
     preprint_url = preprint_url_for_entry(preprint_entry) if preprint_entry else None
 
     citation = (
@@ -479,6 +485,7 @@ def markdown_for_entry(
     md = f'---\ntitle: "{html_escape(title)}"\n'
     md += f"collection: {COLLECTION_NAME}"
     md += f"\npermalink: {PERMALINK_PREFIX}{html_filename}"
+    md += f"\ndescription: '{html_escape(description)}'"
     if excerpt:
         md += f"\nexcerpt: '{html_escape(excerpt)}'"
     md += f"\ndate: {pub_date}"

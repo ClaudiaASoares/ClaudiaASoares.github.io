@@ -2,6 +2,7 @@
 title: "Robust Localization With Bounded Noise: Creating a Superset of the Possible Target Positions via Linear-Fractional Representations"
 collection: publications
 permalink: /publication/2022-01-01-Robust-Localization-With-Bounded-Noise-Creating-a-Superset-of-the-Possible-Target-Positions-Via-Linear-Fractional-Representations
+description: 'Locating a target is key in many applications, namely in high-stakes real-world scenarios, like detecting humans or obstacles in vehicular networks.'
 excerpt: 'Locating a target is key in many applications, namely in high-stakes real-world scenarios, like detecting humans or obstacles in vehicular networks. In scenarios where precise statistics of the measurement noise are unavailable, applications require localization methods that assume minimal knowledge on the noise distribution. We present a scalable algorithm delimiting a tight superset of all possible target locations, assuming range measurements to known landmarks, contaminated.'
 date: 2022-01-01
 venue: 'IEEE Transactions on Signal Processing'

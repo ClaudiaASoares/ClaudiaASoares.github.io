@@ -1,3 +1,6 @@
+---
+description: "Deep Learning lecture by Cláudia Soares on machine learning fundamentals, model selection, training error and generalization."
+---
 
 <script>
   window.MathJax = {

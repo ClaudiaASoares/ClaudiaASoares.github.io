@@ -2,6 +2,7 @@
 title: "Distributed, simple and stable network localization"
 collection: publications
 permalink: /publication/2014-12-01-Distributed-simple-and-stable-network-localization
+description: 'We propose a simple, stable and distributed algorithm which directly optimizes the nonconvex maximum likelihood criterion for sensor network localization, with no need to tune any free parameter.'
 excerpt: 'We propose a simple, stable and distributed algorithm which directly optimizes the nonconvex maximum likelihood criterion for sensor network localization, with no need to tune any free parameter. We reformulate the problem to obtain a gradient Lipschitz cost; by shifting to this cost function we enable a Majorization-Minimization (MM) approach based on quadratic upper bounds that decouple across nodes; the resulting algorithm happens to be.'
 date: 2014-12-01
 venue: '2014 IEEE Global Conference on Signal and Information Processing (GlobalSIP)'

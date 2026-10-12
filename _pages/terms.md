@@ -1,6 +1,7 @@
 ---
 permalink: /terms/
 title: "Terms and Privacy Policy"
+description: "Privacy policy for Cláudia Soares's website, including information about cookies, log files and Google Analytics."
 modified: 2016-06-06
 ---
 

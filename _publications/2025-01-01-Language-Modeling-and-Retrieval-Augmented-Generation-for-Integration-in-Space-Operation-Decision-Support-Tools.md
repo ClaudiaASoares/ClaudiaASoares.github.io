@@ -2,6 +2,7 @@
 title: "Language Modeling and Retrieval-Augmented Generation for Integration in Space Operation Decision Support Tools"
 collection: publications
 permalink: /publication/2025-01-01-Language-Modeling-and-Retrieval-Augmented-Generation-for-Integration-in-Space-Operation-Decision-Support-Tools
+description: 'Language Modeling and Retrieval-Augmented Generation for Integration in Space Operation Decision Support Tools. 58th IAA Symposium on Safety, Quality and Knowledge Management in Space Activities, 2025.'
 date: 2025-01-01
 venue: '58th IAA Symposium on Safety, Quality and Knowledge Management in Space Activities'
 paperurl: 'http://dx.doi.org/10.52202/083095-0016'

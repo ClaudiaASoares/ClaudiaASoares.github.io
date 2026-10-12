@@ -2,6 +2,7 @@
 title: "Finding Common Image Semantics for Urban Perceived Safety Based on Pairwise Comparisons"
 collection: publications
 permalink: /publication/2019-09-01-Finding-Common-Image-Semantics-for-Urban-Perceived-Safety-Based-on-Pairwise-Comparisons
+description: 'What influences people’s perception of safety in an urban environment?'
 excerpt: 'What influences people’s perception of safety in an urban environment? Does everyone perceive safety the same way or do different people look for different contents in an image, safety-wise? We present a user analysis on a crowd-sourced dataset that contains pairwise comparisons regarding the perceived safety of street imagery from different municipalities in the greater Lisbon area, Portugal. We use state-of-the-art semantic segmentation to extract.'
 date: 2019-09-01
 venue: '2019 27th European Signal Processing Conference (EUSIPCO)'

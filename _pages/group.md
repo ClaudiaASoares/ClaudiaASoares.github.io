@@ -11,20 +11,16 @@ redirect_from:
 {% include base_path %}
 
 
-[//]: # Check the [TrustworthyML@NOVA](https://trustworthy-ml.super.site/) group site for more information about the amazing people that I get to collaborate with and the work we are doing.
+TrustworthyML@NOVA is Cláudia Soares's research group at [NOVA LINCS](https://nova-lincs.di.fct.unl.pt/) and the [NOVA School of Science and Technology](https://www.fct.unl.pt/en). We study trustworthy machine learning for healthcare and space.
 
-Here I list some of the amazing people that I get to collaborate with.
-
-
-Students and lab members
-======
+## Students and lab members
 
 If you would like to join our group as a Postdoctoral Researcher, Ph.D. student, M.Sc., or B.Sc. student, [see this page](/students/).
 
 
 
-Current PhD Students
-------
+### Current PhD Students
+
 * [Ricardo Ferreira](https://www.linkedin.com/in/rjnferreira/) ( 2022 - )
 * [Francisco M. Caldas](https://frncaldas.github.io/) (ESA-PT Space PhD Grantee, 2022 - )
 * Marta Guimarães (with [Chiara Manfletti](https://www.professoren.tum.de/en/manfletti-chiara) and Neuraspace, 2023 - )
@@ -36,15 +32,15 @@ Current PhD Students
 * Ruben Belo (with Marta Guimarães and Neuraspace, 2026 - )
 * Hugo Correia (with Filipa Valdeira, 2026 -)
 
-Current MSc Students
-------
+### Current MSc Students
+
 * Luís Camponês
 * José Nunes
 * Miguel Pimenta
 
 
-Current MSc Students in co-supervision
-------
+### Current MSc Students in co-supervision
+
 * Rogério Soares (with Frederico Metelo, Ana Ribeiro, Carla Ferreira)
 * Diogo Domingos (AFA)
 * Guilherme Simões (with Carolina Filipe)
@@ -58,24 +54,22 @@ Current MSc Students in co-supervision
 
 
 
-Visiting students and assistant researchers at my group
-------
+### Visiting students and assistant researchers at my group
+
 * [Filipa Valdeira](https://filva.github.io/) (Researcher, 2023)
 * Pasit Khatinghul (Erausmus+ MSc student U. Bologna, Italy)
 
 
 
-PhD Graduates
-------
+### PhD Graduates
+
 * [Filipa Valdeira](https://filva.github.io/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2019 - 2022)
 * [Stevo Rackovic](https://stevorackovic.github.io/) (with [Dusan Jakovetic](https://people.dmi.uns.ac.rs/~dusan.jakovetic/), 2019 - 2025)
 * [Pedro Valdeira](https://valdeira.github.io/) (CMU-Portugal with [Joao Xavier](http://users.isr.tecnico.ulisboa.pt/~jxavier/) and  [Yuejie Chi](https://yuejiechi.github.io/) 2020 - 2025)
 * [Diogo Lavado](https://www.linkedin.com/in/diogo-mateus-lavado-466a51159/) (with [Alessandra Micheletti](http://www.mat.unimi.it/users/michel/), 2022 - 2026)
 
 
-MSc Alumni
-------
-
+### MSc Alumni
 
 * Alexandre Dorotea (with Filipa Valdeira)
 * António Sobreiro (with Filipa Valdeira)

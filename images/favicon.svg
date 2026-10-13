@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <title>Cláudia Soares</title>
+  <rect width="64" height="64" rx="12" fill="#1c617c"/>
+  <g fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M28 20 C24 15 10 18 10 32 C10 46 24 49 28 44"/>
+    <path d="M54 21 C48 12 33 18 36 27 C39 33 54 31 54 41 C54 51 40 50 36 44"/>
+  </g>
+</svg>

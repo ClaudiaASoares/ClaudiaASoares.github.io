@@ -1,0 +1,49 @@
+{% assign sharing_base = site.url | append: site.baseurl %}
+{% assign sharing_title = page.seo_title | default: page.title | default: site.title | strip_html | strip_newlines | escape_once %}
+{% assign sharing_description = page.description | default: page.excerpt | default: site.description | markdownify | strip_html | strip_newlines | escape_once %}
+{% assign sharing_image = page.header.image | default: page.header.overlay_image | default: site.og_image %}
+{% assign sharing_image_alt = page.header.image_description | default: page.title %}
+{% unless page.header.image or page.header.overlay_image %}
+  {% assign sharing_image_alt = site.og_image_alt %}
+{% endunless %}
+{% unless sharing_image contains "://" %}
+  {% assign sharing_image_first = sharing_image | slice: 0, 1 %}
+  {% if sharing_image_first == '/' %}
+    {% assign sharing_image = sharing_image | prepend: sharing_base %}
+  {% else %}
+    {% assign sharing_image = sharing_image | prepend: "/images/" | prepend: sharing_base %}
+  {% endif %}
+{% endunless %}
+
+<meta property="og:locale" content="{{ site.locale | default: 'en_US' | replace: '-', '_' }}">
+<meta property="og:site_name" content="{{ site.title | escape_once }}">
+<meta property="og:title" content="{{ sharing_title }}">
+<meta property="og:description" content="{{ sharing_description }}">
+<meta property="og:url" content="{{ page.url | prepend: sharing_base | replace: '/index.html', '/' }}">
+{% assign sharing_year = page.date | date: "%Y" %}
+{% if page.collection == 'publications' or page.date and sharing_year != '1900' and page.collection != 'teaching' %}
+<meta property="og:type" content="article">
+  {% unless page.collection == 'publications' %}
+<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+  {% endunless %}
+{% else %}
+<meta property="og:type" content="website">
+{% endif %}
+<meta property="og:image" content="{{ sharing_image | escape_once }}">
+<meta property="og:image:alt" content="{{ sharing_image_alt | escape_once }}">
+{% unless page.header.image or page.header.overlay_image %}
+{% if site.og_image_type %}<meta property="og:image:type" content="{{ site.og_image_type }}">{% endif %}
+{% if site.og_image_width %}<meta property="og:image:width" content="{{ site.og_image_width }}">{% endif %}
+{% if site.og_image_height %}<meta property="og:image:height" content="{{ site.og_image_height }}">{% endif %}
+{% endunless %}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ sharing_title }}">
+<meta name="twitter:description" content="{{ sharing_description }}">
+<meta name="twitter:image" content="{{ sharing_image | escape_once }}">
+<meta name="twitter:image:alt" content="{{ sharing_image_alt | escape_once }}">
+{% if site.twitter.username %}
+<meta name="twitter:site" content="@{{ site.twitter.username | replace: '@', '' | escape_once }}">
+{% endif %}
+{% if seo_author_twitter %}
+<meta name="twitter:creator" content="@{{ seo_author_twitter | escape_once }}">
+{% endif %}

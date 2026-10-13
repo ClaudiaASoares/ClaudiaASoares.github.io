@@ -15,6 +15,7 @@ These terms were checked against the live website and the documentation linked b
 | Page title | The text in the HTML `<title>` element. |
 | Title link | The title displayed for a search result. A search engine may generate it from several sources. |
 | H1 | An HTML heading at level one. This audit recommends one page heading, followed by section headings at lower levels, for clarity. |
+| H2 and H3 | HTML headings at levels two and three. Use H2 for page sections and H3 for categories within those sections. |
 | Structured data | Machine-readable statements about the entities and content represented on a page, using a defined vocabulary. |
 | JSON-LD | The JSON representation used to express linked structured data. Valid JSON syntax does not establish eligibility for a search feature. |
 | Person | The Schema.org type representing an individual. |
@@ -22,6 +23,8 @@ These terms were checked against the live website and the documentation linked b
 | Citation metadata | Bibliographic HTML meta tags, including `citation_title`, one `citation_author` tag per author, and `citation_publication_date`. |
 | Google Scholar indexing | Inclusion of scholarly content in Google Scholar. Its content and bibliographic requirements differ from ordinary web search. |
 | Open Graph metadata | HTML properties used to describe a page when it is shared, including `og:title`, `og:type`, `og:image`, and `og:url`. |
+| Sharing image | The image identified by `og:image` and `twitter:image` for a page preview. The P3 default is the existing portrait of Cláudia Soares. |
+| Favicon | An icon identified by an HTML `link` with `rel="icon"`, used to identify the website in a browser interface. |
 | Lab measurement | A measurement from a controlled test, such as an emulated device running Lighthouse. |
 | Field measurement | A measurement collected from visits by users. |
 | Core Web Vitals | The field metrics Largest Contentful Paint, Interaction to Next Paint, and Cumulative Layout Shift. |
@@ -32,4 +35,4 @@ These terms were checked against the live website and the documentation linked b
 | TrustworthyML@NOVA | The group name used in the live website's navigation. Use this spelling when proposing page titles. |
 | Trustworthy machine learning | The research topic named in the website's introduction. Use the full term in proposed search metadata. Preserve the mechanisms and claims stated in the source content. |
 
-Definitions are bounded by [Google's search documentation](https://developers.google.com/search/docs/fundamentals/how-search-works), [title link guidance](https://developers.google.com/search/docs/appearance/title-link), [meta description guidance](https://developers.google.com/search/docs/appearance/snippet), [ProfilePage guidance](https://developers.google.com/search/docs/appearance/structured-data/profile-page), [Google Scholar inclusion guidelines](https://scholar.google.com/intl/en/scholar/inclusion.html), the [Open Graph protocol](https://ogp.me/), and [Web Vitals documentation](https://web.dev/articles/vitals). Group and research names come from the [live website](https://claudiaasoares.github.io/).
+Definitions are bounded by [Google's search documentation](https://developers.google.com/search/docs/fundamentals/how-search-works), [title link guidance](https://developers.google.com/search/docs/appearance/title-link), [meta description guidance](https://developers.google.com/search/docs/appearance/snippet), [ProfilePage guidance](https://developers.google.com/search/docs/appearance/structured-data/profile-page), [Google Scholar inclusion guidelines](https://scholar.google.com/intl/en/scholar/inclusion.html), the [Open Graph protocol](https://ogp.me/), [HTML icon-link guidance](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/rel#icon), and [Web Vitals documentation](https://web.dev/articles/vitals). Group and research names come from the [live website](https://claudiaasoares.github.io/).

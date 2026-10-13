@@ -1,0 +1,688 @@
+{
+  "sitemap_urls": 74,
+  "html_pages_with_sharing_metadata": 70,
+  "verified_assets": [
+    "/images/android-chrome-192x192.png",
+    "/images/android-chrome-512x512.png",
+    "/images/apple-touch-icon-180x180.png",
+    "/images/favicon-16x16.png",
+    "/images/favicon-32x32.png",
+    "/images/favicon-96x96.png",
+    "/images/favicon.ico",
+    "/images/favicon.svg",
+    "/images/manifest.json",
+    "/images/profile.png",
+    "/images/safari-pinned-tab.svg"
+  ],
+  "heading_hierarchy": {
+    "cv": [
+      {
+        "level": "h1",
+        "text": "CV"
+      },
+      {
+        "level": "h2",
+        "text": "Education"
+      },
+      {
+        "level": "h2",
+        "text": "Work experience"
+      },
+      {
+        "level": "h2",
+        "text": "Skills"
+      },
+      {
+        "level": "h2",
+        "text": "Publications"
+      },
+      {
+        "level": "h3",
+        "text": "Distributed, simple and stable network localization"
+      },
+      {
+        "level": "h3",
+        "text": "Simple and Fast Convex Relaxation Method for Cooperative Localization in Sensor Networks Using Range Measurements"
+      },
+      {
+        "level": "h3",
+        "text": "Distributed and robust network localization algorithms"
+      },
+      {
+        "level": "h3",
+        "text": "Collaborative localization of vehicle formations based on ranges and bearings"
+      },
+      {
+        "level": "h3",
+        "text": "DIeSEL: Distributed self-localization of a network of underwater vehicles"
+      },
+      {
+        "level": "h3",
+        "text": "LocDyn: Robust Distributed Localization for Mobile Underwater Networks"
+      },
+      {
+        "level": "h3",
+        "text": "Parameter-free network localization for mobile vehicles by learning from data"
+      },
+      {
+        "level": "h3",
+        "text": "FLORIS and CLORIS: Hybrid source and network localization based on ranges and video"
+      },
+      {
+        "level": "h3",
+        "text": "Understanding the Primary-Specialty Referral Mechanism using Network Science"
+      },
+      {
+        "level": "h3",
+        "text": "Fast distributed MAP inference for large-scale graphical models"
+      },
+      {
+        "level": "h3",
+        "text": "Locating a target from uncertain data: convex supersets based on linear-fractional representations"
+      },
+      {
+        "level": "h3",
+        "text": "Finding Common Image Semantics for Urban Perceived Safety Based on Pairwise Comparisons"
+      },
+      {
+        "level": "h3",
+        "text": "Dissecting medical referral mechanisms in health services using graph neural networks"
+      },
+      {
+        "level": "h3",
+        "text": "Range and Bearing Data Fusion for Precise Convex Network Localization"
+      },
+      {
+        "level": "h3",
+        "text": "Conjunction Data Messages behave as a Poisson Process"
+      },
+      {
+        "level": "h3",
+        "text": "From Noisy Point Clouds to Complete Ear Shapes: Unsupervised Pipeline"
+      },
+      {
+        "level": "h3",
+        "text": "ISEE.U: Distributed online estimation and control for improved target localization accuracy"
+      },
+      {
+        "level": "h3",
+        "text": "Referral prediction in Healthcare using Graph Neural Networks"
+      },
+      {
+        "level": "h3",
+        "text": "Clustering of the Blendshape Facial Model"
+      },
+      {
+        "level": "h3",
+        "text": "STRONG: Synchronous and asynchronous robust network localization, under non-Gaussian noise"
+      },
+      {
+        "level": "h3",
+        "text": "Robust Localization With Bounded Noise: Creating a Superset of the Possible Target Positions via Linear-Fractional Representations"
+      },
+      {
+        "level": "h3",
+        "text": "Decision Support Models for Predicting and Explaining Airport Passenger Connectivity From Data"
+      },
+      {
+        "level": "h3",
+        "text": "A Temporal Fusion Transformer for Long-Term Explainable Prediction of Emergency Department Overcrowding"
+      },
+      {
+        "level": "h3",
+        "text": "Predicting the Position Uncertainty at the Time of Closest Approach with Diffusion Models"
+      },
+      {
+        "level": "h3",
+        "text": "Taxonomy for Resident Space Objects in LEO"
+      },
+      {
+        "level": "h3",
+        "text": "A majorization-minimization-based method for nonconvex inverse rig problems in facial animation: algorithm derivation"
+      },
+      {
+        "level": "h3",
+        "text": "Probabilistic Registration for Gaussian Process Three-Dimensional Shape Modelling in the Presence of Extensive Missing Data"
+      },
+      {
+        "level": "h3",
+        "text": "Distributed Solution of the Blendshape Rig Inversion Problem"
+      },
+      {
+        "level": "h3",
+        "text": "AI for space traffic management"
+      },
+      {
+        "level": "h3",
+        "text": "Causal Inference Explanations for Graph Neural Networks"
+      },
+      {
+        "level": "h3",
+        "text": "PeersimGym: An Environment for Solving the Task Offloading Problem with Reinforcement Learning"
+      },
+      {
+        "level": "h3",
+        "text": "SCENE-Net V2: Interpretable Multiclass 3D Scene Understanding with Geometric Priors"
+      },
+      {
+        "level": "h3",
+        "text": "One-Shot Initial Orbit Determination in Low-Earth Orbit"
+      },
+      {
+        "level": "h3",
+        "text": "Precise and Efficient Orbit Prediction in LEO with Machine Learning using Exogenous Variables"
+      },
+      {
+        "level": "h3",
+        "text": "Machine learning in orbit estimation: A survey"
+      },
+      {
+        "level": "h3",
+        "text": "Maximum likelihood localization of a network of moving agents from ranges, bearings and velocity measurements"
+      },
+      {
+        "level": "h3",
+        "text": "Refined Inverse Rigging: A Balanced Approach to High-fidelity Blendshape Animation"
+      },
+      {
+        "level": "h3",
+        "text": "Communication-Efficient Vertical Federated Learning via Compressed Error Feedback"
+      },
+      {
+        "level": "h3",
+        "text": "Language Modeling and Retrieval-Augmented Generation for Integration in Space Operation Decision Support Tools"
+      },
+      {
+        "level": "h3",
+        "text": "OrbitZoo: Real Orbital Systems Challenges for Reinforcement Learning"
+      },
+      {
+        "level": "h3",
+        "text": "Ranking with Confidence for Large Scale Comparison Data"
+      },
+      {
+        "level": "h3",
+        "text": "Learning Under Noisy Labels, Spurious Points, and Diverse Structures: TS40K, a 3D Point Cloud Dataset of Rural Terrain and Electrical Transmission Systems"
+      },
+      {
+        "level": "h3",
+        "text": "C-PATH: Conversational Patient Assistance and Triage in Healthcare System"
+      },
+      {
+        "level": "h3",
+        "text": "Generalizing Trilateration: Approximate Maximum Likelihood Estimator for Initial Orbit Determination in Low Earth Orbit"
+      },
+      {
+        "level": "h3",
+        "text": "SCENE-Net: Geometric induction for interpretable and low-resource 3D pole detection with Group-Equivariant Non-Expansive Operators"
+      },
+      {
+        "level": "h3",
+        "text": "A Multi-Token Coordinate Descent Method for Semi-Decentralized Vertical Federated Learning"
+      },
+      {
+        "level": "h3",
+        "text": "A Systematic Evaluation of Retrieval-Augmented Generation and Language Models for Space Operations"
+      },
+      {
+        "level": "h3",
+        "text": "CLASP: Online learning algorithms for Convex Losses And Squared Penalties"
+      },
+      {
+        "level": "h3",
+        "text": "Dissecting medical referrals in health services: role of physician professional networks"
+      },
+      {
+        "level": "h3",
+        "text": "ASTRA: ADMM-Accelerated Topology Reconfiguration for Dynamic Satellite Constellations"
+      },
+      {
+        "level": "h3",
+        "text": "Satellite Safe Margin: Fast Solutions for Conjunction Analysis"
+      },
+      {
+        "level": "h2",
+        "text": "Supervisions"
+      },
+      {
+        "level": "h2",
+        "text": "Talks"
+      },
+      {
+        "level": "h2",
+        "text": "Teaching"
+      },
+      {
+        "level": "h3",
+        "text": "Machine Learning"
+      },
+      {
+        "level": "h3",
+        "text": "Deep Learning"
+      },
+      {
+        "level": "h2",
+        "text": "Service and leadership"
+      }
+    ],
+    "group": [
+      {
+        "level": "h1",
+        "text": "TrustworthyML@NOVA"
+      },
+      {
+        "level": "h2",
+        "text": "Students and lab members"
+      },
+      {
+        "level": "h3",
+        "text": "Current PhD Students"
+      },
+      {
+        "level": "h3",
+        "text": "Current MSc Students"
+      },
+      {
+        "level": "h3",
+        "text": "Current MSc Students in co-supervision"
+      },
+      {
+        "level": "h3",
+        "text": "Visiting students and assistant researchers at my group"
+      },
+      {
+        "level": "h3",
+        "text": "PhD Graduates"
+      },
+      {
+        "level": "h3",
+        "text": "MSc Alumni"
+      }
+    ],
+    "students": [
+      {
+        "level": "h1",
+        "text": "Prospective students"
+      },
+      {
+        "level": "h2",
+        "text": "Prospective PhD Students"
+      },
+      {
+        "level": "h2",
+        "text": "Prospective Postdocs"
+      },
+      {
+        "level": "h2",
+        "text": "NOVA Undergraduate or MS Students"
+      },
+      {
+        "level": "h2",
+        "text": "Outside of NOVA"
+      }
+    ]
+  },
+  "undated_course_checks": "passed",
+  "Person_identity": "preserved",
+  "pages": [
+    {
+      "url": "https://claudiaasoares.github.io/publication/2014-12-01-Distributed-simple-and-stable-network-localization",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2015-09-01-Simple-and-Fast-Convex-Relaxation-Method-for-Cooperative-Localization-in-Sensor-Networks-Using-Range-Measurements",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2016-05-01-Distributed-and-robust-network-localization-algorithms",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2016-08-01-Collaborative-localization-of-vehicle-formations-based-on-ranges-and-bearings",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2017-01-01-DIeSEL-Distributed-self-localization-of-a-network-of-underwater-vehicles",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2017-10-01-LocDyn-Robust-Distributed-Localization-for-Mobile-Underwater-Networks",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2018-08-01-Parameter-free-network-localization-for-mobile-vehicles-by-learning-from-data",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2018-12-01-FLORIS-and-CLORIS-Hybrid-source-and-network-localization-based-on-ranges-and-video",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2019-01-01-Understanding-the-Primary-Specialty-Referral-Mechanism-using-Network-Science",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2019-07-01-Fast-distributed-MAP-inference-for-large-scale-graphical-models",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2019-07-01-Locating-a-target-from-uncertain-data-convex-supersets-based-on-linear-fractional-representations",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2019-09-01-Finding-Common-Image-Semantics-for-Urban-Perceived-Safety-Based-on-Pairwise-Comparisons",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2020-01-01-Dissecting-medical-referral-mechanisms-in-health-services-using-graph-neural-networks",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2020-01-01-Range-and-Bearing-Data-Fusion-for-Precise-Convex-Network-Localization",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2021-01-01-Conjunction-Data-Messages-behave-as-a-Poisson-Process",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2021-01-01-From-Noisy-Point-Clouds-to-Complete-Ear-Shapes-Unsupervised-Pipeline",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2021-01-01-ISEEU-Distributed-online-estimation-and-control-for-improved-target-localization-accuracy",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2021-01-01-Referral-prediction-in-Healthcare-using-Graph-Neural-Networks",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2021-08-01-Clustering-of-the-Blendshape-Facial-Model",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2021-08-01-STRONG-Synchronous-and-asynchronous-robust-network-localization-under-non-Gaussian-noise",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2022-01-01-Robust-Localization-With-Bounded-Noise-Creating-a-Superset-of-the-Possible-Target-Positions-Via-Linear-Fractional-Representations",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2022-09-01-Decision-Support-Models-for-Predicting-and-Explaining-Airport-Passenger-Connectivity-From-Data",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2023-01-01-A-Temporal-Fusion-Transformer-for-Long-Term-Explainable-Prediction-of-Emergency-Department-Overcrowding",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2023-01-01-Predicting-the-Position-Uncertainty-at-the-Time-of-Closest-Approach-with-Diffusion-Models",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2023-01-01-Taxonomy-for-Resident-Space-Objects-in-LEO",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2023-05-01-A-majorization-minimization-based-method-for-nonconvex-inverse-rig-problems-in-facial-animation-algorithm-derivation",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2023-06-01-Probabilistic-Registration-for-Gaussian-Process-Three-Dimensional-Shape-Modelling-in-the-Presence-of-Extensive-Missing-Data",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2023-11-01-Distributed-Solution-of-the-Blendshape-Rig-Inversion-Problem",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2023-12-01-AI-for-space-traffic-management",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2024-01-01-Causal-Inference-Explanations-for-Graph-Neural-Networks",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2024-01-01-PeersimGym-An-Environment-for-Solving-the-Task-Offloading-Problem-with-Reinforcement-Learning",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2024-01-01-SCENE-Net-V2-Interpretable-Multiclass-3D-Scene-Understanding-with-Geometric-Priors",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2024-03-01-One-Shot-Initial-Orbit-Determination-in-Low-Earth-Orbit",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2024-06-01-Precise-and-Efficient-Orbit-Prediction-in-LEO-with-Machine-Learning-using-Exogenous-Variables",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2024-07-01-Machine-learning-in-orbit-estimation-A-survey",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2024-08-01-Maximum-likelihood-localization-of-a-network-of-moving-agents-from-ranges-bearings-and-velocity-measurements",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2024-12-01-Refined-Inverse-Rigging-A-Balanced-Approach-to-High-fidelity-Blendshape-Animation",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2025-01-01-Communication-Efficient-Vertical-Federated-Learning-via-Compressed-Error-Feedback",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2025-01-01-Language-Modeling-and-Retrieval-Augmented-Generation-for-Integration-in-Space-Operation-Decision-Support-Tools",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2025-01-01-OrbitZoo-Real-Orbital-Systems-Challenges-for-Reinforcement-Learning",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2025-01-01-Ranking-with-Confidence-for-Large-Scale-Comparison-Data",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2025-02-01-Learning-Under-Noisy-Labels-Spurious-Points-and-Diverse-Structures-TS40K-a-3D-Point-Cloud-Dataset-of-Rural-Terrain-and-Electrical-Transmission-Systems",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2025-07-01-C-PATH-Conversational-Patient-Assistance-and-Triage-in-Healthcare-System",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2025-08-01-Generalizing-Trilateration-Approximate-Maximum-Likelihood-Estimator-for-Initial-Orbit-Determination-in-Low-Earth-Orbit",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2025-12-01-SCENE-Net-Geometric-induction-for-interpretable-and-low-resource-3D-pole-detection-with-Group-Equivariant-Non-Expansive-Operators",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2026-01-01-A-Multi-Token-Coordinate-Descent-Method-for-Semi-Decentralized-Vertical-Federated-Learning",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2026-01-01-A-Systematic-Evaluation-of-Retrieval-Augmented-Generation-and-Language-Models-for-Space-Operations",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2026-01-01-CLASP-Online-learning-algorithms-for-Convex-Losses-And-Squared-Penalties",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2026-04-01-Dissecting-medical-referrals-in-health-services-role-of-physician-professional-networks",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2026-09-01-ASTRA-ADMM-Accelerated-Topology-Reconfiguration-for-Dynamic-Satellite-Constellations",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publication/2026-09-01-Satellite-Safe-Margin-Fast-Solutions-for-Conjunction-Analysis",
+      "og_type": "article",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/research/FL/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/research/OCO-RL/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/research/Space/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/research/health/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/teaching/2022-machine-learning",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/teaching/2023-deep-learning",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/_pages/Neuraspace-postdoc/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/cv/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/group/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/DeepLearning/lecture0.html",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/DeepLearning/lecture1.html",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/publications/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/research/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/_pages/research/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/sitemap/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/students/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/teaching/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    },
+    {
+      "url": "https://claudiaasoares.github.io/terms/",
+      "og_type": "website",
+      "sharing_image": "https://claudiaasoares.github.io/images/profile.png"
+    }
+  ],
+  "local_build": "Jekyll 3.9.5 safe build passed",
+  "image_override_fixtures": "header filename, root-relative overlay and external URL passed",
+  "supplied_course_date_fixture": "2025-09-01 displayed as 2025",
+  "browser_checks": {
+    "group_heading_layout": "passed",
+    "course_header_without_year_1900": "passed"
+  },
+  "P1_P2_regression": "passed",
+  "Gemfile.lock_sha256": "06f4e544bc80f2f20add45b8885be174e90f23bf1aa3069ea8d95ae38e3e8a54"
+}

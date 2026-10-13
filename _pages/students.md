@@ -18,23 +18,19 @@ We do research in trustworthy ML areas, such as physics-guided learning, robust 
 
 Check [where are now our alumni](/group/) and who are the wonderful people I have been lucky enough to work with.
 
-Prospective PhD Students
-===
+## Prospective PhD Students
 
 We are continuously looking for brilliant Ph.D. students. Please read [this form](https://forms.gle/UCh9tJz8WME4diJM8).
 
-Prospective Postdocs
-===
+## Prospective Postdocs
 
 If you are interested in a post-doc position, please read [this form](https://forms.gle/oXN3sCRgvJfNPJgr9).
 
-NOVA Undergraduate or MS Students
-===
+## NOVA Undergraduate or MS Students
 
 If you are a current or admitted NOVA undergraduate or MS student interested in research positions, please read [this form](https://forms.gle/D7fLX9bb7KcqpQYEA).
 
-Outside of NOVA
-===
+## Outside of NOVA
 
 If you are not a NOVA student and are interested in visiting research positions, please read [this form](https://forms.gle/g2j3XuSZTHR3bTZf6).
 

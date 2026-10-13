@@ -10,16 +10,15 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
+## Education
 
 * Ph.D in Distributed Estimation Algorithms over Networks (Distinction and Honor), Tecnico Lisboa, 2016
 * M.S. in Electrical and Computer Engineering, Tecnico Lisboa, 2007
 * B.S. in Electrical and Computer Engineering, Tecnico Lisboa, 2007
 * Diploma in Modern Languages and Cultures, NOVA University of Lisbon, 2002
 
-Work experience
-======
+## Work experience
+
 * 2021 to present: Assistant Professor
   * Department of Computer Science 
   * NOVA School of Science and Technology
@@ -53,41 +52,41 @@ Work experience
   * Worked on an EU project to develop AI leveraging the mirror neurons concept.
 
   
-Skills
-======
+## Skills
+
 * Distributed Machine Learning
 * Machine Learning for Space
 * Learning with point clouds
 * Machine Learning for Healthcare
  
-Publications
-======
+## Publications
+
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
 
-Supervisions
-======
-TBD
+## Supervisions
+
+See the [TrustworthyML@NOVA group page](/group/) for current students, co-supervisions and alumni.
 
  
-Talks
-======
+## Talks
+
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
 
   
-Teaching
-======
+## Teaching
+
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 
   
-Service and leadership
-======
+## Service and leadership
+
 * Member of the Scientific Committee of SPAICE 2026 organized by ESA
 * AC to UAI 2026
 * Member of the Scientific Committee of the Master program on Big Data Analysis and Engineering

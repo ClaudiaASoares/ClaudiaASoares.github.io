@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2024-01-01-SCENE-Net-V2-Interpretable-Multiclass-3D-Scene-Understanding-with-Geometric-Priors
 excerpt_separator: ""
 description: 'In this paper, we present SCENE-Net V2, a new resource-efficient, gray-box model for multiclass 3D scene understanding.'
-excerpt: 'In this paper, we present SCENE-Net V2, a new resource-efficient, gray-box model for multiclass 3D scene understanding. SCENE-Net V2 leverages Group Equivariant Non-Expansive Operators (GENEOs) to incorporate fundamental geometric priors as inductive biases, offering a more transparent alternative to the prevalent black-box models in the domain. This model addresses the limitations of its white-box predecessor, SCENE-Net, by expanding its applicability from pole-like structures to a.'
+excerpt: 'In this paper, we present SCENE-Net V2, a new resource-efficient, gray-box model for multiclass 3D scene understanding. SCENE-Net V2 leverages Group Equivariant Non-Expansive Operators (GENEOs) to incorporate fundamental geometric priors as inductive biases, offering a more transparent alternative to the prevalent black-box models in the domain. This model addresses the limitations of its white-box predecessor, SCENE-Net, by expanding its applicability from pole-like structures to a…'
+excerpt_truncated: true
 date: 2024-01-01
 venue: 'ICML 2024 Workshop GRaM'
 citation_authors: ["Diogo Mateus Lavado", "Claudia Soares", "Alessandra Micheletti"]

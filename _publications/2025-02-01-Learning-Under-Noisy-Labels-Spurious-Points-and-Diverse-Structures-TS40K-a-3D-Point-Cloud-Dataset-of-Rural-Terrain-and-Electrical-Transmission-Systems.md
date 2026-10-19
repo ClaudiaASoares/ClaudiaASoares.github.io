@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2025-02-01-Learning-Under-Noisy-Labels-Spurious-Points-and-Diverse-Structures-TS40K-a-3D-Point-Cloud-Dataset-of-Rural-Terrain-and-Electrical-Transmission-Systems
 excerpt_separator: ""
 description: 'Research in 3D scene understanding, particularly in autonomous driving and indoor segmentation, has made significant strides.'
-excerpt: 'Research in 3D scene understanding, particularly in autonomous driving and indoor segmentation, has made significant strides. However, most available datasets focus on urban settings. We introduce TS40K, a 3D point cloud dataset spanning 40,000 km of electrical transmission systems in rural terrain, addressing power-grid inspections to prevent outages, damages, and fires. TS40K offers high point density and no occlusion, presenting challenges like noisy labels, diverse.'
+excerpt: 'Research in 3D scene understanding, particularly in autonomous driving and indoor segmentation, has made significant strides. However, most available datasets focus on urban settings. We introduce TS40K, a 3D point cloud dataset spanning 40,000 km of electrical transmission systems in rural terrain, addressing power-grid inspections to prevent outages, damages, and fires. TS40K offers high point density and no occlusion, presenting challenges like noisy labels, diverse…'
+excerpt_truncated: true
 date: 2025-02-01
 venue: '2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)'
 citation_authors: ["Diogo Lavado", "Ricardo Santos", "André Coelho", "João Santos", "Alessandra Micheletti", "Claudia Soares"]

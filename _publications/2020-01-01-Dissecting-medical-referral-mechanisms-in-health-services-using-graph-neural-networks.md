@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2020-01-01-Dissecting-medical-referral-mechanisms-in-health-services-using-graph-neural-networks
 excerpt_separator: ""
 description: 'The medical referrals between primary care doctor and specialist affect many aspects of patient care, such as quality of care, patient satisfaction and health care costs, etc.'
-excerpt: 'The medical referrals between primary care doctor and specialist affect many aspects of patient care, such as quality of care, patient satisfaction and health care costs, etc. In this work, we hypothesize that the social network of medical doctors can influence the referral process. We analyse primary-specialty referrals through transaction data over medical appointments gathered between 2012 and 2017 in all hospital centers of a.'
+excerpt: 'The medical referrals between primary care doctor and specialist affect many aspects of patient care, such as quality of care, patient satisfaction and health care costs, etc. In this work, we hypothesize that the social network of medical doctors can influence the referral process. We analyse primary-specialty referrals through transaction data over medical appointments gathered between 2012 and 2017 in all hospital centers of a…'
+excerpt_truncated: true
 date: 2020-01-01
 venue: 'The International Conference on Complex Networks and Their Applications'
 citation_authors: ["Regina Duarte", "Qiwei Han", "Claudia Soares"]

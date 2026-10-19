@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2026-09-01-Satellite-Safe-Margin-Fast-Solutions-for-Conjunction-Analysis
 excerpt_separator: ""
 description: 'The amount of debris in orbit has increased significantly over the years.'
-excerpt: 'The amount of debris in orbit has increased significantly over the years. With the recent growth of interest in space exploration, conjunction assessment has become a central issue. One important metric to evaluate conjunction risk is the miss distance. However, this metric does not intrinsically take into account uncertainty distributions. Some work has been developed to consider the uncertainty associated with the position of the.'
+excerpt: 'The amount of debris in orbit has increased significantly over the years. With the recent growth of interest in space exploration, conjunction assessment has become a central issue. One important metric to evaluate conjunction risk is the miss distance. However, this metric does not intrinsically take into account uncertainty distributions. Some work has been developed to consider the uncertainty associated with the position of the…'
+excerpt_truncated: true
 date: 2026-09-01
 venue: 'Journal of Guidance, Control, and Dynamics'
 citation_authors: ["Ricardo N. Ferreira", "Marta Guimarães", "Cláudia Soares"]

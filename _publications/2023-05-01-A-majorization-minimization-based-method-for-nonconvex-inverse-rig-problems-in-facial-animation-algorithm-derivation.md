@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2023-05-01-A-majorization-minimization-based-method-for-nonconvex-inverse-rig-problems-in-facial-animation-algorithm-derivation
 excerpt_separator: ""
 description: 'Abstract Automated methods for facial animation are a necessary tool in the modern industry since the standard blendshape head models consist of hundreds of controllers, and a manual approach is painfully slow.'
-excerpt: 'Abstract Automated methods for facial animation are a necessary tool in the modern industry since the standard blendshape head models consist of hundreds of controllers, and a manual approach is painfully slow. Different solutions have been proposed that produce output in real-time or generalize well for different face topologies. However, all these prior works consider a linear approximation of the blendshape function and hence do.'
+excerpt: 'Abstract Automated methods for facial animation are a necessary tool in the modern industry since the standard blendshape head models consist of hundreds of controllers, and a manual approach is painfully slow. Different solutions have been proposed that produce output in real-time or generalize well for different face topologies. However, all these prior works consider a linear approximation of the blendshape function and hence do…'
+excerpt_truncated: true
 date: 2023-05-01
 venue: 'Optimization Letters'
 citation_authors: ["Stevo Racković", "Cláudia Soares", "Dušan Jakovetić", "Zoranka Desnica"]

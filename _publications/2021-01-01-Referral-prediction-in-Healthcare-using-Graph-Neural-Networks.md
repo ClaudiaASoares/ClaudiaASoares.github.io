@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2021-01-01-Referral-prediction-in-Healthcare-using-Graph-Neural-Networks
 excerpt_separator: ""
 description: 'Medical referrals between primary care doctors and specialists affect many aspects of patient care, such as quality of care, patient satisfaction, and health care costs.'
-excerpt: 'Medical referrals between primary care doctors and specialists affect many aspects of patient care, such as quality of care, patient satisfaction, and health care costs. In this work, we hypothesize that the social network of medical doctors can influence the referral process. We analyse primary-specialty referrals through transaction data over medical appointments gathered between 2012 and 2017 in all hospital centers of an European private.'
+excerpt: 'Medical referrals between primary care doctors and specialists affect many aspects of patient care, such as quality of care, patient satisfaction, and health care costs. In this work, we hypothesize that the social network of medical doctors can influence the referral process. We analyse primary-specialty referrals through transaction data over medical appointments gathered between 2012 and 2017 in all hospital centers of an European private…'
+excerpt_truncated: true
 date: 2021-01-01
 venue: 'GReS – Workshop on Graph Neural Networks for Recommendation and Search. Co-located with the ACM RecSys ’21 conference'
 citation_authors: ["REGINA DUARTE", "QIWEI HAN", "CLAUDIA SOARES"]

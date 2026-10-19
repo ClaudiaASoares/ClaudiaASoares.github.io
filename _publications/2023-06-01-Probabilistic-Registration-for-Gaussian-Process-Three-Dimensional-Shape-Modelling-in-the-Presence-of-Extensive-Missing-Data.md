@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2023-06-01-Probabilistic-Registration-for-Gaussian-Process-Three-Dimensional-Shape-Modelling-in-the-Presence-of-Extensive-Missing-Data
 excerpt_separator: ""
 description: 'We propose a shape fitting/registration method based on a Gaussian processes formulation, suitable for shapes with extensive regions of missing data.'
-excerpt: 'We propose a shape fitting/registration method based on a Gaussian processes formulation, suitable for shapes with extensive regions of missing data. Gaussian processes are a proven powerful tool, as they provide a unified setting for shape modelling and fitting. While the existing methods in this area prove to work well for the general case of the human head, when looking at more detailed and deformed.'
+excerpt: 'We propose a shape fitting/registration method based on a Gaussian processes formulation, suitable for shapes with extensive regions of missing data. Gaussian processes are a proven powerful tool, as they provide a unified setting for shape modelling and fitting. While the existing methods in this area prove to work well for the general case of the human head, when looking at more detailed and deformed…'
+excerpt_truncated: true
 date: 2023-06-01
 venue: 'SIAM Journal on Mathematics of Data Science'
 citation_authors: ["Filipa M. Valdeira", "Ricardo Ferreira", "Alessandra Micheletti", "Cláudia Soares"]

@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2026-09-01-ASTRA-ADMM-Accelerated-Topology-Reconfiguration-for-Dynamic-Satellite-Constellations
 excerpt_separator: ""
 description: 'Dynamic topology reconfiguration is central to the reliability and efficiency of large satellite constellations, yet many existing approaches rely on idealized assumptions such as full constellation deployment or uniform orbital spacing.'
-excerpt: 'Dynamic topology reconfiguration is central to the reliability and efficiency of large satellite constellations, yet many existing approaches rely on idealized assumptions such as full constellation deployment or uniform orbital spacing. We present Adaptive Satellite Topology via Regret-Aware learning (ASTRA), a theoretically-grounded framework for dynamic satellite topology reconfiguration that builds on an online learning formulation and makes it computationally practical. ASTRA combines an ADMM-based offline.'
+excerpt: 'Dynamic topology reconfiguration is central to the reliability and efficiency of large satellite constellations, yet many existing approaches rely on idealized assumptions such as full constellation deployment or uniform orbital spacing. We present Adaptive Satellite Topology via Regret-Aware learning (ASTRA), a theoretically-grounded framework for dynamic satellite topology reconfiguration that builds on an online learning formulation and makes it computationally practical. ASTRA combines an ADMM-based offline…'
+excerpt_truncated: true
 date: 2026-09-01
 venue: 'NeurIPS 2026'
 citation_authors: ["João Norberto", "Ricardo Ferreira", "Cláudia Soares"]

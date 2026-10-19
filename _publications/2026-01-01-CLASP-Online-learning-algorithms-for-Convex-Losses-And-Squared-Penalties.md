@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2026-01-01-CLASP-Online-learning-algorithms-for-Convex-Losses-And-Squared-Penalties
 excerpt_separator: ""
 description: 'Addressing Constrained Online Convex Optimization (COCO), we introduce CLASP (Convex Losses And Squared Penalties), a framework that minimizes cumulative loss together with squared constraint violations.'
-excerpt: 'Addressing Constrained Online Convex Optimization (COCO), we introduce CLASP (Convex Losses And Squared Penalties), a framework that minimizes cumulative loss together with squared constraint violations. We propose two variants of CLASP, CLASP-I and CLASP-F, allowing for a joint or separate handling of the static decision set and the time-varying constraints, a decoupling flexibility that affords simpler implementations when projections onto the static decision set are.'
+excerpt: 'Addressing Constrained Online Convex Optimization (COCO), we introduce CLASP (Convex Losses And Squared Penalties), a framework that minimizes cumulative loss together with squared constraint violations. We propose two variants of CLASP, CLASP-I and CLASP-F, allowing for a joint or separate handling of the static decision set and the time-varying constraints, a decoupling flexibility that affords simpler implementations when projections onto the static decision set are…'
+excerpt_truncated: true
 date: 2026-01-01
 venue: 'Proceedings of the 43rd International Conference on Machine Learning'
 citation_authors: ["Ricardo N. Ferreira", "Joao Xavier", "Cláudia Soares"]

@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2023-01-01-Predicting-the-Position-Uncertainty-at-the-Time-of-Closest-Approach-with-Diffusion-Models
 excerpt_separator: ""
 description: 'The risk of collision between resident space objects has significantly increased in recent years.'
-excerpt: 'The risk of collision between resident space objects has significantly increased in recent years. As a result, spacecraft collision avoidance procedures have become an essential part of satellite operations. To ensure safe and effective space activities, satellite owners and operators rely on constantly updated estimates of encounters. These estimates include the uncertainty associated with the position of each object at the expected TCA. These estimates.'
+excerpt: 'The risk of collision between resident space objects has significantly increased in recent years. As a result, spacecraft collision avoidance procedures have become an essential part of satellite operations. To ensure safe and effective space activities, satellite owners and operators rely on constantly updated estimates of encounters. These estimates include the uncertainty associated with the position of each object at the expected TCA. These estimates…'
+excerpt_truncated: true
 date: 2023-01-01
 venue: 'Accepted in the International Astronautical Congress 2023'
 citation_authors: ["Marta Guimaraes", "Claudia Soares", "Chiara Manfletti"]

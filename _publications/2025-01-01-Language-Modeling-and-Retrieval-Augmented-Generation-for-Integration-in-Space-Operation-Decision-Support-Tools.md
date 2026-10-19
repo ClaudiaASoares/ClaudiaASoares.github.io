@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2025-01-01-Language-Modeling-and-Retrieval-Augmented-Generation-for-Integration-in-Space-Operation-Decision-Support-Tools
 excerpt_separator: ""
 description: 'The rapid expansion of the space industry has led to an increasing volume of technical documents, operational guidelines, and scientific publications.'
-excerpt: 'The rapid expansion of the space industry has led to an increasing volume of technical documents, operational guidelines, and scientific publications. As space activities become more complex, effective decision-making and operations management require efficient processing of vast and ever-changing information sources to support new developments in the sector. Space operators must navigate regulations, guidelines, safety protocols, and mission-critical data, which makes knowledge retrieval a significant.'
+excerpt: 'The rapid expansion of the space industry has led to an increasing volume of technical documents, operational guidelines, and scientific publications. As space activities become more complex, effective decision-making and operations management require efficient processing of vast and ever-changing information sources to support new developments in the sector. Space operators must navigate regulations, guidelines, safety protocols, and mission-critical data, which makes knowledge retrieval a significant…'
+excerpt_truncated: true
 date: 2025-01-01
 venue: '58th IAA Symposium on Safety, Quality and Knowledge Management in Space Activities'
 citation_authors: ["Ruben Belo", "Claudia Soares", "Marta Guimaraes"]

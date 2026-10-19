@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2025-01-01-Ranking-with-Confidence-for-Large-Scale-Comparison-Data
 excerpt_separator: ""
 description: 'In this work, we leverage a generative data model considering comparison noise to develop a fast, precise, and informative ranking algorithm from pairwise comparisons that produces a measure of confidence on each comparison.'
-excerpt: 'In this work, we leverage a generative data model considering comparison noise to develop a fast, precise, and informative ranking algorithm from pairwise comparisons that produces a measure of confidence on each comparison. The problem of ranking a large number of items from noisy and sparse pairwise comparison data arises in diverse applications, like ranking players in online games, document retrieval or ranking human perceptions.'
+excerpt: 'In this work, we leverage a generative data model considering comparison noise to develop a fast, precise, and informative ranking algorithm from pairwise comparisons that produces a measure of confidence on each comparison. The problem of ranking a large number of items from noisy and sparse pairwise comparison data arises in diverse applications, like ranking players in online games, document retrieval or ranking human perceptions…'
+excerpt_truncated: true
 date: 2025-01-01
 venue: 'Proceedings of the 2025 SIAM International Conference on Data Mining (SDM)'
 citation_authors: ["Filipa Valdeira", "Cláudia Soares"]

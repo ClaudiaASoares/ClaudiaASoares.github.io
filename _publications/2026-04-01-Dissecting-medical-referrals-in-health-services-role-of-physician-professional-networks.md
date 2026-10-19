@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2026-04-01-Dissecting-medical-referrals-in-health-services-role-of-physician-professional-networks
 excerpt_separator: ""
 description: 'Background Medical referrals between primary care (PC) and specialist care (SC) physicians are essential to integrated healthcare delivery but often encounter inefficiencies arising from communication gaps, coordination issues, and organizational structure.'
-excerpt: 'Background Medical referrals between primary care (PC) and specialist care (SC) physicians are essential to integrated healthcare delivery but often encounter inefficiencies arising from communication gaps, coordination issues, and organizational structure. While prior studies have explored patient-sharing networks, limited quantitative evidence exists on how physicians’ professional relationships, such as co-training, co-affiliation, or network embeddedness, relate to referral behavior. This study develops a data-driven framework combining.'
+excerpt: 'Background Medical referrals between primary care (PC) and specialist care (SC) physicians are essential to integrated healthcare delivery but often encounter inefficiencies arising from communication gaps, coordination issues, and organizational structure. While prior studies have explored patient-sharing networks, limited quantitative evidence exists on how physicians’ professional relationships, such as co-training, co-affiliation, or network embeddedness, relate to referral behavior. This study develops a data-driven framework combining…'
+excerpt_truncated: true
 date: 2026-04-01
 venue: 'BMC Health Services Research'
 citation_authors: ["Regina de Brito Duarte", "Qiwei Han", "Claudia Soares"]

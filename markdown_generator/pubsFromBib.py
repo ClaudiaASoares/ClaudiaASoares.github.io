@@ -241,7 +241,7 @@ def excerpt_for_abstract(abstract: str, max_words: int = 65) -> str:
     words = abstract.split()
     if len(words) <= max_words:
         return abstract
-    return " ".join(words[:max_words]).rstrip(".,;:") + "."
+    return " ".join(words[:max_words]).rstrip(".,;:") + "…"
 
 
 def person_name(person: Person) -> str:
@@ -513,6 +513,8 @@ def markdown_for_entry(
     md += f"\ndescription: '{html_escape(description)}'"
     if excerpt:
         md += f"\nexcerpt: '{html_escape(excerpt)}'"
+        if excerpt != abstract:
+            md += "\nexcerpt_truncated: true"
     md += f"\ndate: {pub_date}"
     md += f"\nvenue: '{html_escape(venue)}'"
     author_names = [person_name(person) for person in entry.persons.get("author", [])]

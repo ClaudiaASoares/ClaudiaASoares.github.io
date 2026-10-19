@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2017-01-01-DIeSEL-Distributed-self-localization-of-a-network-of-underwater-vehicles
 excerpt_separator: ""
 description: 'How can teams of artificial agents localize and position themselves in GPS-denied environments?'
-excerpt: 'How can teams of artificial agents localize and position themselves in GPS-denied environments? How can each agent determine its position from pairwise ranges, own velocity, and limited interaction with neighbors? This paper addresses this problem from an optimization point of view: we directly optimize the nonconvex maximum-likelihood estimator in the presence of range measurements contaminated with Gaussian noise, and we obtain a provably convergent, accurate.'
+excerpt: 'How can teams of artificial agents localize and position themselves in GPS-denied environments? How can each agent determine its position from pairwise ranges, own velocity, and limited interaction with neighbors? This paper addresses this problem from an optimization point of view: we directly optimize the nonconvex maximum-likelihood estimator in the presence of range measurements contaminated with Gaussian noise, and we obtain a provably convergent, accurate…'
+excerpt_truncated: true
 date: 2017-01-01
 venue: 'OCEANS 2017 - Anchorage'
 citation_authors: ["Cláudia Soares", "Pusheng Ji", "João Gomes", "António Pascoal"]

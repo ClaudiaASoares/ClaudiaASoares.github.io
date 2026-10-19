@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2022-09-01-Decision-Support-Models-for-Predicting-and-Explaining-Airport-Passenger-Connectivity-From-Data
 excerpt_separator: ""
 description: 'Predicting if passengers in a connecting flight will lose their connection is paramount for airline profitability.'
-excerpt: 'Predicting if passengers in a connecting flight will lose their connection is paramount for airline profitability. We present novel machine learning-based decision support models for the different stages of connection flight management, namely for strategic, pre-tactical, tactical and post-operations. We predict missed flight connections in an airline’s hub airport using historical data on flights and passengers, and analyse the factors that contribute additively to the.'
+excerpt: 'Predicting if passengers in a connecting flight will lose their connection is paramount for airline profitability. We present novel machine learning-based decision support models for the different stages of connection flight management, namely for strategic, pre-tactical, tactical and post-operations. We predict missed flight connections in an airline’s hub airport using historical data on flights and passengers, and analyse the factors that contribute additively to the…'
+excerpt_truncated: true
 date: 2022-09-01
 venue: 'IEEE Transactions on Intelligent Transportation Systems'
 citation_authors: ["Marta Guimaraes", "Claudia Soares", "Rodrigo Ventura"]

@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2023-01-01-A-Temporal-Fusion-Transformer-for-Long-Term-Explainable-Prediction-of-Emergency-Department-Overcrowding
 excerpt_separator: ""
 description: 'Emergency Departments (EDs) are a fundamental element of the Portuguese National Health Service, serving as an entry point for users with diverse and very serious medical problems.'
-excerpt: 'Emergency Departments (EDs) are a fundamental element of the Portuguese National Health Service, serving as an entry point for users with diverse and very serious medical problems. Due to the inherent characteristics of the ED, forecasting the number of patients using the services is particularly challenging. And a mismatch between the affluence and the number of medical professionals can lead to a decrease in the.'
+excerpt: 'Emergency Departments (EDs) are a fundamental element of the Portuguese National Health Service, serving as an entry point for users with diverse and very serious medical problems. Due to the inherent characteristics of the ED, forecasting the number of patients using the services is particularly challenging. And a mismatch between the affluence and the number of medical professionals can lead to a decrease in the…'
+excerpt_truncated: true
 date: 2023-01-01
 venue: 'Machine Learning and Principles and Practice of Knowledge Discovery in Databases'
 citation_authors: ["Francisco M. Caldas", "Cláudia Soares"]

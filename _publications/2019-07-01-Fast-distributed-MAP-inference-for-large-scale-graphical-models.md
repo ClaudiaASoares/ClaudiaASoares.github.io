@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2019-07-01-Fast-distributed-MAP-inference-for-large-scale-graphical-models
 excerpt_separator: ""
 description: 'In every domain of life and society, real-world data gains pull for both a more informed decision making and citizenship.'
-excerpt: 'In every domain of life and society, real-world data gains pull for both a more informed decision making and citizenship. Social and human phenomena carry intricate and unknown dependencies unreachable by traditional machine learning approaches, like regression or classification. How to extract value from large amounts of complex and noisy data? Assuming we know the generative model of our data, inference itself is a combinatorial.'
+excerpt: 'In every domain of life and society, real-world data gains pull for both a more informed decision making and citizenship. Social and human phenomena carry intricate and unknown dependencies unreachable by traditional machine learning approaches, like regression or classification. How to extract value from large amounts of complex and noisy data? Assuming we know the generative model of our data, inference itself is a combinatorial…'
+excerpt_truncated: true
 date: 2019-07-01
 venue: 'IEEE EUROCON 2019 -18th International Conference on Smart Technologies'
 citation_authors: ["Claudia Soares", "Joao Gomes"]

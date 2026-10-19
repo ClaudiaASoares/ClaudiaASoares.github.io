@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2026-01-01-A-Multi-Token-Coordinate-Descent-Method-for-Semi-Decentralized-Vertical-Federated-Learning
 excerpt_separator: ""
 description: 'Most federated learning (FL) methods use a client-server scheme, where clients communicate only with a central server.'
-excerpt: 'Most federated learning (FL) methods use a client-server scheme, where clients communicate only with a central server. However, this scheme is prone to bandwidth bottlenecks at the server and has a single point of failure. In contrast, in a (fully) decentralized approach, clients communicate directly with each other, dispensing with the server and mitigating these issues. Yet, as the client network grows larger and sparser.'
+excerpt: 'Most federated learning (FL) methods use a client-server scheme, where clients communicate only with a central server. However, this scheme is prone to bandwidth bottlenecks at the server and has a single point of failure. In contrast, in a (fully) decentralized approach, clients communicate directly with each other, dispensing with the server and mitigating these issues. Yet, as the client network grows larger and sparser…'
+excerpt_truncated: true
 date: 2026-01-01
 venue: 'IEEE Transactions on Signal Processing'
 citation_authors: ["Pedro Valdeira", "Yuejie Chi", "Cláudia Soares", "João Xavier"]

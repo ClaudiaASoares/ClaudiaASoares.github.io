@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2024-07-01-Machine-learning-in-orbit-estimation-A-survey
 excerpt_separator: ""
 description: 'Since the late 1950s, when the first artificial satellite was launched, the number of Resident Space Objects has steadily increased.'
-excerpt: 'Since the late 1950s, when the first artificial satellite was launched, the number of Resident Space Objects has steadily increased. It is estimated that around one million objects larger than one cm are currently orbiting the Earth, with only thirty thousand larger than ten cm being tracked. To avert a chain reaction of collisions, known as Kessler Syndrome, it is essential to accurately track and.'
+excerpt: 'Since the late 1950s, when the first artificial satellite was launched, the number of Resident Space Objects has steadily increased. It is estimated that around one million objects larger than one cm are currently orbiting the Earth, with only thirty thousand larger than ten cm being tracked. To avert a chain reaction of collisions, known as Kessler Syndrome, it is essential to accurately track and…'
+excerpt_truncated: true
 date: 2024-07-01
 venue: 'Acta Astronautica'
 citation_authors: ["Francisco Caldas", "Cláudia Soares"]

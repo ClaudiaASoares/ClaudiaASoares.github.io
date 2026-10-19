@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2025-12-01-SCENE-Net-Geometric-induction-for-interpretable-and-low-resource-3D-pole-detection-with-Group-Equivariant-Non-Expansive-Operators
 excerpt_separator: ""
 description: 'This paper introduces SCENE-Net, a novel low-resource, white-box model that serves as a compelling proof-of-concept for 3D point cloud segmentation.'
-excerpt: 'This paper introduces SCENE-Net, a novel low-resource, white-box model that serves as a compelling proof-of-concept for 3D point cloud segmentation. At its core, SCENE-Net employs Group Equivariant Non-Expansive Operators (GENEOs), a mechanism that leverages geometric priors for enhanced object identification. Our contribution extends the theoretical landscape of geometric learning, highlighting the utility of geometric observers as intrinsic biases in analyzing 3D environments. Through empirical testing.'
+excerpt: 'This paper introduces SCENE-Net, a novel low-resource, white-box model that serves as a compelling proof-of-concept for 3D point cloud segmentation. At its core, SCENE-Net employs Group Equivariant Non-Expansive Operators (GENEOs), a mechanism that leverages geometric priors for enhanced object identification. Our contribution extends the theoretical landscape of geometric learning, highlighting the utility of geometric observers as intrinsic biases in analyzing 3D environments. Through empirical testing…'
+excerpt_truncated: true
 date: 2025-12-01
 venue: 'Computer Vision and Image Understanding'
 citation_authors: ["Diogo Lavado", "Alessandra Micheletti", "Giovanni Bocchi", "Patrizio Frosini", "Cláudia Soares"]

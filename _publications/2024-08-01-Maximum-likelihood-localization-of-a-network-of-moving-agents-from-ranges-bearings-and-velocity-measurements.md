@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2024-08-01-Maximum-likelihood-localization-of-a-network-of-moving-agents-from-ranges-bearings-and-velocity-measurements
 excerpt_separator: ""
 description: 'Localization is a fundamental enabler technology for many applications, like vehicular networks, IoT, and even medicine.'
-excerpt: 'Localization is a fundamental enabler technology for many applications, like vehicular networks, IoT, and even medicine. While Global Navigation Satellite Systems solutions offer great performance, they are unavailable in scenarios like indoor or underwater environments, and, for large networks, the instrumentation cost is prohibitive. We develop a localization algorithm from ranges and bearings, suitable for generic mobile networks. Our algorithm is built on a tight.'
+excerpt: 'Localization is a fundamental enabler technology for many applications, like vehicular networks, IoT, and even medicine. While Global Navigation Satellite Systems solutions offer great performance, they are unavailable in scenarios like indoor or underwater environments, and, for large networks, the instrumentation cost is prohibitive. We develop a localization algorithm from ranges and bearings, suitable for generic mobile networks. Our algorithm is built on a tight…'
+excerpt_truncated: true
 date: 2024-08-01
 venue: 'Signal Processing'
 citation_authors: ["Filipa Valdeira", "Cláudia Soares", "João Gomes"]

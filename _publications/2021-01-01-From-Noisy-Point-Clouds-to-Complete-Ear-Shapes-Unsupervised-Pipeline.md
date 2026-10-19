@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2021-01-01-From-Noisy-Point-Clouds-to-Complete-Ear-Shapes-Unsupervised-Pipeline
 excerpt_separator: ""
 description: 'Ears are a particularly difficult region of the human face to model, not only due to the non-rigid deformations existing between shapes but also to the challenges in processing the retrieved data.'
-excerpt: 'Ears are a particularly difficult region of the human face to model, not only due to the non-rigid deformations existing between shapes but also to the challenges in processing the retrieved data. The first step towards obtaining a good model is to have complete scans in correspondence, but these usually present a higher amount of occlusions, noise and outliers when compared to most face regions.'
+excerpt: 'Ears are a particularly difficult region of the human face to model, not only due to the non-rigid deformations existing between shapes but also to the challenges in processing the retrieved data. The first step towards obtaining a good model is to have complete scans in correspondence, but these usually present a higher amount of occlusions, noise and outliers when compared to most face regions…'
+excerpt_truncated: true
 date: 2021-01-01
 venue: 'IEEE Access'
 citation_authors: ["Filipa Valdeira", "Ricardo Ferreira", "Alessandra Micheletti", "Claudia Soares"]

@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2024-03-01-One-Shot-Initial-Orbit-Determination-in-Low-Earth-Orbit
 excerpt_separator: ""
 description: 'Due to the importance of satellites for society and the exponential increase in the number of objects in orbit, it is important to accurately determine the state (e.g., position and velocity) of these Resident Space Objects (RSOs) at any time and in a timely manner.'
-excerpt: 'Due to the importance of satellites for society and the exponential increase in the number of objects in orbit, it is important to accurately determine the state (e.g., position and velocity) of these Resident Space Objects (RSOs) at any time and in a timely manner. State-of-the-art methodologies for initial orbit determination consist of Kalman-type filters that process sequential data over time and return the state.'
+excerpt: 'Due to the importance of satellites for society and the exponential increase in the number of objects in orbit, it is important to accurately determine the state (e.g., position and velocity) of these Resident Space Objects (RSOs) at any time and in a timely manner. State-of-the-art methodologies for initial orbit determination consist of Kalman-type filters that process sequential data over time and return the state…'
+excerpt_truncated: true
 date: 2024-03-01
 venue: 'Accepted at the IEEE Aerospace Conference'
 citation_authors: ["Ricardo Ferreira", "Marta Guimarães", "Filipa Valdeira", "Cláudia Soares"]

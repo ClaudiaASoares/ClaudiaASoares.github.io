@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2021-08-01-Clustering-of-the-Blendshape-Facial-Model
 excerpt_separator: ""
 description: 'Digital human animation relies on high-quality 3D models of the human face-rigs.'
-excerpt: 'Digital human animation relies on high-quality 3D models of the human face-rigs. A face rig must be accurate and, at the same time, fast to compute. One of the most common rigging models is the blendshape model. We present a novel approach for learning the inverse rig parameters at increased accuracy and decreased computational cost at the same time. It is based on a two.'
+excerpt: 'Digital human animation relies on high-quality 3D models of the human face-rigs. A face rig must be accurate and, at the same time, fast to compute. One of the most common rigging models is the blendshape model. We present a novel approach for learning the inverse rig parameters at increased accuracy and decreased computational cost at the same time. It is based on a two…'
+excerpt_truncated: true
 date: 2021-08-01
 venue: '2021 29th European Signal Processing Conference (EUSIPCO)'
 citation_authors: ["Stevo Rackovic", "Claudia Soares", "Dusan Jakovetic", "Zoranka Desnica", "Relja Ljubobratovic"]

@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2016-08-01-Collaborative-localization-of-vehicle-formations-based-on-ranges-and-bearings
 excerpt_separator: ""
 description: 'We examine the problem of jointly determining the positions of multiple underwater vehicles based on a set of pairwise range and bearing measurements taken over time.'
-excerpt: 'We examine the problem of jointly determining the positions of multiple underwater vehicles based on a set of pairwise range and bearing measurements taken over time. This extends prior work on the so-called (static) collaborative localization paradigm where a hybrid approach was proposed for seamless instantaneous fusion (i.e., no time dependence) of range and bearing measurements. To incorporate time we add to the original convexified.'
+excerpt: 'We examine the problem of jointly determining the positions of multiple underwater vehicles based on a set of pairwise range and bearing measurements taken over time. This extends prior work on the so-called (static) collaborative localization paradigm where a hybrid approach was proposed for seamless instantaneous fusion (i.e., no time dependence) of range and bearing measurements. To incorporate time we add to the original convexified…'
+excerpt_truncated: true
 date: 2016-08-01
 venue: '2016 IEEE Third Underwater Communications and Networking Conference (UComms)'
 citation_authors: ["Beatriz Quintino Ferreira", "Joao Gomes", "Claudia Soares", "Joao P. Costeira"]

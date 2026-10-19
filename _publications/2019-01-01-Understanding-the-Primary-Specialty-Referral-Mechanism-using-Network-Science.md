@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2019-01-01-Understanding-the-Primary-Specialty-Referral-Mechanism-using-Network-Science
 excerpt_separator: ""
 description: 'The medical referral between Primary Care Physicians (PCP) and specialists represents the formal mechanism in the health system to address the need of patients for specialty care [5].'
-excerpt: 'The medical referral between Primary Care Physicians (PCP) and specialists represents the formal mechanism in the health system to address the need of patients for specialty care [5]. Typically, for a given patient with clinical needs, PCP can make a choice of several specialists to whom they may refer and their choice would have important downstream effects. As such, primary-specialty referral may affect many aspects.'
+excerpt: 'The medical referral between Primary Care Physicians (PCP) and specialists represents the formal mechanism in the health system to address the need of patients for specialty care [5]. Typically, for a given patient with clinical needs, PCP can make a choice of several specialists to whom they may refer and their choice would have important downstream effects. As such, primary-specialty referral may affect many aspects…'
+excerpt_truncated: true
 date: 2019-01-01
 venue: 'The International Conference on Complex Networks and Their Applications'
 citation_authors: ["Joao Casal da Veiga", "Qiwei Han", "Claudia Soares"]

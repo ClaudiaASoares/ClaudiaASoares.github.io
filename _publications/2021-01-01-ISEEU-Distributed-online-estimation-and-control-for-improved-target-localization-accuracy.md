@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2021-01-01-ISEEU-Distributed-online-estimation-and-control-for-improved-target-localization-accuracy
 excerpt_separator: ""
 description: 'This paper addresses target localization with an online active learning algorithm defined by distributed, simple and fast computations at each node, with no parameters to tune and where the estimate of the target position at each agent is asymptotically equal in expectation to the centralized maximum-likelihood estimator.'
-excerpt: 'This paper addresses target localization with an online active learning algorithm defined by distributed, simple and fast computations at each node, with no parameters to tune and where the estimate of the target position at each agent is asymptotically equal in expectation to the centralized maximum-likelihood estimator. ISEE.U takes noisy distances at each agent and finds a control that maximizes localization accuracy. We do not.'
+excerpt: 'This paper addresses target localization with an online active learning algorithm defined by distributed, simple and fast computations at each node, with no parameters to tune and where the estimate of the target position at each agent is asymptotically equal in expectation to the centralized maximum-likelihood estimator. ISEE.U takes noisy distances at each agent and finds a control that maximizes localization accuracy. We do not…'
+excerpt_truncated: true
 date: 2021-01-01
 venue: 'Publication'
 citation_authors: ["Claudia Soares", "Miguel Vasques", "Joao Gomes"]

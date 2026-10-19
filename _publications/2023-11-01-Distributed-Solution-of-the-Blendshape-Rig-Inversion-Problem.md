@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2023-11-01-Distributed-Solution-of-the-Blendshape-Rig-Inversion-Problem
 excerpt_separator: ""
 description: 'The problem of rig inversion is central in facial animation, but with the increasing complexity of modern blendshape models, execution times increase beyond practically feasible solutions.'
-excerpt: 'The problem of rig inversion is central in facial animation, but with the increasing complexity of modern blendshape models, execution times increase beyond practically feasible solutions. A possible approach towards a faster solution is clustering, which exploits the spacial nature of the face, leading to a distributed method. In this paper, we go a step further, involving cluster coupling to get more confident estimates of.'
+excerpt: 'The problem of rig inversion is central in facial animation, but with the increasing complexity of modern blendshape models, execution times increase beyond practically feasible solutions. A possible approach towards a faster solution is clustering, which exploits the spacial nature of the face, leading to a distributed method. In this paper, we go a step further, involving cluster coupling to get more confident estimates of…'
+excerpt_truncated: true
 date: 2023-11-01
 venue: 'SIGGRAPH Asia 2023 Technical Communications'
 citation_authors: ["Stevo Racković", "Cláudia Soares", "Dušan Jakovetić"]

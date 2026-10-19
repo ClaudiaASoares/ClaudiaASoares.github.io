@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2024-06-01-Precise-and-Efficient-Orbit-Prediction-in-LEO-with-Machine-Learning-using-Exogenous-Variables
 excerpt_separator: ""
 description: 'The increasing volume of space objects in Earth&apos;s orbit presents a significant challenge for Space Situational Awareness (SSA).'
-excerpt: 'The increasing volume of space objects in Earth&apos;s orbit presents a significant challenge for Space Situational Awareness (SSA). And in particular, accurate orbit prediction is crucial to anticipate the position and velocity of space objects, for collision avoidance and space debris mitigation. When performing Orbit Prediction (OP), it is necessary to consider the impact of non-conservative forces, such as atmospheric drag and gravitational perturbations, that.'
+excerpt: 'The increasing volume of space objects in Earth&apos;s orbit presents a significant challenge for Space Situational Awareness (SSA). And in particular, accurate orbit prediction is crucial to anticipate the position and velocity of space objects, for collision avoidance and space debris mitigation. When performing Orbit Prediction (OP), it is necessary to consider the impact of non-conservative forces, such as atmospheric drag and gravitational perturbations, that…'
+excerpt_truncated: true
 date: 2024-06-01
 venue: '2024 IEEE Congress on Evolutionary Computation (CEC)'
 citation_authors: ["Francisco Caldas", "Cláudia Soares"]

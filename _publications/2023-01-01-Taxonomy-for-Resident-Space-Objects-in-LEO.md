@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2023-01-01-Taxonomy-for-Resident-Space-Objects-in-LEO
 excerpt_separator: ""
 description: 'The increasing number of RSOs has raised concerns about the risk of collisions and catastrophic incidents for all direct and indirect users of space.'
-excerpt: 'The increasing number of RSOs has raised concerns about the risk of collisions and catastrophic incidents for all direct and indirect users of space. To mitigate this issue, it is essential to have a good understanding of the various RSOs in orbit and their behaviour. A well-established taxonomy defining several classes of RSOs is a critical step in achieving this understanding. This taxonomy helps assign.'
+excerpt: 'The increasing number of RSOs has raised concerns about the risk of collisions and catastrophic incidents for all direct and indirect users of space. To mitigate this issue, it is essential to have a good understanding of the various RSOs in orbit and their behaviour. A well-established taxonomy defining several classes of RSOs is a critical step in achieving this understanding. This taxonomy helps assign…'
+excerpt_truncated: true
 date: 2023-01-01
 venue: 'Accepted in the International Astronautical Congress 2023'
 citation_authors: ["Marta Guimaraes", "Claudia Soares", "Chiara Manfletti"]

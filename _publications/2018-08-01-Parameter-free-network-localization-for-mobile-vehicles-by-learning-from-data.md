@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2018-08-01-Parameter-free-network-localization-for-mobile-vehicles-by-learning-from-data
 excerpt_separator: ""
 description: 'For any operation involving autonomous vehicles, localization of mobile agents is a critical module.'
-excerpt: 'For any operation involving autonomous vehicles, localization of mobile agents is a critical module. Unfortunately, localization methods are still dependant on tweaked parameters, under assumptions of poor trajectories, and that can fail disgracefully under real-world conditions. As our systems evolve to deployment-ready state, we see the looming need for more adaptive responses, where sudden changes of conditions can be accommodated by the localization algorithm. This.'
+excerpt: 'For any operation involving autonomous vehicles, localization of mobile agents is a critical module. Unfortunately, localization methods are still dependant on tweaked parameters, under assumptions of poor trajectories, and that can fail disgracefully under real-world conditions. As our systems evolve to deployment-ready state, we see the looming need for more adaptive responses, where sudden changes of conditions can be accommodated by the localization algorithm. This…'
+excerpt_truncated: true
 date: 2018-08-01
 venue: '2018 Fourth Underwater Communications and Networking Conference (UComms)'
 citation_authors: ["Claudia Soares", "Joao Gomes"]

@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2025-07-01-C-PATH-Conversational-Patient-Assistance-and-Triage-in-Healthcare-System
 excerpt_separator: ""
 description: 'Navigating healthcare systems can be complex and overwhelming, creating barriers for patients seeking timely and appropriate medical attention.'
-excerpt: 'Navigating healthcare systems can be complex and overwhelming, creating barriers for patients seeking timely and appropriate medical attention. In this paper, we introduce C-PATH (Conversational Patient Assistance and Triage in Healthcare), a novel conversational AI system powered by large language models (LLMs) designed to assist patients in recognizing symptoms and recommending appropriate medical departments through natural, multi-turn dialogues. C-PATH is fine-tuned on medical knowledge, dialogue.'
+excerpt: 'Navigating healthcare systems can be complex and overwhelming, creating barriers for patients seeking timely and appropriate medical attention. In this paper, we introduce C-PATH (Conversational Patient Assistance and Triage in Healthcare), a novel conversational AI system powered by large language models (LLMs) designed to assist patients in recognizing symptoms and recommending appropriate medical departments through natural, multi-turn dialogues. C-PATH is fine-tuned on medical knowledge, dialogue…'
+excerpt_truncated: true
 date: 2025-07-01
 venue: '2025 IEEE International Conference on Digital Health (ICDH)'
 citation_authors: ["Qi Shi", "Qiwei Han", "Cláudia Soares"]

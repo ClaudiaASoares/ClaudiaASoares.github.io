@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2025-08-01-Generalizing-Trilateration-Approximate-Maximum-Likelihood-Estimator-for-Initial-Orbit-Determination-in-Low-Earth-Orbit
 excerpt_separator: ""
 description: 'With the increase in the number of active satellites and space debris in orbit, the problem of initial orbit determination (IOD) becomes increasingly important, demanding a high accuracy.'
-excerpt: 'With the increase in the number of active satellites and space debris in orbit, the problem of initial orbit determination (IOD) becomes increasingly important, demanding a high accuracy. Over the years, different approaches have been presented such as filtering methods (for example, Extended Kalman Filter), differential algebra or solving Lambert&apos;s problem. In this work, we consider a setting of three monostatic radars, where all available.'
+excerpt: 'With the increase in the number of active satellites and space debris in orbit, the problem of initial orbit determination (IOD) becomes increasingly important, demanding a high accuracy. Over the years, different approaches have been presented such as filtering methods (for example, Extended Kalman Filter), differential algebra or solving Lambert&apos;s problem. In this work, we consider a setting of three monostatic radars, where all available…'
+excerpt_truncated: true
 date: 2025-08-01
 venue: 'IEEE Transactions on Aerospace and Electronic Systems'
 citation_authors: ["Ricardo Ferreira", "Filipa Valdeira", "Marta Guimarães", "Cláudia Soares"]

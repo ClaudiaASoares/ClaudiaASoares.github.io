@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2017-10-01-LocDyn-Robust-Distributed-Localization-for-Mobile-Underwater-Networks
 excerpt_separator: ""
 description: 'How do we self-localize large teams of underwater nodes using only noisy range measurements?'
-excerpt: 'How do we self-localize large teams of underwater nodes using only noisy range measurements? How do we do it in a distributed way, and incorporating dynamics into the problem? How do we reject outliers and produce trustworthy position estimates? And what if some of the vehicles can measure angular information? The stringent acoustic communication constraints and accuracy needs of our geophysical survey application demand fast.'
+excerpt: 'How do we self-localize large teams of underwater nodes using only noisy range measurements? How do we do it in a distributed way, and incorporating dynamics into the problem? How do we reject outliers and produce trustworthy position estimates? And what if some of the vehicles can measure angular information? The stringent acoustic communication constraints and accuracy needs of our geophysical survey application demand fast…'
+excerpt_truncated: true
 date: 2017-10-01
 venue: 'IEEE Journal of Oceanic Engineering'
 citation_authors: ["Claudia Soares", "Joao Gomes", "Beatriz Quintino Ferreira", "Joao Paulo Costeira"]

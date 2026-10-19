@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2023-12-01-AI-for-space-traffic-management
 excerpt_separator: ""
 description: 'Morgan Stanley forecasts the space industry to top 1 trillion dollars by 2040.'
-excerpt: 'Morgan Stanley forecasts the space industry to top 1 trillion dollars by 2040. Of these 1 trillion dollars, 1.5 billion dollars are expected to be the contribution of the space situational market alone. Satellite operators are already paying the price of space debris. Current approaches for collision avoidance and space traffic management face serious challenges, mainly: (1) Insufficient data and endangered autonomy of action in.'
+excerpt: 'Morgan Stanley forecasts the space industry to top 1 trillion dollars by 2040. Of these 1 trillion dollars, 1.5 billion dollars are expected to be the contribution of the space situational market alone. Satellite operators are already paying the price of space debris. Current approaches for collision avoidance and space traffic management face serious challenges, mainly: (1) Insufficient data and endangered autonomy of action in…'
+excerpt_truncated: true
 date: 2023-12-01
 venue: 'Journal of Space Safety Engineering'
 citation_authors: ["Chiara Manfletti", "Marta Guimarães", "Claudia Soares"]

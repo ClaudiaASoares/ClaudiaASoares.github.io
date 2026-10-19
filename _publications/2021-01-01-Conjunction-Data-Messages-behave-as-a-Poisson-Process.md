@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2021-01-01-Conjunction-Data-Messages-behave-as-a-Poisson-Process
 excerpt_separator: ""
 description: 'Space debris is a major problem in space exploration.'
-excerpt: 'Space debris is a major problem in space exploration. International bodies continuously monitor a large database of orbiting objects and emit warnings in the form of conjunction data messages. An important question for satellite operators is to estimate when fresh information will arrive so that they can react timely but sparingly with satellite maneuvers. We propose a statistical learning model of the message arrival process.'
+excerpt: 'Space debris is a major problem in space exploration. International bodies continuously monitor a large database of orbiting objects and emit warnings in the form of conjunction data messages. An important question for satellite operators is to estimate when fresh information will arrive so that they can react timely but sparingly with satellite maneuvers. We propose a statistical learning model of the message arrival process…'
+excerpt_truncated: true
 date: 2021-01-01
 venue: 'Workshop on AI for Spacecraft Longevity'
 citation_authors: ["Francisco Caldas", "Claudia Soares", "Cláudia Nunes", "Marta Guimarães", "Mariana Filipe", "Rodrigo Ventura"]

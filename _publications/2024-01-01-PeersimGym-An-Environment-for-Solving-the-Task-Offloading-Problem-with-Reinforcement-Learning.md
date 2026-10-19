@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2024-01-01-PeersimGym-An-Environment-for-Solving-the-Task-Offloading-Problem-with-Reinforcement-Learning
 excerpt_separator: ""
 description: 'Task offloading, crucial for balancing computational loads across devices in networks such as the Internet of Things, poses significant optimization challenges, including minimizing latency and energy usage under strict communication and storage constraints.'
-excerpt: 'Task offloading, crucial for balancing computational loads across devices in networks such as the Internet of Things, poses significant optimization challenges, including minimizing latency and energy usage under strict communication and storage constraints. While traditional optimization falls short in scalability; and heuristic approaches lack in achieving optimal outcomes, Reinforcement Learning (RL) offers a promising avenue by enabling the learning of optimal offloading strategies through iterative.'
+excerpt: 'Task offloading, crucial for balancing computational loads across devices in networks such as the Internet of Things, poses significant optimization challenges, including minimizing latency and energy usage under strict communication and storage constraints. While traditional optimization falls short in scalability; and heuristic approaches lack in achieving optimal outcomes, Reinforcement Learning (RL) offers a promising avenue by enabling the learning of optimal offloading strategies through iterative…'
+excerpt_truncated: true
 date: 2024-01-01
 venue: 'Machine Learning and Knowledge Discovery in Databases. Applied Data Science Track'
 citation_authors: ["Frederico Metelo", "Cláudia Soares", "Stevo Racković", "Pedro Ákos Costa"]

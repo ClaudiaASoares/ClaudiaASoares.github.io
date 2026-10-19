@@ -4,7 +4,8 @@ collection: publications
 permalink: /publication/2024-12-01-Refined-Inverse-Rigging-A-Balanced-Approach-to-High-fidelity-Blendshape-Animation
 excerpt_separator: ""
 description: 'In this paper, we present an advanced approach to solving the inverse rig problem in blendshape animation, using high-quality corrective blendshapes.'
-excerpt: 'In this paper, we present an advanced approach to solving the inverse rig problem in blendshape animation, using high-quality corrective blendshapes. Our algorithm focuses on three key areas: ensuring high data fidelity in reconstructed meshes, achieving greater sparsity in weight distributions, and facilitating smoother frame-to-frame transitions. While the incorporation of corrective terms is a known practice, our method differentiates itself by employing a unique combination.'
+excerpt: 'In this paper, we present an advanced approach to solving the inverse rig problem in blendshape animation, using high-quality corrective blendshapes. Our algorithm focuses on three key areas: ensuring high data fidelity in reconstructed meshes, achieving greater sparsity in weight distributions, and facilitating smoother frame-to-frame transitions. While the incorporation of corrective terms is a known practice, our method differentiates itself by employing a unique combination…'
+excerpt_truncated: true
 date: 2024-12-01
 venue: 'SIGGRAPH Asia 2024 Conference Papers'
 citation_authors: ["Stevo Racković", "Dušan Jakovetić", "Cláudia Soares"]

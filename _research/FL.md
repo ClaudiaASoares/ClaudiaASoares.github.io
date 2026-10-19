@@ -1,16 +1,15 @@
 ---
-title: "Federated and decentralized learning"
-excerpt: "Communication-efficient, privacy-aware learning across distributed data owners."
-collection: portfolio
+title: "Federated Learning and Distributed Optimisation"
+excerpt: "Learning and optimisation across distributed data owners, with convergence analysis and communication constraints."
+collection: research
+topic_id: distributed
+order: 2
 ---
 
-My work in federated and decentralized learning asks how models can be trained when data, labels, features, or compute are split across institutions and devices. I am especially interested in methods that reduce communication without losing convergence guarantees, and in decentralized formulations where coordination is limited but the system still needs reliable learning or inference.
+My work in federated learning studies how data owners can train models through specified information exchange. I develop communication-efficient methods for vertical federated learning and semi-decentralised coordination, and analyse convergence under the assumptions of each algorithm.
 
-This line of work connects optimization theory with practical constraints: compressed communication, error feedback, semi-decentralized coordination, split neural networks, and distributed inference over large graphical models.
+Distributed optimisation also supports my work in estimation. This includes inference in graphical models and network localisation from measurements, with attention to non-Gaussian noise and communication constraints.
 
-## Publications in this topic
+The applications include task offloading in edge systems, distributed energy markets and decomposition of the inverse-rig problem in facial animation.
 
-- [A Multi-Token Coordinate Descent Method for Semi-Decentralized Vertical Federated Learning](/publication/2026-01-01-A-Multi-Token-Coordinate-Descent-Method-for-Semi-Decentralized-Vertical-Federated-Learning), IEEE Transactions on Signal Processing, 2026.
-- [Communication-Efficient Vertical Federated Learning via Compressed Error Feedback](/publication/2025-01-01-Communication-Efficient-Vertical-Federated-Learning-via-Compressed-Error-Feedback), IEEE Transactions on Signal Processing, 2025.
-- [PeersimGym: An Environment for Solving the Task Offloading Problem with Reinforcement Learning](/publication/2024-01-01-PeersimGym-An-Environment-for-Solving-the-Task-Offloading-Problem-with-Reinforcement-Learning), ECML 2024
-- [Fast distributed MAP inference for large-scale graphical models](/publication/2019-07-01-Fast-distributed-MAP-inference-for-large-scale-graphical-models), IEEE EUROCON 2019.
+{% include research-outputs.html %}

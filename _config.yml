@@ -156,6 +156,7 @@ exclude:
   - vendor
   # Theme examples and maintenance files are kept in Git, outside the site output.
   - _audits
+  - CONCEPTS.md
   - DeepLearning/lecture0.md
   - DeepLearning/lecture1.md
   - _drafts

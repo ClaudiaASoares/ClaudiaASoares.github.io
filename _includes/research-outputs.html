@@ -1,0 +1,63 @@
+{% assign topic = page.topic_id %}
+{% assign coverage = site.data.research_coverage %}
+<h2 id="funded-projects">Funded projects</h2>
+<p>Projects active during 2021 or later, including completed projects.</p>
+<ul class="research-projects">
+{% for project in coverage.projects %}
+  {% if project.topics contains topic %}
+  <li>
+    <strong>{% if project.url %}<a href="{{ project.url | escape }}">{{ project.title | escape }}</a>{% else %}{{ project.title | escape }}{% endif %}</strong>
+    ({{ project.years | escape }}). {{ project.role | escape }}.
+    {{ project.description | escape }}
+    <small>Reference {{ project.reference | escape }}.</small>
+  </li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+<h2 id="publications">Publications since 2021</h2>
+{% assign publications = site.publications | sort: "date" | reverse %}
+{% assign latest_year = site.time | date: "%Y" | plus: 0 %}
+<ul class="research-publications">
+{% for output_year in (2021..latest_year) reversed %}
+{% for publication in publications %}
+  {% assign publication_topics = coverage.publications[publication.permalink] %}
+  {% assign year = publication.date | date: "%Y" | plus: 0 %}
+  {% if publication_topics contains topic and year == output_year %}
+  <li><a href="{{ publication.url | relative_url }}">{{ publication.title | escape }}</a>. {% if publication.venue != "Publication" %}{{ publication.venue | escape }}{% assign year_text = year | append: "" %}{% unless publication.venue contains year_text %}, {{ year }}{% endunless %}{% else %}{{ year }}{% endif %}.</li>
+  {% endif %}
+{% endfor %}
+{% for paper in coverage.additional_papers %}
+  {% if paper.topics contains topic and paper.kind == "accepted" and paper.year == output_year %}
+  <li>{% if paper.url %}<a href="{{ paper.url | escape }}">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}. {{ paper.status | escape }}{% assign year_text = paper.year | append: "" %}{% unless paper.status contains year_text %}, {{ paper.year }}{% endunless %}.</li>
+  {% endif %}
+{% endfor %}
+{% endfor %}
+</ul>
+
+<h2 id="preprints">Preprints and related manuscripts since 2021</h2>
+<ul class="research-preprints">
+{% for paper in coverage.additional_papers %}
+  {% if paper.topics contains topic and paper.kind == "preprint" %}
+  <li><a href="{{ paper.url | escape }}">{{ paper.title | escape }}</a>. {{ paper.status | escape }}, {{ paper.year }}.</li>
+  {% endif %}
+{% endfor %}
+</ul>
+
+{% assign earlier_count = 0 %}
+{% capture earlier_publications %}
+{% for publication in publications %}
+  {% assign publication_topics = coverage.publications[publication.permalink] %}
+  {% assign year = publication.date | date: "%Y" | plus: 0 %}
+  {% if publication_topics contains topic and year < 2021 %}
+    {% assign earlier_count = earlier_count | plus: 1 %}
+  <li><a href="{{ publication.url | relative_url }}">{{ publication.title | escape }}</a>. {{ publication.venue | escape }}{% assign year_text = year | append: "" %}{% unless publication.venue contains year_text %}, {{ year }}{% endunless %}.</li>
+  {% endif %}
+{% endfor %}
+{% endcapture %}
+{% if earlier_count > 0 %}
+<details class="research-earlier">
+  <summary>Earlier publications ({{ earlier_count }})</summary>
+  <ul>{{ earlier_publications }}</ul>
+</details>
+{% endif %}

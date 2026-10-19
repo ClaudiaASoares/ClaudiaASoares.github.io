@@ -1,0 +1,452 @@
+# Reviewed 19 October 2026. Topic assignments are independent of generated publication files.
+# See _audits/research-coverage-2026-10-19.md for scope and sources.
+since: 2021
+publications:
+  /publication/2026-09-01-Satellite-Safe-Margin-Fast-Solutions-for-Conjunction-Analysis:
+  - decisions
+  - space
+  /publication/2026-09-01-ASTRA-ADMM-Accelerated-Topology-Reconfiguration-for-Dynamic-Satellite-Constellations:
+  - decisions
+  - space
+  /publication/2026-04-01-Dissecting-medical-referrals-in-health-services-role-of-physician-professional-networks:
+  - health
+  /publication/2026-01-01-CLASP-Online-learning-algorithms-for-Convex-Losses-And-Squared-Penalties:
+  - decisions
+  /publication/2026-01-01-A-Systematic-Evaluation-of-Retrieval-Augmented-Generation-and-Language-Models-for-Space-Operations:
+  - space
+  /publication/2026-01-01-A-Multi-Token-Coordinate-Descent-Method-for-Semi-Decentralized-Vertical-Federated-Learning:
+  - decisions
+  - distributed
+  ? /publication/2025-12-01-SCENE-Net-Geometric-induction-for-interpretable-and-low-resource-3D-pole-detection-with-Group-Equivariant-Non-Expansive-Operators
+  : - geometry
+  ? /publication/2025-08-01-Generalizing-Trilateration-Approximate-Maximum-Likelihood-Estimator-for-Initial-Orbit-Determination-in-Low-Earth-Orbit
+  : - decisions
+    - space
+  /publication/2025-07-01-C-PATH-Conversational-Patient-Assistance-and-Triage-in-Healthcare-System:
+  - health
+  ? /publication/2025-02-01-Learning-Under-Noisy-Labels-Spurious-Points-and-Diverse-Structures-TS40K-a-3D-Point-Cloud-Dataset-of-Rural-Terrain-and-Electrical-Transmission-Systems
+  : - geometry
+  /publication/2025-01-01-Ranking-with-Confidence-for-Large-Scale-Comparison-Data:
+  - decisions
+  /publication/2025-01-01-OrbitZoo-Real-Orbital-Systems-Challenges-for-Reinforcement-Learning:
+  - decisions
+  - space
+  ? /publication/2025-01-01-Language-Modeling-and-Retrieval-Augmented-Generation-for-Integration-in-Space-Operation-Decision-Support-Tools
+  : - space
+  /publication/2025-01-01-Communication-Efficient-Vertical-Federated-Learning-via-Compressed-Error-Feedback:
+  - decisions
+  - distributed
+  /publication/2024-12-01-Refined-Inverse-Rigging-A-Balanced-Approach-to-High-fidelity-Blendshape-Animation:
+  - decisions
+  - geometry
+  ? /publication/2024-08-01-Maximum-likelihood-localization-of-a-network-of-moving-agents-from-ranges-bearings-and-velocity-measurements
+  : - decisions
+    - distributed
+  /publication/2024-07-01-Machine-learning-in-orbit-estimation-A-survey:
+  - space
+  /publication/2024-06-01-Precise-and-Efficient-Orbit-Prediction-in-LEO-with-Machine-Learning-using-Exogenous-Variables:
+  - space
+  /publication/2024-03-01-One-Shot-Initial-Orbit-Determination-in-Low-Earth-Orbit:
+  - decisions
+  - space
+  /publication/2024-01-01-SCENE-Net-V2-Interpretable-Multiclass-3D-Scene-Understanding-with-Geometric-Priors:
+  - geometry
+  /publication/2024-01-01-PeersimGym-An-Environment-for-Solving-the-Task-Offloading-Problem-with-Reinforcement-Learning:
+  - decisions
+  - distributed
+  /publication/2024-01-01-Causal-Inference-Explanations-for-Graph-Neural-Networks:
+  - health
+  /publication/2023-12-01-AI-for-space-traffic-management:
+  - space
+  /publication/2023-11-01-Distributed-Solution-of-the-Blendshape-Rig-Inversion-Problem:
+  - decisions
+  - distributed
+  - geometry
+  ? /publication/2023-06-01-Probabilistic-Registration-for-Gaussian-Process-Three-Dimensional-Shape-Modelling-in-the-Presence-of-Extensive-Missing-Data
+  : - decisions
+    - geometry
+  ? /publication/2023-05-01-A-majorization-minimization-based-method-for-nonconvex-inverse-rig-problems-in-facial-animation-algorithm-derivation
+  : - decisions
+    - geometry
+  /publication/2023-01-01-Taxonomy-for-Resident-Space-Objects-in-LEO:
+  - space
+  /publication/2023-01-01-Predicting-the-Position-Uncertainty-at-the-Time-of-Closest-Approach-with-Diffusion-Models:
+  - space
+  ? /publication/2023-01-01-A-Temporal-Fusion-Transformer-for-Long-Term-Explainable-Prediction-of-Emergency-Department-Overcrowding
+  : - health
+  /publication/2022-09-01-Decision-Support-Models-for-Predicting-and-Explaining-Airport-Passenger-Connectivity-From-Data:
+  - decisions
+  ? /publication/2022-01-01-Robust-Localization-With-Bounded-Noise-Creating-a-Superset-of-the-Possible-Target-Positions-Via-Linear-Fractional-Representations
+  : - decisions
+  /publication/2021-08-01-STRONG-Synchronous-and-asynchronous-robust-network-localization-under-non-Gaussian-noise:
+  - decisions
+  - distributed
+  /publication/2021-08-01-Clustering-of-the-Blendshape-Facial-Model:
+  - decisions
+  - geometry
+  /publication/2021-01-01-Referral-prediction-in-Healthcare-using-Graph-Neural-Networks:
+  - health
+  /publication/2021-01-01-ISEEU-Distributed-online-estimation-and-control-for-improved-target-localization-accuracy:
+  - decisions
+  - distributed
+  /publication/2021-01-01-From-Noisy-Point-Clouds-to-Complete-Ear-Shapes-Unsupervised-Pipeline:
+  - geometry
+  /publication/2021-01-01-Conjunction-Data-Messages-behave-as-a-Poisson-Process:
+  - space
+  /publication/2020-01-01-Range-and-Bearing-Data-Fusion-for-Precise-Convex-Network-Localization:
+  - decisions
+  - distributed
+  /publication/2020-01-01-Dissecting-medical-referral-mechanisms-in-health-services-using-graph-neural-networks:
+  - health
+  /publication/2019-09-01-Finding-Common-Image-Semantics-for-Urban-Perceived-Safety-Based-on-Pairwise-Comparisons:
+  - decisions
+  /publication/2019-07-01-Locating-a-target-from-uncertain-data-convex-supersets-based-on-linear-fractional-representations:
+  - decisions
+  /publication/2019-07-01-Fast-distributed-MAP-inference-for-large-scale-graphical-models:
+  - decisions
+  - distributed
+  /publication/2019-01-01-Understanding-the-Primary-Specialty-Referral-Mechanism-using-Network-Science:
+  - health
+  /publication/2018-12-01-FLORIS-and-CLORIS-Hybrid-source-and-network-localization-based-on-ranges-and-video:
+  - decisions
+  - distributed
+  /publication/2018-08-01-Parameter-free-network-localization-for-mobile-vehicles-by-learning-from-data:
+  - decisions
+  - distributed
+  /publication/2017-10-01-LocDyn-Robust-Distributed-Localization-for-Mobile-Underwater-Networks:
+  - decisions
+  - distributed
+  /publication/2017-01-01-DIeSEL-Distributed-self-localization-of-a-network-of-underwater-vehicles:
+  - decisions
+  - distributed
+  /publication/2016-08-01-Collaborative-localization-of-vehicle-formations-based-on-ranges-and-bearings:
+  - decisions
+  - distributed
+  /publication/2016-05-01-Distributed-and-robust-network-localization-algorithms:
+  - decisions
+  - distributed
+  ? /publication/2015-09-01-Simple-and-Fast-Convex-Relaxation-Method-for-Cooperative-Localization-in-Sensor-Networks-Using-Range-Measurements
+  : - decisions
+    - distributed
+  /publication/2014-12-01-Distributed-simple-and-stable-network-localization:
+  - decisions
+  - distributed
+additional_papers:
+- title: 'AdamX: Cosine similarity meets gradient descent'
+  year: 2026
+  topics:
+  - decisions
+  kind: accepted
+  status: Accepted at EPIA 2026
+  url: https://arxiv.org/abs/2609.11867
+- title: Data-Centric Preprocessing for GNSS-Based Orbit Determination via AI, Signal Processing, and Orbital Dynamics
+  year: 2026
+  topics:
+  - space
+  kind: accepted
+  status: SPAICE 2026
+  url: https://openreview.net/forum?id=N21P2fboTE
+- title: Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting
+  year: 2026
+  topics:
+  - health
+  kind: accepted
+  status: Accepted at SoGood, ECML PKDD 2026
+  url: https://arxiv.org/abs/2607.27106
+- title: Multi-Agent Reinforcement Learning for Procurement Auctions Based Distributed Energy Market Governance
+  year: 2026
+  topics:
+  - decisions
+  - distributed
+  kind: accepted
+  status: Accepted at EPIA 2026
+- title: Towards a data-centric KDD pipeline for natural-stone valorization under weak supervision
+  year: 2026
+  topics:
+  - decisions
+  kind: accepted
+  status: Accepted at EPIA 2026
+- title: A Multi-Token Coordinate Descent Method for Vertical Federated Learning
+  year: 2022
+  topics:
+  - decisions
+  - distributed
+  kind: accepted
+  status: NeurIPS 2022 Workshop on Federated Learning
+  url: https://openreview.net/forum?id=z5ZmWVh0HCh
+- title: Error- and Prediction-Driven Motor Learning in the Cortico-Cerebellar Loop
+  year: 2026
+  topics:
+  - decisions
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2609.29945
+- title: 'CIExplainer++: Generating Causal and Interpretable Explanations for Graph Neural Networks'
+  year: 2026
+  topics:
+  - health
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2606.20747
+- title: 'Beyond Symmetric Alignment: Spectral Diagnostics of Modality Imbalance in Vision-Language Models in the
+    Medical Domain'
+  year: 2026
+  topics:
+  - geometry
+  - health
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2606.04613
+- title: Can Large Language Models Reliably Extract Physiology Index Values from Coronary Angiography Reports?
+  year: 2026
+  topics:
+  - health
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2604.13077
+- title: 'Analyzing Data Quality and Decay in Mega-Constellations: A Physics-Informed Machine Learning Approach'
+  year: 2025
+  topics:
+  - space
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2510.11242
+- title: 'FAuNO: Semi-Asynchronous Federated Reinforcement Learning Framework for Task Offloading in Edge Systems'
+  year: 2025
+  topics:
+  - decisions
+  - distributed
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2506.02668
+- title: 'Modular Federated Learning: A Meta-Framework Perspective'
+  year: 2025
+  topics:
+  - distributed
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2505.08646
+- title: Enhancing Power Grid Inspections with Machine Learning
+  year: 2025
+  topics:
+  - geometry
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2502.13037
+- title: A Proof of Strong Consistency of Maximum Likelihood Estimator for Independent Non-Identically Distributed
+    Data
+  year: 2025
+  topics:
+  - decisions
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2501.07257
+- title: 'Predicting the Probability of Collision of a Satellite with Space Debris: A Bayesian Machine Learning
+    Approach'
+  year: 2023
+  topics:
+  - space
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2311.10633
+- title: Finding Real-World Orbital Motion Laws from Data
+  year: 2023
+  topics:
+  - decisions
+  - space
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2311.10012
+- title: 'Probability of Collision of satellites and space debris for short-term encounters: Rederivation and fast-to-compute
+    upper and lower bounds'
+  year: 2023
+  topics:
+  - decisions
+  - space
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2311.08978
+- title: Statistical Learning of Conjunction Data Messages Through a Bayesian Non-Homogeneous Poisson Process
+  year: 2023
+  topics:
+  - space
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2311.05426
+- title: Extreme Multilabel Classification for Specialist Doctor Recommendation with Implicit Feedback and Limited
+    Patient Metadata
+  year: 2023
+  topics:
+  - health
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2308.11022
+- title: Low-Resource White-Box Semantic Segmentation of Supporting Towers on 3D Point Clouds via Signature Shape
+    Identification
+  year: 2023
+  topics:
+  - geometry
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2306.07809
+- title: 'High-fidelity Interpretable Inverse Rig: An Accurate and Sparse Solution Optimizing the Quartic Blendshape
+    Model'
+  year: 2023
+  topics:
+  - decisions
+  - geometry
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2302.04820
+- title: Accurate and Interpretable Solution of the Inverse Rig for Realistic Blendshape Models with Quadratic Corrective
+    Terms
+  year: 2023
+  topics:
+  - decisions
+  - geometry
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2302.04843
+- title: 'ISEE.U: Distributed online active target localization with unpredictable targets'
+  year: 2022
+  topics:
+  - decisions
+  - distributed
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2210.09107
+- title: Decentralized EM to Learn Gaussian Mixtures from Datasets Distributed by Features
+  year: 2022
+  topics:
+  - decisions
+  - distributed
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2201.09965
+- title: A Cluster-Based Trip Prediction Graph Neural Network Model for Bike Sharing Systems
+  year: 2022
+  topics:
+  - decisions
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2201.00720
+- title: 'COSMIC: fast closed-form identification from large-scale data for LTV systems'
+  year: 2021
+  topics:
+  - decisions
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2112.04355
+- title: 'Accurate, Interpretable, and Fast Animation: An Iterative, Sparse, and Nonconvex Approach'
+  year: 2021
+  topics:
+  - decisions
+  - geometry
+  kind: preprint
+  status: arXiv preprint
+  url: https://arxiv.org/abs/2109.08356
+projects:
+- title: HyCARE
+  years: 2025–2026
+  role: Principal investigator
+  reference: 2024.07361.IACDC
+  description: Clinical information extraction and decision support combining clinical guidelines with machine learning,
+    with use cases in radiology scheduling and lung cancer treatment.
+  topics:
+  - health
+- title: Thermospheric density estimation with generative diffusion models
+  years: '2025'
+  role: Principal investigator
+  reference: 2024.12852.CPCA
+  description: Computing project on thermospheric density forecasting and uncertainty quantification.
+  topics:
+  - space
+- title: TaRDIS
+  years: 2023–2026
+  role: Task leader
+  reference: '101093006'
+  description: Decentralised learning and task orchestration for edge systems, with use cases including satellite
+    swarms and distributed marketplaces.
+  topics:
+  - decisions
+  - distributed
+  - space
+  url: https://cordis.europa.eu/project/id/101093006
+- title: AI4Europe
+  years: 2022–2025
+  role: Team member
+  reference: '101070000'
+  description: Shared AI research infrastructure for experimentation and reproducibility through the AI-on-demand
+    platform.
+  topics:
+  - decisions
+  url: https://cordis.europa.eu/project/id/101070000
+- title: TRUST-DL
+  years: 2022–2023
+  role: Principal investigator
+  reference: FCT/CPCA-IAC/2022/01
+  description: Causal explanations for specialist referral recommendation.
+  topics:
+  - health
+- title: Drivolution
+  years: 2021–2026
+  role: Team member
+  reference: C644913740-00000022
+  description: Industrial programme on digital production, data intelligence and the transition to the factory of
+    the future.
+  topics:
+  - decisions
+  url: https://www.fct.unl.pt/investigacao/projetos-financiados/drivolution-transicao-para-fabrica-do-futuro
+- title: Sustainable Stone by Portugal
+  years: 2022–2025
+  role: Team member
+  reference: C644943391-00000051/40
+  description: Natural-stone valorisation and digital production, with related research on a data-centric learning
+    pipeline under weak supervision.
+  topics:
+  - decisions
+  url: https://sustainable.stonebyportugal.com/
+- title: Artificial Intelligence Fights Space Debris
+  years: 2022–2026
+  role: Team leader
+  reference: C626449889-0046305
+  description: Collision-risk prediction and machine learning for space traffic management, in collaboration with
+    Neuraspace.
+  topics:
+  - decisions
+  - space
+  url: https://www.unl.pt/en/nova-aerospace/research-projects/
+- title: MD2TRUST
+  years: 2022–2023
+  role: Principal investigator
+  reference: CMU/TIC/0016/2021
+  description: Trustworthy data science for healthcare efficiency, focused on specialist referral recommendation.
+  topics:
+  - health
+  url: https://sites.google.com/view/md2trust/
+- title: RELIABLE
+  years: 2020–2022
+  role: Team member
+  reference: DSAIPA/DS/0111/2019
+  description: Prediction of building occupants’ health risk during extreme weather events, combining health, weather
+    and building data.
+  topics:
+  - health
+- title: BIGMATH
+  years: 2018–2022
+  role: National principal investigator
+  reference: '812912'
+  description: Industrial doctoral research in optimisation, statistics and linear algebra, including facial data
+    analysis. The University of Milan coordinated the consortium.
+  topics:
+  - decisions
+  - distributed
+  - geometry
+  url: https://cordis.europa.eu/project/id/812912
+- title: IPPU — Identifying and Predicting Emergency Admissions
+  years: 2019–2023
+  role: Team leader
+  reference: DSAIPA/AI/0087/2018
+  description: Forecasting emergency admissions to support health-service planning.
+  topics:
+  - health

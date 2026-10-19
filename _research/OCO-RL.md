@@ -1,16 +1,21 @@
 ---
-title: "Online and Reinforcement Learning"
-excerpt: "Learning algorithms for sequential decisions, online updates, and complex operational systems."
-collection: portfolio
+title: "Optimisation and Sequential Decision-Making"
+excerpt: "Optimisation and estimation methods, with constrained online learning, reinforcement learning and operational decision support."
+collection: research
+topic_id: decisions
+order: 1
 ---
 
-My work in online and reinforcement learning is about models that must keep improving while decisions are being made. These settings are often constrained, dynamic, and expensive to simulate: orbital systems, edge-computing task offloading, target localization, and online convex objectives all require algorithms that learn from sequential feedback without assuming a static, fully observed world.
+My work in optimisation studies how to compute decisions and estimates under constraints and uncertainty. It includes convex relaxations for localisation, nonconvex optimisation for facial animation, and learning from pairwise comparisons. Statistical estimation and system identification supply models for control.
 
-The projects in this topic combine algorithmic guarantees with benchmark design and applied decision-support systems. I am particularly interested in how online learning and reinforcement learning can be made reliable enough for infrastructure-like settings, where exploration, uncertainty, and operational cost have to be handled carefully.
+In sequential decision-making, I study algorithms that act on observations revealed over time. This includes constrained online learning and reinforcement learning for orbital systems, task offloading and distributed energy markets. Related work uses predictive models to support operational decisions in transport and industrial production.
 
-## Publications in this topic
+CLASP establishes bounds on regret and cumulative squared violation under its stated assumptions. ASTRA combines an ADMM-based solver with online learning for satellite-network decisions. OrbitZoo and PeersimGym provide environments for evaluating reinforcement learning.
 
-- [CLASP: Online learning algorithms for Convex Losses And Squared Penalties](/publication/2026-01-01-CLASP-Online-learning-algorithms-for-Convex-Losses-And-Squared-Penalties), International Conference on Machine Learning, 2026.
-- [OrbitZoo: Real Orbital Systems Challenges for Reinforcement Learning](/publication/2025-01-01-OrbitZoo-Real-Orbital-Systems-Challenges-for-Reinforcement-Learning), NeurIPS, 2025.
-- [PeersimGym: An Environment for Solving the Task Offloading Problem with Reinforcement Learning](/publication/2024-01-01-PeersimGym-An-Environment-for-Solving-the-Task-Offloading-Problem-with-Reinforcement-Learning), ECML PKDD Applied Data Science Track, 2024.
-- [ISEE.U: Distributed online estimation and control for improved target localization accuracy](/publication/2021-01-01-ISEEU-Distributed-online-estimation-and-control-for-improved-target-localization-accuracy), 2021.
+## Agentic decision-making
+
+The submitted GUARDA proposal asks when guarantees survive substitutions selected by an AI agent during operation. A decision architecture comprises the operator, model class, planning horizon, planning objective and subgoal structure. A substitution replaces one component of that decision architecture.
+
+GUARDA proposes to study how computational approximations and changes to the model class affect regret and cumulative squared violation, and when bounds for individual substitutions survive a sequence. The evaluation keeps the physical loss and constraints fixed.
+
+{% include research-outputs.html %}

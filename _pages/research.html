@@ -1,14 +1,18 @@
 ---
 layout: archive
 title: "Research"
-description: "Research by Cláudia Soares at NOVA in machine learning for space, healthcare, federated and decentralized learning, and online and reinforcement learning."
+description: "Research by Cláudia Soares on trustworthy machine learning, optimisation, federated learning, geometric models, space operations and clinical decision support."
 permalink: /research/
 author_profile: true
 ---
 
 {% include base_path %}
 
+<p>I develop methods for trustworthy machine learning, focusing on optimisation and decision-making under constraints and uncertainty. My work spans distributed learning and geometric models, with applications in space operations, clinical decision support and facial animation.</p>
 
-{% for post in site.research %}
+<p>The topic pages bring together publications and funded projects active since 2021, alongside related preprints and earlier work. Papers and projects may appear in more than one topic when they connect methods with applications.</p>
+
+{% assign research_topics = site.research | sort: "order" %}
+{% for post in research_topics %}
   {% include archive-single.html %}
 {% endfor %}

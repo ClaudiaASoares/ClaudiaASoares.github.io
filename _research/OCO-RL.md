@@ -14,8 +14,8 @@ CLASP establishes bounds on regret and cumulative squared violation under its st
 
 ## Agentic decision-making
 
-The submitted GUARDA proposal asks when guarantees survive substitutions selected by an AI agent during operation. A decision architecture comprises the operator, model class, planning horizon, planning objective and subgoal structure. A substitution replaces one component of that decision architecture.
+My research on agentic decision-making asks when algorithmic guarantees survive substitutions selected by an AI agent during operation. A decision architecture comprises the operator, model class, planning horizon, planning objective and subgoal structure. A substitution replaces one component of that decision architecture.
 
-GUARDA proposes to study how computational approximations and changes to the model class affect regret and cumulative squared violation, and when bounds for individual substitutions survive a sequence. The evaluation keeps the physical loss and constraints fixed.
+This line of work examines how computational approximations and changes to the model class affect regret and cumulative squared violation, and under what conditions bounds for individual substitutions extend to a sequence. The physical loss and constraints remain fixed during evaluation.
 
 {% include research-outputs.html %}

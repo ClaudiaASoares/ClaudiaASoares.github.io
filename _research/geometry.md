@@ -16,6 +16,6 @@ Related work examines the geometry of vision-language representations through sp
 
 STEmo is a research dataset described in a manuscript under review. It records facial motion during transitions between emotion categories, with generation baselines used to study how these transitions are reproduced.
 
-The submitted EPIC proposal would extend this work with an Unreal Engine editor plugin for generating and previewing facial motion on MetaHuman characters.
+This line of work also examines how facial-motion generation and preview can be integrated into Unreal Engine workflows for MetaHuman characters.
 
 {% include research-outputs.html %}

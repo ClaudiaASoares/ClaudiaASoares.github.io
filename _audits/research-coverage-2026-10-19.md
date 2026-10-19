@@ -24,7 +24,7 @@
 - BIGMATH is dated 2018–2022 using CORDIS, which corrects the 2019 start in Notion. AI4Europe uses CORDIS dates 2022–2025 because the Notion dates are blank.
 - Drivolution uses the [NOVA FCT project page](https://www.fct.unl.pt/investigacao/projetos-financiados/drivolution-transicao-para-fabrica-do-futuro) dates 2021–2026. Notion gives 2022–2025. Other project year ranges use the current Formal Projects records. Older CV dates can differ.
 - Public project pages are linked where verified. Projects without a confirmed public page display their grant reference instead of a private Notion link.
-- Submitted GUARDA, EPIC and HyCARE2 proposals are not included in the funded-project lists. Existing proposal text remains labelled as proposed work.
+- Editorial update on 20 October 2026: describe research directions through their scientific questions and methods. Public pages omit funding application names and submission status. Funded-project lists contain awarded projects only.
 - Unpublished private drafts, ideas and dropped work were not added to the public bibliography. STEmo remains described as a manuscript under review in the topic prose. The withdrawn arXiv manuscript 2503.13366 is excluded.
 
 ## Coverage by topic

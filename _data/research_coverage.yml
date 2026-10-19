@@ -178,8 +178,8 @@ additional_papers:
   year: 2026
   topics:
   - decisions
-  kind: preprint
-  status: arXiv preprint
+  kind: accepted
+  status: Accepted at EPIA 2026
   url: https://arxiv.org/abs/2609.29945
 - title: 'CIExplainer++: Generating Causal and Interpretable Explanations for Graph Neural Networks'
   year: 2026
@@ -388,15 +388,6 @@ projects:
   description: Causal explanations for specialist referral recommendation.
   topics:
   - health
-- title: Drivolution
-  years: 2021–2026
-  role: Team member
-  reference: C644913740-00000022
-  description: Industrial programme on digital production, data intelligence and the transition to the factory of
-    the future.
-  topics:
-  - decisions
-  url: https://www.fct.unl.pt/investigacao/projetos-financiados/drivolution-transicao-para-fabrica-do-futuro
 - title: Sustainable Stone by Portugal
   years: 2022–2025
   role: Team member
@@ -408,7 +399,7 @@ projects:
   url: https://sustainable.stonebyportugal.com/
 - title: Artificial Intelligence Fights Space Debris
   years: 2022–2026
-  role: Team leader
+  role: Local PI
   reference: C626449889-0046305
   description: Collision-risk prediction and machine learning for space traffic management, in collaboration with
     Neuraspace.

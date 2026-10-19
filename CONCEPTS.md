@@ -44,6 +44,7 @@ Publication titles retain their published spelling.
 | Clinical decision support | Methods supplying information to a clinician's decision process. Model evaluation does not establish clinical effectiveness. |
 | AI for Clinical Decision Support and Health Services | The application topic covering clinical information extraction, decision support, referral networks, healthcare-demand forecasting and population health risk prediction. Related methods papers are identified as such. |
 | Funded project | An awarded research project or computing allocation with an identifiable grant or award reference. Completed projects are included when their activity overlaps 2021 or later. |
+| Local PI | Principal investigator for the participation at the local institution. Use this role for Artificial Intelligence Fights Space Debris. |
 | Preprint | A publicly available manuscript without an established publication claim in the evidence used here. Related manuscripts may develop earlier work and are not counted as independent journal or conference publications. |
 | Research direction | A line of work described through its scientific questions and methods. Its description does not establish a completed result, implementation or funding award. |
 
@@ -61,11 +62,15 @@ Publication titles retain their published spelling.
   Topic assignments and additional papers are maintained in
   `_data/research_coverage.yml`, so regenerating publications does not erase them.
 - Coverage includes all 51 existing publication records, 28 additional papers
-  and public manuscripts, and 12 funded project records. Use 2021 as the
+  and public manuscripts, and 11 funded project records. Use 2021 as the
   calendar-year boundary. Keep older work accessible separately.
 - AI4Europe is the name confirmed by the user for grant 101070000. BIGMATH's
   role is National PI; the University of Milan coordinated the consortium.
-- AI4Europe is shared research infrastructure. Drivolution and Sustainable
-  Stone by Portugal are related industrial programmes. Their placement under
+- AI4Europe is shared research infrastructure. Sustainable Stone by Portugal
+  is a related industrial programme. Their placement under
   the methods topic does not assert that every activity uses online learning.
+- User corrections on 20 October 2026 take precedence over the earlier database
+  records: exclude Drivolution because Cláudia did not participate; list her as
+  Local PI for Artificial Intelligence Fights Space Debris; list the
+  cortico-cerebellar motor-learning paper as accepted at EPIA 2026.
 - See `_audits/research-coverage-2026-10-19.md` for sources and coverage limits.

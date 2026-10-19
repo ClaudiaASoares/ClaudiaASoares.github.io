@@ -3,12 +3,12 @@
 ## Scope and decisions
 
 - Covered every one of the 51 existing publication records, including the 2016 dissertation. Of these, 37 are dated 2021 or later.
-- Added six accepted or workshop papers and 22 public preprints or related manuscripts that were missing from the topic lists. Related manuscripts can develop earlier work, so 79 records does not mean 79 independent papers.
-- Included all 12 funded or completed project records identified in the Formal Projects DB that overlap 2021 or later. Computing allocations are included.
+- Added seven accepted or workshop papers and 21 public preprints or related manuscripts that were missing from the topic lists. Related manuscripts can develop earlier work, so 79 records does not mean 79 independent papers.
+- Included 11 funded or completed projects overlapping 2021 or later, after applying the user's participation correction on 20 October 2026. Computing allocations are included.
 - Retained the five topic names and URLs. Cross-listing reflects a methodological or application connection, rather than a claim that every paper uses every method named in a topic.
 - AI4Europe is the user-confirmed name for grant 101070000. The Notion record is still named AI4EU. No Notion records were changed.
 - Used the National PI role for BIGMATH. The University of Milan coordinated the consortium.
-- AI4Europe is listed as shared research infrastructure within the methods topic. Drivolution and Sustainable Stone are related industrial programmes, not evidence of online-learning guarantees.
+- AI4Europe is listed as shared research infrastructure within the methods topic. Sustainable Stone is a related industrial programme, not evidence of online-learning guarantees.
 - Generic graph-explanation papers are methods relevant to clinical decision support. The topic text describes this connection without asserting a clinical evaluation.
 - Airport connectivity, bike-sharing demand, urban pairwise comparisons and natural-stone data preparation are grouped under operational decision support within the first topic. They are not described as sequential-learning algorithms.
 
@@ -22,7 +22,8 @@
 - Public discovery sources included the [arXiv author page](https://arxiv.org/a/soares_c_1.html) and [CIENCIAVITAE profile](https://www.cienciavitae.pt/portal/pt/691E-996A-BEA8). These can lag current records. This is a coverage audit of the reconciled inventory, not proof that no other paper exists.
 - Public sources confirm [BIGMATH](https://cordis.europa.eu/project/id/812912), [TaRDIS](https://cordis.europa.eu/project/id/101093006) and [AI4Europe](https://cordis.europa.eu/project/id/101070000).
 - BIGMATH is dated 2018–2022 using CORDIS, which corrects the 2019 start in Notion. AI4Europe uses CORDIS dates 2022–2025 because the Notion dates are blank.
-- Drivolution uses the [NOVA FCT project page](https://www.fct.unl.pt/investigacao/projetos-financiados/drivolution-transicao-para-fabrica-do-futuro) dates 2021–2026. Notion gives 2022–2025. Other project year ranges use the current Formal Projects records. Older CV dates can differ.
+- Other project year ranges use the current Formal Projects records. Older CV dates can differ.
+- User corrections on 20 October 2026 supersede earlier database metadata: remove Drivolution because Cláudia did not participate; use Local PI for Artificial Intelligence Fights Space Debris; classify the cortico-cerebellar motor-learning paper as accepted at EPIA 2026. No Notion records were changed.
 - Public project pages are linked where verified. Projects without a confirmed public page display their grant reference instead of a private Notion link.
 - Editorial update on 20 October 2026: describe research directions through their scientific questions and methods. Public pages omit funding application names and submission status. Funded-project lists contain awarded projects only.
 - Unpublished private drafts, ideas and dropped work were not added to the public bibliography. STEmo remains described as a manuscript under review in the topic prose. The withdrawn arXiv manuscript 2503.13366 is excluded.
@@ -32,7 +33,7 @@
 | Topic | Existing publication records | Additional papers and manuscripts | Funded projects |
 | --- | ---: | ---: | ---: |
 | Geometric Learning and Facial Animation | 9 | 6 | 1 |
-| Optimisation and Sequential Decision-Making | 32 | 16 | 6 |
+| Optimisation and Sequential Decision-Making | 32 | 16 | 5 |
 | AI for Space Operations | 13 | 6 | 3 |
 | AI for Clinical Decision Support and Health Services | 7 | 5 | 5 |
 | Federated Learning and Distributed Optimisation | 17 | 6 | 2 |
@@ -105,7 +106,7 @@
 | Multi-Agent Reinforcement Learning for Procurement Auctions Based Distributed Energy Market Governance | Accepted at EPIA 2026, 2026 | decisions, distributed |
 | Towards a data-centric KDD pipeline for natural-stone valorization under weak supervision | Accepted at EPIA 2026, 2026 | decisions |
 | [A Multi-Token Coordinate Descent Method for Vertical Federated Learning](https://openreview.net/forum?id=z5ZmWVh0HCh) | NeurIPS 2022 Workshop on Federated Learning, 2022 | decisions, distributed |
-| [Error- and Prediction-Driven Motor Learning in the Cortico-Cerebellar Loop](https://arxiv.org/abs/2609.29945) | arXiv preprint, 2026 | decisions |
+| [Error- and Prediction-Driven Motor Learning in the Cortico-Cerebellar Loop](https://arxiv.org/abs/2609.29945) | Accepted at EPIA 2026 | decisions |
 | [CIExplainer++: Generating Causal and Interpretable Explanations for Graph Neural Networks](https://arxiv.org/abs/2606.20747) | arXiv preprint, 2026 | health |
 | [Beyond Symmetric Alignment: Spectral Diagnostics of Modality Imbalance in Vision-Language Models in the Medical Domain](https://arxiv.org/abs/2606.04613) | arXiv preprint, 2026 | geometry, health |
 | [Can Large Language Models Reliably Extract Physiology Index Values from Coronary Angiography Reports?](https://arxiv.org/abs/2604.13077) | arXiv preprint, 2026 | health |
@@ -138,9 +139,8 @@
 | TaRDIS | 2023–2026 | Task leader | decisions, distributed, space | 101093006 |
 | AI4Europe | 2022–2025 | Team member | decisions | 101070000 |
 | TRUST-DL | 2022–2023 | Principal investigator | health | FCT/CPCA-IAC/2022/01 |
-| Drivolution | 2021–2026 | Team member | decisions | C644913740-00000022 |
 | Sustainable Stone by Portugal | 2022–2025 | Team member | decisions | C644943391-00000051/40 |
-| Artificial Intelligence Fights Space Debris | 2022–2026 | Team leader | decisions, space | C626449889-0046305 |
+| Artificial Intelligence Fights Space Debris | 2022–2026 | Local PI | decisions, space | C626449889-0046305 |
 | MD2TRUST | 2022–2023 | Principal investigator | health | CMU/TIC/0016/2021 |
 | RELIABLE | 2020–2022 | Team member | health | DSAIPA/DS/0111/2019 |
 | BIGMATH | 2018–2022 | National principal investigator | decisions, distributed, geometry | 812912 |

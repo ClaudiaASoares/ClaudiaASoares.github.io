@@ -61,9 +61,7 @@ redirect_from:
  
 ## Publications
 
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+{% include cv-publications.html %}
 
 
 ## Supervisions
@@ -71,11 +69,13 @@ redirect_from:
 See the [TrustworthyML@NOVA group page](/group/) for current students, co-supervisions and alumni.
 
  
+{% comment %}
 ## Talks
 
   <ul>{% for post in site.talks %}
     {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
+{% endcomment %}
 
   
 ## Teaching

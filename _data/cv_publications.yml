@@ -1,0 +1,185 @@
+# CV inclusion and categories are independent of generated publication files.
+# New records require a publication-status and category review before CV inclusion.
+ranking_edition: ICORE2026
+sections:
+- id: ranked-conferences
+  title: A/A* conferences
+- id: journals
+  title: Journals
+- id: other-conferences
+  title: Other conferences
+- id: workshops
+  title: Workshops
+publications:
+  /publication/2014-12-01-Distributed-simple-and-stable-network-localization:
+    section: other-conferences
+    status: published
+  ? /publication/2015-09-01-Simple-and-Fast-Convex-Relaxation-Method-for-Cooperative-Localization-in-Sensor-Networks-Using-Range-Measurements
+  : section: journals
+    status: published
+  /publication/2016-05-01-Distributed-and-robust-network-localization-algorithms:
+    status: excluded
+    reason: Doctoral thesis; degree is listed under Education.
+  /publication/2016-08-01-Collaborative-localization-of-vehicle-formations-based-on-ranges-and-bearings:
+    section: other-conferences
+    status: published
+  /publication/2017-01-01-DIeSEL-Distributed-self-localization-of-a-network-of-underwater-vehicles:
+    section: other-conferences
+    status: published
+  /publication/2017-10-01-LocDyn-Robust-Distributed-Localization-for-Mobile-Underwater-Networks:
+    section: journals
+    status: published
+  /publication/2018-08-01-Parameter-free-network-localization-for-mobile-vehicles-by-learning-from-data:
+    section: other-conferences
+    status: published
+  /publication/2018-12-01-FLORIS-and-CLORIS-Hybrid-source-and-network-localization-based-on-ranges-and-video:
+    section: journals
+    status: published
+  /publication/2019-01-01-Understanding-the-Primary-Specialty-Referral-Mechanism-using-Network-Science:
+    section: other-conferences
+    status: published
+  /publication/2019-07-01-Fast-distributed-MAP-inference-for-large-scale-graphical-models:
+    section: other-conferences
+    status: published
+  /publication/2019-07-01-Locating-a-target-from-uncertain-data-convex-supersets-based-on-linear-fractional-representations:
+    section: other-conferences
+    status: published
+  /publication/2019-09-01-Finding-Common-Image-Semantics-for-Urban-Perceived-Safety-Based-on-Pairwise-Comparisons:
+    section: other-conferences
+    status: published
+  /publication/2020-01-01-Dissecting-medical-referral-mechanisms-in-health-services-using-graph-neural-networks:
+    section: other-conferences
+    status: published
+  /publication/2020-01-01-Range-and-Bearing-Data-Fusion-for-Precise-Convex-Network-Localization:
+    section: journals
+    status: published
+  /publication/2021-01-01-Conjunction-Data-Messages-behave-as-a-Poisson-Process:
+    section: workshops
+    status: published
+  /publication/2021-01-01-From-Noisy-Point-Clouds-to-Complete-Ear-Shapes-Unsupervised-Pipeline:
+    section: journals
+    status: published
+  /publication/2021-01-01-ISEEU-Distributed-online-estimation-and-control-for-improved-target-localization-accuracy:
+    status: unpublished
+    reason: Unpublished BibTeX entry; excluded from the CV.
+  /publication/2021-01-01-Referral-prediction-in-Healthcare-using-Graph-Neural-Networks:
+    section: workshops
+    status: published
+  /publication/2021-08-01-Clustering-of-the-Blendshape-Facial-Model:
+    section: other-conferences
+    status: published
+  /publication/2021-08-01-STRONG-Synchronous-and-asynchronous-robust-network-localization-under-non-Gaussian-noise:
+    section: journals
+    status: published
+  ? /publication/2022-01-01-Robust-Localization-With-Bounded-Noise-Creating-a-Superset-of-the-Possible-Target-Positions-Via-Linear-Fractional-Representations
+  : section: journals
+    status: published
+  /publication/2022-09-01-Decision-Support-Models-for-Predicting-and-Explaining-Airport-Passenger-Connectivity-From-Data:
+    section: journals
+    status: published
+  ? /publication/2023-01-01-A-Temporal-Fusion-Transformer-for-Long-Term-Explainable-Prediction-of-Emergency-Department-Overcrowding
+  : section: workshops
+    status: published
+  /publication/2023-01-01-Predicting-the-Position-Uncertainty-at-the-Time-of-Closest-Approach-with-Diffusion-Models:
+    section: other-conferences
+    status: accepted
+  /publication/2023-01-01-Taxonomy-for-Resident-Space-Objects-in-LEO:
+    section: other-conferences
+    status: accepted
+  ? /publication/2023-05-01-A-majorization-minimization-based-method-for-nonconvex-inverse-rig-problems-in-facial-animation-algorithm-derivation
+  : section: journals
+    status: published
+  ? /publication/2023-06-01-Probabilistic-Registration-for-Gaussian-Process-Three-Dimensional-Shape-Modelling-in-the-Presence-of-Extensive-Missing-Data
+  : section: journals
+    status: published
+  /publication/2023-11-01-Distributed-Solution-of-the-Blendshape-Rig-Inversion-Problem:
+    section: other-conferences
+    status: published
+  /publication/2023-12-01-AI-for-space-traffic-management:
+    section: journals
+    status: published
+  /publication/2024-01-01-Causal-Inference-Explanations-for-Graph-Neural-Networks:
+    section: workshops
+    status: published
+  /publication/2024-01-01-PeersimGym-An-Environment-for-Solving-the-Task-Offloading-Problem-with-Reinforcement-Learning:
+    section: ranked-conferences
+    status: published
+    rank: A
+  /publication/2024-01-01-SCENE-Net-V2-Interpretable-Multiclass-3D-Scene-Understanding-with-Geometric-Priors:
+    section: workshops
+    status: published
+  /publication/2024-03-01-One-Shot-Initial-Orbit-Determination-in-Low-Earth-Orbit:
+    section: other-conferences
+    status: published
+  /publication/2024-06-01-Precise-and-Efficient-Orbit-Prediction-in-LEO-with-Machine-Learning-using-Exogenous-Variables:
+    section: other-conferences
+    status: published
+  /publication/2024-07-01-Machine-learning-in-orbit-estimation-A-survey:
+    section: journals
+    status: published
+  ? /publication/2024-08-01-Maximum-likelihood-localization-of-a-network-of-moving-agents-from-ranges-bearings-and-velocity-measurements
+  : section: journals
+    status: published
+  /publication/2024-12-01-Refined-Inverse-Rigging-A-Balanced-Approach-to-High-fidelity-Blendshape-Animation:
+    section: ranked-conferences
+    status: published
+    rank: A*
+  /publication/2025-01-01-Communication-Efficient-Vertical-Federated-Learning-via-Compressed-Error-Feedback:
+    section: journals
+    status: published
+  ? /publication/2025-01-01-Language-Modeling-and-Retrieval-Augmented-Generation-for-Integration-in-Space-Operation-Decision-Support-Tools
+  : section: other-conferences
+    status: published
+  /publication/2025-01-01-OrbitZoo-Real-Orbital-Systems-Challenges-for-Reinforcement-Learning:
+    section: ranked-conferences
+    status: published
+    rank: A*
+  /publication/2025-01-01-Ranking-with-Confidence-for-Large-Scale-Comparison-Data:
+    section: ranked-conferences
+    status: published
+    rank: A
+  ? /publication/2025-02-01-Learning-Under-Noisy-Labels-Spurious-Points-and-Diverse-Structures-TS40K-a-3D-Point-Cloud-Dataset-of-Rural-Terrain-and-Electrical-Transmission-Systems
+  : section: ranked-conferences
+    status: published
+    rank: A
+  /publication/2025-07-01-C-PATH-Conversational-Patient-Assistance-and-Triage-in-Healthcare-System:
+    section: other-conferences
+    status: published
+  ? /publication/2025-08-01-Generalizing-Trilateration-Approximate-Maximum-Likelihood-Estimator-for-Initial-Orbit-Determination-in-Low-Earth-Orbit
+  : section: journals
+    status: published
+  ? /publication/2025-12-01-SCENE-Net-Geometric-induction-for-interpretable-and-low-resource-3D-pole-detection-with-Group-Equivariant-Non-Expansive-Operators
+  : section: journals
+    status: published
+  /publication/2026-01-01-A-Multi-Token-Coordinate-Descent-Method-for-Semi-Decentralized-Vertical-Federated-Learning:
+    section: journals
+    status: published
+  /publication/2026-01-01-A-Systematic-Evaluation-of-Retrieval-Augmented-Generation-and-Language-Models-for-Space-Operations:
+    section: workshops
+    status: published
+  /publication/2026-01-01-CLASP-Online-learning-algorithms-for-Convex-Losses-And-Squared-Penalties:
+    section: ranked-conferences
+    status: published
+    rank: A*
+  /publication/2026-04-01-Dissecting-medical-referrals-in-health-services-role-of-physician-professional-networks:
+    section: journals
+    status: published
+  /publication/2026-09-01-ASTRA-ADMM-Accelerated-Topology-Reconfiguration-for-Dynamic-Satellite-Constellations:
+    section: ranked-conferences
+    status: accepted
+    rank: A*
+  /publication/2026-09-01-Satellite-Safe-Margin-Fast-Solutions-for-Conjunction-Analysis:
+    section: journals
+    status: published
+  /publication/2026-10-21-Analysis-of-Space-Research-through-Neural-Topic-Modeling-leveraging-Large-Language-Models:
+    section: other-conferences
+    status: accepted
+  ? /publication/2026-10-21-Data-Centric-Preprocessing-for-GNSS-Based-Orbit-Determination-via-AI-Signal-Processing-and-Orbital-Dynamics
+  : section: other-conferences
+    status: accepted
+  ? /publication/2026-10-21-Identification-of-the-Gravitational-Constant-from-Satellite-Trajectories-Using-Neural-Ordinary-Differential-Equations
+  : section: other-conferences
+    status: accepted
+  /publication/2026-10-21-Online-Learning-for-Dynamic-Constellation-Topologies:
+    section: other-conferences
+    status: accepted

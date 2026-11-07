@@ -1,0 +1,22 @@
+{% assign cv = site.data.cv_publications %}
+{% assign publications = site.publications | sort: "date" | reverse %}
+<p>Conference ranks follow <a href="https://portal.core.edu.au/conf-ranks/?source=ICORE2026">ICORE2026</a>.</p>
+{% for section in cv.sections %}
+<h3 id="{{ section.id }}">{{ section.title | escape }}</h3>
+<ul class="cv-publications">
+{% for post in publications %}
+  {% assign record = cv.publications[post.permalink] %}
+  {% if record.section == section.id %}
+    {% if record.status == "published" or record.status == "accepted" %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>.<br>
+    {{ post.citation_authors | join: ", " | escape }}.
+    <em>{{ post.venue | remove: "Accepted at the " | remove: "Accepted in the " | escape }}</em>{% assign year = post.date | date: "%Y" %}{% unless post.venue contains year %}, {{ year }}{% endunless %}.
+    {% if record.rank %}({{ record.rank | escape }}){% endif %}
+    {% if record.status == "accepted" %}<strong>Accepted.</strong>{% endif %}
+  </li>
+    {% endif %}
+  {% endif %}
+{% endfor %}
+</ul>
+{% endfor %}

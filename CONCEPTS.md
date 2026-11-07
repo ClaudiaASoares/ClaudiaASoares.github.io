@@ -48,6 +48,15 @@ Publication titles retain their published spelling.
 | Preprint | A publicly available manuscript without an established publication claim in the evidence used here. Related manuscripts may develop earlier work and are not counted as independent journal or conference publications. |
 | Research direction | A line of work described through its scientific questions and methods. Its description does not establish a completed result, implementation or funding award. |
 
+## CV publication terminology
+
+| Concept | Definition and usage boundary |
+| --- | --- |
+| Published paper | A paper released through its journal, conference or workshop. A DOI is not required for workshop contributions. A preprint alone does not establish publication. |
+| Accepted paper | A paper with an acceptance decision whose publication is pending. Include it in the CV with the label Accepted, as requested on 7 November 2026. |
+| A/A* conference paper | A conference paper assigned to a venue ranked A or A* in ICORE2026. A workshop or technical-communications contribution does not inherit the rank of its host conference. |
+| CV publication category | One of A/A* conferences, Journals, Other conferences or Workshops. Each included paper appears in one category, in reverse chronological order within that category. |
+
 ## Evidence boundaries
 
 - Public pages describe lines of work through scientific questions and methods.

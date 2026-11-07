@@ -2,6 +2,16 @@
 # See _audits/research-coverage-2026-10-19.md for scope and sources.
 since: 2021
 publications:
+  /publication/2026-10-21-Analysis-of-Space-Research-through-Neural-Topic-Modeling-leveraging-Large-Language-Models:
+  - space
+  /publication/2026-10-21-Data-Centric-Preprocessing-for-GNSS-Based-Orbit-Determination-via-AI-Signal-Processing-and-Orbital-Dynamics:
+  - space
+  /publication/2026-10-21-Identification-of-the-Gravitational-Constant-from-Satellite-Trajectories-Using-Neural-Ordinary-Differential-Equations:
+  - space
+  - decisions
+  /publication/2026-10-21-Online-Learning-for-Dynamic-Constellation-Topologies:
+  - space
+  - decisions
   /publication/2026-09-01-Satellite-Safe-Margin-Fast-Solutions-for-Conjunction-Analysis:
   - decisions
   - space
@@ -139,13 +149,6 @@ additional_papers:
   kind: accepted
   status: Accepted at EPIA 2026
   url: https://arxiv.org/abs/2609.11867
-- title: Data-Centric Preprocessing for GNSS-Based Orbit Determination via AI, Signal Processing, and Orbital Dynamics
-  year: 2026
-  topics:
-  - space
-  kind: accepted
-  status: SPAICE 2026
-  url: https://openreview.net/forum?id=N21P2fboTE
 - title: Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting
   year: 2026
   topics:

@@ -1387,3 +1387,57 @@ Our code is available in: https://github.com/dlavado/SCENE-Net-V2"
     abstractsource = {https://link.springer.com/article/10.1186/s12913-026-14099-9},
     abstractsourcelabel = {Published abstract source}
 }
+
+% SPAICE 2026. Metadata from acceptance and final revision notifications.
+@inproceedings{spaice2026GMZrV2CgYb,
+    author = "Belo, Ruben Catarino and Guimaraes, Marta and Soares, Claudia",
+    title = "Analysis of Space Research through Neural Topic Modeling leveraging Large Language Models",
+    booktitle = "SPAICE 2026",
+    year = "2026",
+    month = "oct",
+    day = "21",
+    url = "https://openreview.net/forum?id=GMZrV2CgYb",
+    abstract = "The rapid growth of space-related research, spanning disciplines from Earth observation to robotics and machine learning, presents challenges for efficiently navigating and contextualizing the literature. Traditional categorization approaches struggle to capture emerging themes and cross-disciplinary connections. In this work, we present a data-driven analysis of space science publications from the well-known preprint server arXiv, using neural topic modeling enhanced with large language models to uncover latent topics and track their evolution over time. Our methodology identifies major research themes, highlights the emergence of multimodal and self-supervised approaches, and captures methodological trends within high-prevalence topics. We further assess the robustness of topic discovery by comparing neural topic models, revealing both consistent and model-specific patterns. This analysis provides a resource for researchers and newcomers alike to navigate the rapidly expanding literature, supporting informed exploration and fostering interdisciplinary understanding.",
+    note = "Accepted for oral presentation"
+}
+
+@inproceedings{spaice2026Gf8ij9SHjP,
+    author = "Dyreby, Katarina and Soares, Claudia",
+    title = "Identification of the Gravitational Constant from Satellite Trajectories Using Neural Ordinary Differential Equations",
+    booktitle = "SPAICE 2026",
+    year = "2026",
+    month = "oct",
+    day = "21",
+    url = "https://openreview.net/forum?id=Gf8ij9SHjP",
+    abstract = "The rapid growth of satellite constellations in low Earth orbit has increased the probability of collisions involving satellites and debris, making accurate orbit propagation increasingly important. However, accurate orbit prediction remains challenging. Propagators depend on spacecraft properties, environmental parameters, and non-conservative forces that are often uncertain, causing propagation errors to accumulate over time. Estimating these values directly from orbital data offers a solution that could improve propagation accuracy.
+
+This work investigates whether a global physical constant can be identified directly from real orbital data using Neural Ordinary Differential Equations (Neural ODEs). A hybrid Neural ODE model is developed in which the equations of motion of satellites are split into two parts: known gravitational dynamics, with the gravitational constant treated as a trainable parameter, and a Neural Network that learns the residual accelerations representing the unmodelled forces. Using different initial biases, the model successfully recovers the gravitational constant for relative errors of up to 150\%. Increasing the initialization error primarily increases the number of training epochs required for convergence, as the final relative errors achieved are below 0.02\% for all different initial biases used. At higher initial errors, the Neural Network instead compensates for the incorrect gravitational term by learning residual accelerations several orders of magnitude larger than physically expected, preventing recovery of the gravitational constant.
+
+These results show that Neural ODEs can recover physical parameters from real orbital data, while also revealing the limits of parameter identifiability when unknown dynamics are learned simultaneously.",
+    note = "Accepted for oral presentation"
+}
+
+@inproceedings{spaice2026QbHeWRNwGa,
+    author = "Norberto, João and Ferreira, Ricardo N. and Soares, Claudia",
+    title = "Online Learning for Dynamic Constellation Topologies",
+    booktitle = "SPAICE 2026",
+    year = "2026",
+    month = "oct",
+    day = "21",
+    url = "https://openreview.net/forum?id=QbHeWRNwGa",
+    abstract = "The use of satellite networks has increased significantly in recent years due to their advantages over purely terrestrial systems, such as higher availability and coverage. However, to effectively provide these services, satellite networks must cope with the continuous orbital movement and maneuvering of their nodes and the impact on the network's topology. In this work, we address the problem of (dynamic) network topology configuration under the online learning framework. As a byproduct, our approach does not assume structure about the network, such as known orbital planes (that could be violated by maneuvering satellites). We empirically demonstrate that our problem formulation matches the performance of state-of-the-art offline methods. Importantly, we demonstrate that our approach is amenable to constrained online learning, exhibiting a trade-off between computational complexity per iteration and convergence to a final strategy.",
+    note = "Accepted for poster presentation"
+}
+
+@inproceedings{spaice2026N21P2fboTE,
+    author = "Guimaraes, Marta and Arthur, Robert and Soares, Claudia and Manfletti, Chiara and Pasquale, Gerarda De",
+    title = "Data-Centric Preprocessing for GNSS-Based Orbit Determination via AI, Signal Processing, and Orbital Dynamics",
+    booktitle = "SPAICE 2026",
+    year = "2026",
+    month = "oct",
+    day = "21",
+    url = "https://openreview.net/forum?id=N21P2fboTE",
+    abstract = "GNSS-based orbit determination relies on input measurements whose quality can vary significantly across mission phases and operating conditions. In such settings, inappropriate data conditioning may either improve estimation robustness or, if misapplied, degrade convergence and numerical stability. This work proposes a data-centric preprocessing pipeline designed to operate safely under heterogeneous data quality conditions. The method combines lightweight physical sanity checks with a structure-aware ML classifier that gates increasingly assumption-dependent signal-processing-based cleaning stages.
+The pipeline targets localised measurement irregularities across multiple orbital representations while explicitly avoiding over-cleaning in weakly structured segments. In representative scenarios, it agrees with a baseline batch least-squares estimator on obvious outliers and additionally identifies dynamically inconsistent samples that remain invisible to position-only residual analysis. The results show that data-centric AI preprocessing reduces residual dispersion and improves convergence behaviour, resulting in a more stable and statistically consistent orbit determination without modifying the underlying dynamical model.",
+    note = "Accepted for oral presentation"
+}

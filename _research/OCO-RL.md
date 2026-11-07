@@ -6,11 +6,11 @@ topic_id: decisions
 order: 1
 ---
 
-My work in optimisation studies how to compute decisions and estimates under constraints and uncertainty. It includes convex relaxations for localisation, nonconvex optimisation for facial animation, and learning from pairwise comparisons. Statistical estimation and system identification supply models for control.
+My work in optimisation studies how to compute decisions and estimates under constraints and uncertainty. It includes convex relaxations for localisation, nonconvex optimisation for facial animation, and rank aggregation and learning from pairwise comparisons. Statistical estimation and system identification supply models for control in physical systems.
 
-In sequential decision-making, I study algorithms that act on observations revealed over time. This includes constrained online learning and reinforcement learning for orbital systems, task offloading and distributed energy markets. Related work uses predictive models to support operational decisions in transport and industrial production.
+In sequential decision-making, I study algorithms that act on observations revealed over time. This includes constrained online learning and reinforcement learning for orbital systems, task offloading in computer networks, and distributed energy markets. Further work uses predictive models to support operational decisions in transport and industrial production.
 
-CLASP establishes bounds on regret and cumulative squared violation under its stated assumptions. ASTRA combines an ADMM-based solver with online learning for satellite-network decisions. OrbitZoo and PeersimGym provide environments for evaluating reinforcement learning.
+Our ICML 2026 paper CLASP establishes bounds on regret and cumulative squared violation, a metric suitable for control of physical systems. Our NeurIPS 2026 ASTRA combines an ADMM-based solver with online learning for satellite-network decisions. OrbitZoo and PeersimGym provide environments for evaluating sequencial decision-making in challenging physical environments, for example using reinforcement learning.
 
 ## Agentic decision-making
 

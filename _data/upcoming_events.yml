@@ -6,6 +6,13 @@
 #   description: "Short optional description."
 #   url: "https://example.com"
 
+- date: December 2026
+  title: "NeurIPS 2026"
+  location: "Sidney, Australia"
+  description: "João Norberto will present our work in Online Learning with guarantees even under imperfect updates, applied to the combinatorial problem of connecting satellites in large constellations, at the NeurIPS 2026 main conference. Drop by our poster on Dec 7 at 10 pm PST!"
+  url: "https://neurips.cc/virtual/2026/loc/sydney/poster/156042"
+  
+
 - date: 21 to 23 October 2026
   title: "SPAICE Conference. AI in and for Space"
   location: "ESA/ESTEC, Noordwijk, The Netherlands"

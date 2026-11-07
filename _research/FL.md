@@ -10,6 +10,6 @@ My work in federated learning studies how data owners can train models through s
 
 Distributed optimisation also supports my work in estimation. This includes inference in graphical models and network localisation from measurements, with attention to non-Gaussian noise and communication constraints.
 
-The applications include task offloading in edge systems, distributed energy markets and decomposition of the inverse-rig problem in facial animation.
+The applications include task offloading in edge systems, distributed energy markets and parallel decomposition of the inverse-rig problem in facial animation.
 
 {% include research-outputs.html %}

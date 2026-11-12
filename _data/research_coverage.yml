@@ -349,6 +349,12 @@ additional_papers:
   status: arXiv preprint
   url: https://arxiv.org/abs/2109.08356
 projects:
+- title: TMM-HyCARE
+  status: Funded
+  role: Principal investigator
+  description: Clinical decision support within the HyCARE research direction.
+  topics:
+  - health
 - title: HyCARE
   years: 2025–2026
   role: Principal investigator

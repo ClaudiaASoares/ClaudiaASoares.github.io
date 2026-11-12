@@ -7,9 +7,9 @@
   {% if project.topics contains topic %}
   <li>
     <strong>{% if project.url %}<a href="{{ project.url | escape }}">{{ project.title | escape }}</a>{% else %}{{ project.title | escape }}{% endif %}</strong>
-    ({{ project.years | escape }}). {{ project.role | escape }}.
+    {% if project.years %}({{ project.years | escape }}). {% elsif project.status %}({{ project.status | escape }}). {% endif %}{{ project.role | escape }}.
     {{ project.description | escape }}
-    <small>Reference {{ project.reference | escape }}.</small>
+    {% if project.reference %}<small>Reference {{ project.reference | escape }}.</small>{% endif %}
   </li>
   {% endif %}
 {% endfor %}

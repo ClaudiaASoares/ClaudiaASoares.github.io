@@ -44,6 +44,7 @@ Publication titles retain their published spelling.
 | Clinical decision support | Methods supplying information to a clinician's decision process. Model evaluation does not establish clinical effectiveness. |
 | AI for Clinical Decision Support and Health Services | The application topic covering clinical information extraction, decision support, referral networks, healthcare-demand forecasting and population health risk prediction. Related methods papers are identified as such. |
 | Funded project | An awarded research project or computing allocation with an identifiable grant or award reference. Completed projects are included when their activity overlaps 2021 or later. |
+| Funding acknowledgement | Attribution of support received for research. FCT and the European Union are funders; Horizon Europe, Horizon 2020 and PRR identify funding programmes. PRR support is acknowledged with the PRR, República Portuguesa and EU NextGenerationEU logos. |
 | Local PI | Principal investigator for the participation at the local institution. Use this role for Artificial Intelligence Fights Space Debris. |
 | Preprint | A publicly available manuscript without an established publication claim in the evidence used here. Related manuscripts may develop earlier work and are not counted as independent journal or conference publications. |
 | Research direction | A line of work described through its scientific questions and methods. Its description does not establish a completed result, implementation or funding award. |

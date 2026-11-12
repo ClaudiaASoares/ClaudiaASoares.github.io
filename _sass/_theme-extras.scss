@@ -3,3 +3,37 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+.research-funding {
+  clear: both;
+  margin-top: 2em;
+  padding-top: 1em;
+  border-top: 1px solid #ddd;
+
+  &__logos,
+  &__prr {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5em;
+    margin: 1em 0 1.5em;
+    padding: 1em;
+    background: #fff;
+
+    a {
+      display: flex;
+      align-items: center;
+      max-width: 100%;
+    }
+
+    img {
+      display: block;
+      height: auto;
+      max-width: 100%;
+    }
+  }
+
+  &__logos a { width: 280px; }
+  &__prr a { width: 150px; }
+  &__prr a:last-child { width: 210px; }
+}

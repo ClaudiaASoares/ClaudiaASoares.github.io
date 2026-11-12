@@ -17,3 +17,28 @@ author_profile: true
 {% for post in research_topics %}
   {% include archive-single.html %}
 {% endfor %}
+
+<section class="research-funding" aria-labelledby="funding-acknowledgements">
+  <h2 id="funding-acknowledgements">Funding acknowledgements</h2>
+  <p>My research has received support from FCT and the European Union through Horizon Europe, Horizon 2020 and Portugal’s Recovery and Resilience Plan (PRR).</p>
+  <div class="research-funding__logos">
+    <a href="https://www.fct.pt/">
+      <img src="{{ base_path }}/images/funding/fct.png" alt="FCT — Fundação para a Ciência e a Tecnologia" width="4001" height="2251" loading="lazy">
+    </a>
+    <a href="https://cordis.europa.eu/">
+      <img src="{{ base_path }}/images/funding/eu-funded-en.jpg" alt="Funded by the European Union" width="538" height="113" loading="lazy">
+    </a>
+  </div>
+  <p>PRR support includes HyCARE, Artificial Intelligence Fights Space Debris and Sustainable Stone by Portugal.</p>
+  <div class="research-funding__prr">
+    <a href="https://recuperarportugal.gov.pt/">
+      <img src="{{ base_path }}/images/funding/prr.svg" alt="PRR — Plano de Recuperação e Resiliência" width="84" height="28" loading="lazy">
+    </a>
+    <a href="https://www.portugal.gov.pt/">
+      <img src="{{ base_path }}/images/funding/republica-portuguesa.svg" alt="República Portuguesa" width="102" height="28" loading="lazy">
+    </a>
+    <a href="https://next-generation-eu.europa.eu/">
+      <img src="{{ base_path }}/images/funding/eu-nextgeneration.svg" alt="Financiado pela União Europeia — NextGenerationEU" width="98" height="25" loading="lazy">
+    </a>
+  </div>
+</section>

@@ -517,6 +517,9 @@ def markdown_for_entry(
             md += "\nexcerpt_truncated: true"
     md += f"\ndate: {pub_date}"
     md += f"\nvenue: '{html_escape(venue)}'"
+    publication_status = clean_bibtex_text(fields.get("publicationstatus"))
+    if publication_status:
+        md += f"\ntype: {json.dumps(publication_status, ensure_ascii=False)}"
     author_names = [person_name(person) for person in entry.persons.get("author", [])]
     md += f"\ncitation_authors: {json.dumps(author_names, ensure_ascii=False)}"
     md += f"\ncitation_year: '{pub_year}'"

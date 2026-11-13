@@ -6,7 +6,7 @@ excerpt_separator: ""
 description: 'Error- and Prediction-Driven Motor Learning in the Cortico-Cerebellar Loop. EPIA 2026.'
 date: 2026-09-01
 venue: 'EPIA 2026'
-type: "Accepted paper"
+publication_status: "Accepted paper"
 citation_authors: ["Ana Carolina Filipe", "Rui Ponte Costa", "Cláudia Soares"]
 citation_year: '2026'
 citation_conference: "EPIA 2026"

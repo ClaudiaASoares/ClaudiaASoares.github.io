@@ -183,3 +183,15 @@ publications:
   /publication/2026-10-21-Online-Learning-for-Dynamic-Constellation-Topologies:
     section: other-conferences
     status: accepted
+  /publication/2026-11-17-AdamX-Cosine-Similarity-Meets-Gradient-Descent:
+    section: other-conferences
+    status: published
+  ? /publication/2026-11-17-Multi-Agent-Reinforcement-Learning-for-Procurement-Auctions-Based-Distributed-Energy-Market-Governance
+  : section: other-conferences
+    status: published
+  ? /publication/2026-11-17-Towards-a-Data-Centric-KDD-Pipeline-for-Natural-Stone-Valorization-Under-Weak-Supervision
+  : section: other-conferences
+    status: published
+  /publication/2026-09-01-Error-and-Prediction-Driven-Motor-Learning-in-the-Cortico-Cerebellar-Loop:
+    section: other-conferences
+    status: accepted

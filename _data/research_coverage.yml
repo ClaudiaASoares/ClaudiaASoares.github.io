@@ -12,6 +12,15 @@ publications:
   /publication/2026-10-21-Online-Learning-for-Dynamic-Constellation-Topologies:
   - space
   - decisions
+  /publication/2026-11-17-AdamX-Cosine-Similarity-Meets-Gradient-Descent:
+  - decisions
+  ? /publication/2026-11-17-Multi-Agent-Reinforcement-Learning-for-Procurement-Auctions-Based-Distributed-Energy-Market-Governance
+  : - decisions
+    - distributed
+  ? /publication/2026-11-17-Towards-a-Data-Centric-KDD-Pipeline-for-Natural-Stone-Valorization-Under-Weak-Supervision
+  : - decisions
+  /publication/2026-09-01-Error-and-Prediction-Driven-Motor-Learning-in-the-Cortico-Cerebellar-Loop:
+  - decisions
   /publication/2026-09-01-Satellite-Safe-Margin-Fast-Solutions-for-Conjunction-Analysis:
   - decisions
   - space
@@ -142,13 +151,6 @@ publications:
   - decisions
   - distributed
 additional_papers:
-- title: 'AdamX: Cosine similarity meets gradient descent'
-  year: 2026
-  topics:
-  - decisions
-  kind: accepted
-  status: Accepted at EPIA 2026
-  url: https://arxiv.org/abs/2609.11867
 - title: Hierarchical Spatio-Temporal Transformer for Coherent Emergency Department Forecasting
   year: 2026
   topics:
@@ -156,19 +158,6 @@ additional_papers:
   kind: accepted
   status: Accepted at SoGood, ECML PKDD 2026
   url: https://arxiv.org/abs/2607.27106
-- title: Multi-Agent Reinforcement Learning for Procurement Auctions Based Distributed Energy Market Governance
-  year: 2026
-  topics:
-  - decisions
-  - distributed
-  kind: accepted
-  status: Accepted at EPIA 2026
-- title: Towards a data-centric KDD pipeline for natural-stone valorization under weak supervision
-  year: 2026
-  topics:
-  - decisions
-  kind: accepted
-  status: Accepted at EPIA 2026
 - title: A Multi-Token Coordinate Descent Method for Vertical Federated Learning
   year: 2022
   topics:
@@ -177,13 +166,6 @@ additional_papers:
   kind: accepted
   status: NeurIPS 2022 Workshop on Federated Learning
   url: https://openreview.net/forum?id=z5ZmWVh0HCh
-- title: Error- and Prediction-Driven Motor Learning in the Cortico-Cerebellar Loop
-  year: 2026
-  topics:
-  - decisions
-  kind: accepted
-  status: Accepted at EPIA 2026
-  url: https://arxiv.org/abs/2609.29945
 - title: 'CIExplainer++: Generating Causal and Interpretable Explanations for Graph Neural Networks'
   year: 2026
   topics:
